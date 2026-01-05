@@ -50,14 +50,41 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <Box
-      id="services"
-      sx={{
-        py: 8,
-        backgroundColor: "background.paper",
-      }}
-    >
-      <Container maxWidth="lg">
+    <>
+      {/* Service Schema for each service */}
+      {services.map((service, index) => (
+        <script
+          key={`schema-service-${index}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: service.title,
+              provider: {
+                "@type": "RealEstateAgent",
+                name: "Romegate Properties",
+                url: "https://romegate.it",
+              },
+              areaServed: {
+                "@type": "City",
+                name: "Rome",
+              },
+              description: service.description,
+            }),
+          }}
+        />
+      ))}
+      <Box
+        id="services"
+        component="section"
+        aria-label="Our services"
+        sx={{
+          py: 8,
+          backgroundColor: "background.paper",
+        }}
+      >
+        <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -115,6 +142,7 @@ const Services: React.FC = () => {
         </Grid>
       </Container>
     </Box>
+    </>
   );
 };
 

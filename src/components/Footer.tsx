@@ -24,6 +24,8 @@ const Footer: React.FC = () => {
   return (
     <Box
       component="footer"
+      role="contentinfo"
+      aria-label="Site footer"
       sx={{
         backgroundColor: "primary.dark",
         color: "white",

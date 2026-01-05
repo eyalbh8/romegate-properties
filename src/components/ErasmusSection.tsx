@@ -71,6 +71,8 @@ const ErasmusSection: React.FC = () => {
   return (
     <Box
       id="erasmus"
+      component="section"
+      aria-label="Erasmus student services"
       sx={{
         py: 8,
         backgroundColor: "secondary.main",
@@ -148,7 +150,7 @@ const ErasmusSection: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <Typography
-            variant="h4"
+            variant="h3"
             component="h3"
             sx={{ textAlign: "center", mb: 4, color: "white" }}
           >

@@ -78,6 +78,8 @@ const UniqueSection: React.FC = () => {
   return (
     <Box
       id="about"
+      component="section"
+      aria-label="What makes us unique"
       sx={{
         py: 8,
         backgroundColor: "background.default",
@@ -115,18 +117,18 @@ const UniqueSection: React.FC = () => {
                         },
                       }}
                     >
-                    <Typography
-                      variant="h4"
-                      component="h3"
-                      gutterBottom
-                      sx={{ mb: 2 }}
-                    >
-                      {feature.icon} {feature.title}
-                    </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      {feature.description}
-                    </Typography>
-                  </Paper>
+                      <Typography
+                        variant="h5"
+                        component="h3"
+                        gutterBottom
+                        sx={{ mb: 2 }}
+                      >
+                        {feature.icon} {feature.title}
+                      </Typography>
+                      <Typography variant="body1" color="text.secondary">
+                        {feature.description}
+                      </Typography>
+                    </Paper>
                   </motion.div>
                 </Grid>
               ))}
@@ -148,19 +150,19 @@ const UniqueSection: React.FC = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                   >
-                  <ImageListItem>
-                  <img
-                    src={`${item.img}?w=400&fit=crop&auto=format`}
-                    srcSet={`${item.img}?w=400&fit=crop&auto=format&dpr=2 2x`}
-                    alt={item.title}
-                    loading="lazy"
-                    style={{
-                      borderRadius: "8px",
-                      width: "100%",
-                      height: "auto",
-                    }}
-                  />
-                  </ImageListItem>
+                    <ImageListItem>
+                      <img
+                        src={`${item.img}?w=400&fit=crop&auto=format`}
+                        srcSet={`${item.img}?w=400&fit=crop&auto=format&dpr=2 2x`}
+                        alt={`${item.title} - Rome real estate and property showcase`}
+                        loading="lazy"
+                        style={{
+                          borderRadius: "8px",
+                          width: "100%",
+                          height: "auto",
+                        }}
+                      />
+                    </ImageListItem>
                   </motion.div>
                 ))}
               </ImageList>

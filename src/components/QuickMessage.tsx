@@ -51,6 +51,8 @@ const QuickMessage: React.FC = () => {
 
   return (
     <Box
+      component="section"
+      aria-label="Quick message form"
       sx={{
         py: 6,
         backgroundColor: "background.default",
@@ -72,14 +74,14 @@ const QuickMessage: React.FC = () => {
             }}
           >
             <Typography
-              variant="h3"
+              variant="h2"
               component="h2"
               gutterBottom
               sx={{ textAlign: "center", mb: 4 }}
             >
               Have a Question? Leave Us a Message
             </Typography>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-label="Quick message form">
               <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
                 <TextField
                   name="name"
@@ -88,6 +90,9 @@ const QuickMessage: React.FC = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
+                  aria-label="Your full name"
+                  aria-describedby="quick-name-description"
+                  id="quick-name"
                   sx={{
                     backgroundColor: "white",
                     "& .MuiOutlinedInput-root": {
@@ -97,6 +102,9 @@ const QuickMessage: React.FC = () => {
                     },
                   }}
                 />
+                <Box id="quick-name-description" sx={{ display: "none" }}>
+                  Please enter your full name
+                </Box>
                 <TextField
                   name="email"
                   label="Your Email"
@@ -105,6 +113,9 @@ const QuickMessage: React.FC = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
+                  aria-label="Your email address"
+                  aria-describedby="quick-email-description"
+                  id="quick-email"
                   sx={{
                     backgroundColor: "white",
                     "& .MuiOutlinedInput-root": {
@@ -114,6 +125,9 @@ const QuickMessage: React.FC = () => {
                     },
                   }}
                 />
+                <Box id="quick-email-description" sx={{ display: "none" }}>
+                  Please enter a valid email address
+                </Box>
                 <TextField
                   name="message"
                   label="Your Message"
@@ -123,6 +137,9 @@ const QuickMessage: React.FC = () => {
                   required
                   value={formData.message}
                   onChange={handleChange}
+                  aria-label="Your message"
+                  aria-describedby="quick-message-description"
+                  id="quick-message"
                   sx={{
                     backgroundColor: "white",
                     "& .MuiOutlinedInput-root": {
@@ -132,6 +149,9 @@ const QuickMessage: React.FC = () => {
                     },
                   }}
                 />
+                <Box id="quick-message-description" sx={{ display: "none" }}>
+                  Please enter your message or question
+                </Box>
                 <Button
                   type="submit"
                   variant="contained"

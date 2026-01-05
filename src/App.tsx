@@ -13,6 +13,8 @@ import Properties from "./components/Properties";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Breadcrumb from "./components/Breadcrumb";
+import FAQ from "./components/FAQ";
 
 const App: React.FC = () => {
   return (
@@ -20,16 +22,21 @@ const App: React.FC = () => {
       <CssBaseline />
       <Box
         sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+        component="main"
       >
         <Navbar />
-        <Hero />
+        <Breadcrumb items={[{ label: "Home" }]} />
+        <Box id="main-content" component="main">
+          <Hero />
         <QuickMessage />
         <Services />
         <UniqueSection />
         <ErasmusSection />
         <Properties />
         <Blog />
+        <FAQ />
         <Contact />
+        </Box>
         <Footer />
       </Box>
     </ThemeProvider>

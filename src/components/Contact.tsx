@@ -64,6 +64,8 @@ const Contact: React.FC = () => {
   return (
     <Box
       id="contact"
+      component="section"
+      aria-label="Contact us"
       sx={{
         py: 8,
         backgroundColor: "background.default",
@@ -102,10 +104,15 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
-                <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
+                <Typography
+                  variant="h3"
+                  component="h3"
+                  gutterBottom
+                  sx={{ mb: 4 }}
+                >
                   Send us a Message
                 </Typography>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} aria-label="Contact form">
                   <Box
                     sx={{ display: "flex", flexDirection: "column", gap: 3 }}
                   >
@@ -116,7 +123,13 @@ const Contact: React.FC = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
+                      aria-label="Your full name"
+                      aria-describedby="name-description"
+                      id="contact-name"
                     />
+                    <Box id="name-description" sx={{ display: "none" }}>
+                      Please enter your full name
+                    </Box>
                     <TextField
                       name="email"
                       label="Your Email"
@@ -125,14 +138,26 @@ const Contact: React.FC = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
+                      aria-label="Your email address"
+                      aria-describedby="email-description"
+                      id="contact-email"
                     />
+                    <Box id="email-description" sx={{ display: "none" }}>
+                      Please enter a valid email address
+                    </Box>
                     <TextField
                       name="phone"
                       label="Phone Number"
                       variant="outlined"
                       value={formData.phone}
                       onChange={handleChange}
+                      aria-label="Your phone number (optional)"
+                      aria-describedby="phone-description"
+                      id="contact-phone"
                     />
+                    <Box id="phone-description" sx={{ display: "none" }}>
+                      Optional: Enter your phone number for faster contact
+                    </Box>
                     <TextField
                       name="subject"
                       label="Subject"
@@ -140,7 +165,13 @@ const Contact: React.FC = () => {
                       required
                       value={formData.subject}
                       onChange={handleChange}
+                      aria-label="Message subject"
+                      aria-describedby="subject-description"
+                      id="contact-subject"
                     />
+                    <Box id="subject-description" sx={{ display: "none" }}>
+                      Please enter the subject of your message
+                    </Box>
                     <TextField
                       name="message"
                       label="Your Message"
@@ -150,7 +181,13 @@ const Contact: React.FC = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
+                      aria-label="Your message"
+                      aria-describedby="message-description"
+                      id="contact-message"
                     />
+                    <Box id="message-description" sx={{ display: "none" }}>
+                      Please enter your message or inquiry
+                    </Box>
                     <Button
                       type="submit"
                       variant="contained"
@@ -172,7 +209,12 @@ const Contact: React.FC = () => {
               transition={{ duration: 0.6 }}
             >
               <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
-                <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
+                <Typography
+                  variant="h3"
+                  component="h3"
+                  gutterBottom
+                  sx={{ mb: 4 }}
+                >
                   Contact Information
                 </Typography>
                 <Stack spacing={3}>

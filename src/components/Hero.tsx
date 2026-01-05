@@ -12,7 +12,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 
-const HeroBox = styled(Box)(({ theme }) => ({
+const HeroSection = styled("section")({
   position: "relative",
   minHeight: "90vh",
   display: "flex",
@@ -29,7 +29,7 @@ const HeroBox = styled(Box)(({ theme }) => ({
     backgroundColor: "rgba(0, 0, 0, 0.5)",
     zIndex: 1,
   },
-}));
+});
 
 const VideoBackground = styled("video")({
   position: "absolute",
@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <HeroBox id="home">
+    <HeroSection id="home" aria-label="Hero section">
       <VideoBackground
         autoPlay
         loop
@@ -98,7 +98,8 @@ const Hero: React.FC = () => {
         {/* Fallback image if video doesn't load */}
         <img
           src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920"
-          alt="Rome background"
+          alt="Beautiful view of Rome, Italy - Historic architecture and cityscape"
+          loading="lazy"
           style={{
             position: "absolute",
             top: "50%",
@@ -113,7 +114,7 @@ const Hero: React.FC = () => {
         />
       </VideoBackground>
       <HeroContent maxWidth="lg">
-        <motion.div
+        <motion.header
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -130,15 +131,15 @@ const Hero: React.FC = () => {
           >
             Your Gateway to Roman Properties
           </Typography>
-        </motion.div>
-        <motion.div
+        </motion.header>
+        <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Typography
             variant="h5"
-            component="p"
+            component="span"
             sx={{
               mb: 4,
               textShadow: "1px 1px 2px rgba(0,0,0,0.5)",
@@ -146,13 +147,14 @@ const Hero: React.FC = () => {
           >
             Buying • Selling • Managing • Student Accommodation
           </Typography>
-        </motion.div>
-        <motion.div
+        </motion.p>
+        <motion.nav
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          aria-label="Property search"
         >
-          <SearchBox>
+          <SearchBox component="form" role="search">
             <TextField
               fullWidth
               placeholder="Search properties, neighborhoods, or areas..."
@@ -191,11 +193,12 @@ const Hero: React.FC = () => {
               Search
             </Button>
           </SearchBox>
-        </motion.div>
-        <motion.div
+        </motion.nav>
+        <motion.nav
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          aria-label="Main navigation"
         >
           <Stack
             direction={{ xs: "column", sm: "row" }}
@@ -231,9 +234,9 @@ const Hero: React.FC = () => {
               Get Started
             </Button>
           </Stack>
-        </motion.div>
+        </motion.nav>
       </HeroContent>
-    </HeroBox>
+    </HeroSection>
   );
 };
 

@@ -49,16 +49,22 @@ const Navbar: React.FC = () => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      role="navigation"
+      aria-label="Mobile navigation menu"
+      sx={{ textAlign: "center" }}
+    >
       <Typography variant="h6" sx={{ my: 2, color: "primary.main" }}>
         ROME<span style={{ color: "secondary.main" }}>GATE</span>
       </Typography>
-      <List>
+      <List role="list">
         {navItems.map((item) => (
-          <ListItem key={item.label} disablePadding>
+          <ListItem key={item.label} disablePadding role="listitem">
             <ListItemButton
               sx={{ textAlign: "center" }}
               onClick={() => handleNavClick(item.href)}
+              aria-label={`Navigate to ${item.label} section`}
             >
               <ListItemText primary={item.label} />
             </ListItemButton>
@@ -70,18 +76,43 @@ const Navbar: React.FC = () => {
 
   return (
     <>
+      <Box
+        component="a"
+        href="#main-content"
+        sx={{
+          position: "absolute",
+          top: -40,
+          left: 0,
+          backgroundColor: "primary.main",
+          color: "white",
+          padding: 1,
+          textDecoration: "none",
+          zIndex: 10000,
+          "&:focus": {
+            top: 0,
+          },
+        }}
+        aria-label="Skip to main content"
+      >
+        Skip to main content
+      </Box>
       <AppBar
         position="sticky"
+        component="nav"
+        role="navigation"
+        aria-label="Main navigation"
         sx={{
           backgroundColor: "rgba(139, 0, 0, 0.95)",
           backdropFilter: "blur(10px)",
           boxShadow: 3,
         }}
       >
-        <Toolbar>
+        <Toolbar role="toolbar">
           <Typography
             variant="h5"
             component="div"
+            role="banner"
+            aria-label="Romegate logo - Home"
             sx={{
               flexGrow: { xs: 1, md: 0 },
               fontFamily: '"Playfair Display", serif',
@@ -90,6 +121,13 @@ const Navbar: React.FC = () => {
               cursor: "pointer",
             }}
             onClick={() => handleNavClick("#home")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                handleNavClick("#home");
+              }
+            }}
+            tabIndex={0}
           >
             ROME<span style={{ color: "#9D4EDD" }}>GATE</span>
           </Typography>
@@ -105,6 +143,9 @@ const Navbar: React.FC = () => {
             </IconButton>
           ) : (
             <Box
+              component="nav"
+              role="navigation"
+              aria-label="Main menu"
               sx={{
                 flexGrow: 1,
                 display: "flex",
@@ -116,6 +157,7 @@ const Navbar: React.FC = () => {
                 <Button
                   key={item.label}
                   onClick={() => handleNavClick(item.href)}
+                  aria-label={`Navigate to ${item.label} section`}
                   sx={{ color: "white", fontWeight: 500 }}
                 >
                   {item.label}

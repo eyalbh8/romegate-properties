@@ -119,14 +119,47 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <Box
-      id="blog"
-      sx={{
-        py: 8,
-        backgroundColor: "background.paper",
-      }}
-    >
-      <Container maxWidth="lg">
+    <>
+      {/* BlogPosting Schema for each post */}
+      {blogPosts.map((post) => (
+        <script
+          key={`schema-${post.id}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              headline: post.title,
+              image: post.image,
+              datePublished: new Date(post.date).toISOString(),
+              author: {
+                "@type": "Person",
+                name: post.author,
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Romegate Properties",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://romegate.it/logo.png",
+                },
+              },
+              description: post.excerpt,
+              articleSection: post.category,
+            }),
+          }}
+        />
+      ))}
+      <Box
+        id="blog"
+        component="section"
+        aria-label="Blog and news articles"
+        sx={{
+          py: 8,
+          backgroundColor: "background.paper",
+        }}
+      >
+        <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -193,6 +226,7 @@ const Blog: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Card
+                  component="article"
                   sx={{
                     height: "100%",
                     display: "flex",
@@ -208,7 +242,8 @@ const Blog: React.FC = () => {
                     component="img"
                     height="200"
                     image={post.image}
-                    alt={post.title}
+                    alt={`${post.title} - ${post.category} article image`}
+                    loading="lazy"
                     sx={{
                       objectFit: "cover",
                     }}
@@ -284,6 +319,7 @@ const Blog: React.FC = () => {
         </motion.div>
       </Container>
     </Box>
+    </>
   );
 };
 

@@ -1,0 +1,68 @@
+# Romegate Properties - Real Estate in Rome
+
+## About
+Romegate is a premier real estate agency specializing in buying, selling, and managing properties in Rome, Italy. We provide specialized services for Erasmus students and international clients seeking accommodation in the Eternal City.
+
+## Services
+- Property Buying: Expert guidance through Rome's real estate market
+- Property Selling: Professional marketing, valuation, and negotiation
+- Property Management: Complete management services including maintenance and tenant relations
+- Student Accommodation: Specialized services for Erasmus and international students
+
+## Key Features
+- Deep knowledge of Roman neighborhoods and real estate market
+- Multilingual support (English, Italian, Spanish, French)
+- Prime locations near universities and public transport
+- Fast and efficient service, especially for students
+- Personalized service for all clients
+
+## Contact
+- Email: info@romegate.it
+- Phone: +39 02 1234 5678
+- Address: Via Manzoni 37, 20121 Milano, Italy
+- Website: https://romegate.it
+
+## Target Audience
+- Property buyers and sellers in Rome
+- Erasmus students seeking accommodation
+- International students and expatriates
+- Property investors
+
+## Content Focus
+Real estate listings, student housing guides, market insights, property management services, neighborhood information, legal guidance for property transactions in Italy.
+
+## Specializations
+- Student Housing: Erasmus accommodation, semester-based leases, university proximity
+- Luxury Properties: High-end apartments and villas in prime locations
+- Investment Properties: Commercial and residential investment opportunities
+- Property Management: Full-service management for landlords
+
+## Languages Supported
+English, Italian, Spanish, French, German
+
+## Service Areas
+Rome, Italy - All neighborhoods including Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio
+
+## Content Updates
+- Blog posts: Updated weekly with new articles about real estate trends, student guides, and market insights
+- Property listings: Updated daily with new properties, price changes, and availability updates
+- Market insights: Updated monthly with comprehensive market analysis and trends
+- Student accommodation: Updated weekly during academic semesters, daily during peak enrollment periods
+- Service information: Updated quarterly or as services evolve
+
+## API Endpoints (Future Implementation)
+- Properties API: /api/properties - GET endpoint for property listings with filtering
+- Search API: /api/search - POST endpoint for property search with advanced filters
+- Contact API: /api/contact - POST endpoint for contact form submissions
+- Blog API: /api/blog - GET endpoint for blog posts with pagination
+
+## Data Structure
+- Properties: Include price, location, size, amenities, images, availability
+- Blog Posts: Include title, author, date, category, content, images
+- Services: Include description, pricing, availability, requirements
+
+## Content Types
+- Property Listings: Residential, commercial, student housing
+- Blog Articles: Market analysis, guides, student resources, legal information
+- Service Descriptions: Buying, selling, management, consulting
+

@@ -20,8 +20,20 @@ const theme = createTheme({
       paper: "#FFFFFF",
     },
     text: {
-      primary: "#1A1A1A",
-      secondary: "#666666",
+      primary: "#1A1A1A", // High contrast on white background (WCAG AA compliant)
+      secondary: "#666666", // Meets WCAG AA for normal text
+    },
+    error: {
+      main: "#D32F2F", // High contrast error color
+    },
+    warning: {
+      main: "#ED6C02", // High contrast warning color
+    },
+    info: {
+      main: "#0288D1", // High contrast info color
+    },
+    success: {
+      main: "#2E7D32", // High contrast success color
     },
   },
   typography: {
@@ -59,6 +71,11 @@ const theme = createTheme({
         root: {
           borderRadius: 8,
           padding: "10px 24px",
+          "&:focus-visible": {
+            outline: "3px solid",
+            outlineColor: "primary.main",
+            outlineOffset: "2px",
+          },
         },
       },
     },
@@ -67,6 +84,53 @@ const theme = createTheme({
         root: {
           borderRadius: 12,
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          "&:focus-visible": {
+            outline: "2px solid",
+            outlineColor: "primary.main",
+            outlineOffset: "2px",
+            borderRadius: "2px",
+          },
+        },
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          "& .MuiOutlinedInput-root": {
+            "&:focus-within": {
+              "& fieldset": {
+                borderWidth: "2px",
+              },
+            },
+          },
+        },
+      },
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          "&:focus-visible": {
+            outline: "3px solid",
+            outlineColor: "primary.main",
+            outlineOffset: "2px",
+          },
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          "&:focus-visible": {
+            outline: "2px solid",
+            outlineColor: "primary.main",
+            outlineOffset: "2px",
+          },
         },
       },
     },

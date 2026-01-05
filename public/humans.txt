@@ -1,0 +1,16 @@
+/* TEAM */
+Developer: Romegate Development Team
+Contact: info@romegate.it
+Location: Rome, Italy
+
+/* THANKS */
+MUI Team
+React Team
+Framer Motion
+
+/* SITE */
+Last update: 2025/01/05
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: React, Material-UI, TypeScript
+Software: Visual Studio Code
+
