@@ -96,20 +96,24 @@ const UniqueSection: React.FC = () => {
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} md={8}>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} sx={{ alignItems: "stretch" }}>
               {features.map((feature, index) => (
-                <Grid item xs={12} sm={6} key={index}>
+                <Grid item xs={12} sm={6} key={index} sx={{ display: "flex" }}>
                   <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
+                    style={{ width: "100%", display: "flex" }}
                   >
                     <Paper
                       elevation={2}
                       sx={{
                         p: 3,
                         height: "100%",
+                        width: "100%",
+                        display: "flex",
+                        flexDirection: "column",
                         transition: "transform 0.3s, box-shadow 0.3s",
                         "&:hover": {
                           transform: "translateY(-4px) scale(1.02)",

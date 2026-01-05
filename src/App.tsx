@@ -5,7 +5,6 @@ import { Box } from "@mui/material";
 import theme from "./theme";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import QuickMessage from "./components/QuickMessage";
 import Services from "./components/Services";
 import UniqueSection from "./components/UniqueSection";
 import ErasmusSection from "./components/ErasmusSection";
@@ -28,14 +27,13 @@ const App: React.FC = () => {
         <Breadcrumb items={[{ label: "Home" }]} />
         <Box id="main-content" component="main">
           <Hero />
-        <QuickMessage />
-        <Services />
-        <UniqueSection />
-        <ErasmusSection />
-        <Properties />
-        <Blog />
-        <FAQ />
-        <Contact />
+          <Services />
+          <UniqueSection />
+          <ErasmusSection />
+          <Properties />
+          <Blog />
+          <FAQ />
+          <Contact />
         </Box>
         <Footer />
       </Box>

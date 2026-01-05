@@ -107,18 +107,29 @@ const ErasmusSection: React.FC = () => {
           </Typography>
         </motion.div>
 
-        <Grid container spacing={4} sx={{ mb: 6 }}>
+        <Grid container spacing={4} sx={{ mb: 6, alignItems: "stretch" }}>
           {services.map((service, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={3}
+              key={index}
+              sx={{ display: "flex" }}
+            >
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
+                style={{ width: "100%", display: "flex" }}
               >
                 <Card
                   sx={{
                     height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
                     textAlign: "center",
                     p: 3,
                     backgroundColor: "rgba(255, 255, 255, 0.1)",
@@ -157,22 +168,32 @@ const ErasmusSection: React.FC = () => {
             What Our Students Say
           </Typography>
         </motion.div>
-        <Grid container spacing={4}>
+        <Grid container spacing={4} sx={{ alignItems: "stretch" }}>
           {testimonials.map((testimonial, index) => (
-            <Grid item xs={12} md={4} key={index}>
+            <Grid item xs={12} md={4} key={index} sx={{ display: "flex" }}>
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
+                style={{ width: "100%", display: "flex" }}
               >
                 <Card
                   sx={{
                     height: "100%",
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
                     backgroundColor: "rgba(255, 255, 255, 0.95)",
                   }}
                 >
-                  <CardContent>
+                  <CardContent
+                    sx={{
+                      flexGrow: 1,
+                      display: "flex",
+                      flexDirection: "column",
+                    }}
+                  >
                     <Stack
                       direction="row"
                       spacing={2}
@@ -194,7 +215,11 @@ const ErasmusSection: React.FC = () => {
                         />
                       </Box>
                     </Stack>
-                    <Typography variant="body1" color="text.secondary">
+                    <Typography
+                      variant="body1"
+                      color="text.secondary"
+                      sx={{ flexGrow: 1 }}
+                    >
                       "{testimonial.text}"
                     </Typography>
                   </CardContent>
