@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import UniqueSection from "./components/UniqueSection";
 import ErasmusSection from "./components/ErasmusSection";
 import Properties from "./components/Properties";
+import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -27,6 +28,7 @@ const App: React.FC = () => {
         <UniqueSection />
         <ErasmusSection />
         <Properties />
+        <Blog />
         <Contact />
         <Footer />
       </Box>
