@@ -268,7 +268,7 @@ const Properties: React.FC = () => {
                       transition: "transform 0.3s, box-shadow 0.3s",
                       "&:hover": {
                         transform: "translateY(-8px) scale(1.02)",
-                        boxShadow: 6,
+                        boxShadow: 3,
                       },
                     }}
                   >

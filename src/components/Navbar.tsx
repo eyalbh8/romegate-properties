@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
         role="navigation"
         aria-label="Main navigation"
         sx={{
-          backgroundColor: "rgba(139, 0, 0, 0.95)",
+          backgroundColor: "rgba(44, 62, 80, 0.92)",
           backdropFilter: "blur(10px)",
           boxShadow: 3,
         }}
@@ -134,7 +134,6 @@ const Navbar: React.FC = () => {
             aria-label="Romegate logo - Home"
             sx={{
               flexGrow: { xs: 1, md: 0 },
-              fontFamily: '"Playfair Display", serif',
               fontWeight: 700,
               color: "white",
               cursor: "pointer",
@@ -148,7 +147,7 @@ const Navbar: React.FC = () => {
             }}
             tabIndex={0}
           >
-            ROME<span style={{ color: "#9D4EDD" }}>GATE</span>
+            ROME<span style={{ color: theme.palette.secondary.main }}>GATE</span>
           </Typography>
           {isMobile ? (
             <Box

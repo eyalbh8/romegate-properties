@@ -13,9 +13,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@mui/material/styles";
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
+  const theme = useTheme();
   const handleNavClick = (href: string): void => {
     const element = document.querySelector(href);
     if (element) {
@@ -42,12 +44,12 @@ const Footer: React.FC = () => {
               variant="h5"
               component="div"
               sx={{
-                fontFamily: '"Playfair Display", serif',
                 fontWeight: 700,
                 mb: 2,
               }}
             >
-              ROME<span style={{ color: "#9D4EDD" }}>GATE</span>
+              ROME
+              <span style={{ color: theme.palette.secondary.main }}>GATE</span>
             </Typography>
             <Typography
               variant="body2"

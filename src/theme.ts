@@ -1,45 +1,45 @@
 import { createTheme } from "@mui/material/styles";
 
-// Roman Empire inspired color palette - darker red and purple
+// iGEO-inspired color palette - gentle, muted blue-gray tones
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#8B0000", // Dark red (Roman crimson)
-      light: "#A52A2A",
-      dark: "#5C0000",
+      main: "#2C3E50", // Muted dark blue-gray
+      light: "#34495E",
+      dark: "#1A252F",
       contrastText: "#FFFFFF",
     },
     secondary: {
-      main: "#4B0082", // Indigo purple (Roman purple)
-      light: "#6A0DAD",
-      dark: "#2D0042",
+      main: "#5A8BA8", // Soft blue-teal
+      light: "#7BA4C2",
+      dark: "#457B9D",
       contrastText: "#FFFFFF",
     },
     background: {
-      default: "#F5F5F5",
+      default: "#FAFBFC", // Softer white
       paper: "#FFFFFF",
     },
     text: {
-      primary: "#1A1A1A", // High contrast on white background (WCAG AA compliant)
-      secondary: "#666666", // Meets WCAG AA for normal text
+      primary: "#2D3436", // Soft dark gray (WCAG AA compliant)
+      secondary: "#636E72", // Gentle medium gray
     },
     error: {
-      main: "#D32F2F", // High contrast error color
+      main: "#C62828", // Slightly softened error color
     },
     warning: {
-      main: "#ED6C02", // High contrast warning color
+      main: "#E65100", // Slightly softened warning color
     },
     info: {
-      main: "#0288D1", // High contrast info color
+      main: "#0277BD", // Slightly softened info color
     },
     success: {
-      main: "#2E7D32", // High contrast success color
+      main: "#2E7D32", // Keep success color as is
     },
   },
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 700,
       fontSize: "3.5rem",
       "@media (max-width:600px)": {
@@ -47,12 +47,12 @@ const theme = createTheme({
       },
     },
     h2: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2.5rem",
     },
     h3: {
-      fontFamily: '"Playfair Display", serif',
+      fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2rem",
     },
@@ -83,7 +83,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 12,
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          boxShadow: "0 2px 4px rgba(0, 0, 0, 0.08)",
         },
       },
     },
