@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface FAQItem {
   question: string;
@@ -16,6 +17,7 @@ interface FAQItem {
 }
 
 const FAQ: React.FC = () => {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState<string | false>(false);
 
   const handleChange =
@@ -25,44 +27,36 @@ const FAQ: React.FC = () => {
 
   const faqs: FAQItem[] = [
     {
-      question: "How do I find student accommodation in Rome?",
-      answer:
-        "We specialize in helping Erasmus and international students find accommodation in Rome. Simply contact us with your requirements, budget, and preferred location, and we'll match you with suitable properties near universities.",
+      question: t("faq.questions.findStudentAccommodation.question"),
+      answer: t("faq.questions.findStudentAccommodation.answer"),
     },
     {
-      question: "What documents do I need to rent a property in Rome?",
-      answer:
-        "Typically, you'll need a valid ID or passport, proof of income or a guarantor, and sometimes a tax code (codice fiscale). For students, we can help you navigate the requirements and provide guidance on obtaining necessary documents.",
+      question: t("faq.questions.documentsForRenting.question"),
+      answer: t("faq.questions.documentsForRenting.answer"),
     },
     {
-      question: "How long does it take to find a property?",
-      answer:
-        "For students, we often find suitable accommodation within 3-7 days. For buyers or long-term renters, the process typically takes 2-4 weeks depending on your specific requirements and market availability.",
+      question: t("faq.questions.howLongToFindProperty.question"),
+      answer: t("faq.questions.howLongToFindProperty.answer"),
     },
     {
-      question: "Do you offer property management services?",
-      answer:
-        "Yes, we provide comprehensive property management services including maintenance, tenant relations, rent collection, and financial reporting. We handle all aspects of property management so you don't have to.",
+      question: t("faq.questions.propertyManagementServices.question"),
+      answer: t("faq.questions.propertyManagementServices.answer"),
     },
     {
-      question: "What areas of Rome do you cover?",
-      answer:
-        "We cover all neighborhoods in Rome, with special expertise in areas popular with students such as Trastevere, San Lorenzo, Testaccio, and Centro Storico. We also serve luxury markets in Prati, Monti, and other prime locations.",
+      question: t("faq.questions.areasCovered.question"),
+      answer: t("faq.questions.areasCovered.answer"),
     },
     {
-      question: "Can you help with property investment in Rome?",
-      answer:
-        "Absolutely! We provide investment consulting services, market analysis, and help identify profitable investment opportunities in Rome's real estate market. We work with both local and international investors.",
+      question: t("faq.questions.propertyInvestment.question"),
+      answer: t("faq.questions.propertyInvestment.answer"),
     },
     {
-      question: "What languages do you speak?",
-      answer:
-        "Our team is multilingual and can assist you in English, Italian, Spanish, French, and German. We ensure clear communication for all our international clients.",
+      question: t("faq.questions.languagesSpoken.question"),
+      answer: t("faq.questions.languagesSpoken.answer"),
     },
     {
-      question: "Do you offer virtual property tours?",
-      answer:
-        "Yes, we offer virtual tours for many of our properties. This is especially useful for international clients and students who cannot visit in person before making a decision.",
+      question: t("faq.questions.virtualTours.question"),
+      answer: t("faq.questions.virtualTours.answer"),
     },
   ];
 
@@ -109,14 +103,14 @@ const FAQ: React.FC = () => {
               gutterBottom
               sx={{ textAlign: "center", mb: 2 }}
             >
-              Frequently Asked Questions
+              {t("faq.title")}
             </Typography>
             <Typography
               variant="h6"
               component="p"
               sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
             >
-              Find answers to common questions about our services
+              {t("faq.subtitle")}
             </Typography>
           </motion.div>
 
@@ -145,7 +139,11 @@ const FAQ: React.FC = () => {
                     aria-controls={`panel${index}-content`}
                     id={`panel${index}-header`}
                   >
-                    <Typography variant="h6" component="h3" sx={{ fontWeight: 600 }}>
+                    <Typography
+                      variant="h6"
+                      component="h3"
+                      sx={{ fontWeight: 600 }}
+                    >
                       {faq.question}
                     </Typography>
                   </AccordionSummary>
@@ -165,4 +163,3 @@ const FAQ: React.FC = () => {
 };
 
 export default FAQ;
-

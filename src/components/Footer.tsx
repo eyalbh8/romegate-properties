@@ -12,8 +12,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const handleNavClick = (href: string): void => {
     const element = document.querySelector(href);
     if (element) {
@@ -51,9 +53,7 @@ const Footer: React.FC = () => {
               variant="body2"
               sx={{ color: "rgba(255, 255, 255, 0.8)", mb: 2 }}
             >
-              Your trusted partner for real estate in Rome. Specializing in
-              buying, selling, and managing properties with a focus on student
-              accommodation.
+              {t("footer.description")}
             </Typography>
             <Stack direction="row" spacing={2}>
               <Link
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
-              Quick Links
+              {t("footer.quickLinks")}
             </Typography>
             <Stack spacing={1}>
               <Link
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Home
+                {t("navbar.home")}
               </Link>
               <Link
                 component="button"
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Properties
+                {t("navbar.properties")}
               </Link>
               <Link
                 component="button"
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Services
+                {t("navbar.services")}
               </Link>
               <Link
                 component="button"
@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                About Us
+                {t("footer.aboutUs")}
               </Link>
               <Link
                 component="button"
@@ -154,13 +154,13 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Blog
+                {t("navbar.blog")}
               </Link>
             </Stack>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
-              Services
+              {t("footer.services")}
             </Typography>
             <Stack spacing={1}>
               <Link
@@ -173,7 +173,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Buying Properties
+                {t("footer.buyingProperties")}
               </Link>
               <Link
                 component="button"
@@ -185,7 +185,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Selling Properties
+                {t("footer.sellingProperties")}
               </Link>
               <Link
                 component="button"
@@ -197,7 +197,7 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Property Management
+                {t("footer.propertyManagement")}
               </Link>
               <Link
                 component="button"
@@ -210,34 +210,34 @@ const Footer: React.FC = () => {
                   cursor: "pointer",
                 }}
               >
-                Student Accommodation
+                {t("footer.studentAccommodation")}
               </Link>
             </Stack>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" gutterBottom>
-              Contact
+              {t("footer.contact")}
             </Typography>
             <Stack spacing={1}>
               <Typography
                 variant="body2"
                 sx={{ color: "rgba(255, 255, 255, 0.8)" }}
               >
-                Via Manzoni 37
+                {t("contact.addressLine1")}
                 <br />
-                20121 Milano, Italy
+                {t("contact.addressLine2")}
               </Typography>
               <Typography
                 variant="body2"
                 sx={{ color: "rgba(255, 255, 255, 0.8)" }}
               >
-                Phone: +39 02 1234 5678
+                {t("contact.phone")}: {t("contact.phoneNumber")}
               </Typography>
               <Typography
                 variant="body2"
                 sx={{ color: "rgba(255, 255, 255, 0.8)" }}
               >
-                Email: info@romegate.it
+                {t("contact.email")}: {t("contact.emailAddress")}
               </Typography>
             </Stack>
           </Grid>
@@ -248,8 +248,7 @@ const Footer: React.FC = () => {
             variant="body2"
             sx={{ color: "rgba(255, 255, 255, 0.8)" }}
           >
-            © {new Date().getFullYear()} Romegate Properties. All rights
-            reserved.
+            © {new Date().getFullYear()} {t("footer.copyright")}
           </Typography>
         </Box>
       </Container>

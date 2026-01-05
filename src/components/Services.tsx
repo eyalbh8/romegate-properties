@@ -14,6 +14,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import BuildIcon from "@mui/icons-material/Build";
 import SchoolIcon from "@mui/icons-material/School";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface Service {
   icon: React.ReactNode;
@@ -22,30 +23,27 @@ interface Service {
 }
 
 const Services: React.FC = () => {
+  const { t } = useTranslation();
   const services: Service[] = [
     {
       icon: <HomeIcon sx={{ fontSize: 60, color: "primary.main" }} />,
-      title: "Buying Properties",
-      description:
-        "Expert guidance through Rome's real estate market. Find your perfect property with our comprehensive search and personalized service.",
+      title: t("services.buyingProperties.title"),
+      description: t("services.buyingProperties.description"),
     },
     {
       icon: <AttachMoneyIcon sx={{ fontSize: 60, color: "primary.main" }} />,
-      title: "Selling Properties",
-      description:
-        "Maximize your property's value with our professional marketing, valuation, and negotiation services.",
+      title: t("services.sellingProperties.title"),
+      description: t("services.sellingProperties.description"),
     },
     {
       icon: <BuildIcon sx={{ fontSize: 60, color: "primary.main" }} />,
-      title: "Property Management",
-      description:
-        "Complete property management services including maintenance, tenant relations, and financial reporting.",
+      title: t("services.propertyManagement.title"),
+      description: t("services.propertyManagement.description"),
     },
     {
       icon: <SchoolIcon sx={{ fontSize: 60, color: "primary.main" }} />,
-      title: "Student Accommodation",
-      description:
-        "Specialized services for Erasmus and international students. Find safe, affordable housing near universities.",
+      title: t("services.studentAccommodation.title"),
+      description: t("services.studentAccommodation.description"),
     },
   ];
 
@@ -97,7 +95,7 @@ const Services: React.FC = () => {
               gutterBottom
               sx={{ textAlign: "center", mb: 6 }}
             >
-              Our Services
+              {t("services.title")}
             </Typography>
           </motion.div>
           <Grid container spacing={4} sx={{ alignItems: "stretch" }}>
@@ -143,7 +141,7 @@ const Services: React.FC = () => {
                     </CardContent>
                     <CardActions sx={{ justifyContent: "center", pb: 2 }}>
                       <Button size="small" color="primary">
-                        Learn More
+                        {t("services.learnMore")}
                       </Button>
                     </CardActions>
                   </Card>

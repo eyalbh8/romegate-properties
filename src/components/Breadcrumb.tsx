@@ -2,6 +2,7 @@ import React from "react";
 import { Breadcrumbs, Link, Typography, Box } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { useTranslation } from "react-i18next";
 
 interface BreadcrumbItem {
   label: string;
@@ -13,6 +14,7 @@ interface BreadcrumbProps {
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
+  const { t } = useTranslation();
   const handleClick = (href: string): void => {
     const element = document.querySelector(href);
     if (element) {
@@ -27,7 +29,9 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
       "@type": "ListItem",
       position: index + 1,
       name: item.label,
-      item: item.href ? `https://romegate.it${item.href}` : "https://romegate.it",
+      item: item.href
+        ? `https://romegate.it${item.href}`
+        : "https://romegate.it",
     })),
   };
 
@@ -70,7 +74,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
             }}
           >
             <HomeIcon fontSize="small" />
-            Home
+            {t("common.home")}
           </Link>
           {items.map((item, index) =>
             index === items.length - 1 ? (
@@ -106,4 +110,3 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
 };
 
 export default Breadcrumb;
-

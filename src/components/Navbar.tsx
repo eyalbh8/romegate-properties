@@ -11,10 +11,14 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LanguageIcon from "@mui/icons-material/Language";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTranslation } from "react-i18next";
 
 interface NavItem {
   label: string;
@@ -22,7 +26,9 @@ interface NavItem {
 }
 
 const Navbar: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
+  const [langAnchorEl, setLangAnchorEl] = useState<null | HTMLElement>(null);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -30,14 +36,27 @@ const Navbar: React.FC = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const handleLangMenuOpen = (event: React.MouseEvent<HTMLElement>): void => {
+    setLangAnchorEl(event.currentTarget);
+  };
+
+  const handleLangMenuClose = (): void => {
+    setLangAnchorEl(null);
+  };
+
+  const handleLanguageChange = (lang: string): void => {
+    i18n.changeLanguage(lang);
+    handleLangMenuClose();
+  };
+
   const navItems: NavItem[] = [
-    { label: "Home", href: "#home" },
-    { label: "Properties", href: "#properties" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Erasmus", href: "#erasmus" },
-    { label: "Blog", href: "#blog" },
-    { label: "Contact", href: "#contact" },
+    { label: t("navbar.home"), href: "#home" },
+    { label: t("navbar.properties"), href: "#properties" },
+    { label: t("navbar.services"), href: "#services" },
+    { label: t("navbar.about"), href: "#about" },
+    { label: t("navbar.erasmus"), href: "#erasmus" },
+    { label: t("navbar.blog"), href: "#blog" },
+    { label: t("navbar.contact"), href: "#contact" },
   ];
 
   const handleNavClick = (href: string): void => {
@@ -92,9 +111,9 @@ const Navbar: React.FC = () => {
             top: 0,
           },
         }}
-        aria-label="Skip to main content"
+        aria-label={t("navbar.skipToMainContent")}
       >
-        Skip to main content
+        {t("navbar.skipToMainContent")}
       </Box>
       <AppBar
         position="sticky"
@@ -132,15 +151,25 @@ const Navbar: React.FC = () => {
             ROME<span style={{ color: "#9D4EDD" }}>GATE</span>
           </Typography>
           {isMobile ? (
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{ ml: "auto" }}
+            <Box
+              sx={{ display: "flex", alignItems: "center", gap: 1, ml: "auto" }}
             >
-              <MenuIcon />
-            </IconButton>
+              <IconButton
+                color="inherit"
+                aria-label="language selector"
+                onClick={handleLangMenuOpen}
+              >
+                <LanguageIcon />
+              </IconButton>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Box>
           ) : (
             <Box
               component="nav"
@@ -150,6 +179,7 @@ const Navbar: React.FC = () => {
                 flexGrow: 1,
                 display: "flex",
                 justifyContent: "flex-end",
+                alignItems: "center",
                 gap: 2,
               }}
             >
@@ -163,8 +193,40 @@ const Navbar: React.FC = () => {
                   {item.label}
                 </Button>
               ))}
+              <IconButton
+                color="inherit"
+                aria-label="language selector"
+                onClick={handleLangMenuOpen}
+                sx={{ color: "white" }}
+              >
+                <LanguageIcon />
+              </IconButton>
             </Box>
           )}
+          <Menu
+            anchorEl={langAnchorEl}
+            open={Boolean(langAnchorEl)}
+            onClose={handleLangMenuClose}
+          >
+            <MenuItem
+              onClick={() => handleLanguageChange("en")}
+              selected={i18n.language === "en"}
+            >
+              English
+            </MenuItem>
+            <MenuItem
+              onClick={() => handleLanguageChange("it")}
+              selected={i18n.language === "it"}
+            >
+              Italiano
+            </MenuItem>
+            <MenuItem
+              onClick={() => handleLanguageChange("he")}
+              selected={i18n.language === "he"}
+            >
+              עברית
+            </MenuItem>
+          </Menu>
         </Toolbar>
       </AppBar>
       <Drawer

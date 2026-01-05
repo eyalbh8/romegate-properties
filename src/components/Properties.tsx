@@ -24,6 +24,7 @@ import BedIcon from "@mui/icons-material/Bed";
 import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface Property {
   id: number;
@@ -38,13 +39,23 @@ interface Property {
 }
 
 const Properties: React.FC = () => {
+  const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filterType, setFilterType] = useState<string>("all");
+
+  const propertyTitleKeys: { [key: number]: string } = {
+    1: "properties.propertyTitles.modernApartmentTrastevere",
+    2: "properties.propertyTitles.luxuryVillaNearColosseum",
+    3: "properties.propertyTitles.studentStudioNearSapienza",
+    4: "properties.propertyTitles.cozyApartmentCentroStorico",
+    5: "properties.propertyTitles.elegantPenthouseWithTerrace",
+    6: "properties.propertyTitles.sharedStudentRoom",
+  };
 
   const properties: Property[] = [
     {
       id: 1,
-      title: "Modern Apartment in Trastevere",
+      title: t(propertyTitleKeys[1]),
       location: "Trastevere, Rome",
       price: 1200,
       bedrooms: 2,
@@ -56,7 +67,7 @@ const Properties: React.FC = () => {
     },
     {
       id: 2,
-      title: "Luxury Villa near Colosseum",
+      title: t(propertyTitleKeys[2]),
       location: "Monti, Rome",
       price: 450000,
       bedrooms: 4,
@@ -68,7 +79,7 @@ const Properties: React.FC = () => {
     },
     {
       id: 3,
-      title: "Student Studio near Sapienza",
+      title: t(propertyTitleKeys[3]),
       location: "San Lorenzo, Rome",
       price: 650,
       bedrooms: 1,
@@ -80,7 +91,7 @@ const Properties: React.FC = () => {
     },
     {
       id: 4,
-      title: "Cozy Apartment in Centro Storico",
+      title: t(propertyTitleKeys[4]),
       location: "Centro Storico, Rome",
       price: 1800,
       bedrooms: 3,
@@ -92,7 +103,7 @@ const Properties: React.FC = () => {
     },
     {
       id: 5,
-      title: "Elegant Penthouse with Terrace",
+      title: t(propertyTitleKeys[5]),
       location: "Prati, Rome",
       price: 680000,
       bedrooms: 3,
@@ -104,7 +115,7 @@ const Properties: React.FC = () => {
     },
     {
       id: 6,
-      title: "Shared Student Room",
+      title: t(propertyTitleKeys[6]),
       location: "Testaccio, Rome",
       price: 450,
       bedrooms: 1,
@@ -189,14 +200,14 @@ const Properties: React.FC = () => {
               gutterBottom
               sx={{ textAlign: "center", mb: 2 }}
             >
-              Featured Properties
+              {t("properties.title")}
             </Typography>
             <Typography
               variant="h6"
               component="p"
               sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
             >
-              Discover your perfect home in Rome
+              {t("properties.subtitle")}
             </Typography>
           </motion.div>
 
@@ -210,7 +221,7 @@ const Properties: React.FC = () => {
           >
             <TextField
               fullWidth
-              placeholder="Search by location or property name..."
+              placeholder={t("properties.searchPlaceholder")}
               value={searchTerm}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                 setSearchTerm(e.target.value)
@@ -224,17 +235,17 @@ const Properties: React.FC = () => {
               }}
             />
             <FormControl sx={{ minWidth: 200 }}>
-              <InputLabel>Property Type</InputLabel>
+              <InputLabel>{t("properties.propertyType")}</InputLabel>
               <Select
                 value={filterType}
-                label="Property Type"
+                label={t("properties.propertyType")}
                 onChange={(e: SelectChangeEvent<string>) =>
                   setFilterType(e.target.value)
                 }
               >
-                <MenuItem value="all">All Properties</MenuItem>
-                <MenuItem value="rent">For Rent</MenuItem>
-                <MenuItem value="sale">For Sale</MenuItem>
+                <MenuItem value="all">{t("properties.allProperties")}</MenuItem>
+                <MenuItem value="rent">{t("properties.forRent")}</MenuItem>
+                <MenuItem value="sale">{t("properties.forSale")}</MenuItem>
               </Select>
             </FormControl>
           </Box>
@@ -278,7 +289,9 @@ const Properties: React.FC = () => {
                       >
                         <Chip
                           label={
-                            property.type === "rent" ? "For Rent" : "For Sale"
+                            property.type === "rent"
+                              ? t("properties.forRent")
+                              : t("properties.forSale")
                           }
                           color={
                             property.type === "rent" ? "primary" : "secondary"
@@ -356,7 +369,7 @@ const Properties: React.FC = () => {
                     </CardContent>
                     <CardActions sx={{ p: 2, pt: 0 }}>
                       <Button size="small" color="primary" fullWidth>
-                        View Details
+                        {t("properties.viewDetails")}
                       </Button>
                     </CardActions>
                   </Card>
@@ -368,14 +381,14 @@ const Properties: React.FC = () => {
           {filteredProperties.length === 0 && (
             <Box sx={{ textAlign: "center", py: 8 }}>
               <Typography variant="h6" color="text.secondary">
-                No properties found matching your criteria.
+                {t("properties.noPropertiesFound")}
               </Typography>
             </Box>
           )}
 
           <Box sx={{ textAlign: "center", mt: 6 }}>
             <Button variant="outlined" size="large" color="primary">
-              View All Properties
+              {t("properties.viewAllProperties")}
             </Button>
           </Box>
         </Container>

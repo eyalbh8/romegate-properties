@@ -16,6 +16,7 @@ import {
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PersonIcon from "@mui/icons-material/Person";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface BlogPost {
   id: number;
@@ -29,95 +30,138 @@ interface BlogPost {
 }
 
 const Blog: React.FC = () => {
+  const { t } = useTranslation();
+
+  const blogPostKeys: {
+    [key: number]: { title: string; excerpt: string; category: string };
+  } = {
+    1: {
+      title: "blog.posts.top5Neighborhoods.title",
+      excerpt: "blog.posts.top5Neighborhoods.excerpt",
+      category: "Student Life",
+    },
+    2: {
+      title: "blog.posts.understandingRentalMarket.title",
+      excerpt: "blog.posts.understandingRentalMarket.excerpt",
+      category: "Real Estate",
+    },
+    3: {
+      title: "blog.posts.propertyInvestmentTrends.title",
+      excerpt: "blog.posts.propertyInvestmentTrends.excerpt",
+      category: "Investment",
+    },
+    4: {
+      title: "blog.posts.erasmusSuccessStories.title",
+      excerpt: "blog.posts.erasmusSuccessStories.excerpt",
+      category: "Student Life",
+    },
+    5: {
+      title: "blog.posts.navigatingPropertyLaws.title",
+      excerpt: "blog.posts.navigatingPropertyLaws.excerpt",
+      category: "Legal",
+    },
+    6: {
+      title: "blog.posts.bestTimeToBuyOrRent.title",
+      excerpt: "blog.posts.bestTimeToBuyOrRent.excerpt",
+      category: "Real Estate",
+    },
+  };
+
   const blogPosts: BlogPost[] = [
     {
       id: 1,
-      title: "Top 5 Neighborhoods for Erasmus Students in Rome",
-      excerpt:
-        "Discover the best areas in Rome for international students, from affordable housing to vibrant nightlife and easy access to universities.",
+      title: t(blogPostKeys[1].title),
+      excerpt: t(blogPostKeys[1].excerpt),
       author: "Maria Rossi",
       date: "January 15, 2025",
-      category: "Student Life",
+      category: blogPostKeys[1].category,
       image:
         "https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800",
-      readTime: "5 min read",
+      readTime: `5 ${t("common.minRead")}`,
     },
     {
       id: 2,
-      title: "Understanding Rome's Rental Market: A Complete Guide",
-      excerpt:
-        "Everything you need to know about renting in Rome, from average prices to legal requirements and what to look for in a rental contract.",
+      title: t(blogPostKeys[2].title),
+      excerpt: t(blogPostKeys[2].excerpt),
       author: "Giuseppe Bianchi",
       date: "January 10, 2025",
-      category: "Real Estate",
+      category: blogPostKeys[2].category,
       image:
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-      readTime: "8 min read",
+      readTime: `8 ${t("common.minRead")}`,
     },
     {
       id: 3,
-      title: "Property Investment in Rome: Trends for 2025",
-      excerpt:
-        "Explore the latest trends in Rome's real estate market, including emerging neighborhoods and investment opportunities for the year ahead.",
+      title: t(blogPostKeys[3].title),
+      excerpt: t(blogPostKeys[3].excerpt),
       author: "Francesca Romano",
       date: "January 5, 2025",
-      category: "Investment",
+      category: blogPostKeys[3].category,
       image:
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-      readTime: "6 min read",
+      readTime: `6 ${t("common.minRead")}`,
     },
     {
       id: 4,
-      title: "Erasmus Student Success Stories: Finding Home in Rome",
-      excerpt:
-        "Read inspiring stories from Erasmus students who found their perfect accommodation in Rome and made the most of their study abroad experience.",
+      title: t(blogPostKeys[4].title),
+      excerpt: t(blogPostKeys[4].excerpt),
       author: "Sofia Conti",
       date: "December 28, 2024",
-      category: "Student Life",
+      category: blogPostKeys[4].category,
       image:
         "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-      readTime: "4 min read",
+      readTime: `4 ${t("common.minRead")}`,
     },
     {
       id: 5,
-      title: "Navigating Italian Property Laws: What Foreigners Need to Know",
-      excerpt:
-        "A comprehensive guide to Italian property laws, regulations, and requirements for foreign buyers and renters in Rome.",
+      title: t(blogPostKeys[5].title),
+      excerpt: t(blogPostKeys[5].excerpt),
       author: "Marco De Luca",
       date: "December 20, 2024",
-      category: "Legal",
+      category: blogPostKeys[5].category,
       image:
         "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-      readTime: "10 min read",
+      readTime: `10 ${t("common.minRead")}`,
     },
     {
       id: 6,
-      title: "Best Time to Buy or Rent in Rome: Seasonal Market Insights",
-      excerpt:
-        "Learn about the best times of year to search for properties in Rome, including seasonal price fluctuations and market availability.",
+      title: t(blogPostKeys[6].title),
+      excerpt: t(blogPostKeys[6].excerpt),
       author: "Elena Ferrari",
       date: "December 15, 2024",
-      category: "Real Estate",
+      category: blogPostKeys[6].category,
       image:
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      readTime: "7 min read",
+      readTime: `7 ${t("common.minRead")}`,
     },
   ];
 
   const categories = [
-    "All",
-    "Student Life",
-    "Real Estate",
-    "Investment",
-    "Legal",
+    t("blog.categories.all"),
+    t("blog.categories.studentLife"),
+    t("blog.categories.realEstate"),
+    t("blog.categories.investment"),
+    t("blog.categories.legal"),
   ];
 
-  const [selectedCategory, setSelectedCategory] = React.useState<string>("All");
+  const categoryTranslationMap: { [key: string]: string } = {
+    [t("blog.categories.all")]: "All",
+    [t("blog.categories.studentLife")]: "Student Life",
+    [t("blog.categories.realEstate")]: "Real Estate",
+    [t("blog.categories.investment")]: "Investment",
+    [t("blog.categories.legal")]: "Legal",
+  };
+
+  const [selectedCategory, setSelectedCategory] = React.useState<string>(
+    t("blog.categories.all")
+  );
 
   const filteredPosts =
-    selectedCategory === "All"
+    selectedCategory === t("blog.categories.all")
       ? blogPosts
-      : blogPosts.filter((post) => post.category === selectedCategory);
+      : blogPosts.filter(
+          (post) => post.category === categoryTranslationMap[selectedCategory]
+        );
 
   const getCategoryColor = (
     category: string
@@ -186,15 +230,14 @@ const Blog: React.FC = () => {
               gutterBottom
               sx={{ textAlign: "center", mb: 2 }}
             >
-              News & Insights
+              {t("blog.title")}
             </Typography>
             <Typography
               variant="h6"
               component="p"
               sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
             >
-              Stay updated with the latest real estate trends, student guides,
-              and market insights
+              {t("blog.subtitle")}
             </Typography>
           </motion.div>
 
@@ -322,7 +365,7 @@ const Blog: React.FC = () => {
                     </CardContent>
                     <CardActions sx={{ p: 2, pt: 0 }}>
                       <Button size="small" color="primary" fullWidth>
-                        Read More
+                        {t("blog.readMore")}
                       </Button>
                     </CardActions>
                   </Card>
@@ -334,7 +377,7 @@ const Blog: React.FC = () => {
           {filteredPosts.length === 0 && (
             <Box sx={{ textAlign: "center", py: 8 }}>
               <Typography variant="h6" color="text.secondary">
-                No posts found in this category.
+                {t("blog.noPostsFound")}
               </Typography>
             </Box>
           )}
@@ -347,7 +390,7 @@ const Blog: React.FC = () => {
           >
             <Box sx={{ textAlign: "center", mt: 6 }}>
               <Button variant="outlined" size="large" color="primary">
-                View All Posts
+                {t("blog.viewAllPosts")}
               </Button>
             </Box>
           </motion.div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Typography, Button, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = styled("section")({
   position: "relative",
@@ -44,6 +45,7 @@ const HeroContent = styled(Container)(({ theme }) => ({
 }));
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
   const handleBrowseClick = (): void => {
     const element = document.querySelector("#properties");
     if (element) {
@@ -106,7 +108,7 @@ const Hero: React.FC = () => {
               fontSize: { xs: "2.5rem", sm: "3.5rem", md: "4.5rem" },
             }}
           >
-            Your Gateway to Roman Properties
+            {t("hero.title")}
           </Typography>
         </motion.header>
         <motion.p
@@ -126,7 +128,7 @@ const Hero: React.FC = () => {
               lineHeight: 1.6,
             }}
           >
-            Buying • Selling • Managing • Student Accommodation
+            {t("hero.subtitle")}
           </Typography>
         </motion.p>
         <motion.nav
@@ -152,7 +154,7 @@ const Hero: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              Browse Properties
+              {t("hero.browseProperties")}
             </Button>
             <Button
               variant="outlined"
@@ -173,7 +175,7 @@ const Hero: React.FC = () => {
                 },
               }}
             >
-              Get Started
+              {t("hero.getStarted")}
             </Button>
           </Stack>
         </motion.nav>

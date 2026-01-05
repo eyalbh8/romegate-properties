@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Box } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import theme from "./theme";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -16,6 +17,7 @@ import Breadcrumb from "./components/Breadcrumb";
 import FAQ from "./components/FAQ";
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -24,7 +26,7 @@ const App: React.FC = () => {
         component="main"
       >
         <Navbar />
-        <Breadcrumb items={[{ label: "Home" }]} />
+        <Breadcrumb items={[{ label: t("common.home") }]} />
         <Box id="main-content" component="main">
           <Hero />
           <Services />

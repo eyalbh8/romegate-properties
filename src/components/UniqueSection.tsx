@@ -9,6 +9,7 @@ import {
   Paper,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface UniqueFeature {
   icon: string;
@@ -17,42 +18,37 @@ interface UniqueFeature {
 }
 
 const UniqueSection: React.FC = () => {
+  const { t } = useTranslation();
   const features: UniqueFeature[] = [
     {
       icon: "🏛️",
-      title: "Deep Roman Heritage",
-      description:
-        "We understand Rome's neighborhoods, history, and real estate market like no other. Our team has lived and worked in Rome for generations.",
+      title: t("uniqueSection.deepRomanHeritage.title"),
+      description: t("uniqueSection.deepRomanHeritage.description"),
     },
     {
       icon: "🎓",
-      title: "Erasmus Student Specialists",
-      description:
-        "We're the #1 choice for Erasmus students. From finding affordable housing to helping with paperwork and settling in, we make your transition seamless.",
+      title: t("uniqueSection.erasmusStudentSpecialists.title"),
+      description: t("uniqueSection.erasmusStudentSpecialists.description"),
     },
     {
       icon: "🌍",
-      title: "Multilingual Support",
-      description:
-        "Our team speaks English, Italian, Spanish, French, and more. We ensure clear communication for all our international clients.",
+      title: t("uniqueSection.multilingualSupport.title"),
+      description: t("uniqueSection.multilingualSupport.description"),
     },
     {
       icon: "📍",
-      title: "Prime Locations",
-      description:
-        "Properties near universities, public transport, and Rome's most vibrant neighborhoods. We know where students want to live.",
+      title: t("uniqueSection.primeLocations.title"),
+      description: t("uniqueSection.primeLocations.description"),
     },
     {
       icon: "🤝",
-      title: "Personalized Service",
-      description:
-        "Every client is unique. We provide tailored solutions, whether you're buying a luxury apartment or finding a student room.",
+      title: t("uniqueSection.personalizedService.title"),
+      description: t("uniqueSection.personalizedService.description"),
     },
     {
       icon: "⚡",
-      title: "Fast & Efficient",
-      description:
-        "We understand students need housing quickly. Our streamlined process gets you settled fast, often within days.",
+      title: t("uniqueSection.fastAndEfficient.title"),
+      description: t("uniqueSection.fastAndEfficient.description"),
     },
   ];
 
@@ -92,7 +88,7 @@ const UniqueSection: React.FC = () => {
           gutterBottom
           sx={{ textAlign: "center", mb: 6 }}
         >
-          What Makes Us Unique
+          {t("uniqueSection.title")}
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12} md={8}>

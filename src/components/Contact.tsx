@@ -18,6 +18,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface ContactFormData {
   name: string;
@@ -28,6 +29,7 @@ interface ContactFormData {
 }
 
 const Contact: React.FC = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -84,14 +86,14 @@ const Contact: React.FC = () => {
             gutterBottom
             sx={{ textAlign: "center", mb: 2 }}
           >
-            Contact Us
+            {t("contact.title")}
           </Typography>
           <Typography
             variant="h6"
             component="p"
             sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
           >
-            Get in touch with our team - we're here to help
+            {t("contact.subtitle")}
           </Typography>
         </motion.div>
 
@@ -110,7 +112,7 @@ const Contact: React.FC = () => {
                   gutterBottom
                   sx={{ mb: 4 }}
                 >
-                  Send us a Message
+                  {t("contact.sendUsAMessage")}
                 </Typography>
                 <form onSubmit={handleSubmit} aria-label="Contact form">
                   <Box
@@ -118,75 +120,75 @@ const Contact: React.FC = () => {
                   >
                     <TextField
                       name="name"
-                      label="Your Name"
+                      label={t("contact.form.yourName")}
                       variant="outlined"
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      aria-label="Your full name"
+                      aria-label={t("contact.form.yourName")}
                       aria-describedby="name-description"
                       id="contact-name"
                     />
                     <Box id="name-description" sx={{ display: "none" }}>
-                      Please enter your full name
+                      {t("contact.form.nameDescription")}
                     </Box>
                     <TextField
                       name="email"
-                      label="Your Email"
+                      label={t("contact.form.yourEmail")}
                       type="email"
                       variant="outlined"
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      aria-label="Your email address"
+                      aria-label={t("contact.form.yourEmail")}
                       aria-describedby="email-description"
                       id="contact-email"
                     />
                     <Box id="email-description" sx={{ display: "none" }}>
-                      Please enter a valid email address
+                      {t("contact.form.emailDescription")}
                     </Box>
                     <TextField
                       name="phone"
-                      label="Phone Number"
+                      label={t("contact.form.phoneNumber")}
                       variant="outlined"
                       value={formData.phone}
                       onChange={handleChange}
-                      aria-label="Your phone number (optional)"
+                      aria-label={t("contact.form.phoneNumber")}
                       aria-describedby="phone-description"
                       id="contact-phone"
                     />
                     <Box id="phone-description" sx={{ display: "none" }}>
-                      Optional: Enter your phone number for faster contact
+                      {t("contact.form.phoneDescription")}
                     </Box>
                     <TextField
                       name="subject"
-                      label="Subject"
+                      label={t("contact.form.subject")}
                       variant="outlined"
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      aria-label="Message subject"
+                      aria-label={t("contact.form.subject")}
                       aria-describedby="subject-description"
                       id="contact-subject"
                     />
                     <Box id="subject-description" sx={{ display: "none" }}>
-                      Please enter the subject of your message
+                      {t("contact.form.subjectDescription")}
                     </Box>
                     <TextField
                       name="message"
-                      label="Your Message"
+                      label={t("contact.form.yourMessage")}
                       multiline
                       rows={5}
                       variant="outlined"
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      aria-label="Your message"
+                      aria-label={t("contact.form.yourMessage")}
                       aria-describedby="message-description"
                       id="contact-message"
                     />
                     <Box id="message-description" sx={{ display: "none" }}>
-                      Please enter your message or inquiry
+                      {t("contact.form.messageDescription")}
                     </Box>
                     <Button
                       type="submit"
@@ -194,7 +196,7 @@ const Contact: React.FC = () => {
                       size="large"
                       sx={{ py: 1.5 }}
                     >
-                      Send Message
+                      {t("contact.form.sendMessage")}
                     </Button>
                   </Box>
                 </form>
@@ -215,19 +217,19 @@ const Contact: React.FC = () => {
                   gutterBottom
                   sx={{ mb: 4 }}
                 >
-                  Contact Information
+                  {t("contact.contactInformation")}
                 </Typography>
                 <Stack spacing={3}>
                   <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
                     <LocationOnIcon color="primary" sx={{ mt: 0.5 }} />
                     <Box>
                       <Typography variant="h6" gutterBottom>
-                        Office Address
+                        {t("contact.officeAddress")}
                       </Typography>
                       <Typography variant="body1" color="text.secondary">
-                        Via Manzoni 37
+                        {t("contact.addressLine1")}
                         <br />
-                        20121 Milano, Italy
+                        {t("contact.addressLine2")}
                       </Typography>
                     </Box>
                   </Box>
@@ -235,10 +237,10 @@ const Contact: React.FC = () => {
                     <PhoneIcon color="primary" sx={{ mt: 0.5 }} />
                     <Box>
                       <Typography variant="h6" gutterBottom>
-                        Phone
+                        {t("contact.phone")}
                       </Typography>
                       <Typography variant="body1" color="text.secondary">
-                        +39 02 1234 5678
+                        {t("contact.phoneNumber")}
                       </Typography>
                     </Box>
                   </Box>
@@ -246,16 +248,16 @@ const Contact: React.FC = () => {
                     <EmailIcon color="primary" sx={{ mt: 0.5 }} />
                     <Box>
                       <Typography variant="h6" gutterBottom>
-                        Email
+                        {t("contact.email")}
                       </Typography>
                       <Typography variant="body1" color="text.secondary">
-                        info@romegate.it
+                        {t("contact.emailAddress")}
                       </Typography>
                     </Box>
                   </Box>
                   <Box>
                     <Typography variant="h6" gutterBottom>
-                      Follow Us
+                      {t("contact.followUs")}
                     </Typography>
                     <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
                       <Button
@@ -264,7 +266,7 @@ const Contact: React.FC = () => {
                         href="https://facebook.com"
                         target="_blank"
                       >
-                        Facebook
+                        {t("contact.facebook")}
                       </Button>
                       <Button
                         variant="outlined"
@@ -272,7 +274,7 @@ const Contact: React.FC = () => {
                         href="https://instagram.com"
                         target="_blank"
                       >
-                        Instagram
+                        {t("contact.instagram")}
                       </Button>
                       <Button
                         variant="outlined"
@@ -280,7 +282,7 @@ const Contact: React.FC = () => {
                         href="https://linkedin.com"
                         target="_blank"
                       >
-                        LinkedIn
+                        {t("contact.linkedin")}
                       </Button>
                     </Stack>
                   </Box>
@@ -301,8 +303,8 @@ const Contact: React.FC = () => {
             sx={{ width: "100%" }}
           >
             {success
-              ? "Message sent successfully! We'll get back to you soon."
-              : "Something went wrong. Please try again."}
+              ? t("contact.successMessage")
+              : t("contact.errorMessage")}
           </Alert>
         </Snackbar>
       </Container>

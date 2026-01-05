@@ -15,6 +15,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import SupportIcon from "@mui/icons-material/Support";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface Testimonial {
   name: string;
@@ -24,23 +25,24 @@ interface Testimonial {
 }
 
 const ErasmusSection: React.FC = () => {
+  const { t } = useTranslation();
   const testimonials: Testimonial[] = [
     {
       name: "Maria González",
       country: "Spain",
-      text: "Romegate made finding accommodation in Rome so easy! They understood exactly what I needed as an Erasmus student and found me the perfect place near my university.",
+      text: t("erasmusSection.testimonials.maria.text"),
       avatar: "https://i.pravatar.cc/150?img=1",
     },
     {
       name: "Thomas Müller",
       country: "Germany",
-      text: "The team at Romegate speaks multiple languages and helped me with all the paperwork. I felt supported throughout my entire stay in Rome.",
+      text: t("erasmusSection.testimonials.thomas.text"),
       avatar: "https://i.pravatar.cc/150?img=2",
     },
     {
       name: "Sophie Dubois",
       country: "France",
-      text: "As an Erasmus student, I needed flexible lease terms. Romegate found me a great apartment with a semester-based lease. Highly recommend!",
+      text: t("erasmusSection.testimonials.sophie.text"),
       avatar: "https://i.pravatar.cc/150?img=3",
     },
   ];
@@ -48,23 +50,23 @@ const ErasmusSection: React.FC = () => {
   const services = [
     {
       icon: <SchoolIcon sx={{ fontSize: 40 }} />,
-      title: "Near Universities",
-      description: "Properties within walking distance of major universities",
+      title: t("erasmusSection.nearUniversities.title"),
+      description: t("erasmusSection.nearUniversities.description"),
     },
     {
       icon: <LocationOnIcon sx={{ fontSize: 40 }} />,
-      title: "Prime Locations",
-      description: "Safe neighborhoods with excellent public transport links",
+      title: t("erasmusSection.primeLocations.title"),
+      description: t("erasmusSection.primeLocations.description"),
     },
     {
       icon: <AccessTimeIcon sx={{ fontSize: 40 }} />,
-      title: "Flexible Leases",
-      description: "Semester-based leases that match your study period",
+      title: t("erasmusSection.flexibleLeases.title"),
+      description: t("erasmusSection.flexibleLeases.description"),
     },
     {
       icon: <SupportIcon sx={{ fontSize: 40 }} />,
-      title: "Full Support",
-      description: "Help with paperwork, utilities, and settling into Rome",
+      title: t("erasmusSection.fullSupport.title"),
+      description: t("erasmusSection.fullSupport.description"),
     },
   ];
 
@@ -92,7 +94,7 @@ const ErasmusSection: React.FC = () => {
             gutterBottom
             sx={{ textAlign: "center", mb: 2, color: "white" }}
           >
-            Specialized Services for Erasmus Students
+            {t("erasmusSection.title")}
           </Typography>
           <Typography
             variant="h6"
@@ -103,7 +105,7 @@ const ErasmusSection: React.FC = () => {
               color: "rgba(255, 255, 255, 0.9)",
             }}
           >
-            Your home away from home in the Eternal City
+            {t("erasmusSection.subtitle")}
           </Typography>
         </motion.div>
 
@@ -165,7 +167,7 @@ const ErasmusSection: React.FC = () => {
             component="h3"
             sx={{ textAlign: "center", mb: 4, color: "white" }}
           >
-            What Our Students Say
+            {t("erasmusSection.whatOurStudentsSay")}
           </Typography>
         </motion.div>
         <Grid container spacing={4} sx={{ alignItems: "stretch" }}>
