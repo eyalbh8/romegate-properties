@@ -8,6 +8,7 @@ import {
   ImageListItem,
   Paper,
 } from "@mui/material";
+import { motion } from "framer-motion";
 
 interface UniqueFeature {
   icon: string;
@@ -96,18 +97,24 @@ const UniqueSection: React.FC = () => {
             <Grid container spacing={3}>
               {features.map((feature, index) => (
                 <Grid item xs={12} sm={6} key={index}>
-                  <Paper
-                    elevation={2}
-                    sx={{
-                      p: 3,
-                      height: "100%",
-                      transition: "transform 0.3s, box-shadow 0.3s",
-                      "&:hover": {
-                        transform: "translateY(-4px)",
-                        boxShadow: 4,
-                      },
-                    }}
+                  <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
                   >
+                    <Paper
+                      elevation={2}
+                      sx={{
+                        p: 3,
+                        height: "100%",
+                        transition: "transform 0.3s, box-shadow 0.3s",
+                        "&:hover": {
+                          transform: "translateY(-4px) scale(1.02)",
+                          boxShadow: 4,
+                        },
+                      }}
+                    >
                     <Typography
                       variant="h4"
                       component="h3"
@@ -120,14 +127,28 @@ const UniqueSection: React.FC = () => {
                       {feature.description}
                     </Typography>
                   </Paper>
+                  </motion.div>
                 </Grid>
               ))}
             </Grid>
           </Grid>
           <Grid item xs={12} md={4}>
-            <ImageList variant="masonry" cols={1} gap={8}>
-              {images.map((item) => (
-                <ImageListItem key={item.img}>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <ImageList variant="masonry" cols={1} gap={8}>
+                {images.map((item, index) => (
+                  <motion.div
+                    key={item.img}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                  >
+                  <ImageListItem>
                   <img
                     src={`${item.img}?w=400&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=400&fit=crop&auto=format&dpr=2 2x`}
@@ -139,9 +160,11 @@ const UniqueSection: React.FC = () => {
                       height: "auto",
                     }}
                   />
-                </ImageListItem>
-              ))}
-            </ImageList>
+                  </ImageListItem>
+                  </motion.div>
+                ))}
+              </ImageList>
+            </motion.div>
           </Grid>
         </Grid>
       </Container>

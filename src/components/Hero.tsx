@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled } from "@mui/material/styles";
+import { motion } from "framer-motion";
 
 const HeroBox = styled(Box)(({ theme }) => ({
   position: "relative",
@@ -17,11 +18,7 @@ const HeroBox = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920')",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
+  overflow: "hidden",
   "&::before": {
     content: '""',
     position: "absolute",
@@ -33,6 +30,19 @@ const HeroBox = styled(Box)(({ theme }) => ({
     zIndex: 1,
   },
 }));
+
+const VideoBackground = styled("video")({
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  minWidth: "100%",
+  minHeight: "100%",
+  width: "auto",
+  height: "auto",
+  transform: "translate(-50%, -50%)",
+  zIndex: 0,
+  objectFit: "cover",
+});
 
 const HeroContent = styled(Container)(({ theme }) => ({
   position: "relative",
@@ -74,102 +84,154 @@ const Hero: React.FC = () => {
 
   return (
     <HeroBox id="home">
+      <VideoBackground
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920"
+      >
+        <source
+          src="https://videos.pexels.com/video-files/2491284/2491284-hd_1920_1080_25fps.mp4"
+          type="video/mp4"
+        />
+        {/* Fallback image if video doesn't load */}
+        <img
+          src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920"
+          alt="Rome background"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            minWidth: "100%",
+            minHeight: "100%",
+            width: "auto",
+            height: "auto",
+            transform: "translate(-50%, -50%)",
+            objectFit: "cover",
+          }}
+        />
+      </VideoBackground>
       <HeroContent maxWidth="lg">
-        <Typography
-          variant="h1"
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            mb: 2,
-            textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
-          }}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          Your Gateway to Roman Properties
-        </Typography>
-        <Typography
-          variant="h5"
-          component="p"
-          sx={{
-            mb: 4,
-            textShadow: "1px 1px 2px rgba(0,0,0,0.5)",
-          }}
-        >
-          Buying • Selling • Managing • Student Accommodation
-        </Typography>
-        <SearchBox>
-          <TextField
-            fullWidth
-            placeholder="Search properties, neighborhoods, or areas..."
-            variant="outlined"
+          <Typography
+            variant="h1"
+            component="h1"
+            gutterBottom
             sx={{
-              backgroundColor: "rgba(255, 255, 255, 0.95)",
-              "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                  borderColor: "transparent",
-                },
-                "&:hover fieldset": {
-                  borderColor: "primary.main",
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "primary.main",
-                },
-              },
-            }}
-            InputProps={{
-              endAdornment: (
-                <InputAdornment position="end">
-                  <SearchIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-          <Button
-            variant="contained"
-            size="large"
-            onClick={handleSearch}
-            sx={{
-              minWidth: 150,
-              height: "56px",
+              fontWeight: 700,
+              mb: 2,
+              textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
             }}
           >
-            Search
-          </Button>
-        </SearchBox>
-        <Stack
-          direction={{ xs: "column", sm: "row" }}
-          spacing={2}
-          justifyContent="center"
+            Your Gateway to Roman Properties
+          </Typography>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <Button
-            variant="contained"
-            size="large"
-            onClick={handleBrowseClick}
+          <Typography
+            variant="h5"
+            component="p"
             sx={{
-              px: 4,
-              py: 1.5,
+              mb: 4,
+              textShadow: "1px 1px 2px rgba(0,0,0,0.5)",
             }}
           >
-            Browse Properties
-          </Button>
-          <Button
-            variant="outlined"
-            size="large"
-            onClick={handleGetStartedClick}
-            sx={{
-              px: 4,
-              py: 1.5,
-              borderColor: "white",
-              color: "white",
-              "&:hover": {
+            Buying • Selling • Managing • Student Accommodation
+          </Typography>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          <SearchBox>
+            <TextField
+              fullWidth
+              placeholder="Search properties, neighborhoods, or areas..."
+              variant="outlined"
+              sx={{
+                backgroundColor: "rgba(255, 255, 255, 0.95)",
+                "& .MuiOutlinedInput-root": {
+                  "& fieldset": {
+                    borderColor: "transparent",
+                  },
+                  "&:hover fieldset": {
+                    borderColor: "primary.main",
+                  },
+                  "&.Mui-focused fieldset": {
+                    borderColor: "primary.main",
+                  },
+                },
+              }}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <SearchIcon />
+                  </InputAdornment>
+                ),
+              }}
+            />
+            <Button
+              variant="contained"
+              size="large"
+              onClick={handleSearch}
+              sx={{
+                minWidth: 150,
+                height: "56px",
+              }}
+            >
+              Search
+            </Button>
+          </SearchBox>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            spacing={2}
+            justifyContent="center"
+          >
+            <Button
+              variant="contained"
+              size="large"
+              onClick={handleBrowseClick}
+              sx={{
+                px: 4,
+                py: 1.5,
+              }}
+            >
+              Browse Properties
+            </Button>
+            <Button
+              variant="outlined"
+              size="large"
+              onClick={handleGetStartedClick}
+              sx={{
+                px: 4,
+                py: 1.5,
                 borderColor: "white",
-                backgroundColor: "rgba(255, 255, 255, 0.1)",
-              },
-            }}
-          >
-            Get Started
-          </Button>
-        </Stack>
+                color: "white",
+                "&:hover": {
+                  borderColor: "white",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                },
+              }}
+            >
+              Get Started
+            </Button>
+          </Stack>
+        </motion.div>
       </HeroContent>
     </HeroBox>
   );

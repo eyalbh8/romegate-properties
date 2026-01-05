@@ -23,6 +23,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BedIcon from "@mui/icons-material/Bed";
 import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
+import { motion } from "framer-motion";
 
 interface Property {
   id: number;
@@ -139,21 +140,28 @@ const Properties: React.FC = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography
-          variant="h2"
-          component="h2"
-          gutterBottom
-          sx={{ textAlign: "center", mb: 2 }}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
-          Featured Properties
-        </Typography>
-        <Typography
-          variant="h6"
-          component="p"
-          sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
-        >
-          Discover your perfect home in Rome
-        </Typography>
+          <Typography
+            variant="h2"
+            component="h2"
+            gutterBottom
+            sx={{ textAlign: "center", mb: 2 }}
+          >
+            Featured Properties
+          </Typography>
+          <Typography
+            variant="h6"
+            component="p"
+            sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
+          >
+            Discover your perfect home in Rome
+          </Typography>
+        </motion.div>
 
         <Box
           sx={{
@@ -195,98 +203,113 @@ const Properties: React.FC = () => {
         </Box>
 
         <Grid container spacing={4}>
-          {filteredProperties.map((property) => (
+          {filteredProperties.map((property, index) => (
             <Grid item xs={12} sm={6} md={4} key={property.id}>
-              <Card
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  transition: "transform 0.3s, box-shadow 0.3s",
-                  "&:hover": {
-                    transform: "translateY(-8px)",
-                    boxShadow: 6,
-                  },
-                }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <CardMedia
-                  component="img"
-                  height="200"
-                  image={property.image}
-                  alt={property.title}
-                />
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      mb: 1,
-                    }}
-                  >
-                    <Chip
-                      label={property.type === "rent" ? "For Rent" : "For Sale"}
-                      color={property.type === "rent" ? "primary" : "secondary"}
-                      size="small"
-                    />
-                    <Typography
-                      variant="h6"
-                      color="primary.main"
-                      fontWeight="bold"
+                <Card
+                  sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    transition: "transform 0.3s, box-shadow 0.3s",
+                    "&:hover": {
+                      transform: "translateY(-8px) scale(1.02)",
+                      boxShadow: 6,
+                    },
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    height="200"
+                    image={property.image}
+                    alt={property.title}
+                  />
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        mb: 1,
+                      }}
                     >
-                      {formatPrice(property.price, property.type)}
+                      <Chip
+                        label={
+                          property.type === "rent" ? "For Rent" : "For Sale"
+                        }
+                        color={
+                          property.type === "rent" ? "primary" : "secondary"
+                        }
+                        size="small"
+                      />
+                      <Typography
+                        variant="h6"
+                        color="primary.main"
+                        fontWeight="bold"
+                      >
+                        {formatPrice(property.price, property.type)}
+                      </Typography>
+                    </Box>
+                    <Typography variant="h6" component="h3" gutterBottom>
+                      {property.title}
                     </Typography>
-                  </Box>
-                  <Typography variant="h6" component="h3" gutterBottom>
-                    {property.title}
-                  </Typography>
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      mb: 2,
-                      color: "text.secondary",
-                    }}
-                  >
-                    <LocationOnIcon sx={{ fontSize: 18, mr: 0.5 }} />
-                    <Typography variant="body2">{property.location}</Typography>
-                  </Box>
-                  <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
                     <Box
-                      sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        mb: 2,
+                        color: "text.secondary",
+                      }}
                     >
-                      <BedIcon sx={{ fontSize: 18, color: "text.secondary" }} />
+                      <LocationOnIcon sx={{ fontSize: 18, mr: 0.5 }} />
                       <Typography variant="body2">
-                        {property.bedrooms}
+                        {property.location}
                       </Typography>
                     </Box>
-                    <Box
-                      sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
-                    >
-                      <BathtubIcon
-                        sx={{ fontSize: 18, color: "text.secondary" }}
-                      />
-                      <Typography variant="body2">
-                        {property.bathrooms}
-                      </Typography>
+                    <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+                      <Box
+                        sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
+                      >
+                        <BedIcon
+                          sx={{ fontSize: 18, color: "text.secondary" }}
+                        />
+                        <Typography variant="body2">
+                          {property.bedrooms}
+                        </Typography>
+                      </Box>
+                      <Box
+                        sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
+                      >
+                        <BathtubIcon
+                          sx={{ fontSize: 18, color: "text.secondary" }}
+                        />
+                        <Typography variant="body2">
+                          {property.bathrooms}
+                        </Typography>
+                      </Box>
+                      <Box
+                        sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
+                      >
+                        <SquareFootIcon
+                          sx={{ fontSize: 18, color: "text.secondary" }}
+                        />
+                        <Typography variant="body2">
+                          {property.area} m²
+                        </Typography>
+                      </Box>
                     </Box>
-                    <Box
-                      sx={{ display: "flex", alignItems: "center", gap: 0.5 }}
-                    >
-                      <SquareFootIcon
-                        sx={{ fontSize: 18, color: "text.secondary" }}
-                      />
-                      <Typography variant="body2">
-                        {property.area} m²
-                      </Typography>
-                    </Box>
-                  </Box>
-                </CardContent>
-                <CardActions sx={{ p: 2, pt: 0 }}>
-                  <Button size="small" color="primary" fullWidth>
-                    View Details
-                  </Button>
-                </CardActions>
-              </Card>
+                  </CardContent>
+                  <CardActions sx={{ p: 2, pt: 0 }}>
+                    <Button size="small" color="primary" fullWidth>
+                      View Details
+                    </Button>
+                  </CardActions>
+                </Card>
+              </motion.div>
             </Grid>
           ))}
         </Grid>

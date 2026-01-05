@@ -13,6 +13,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import BuildIcon from "@mui/icons-material/Build";
 import SchoolIcon from "@mui/icons-material/School";
+import { motion } from "framer-motion";
 
 interface Service {
   icon: React.ReactNode;
@@ -57,44 +58,58 @@ const Services: React.FC = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography
-          variant="h2"
-          component="h2"
-          gutterBottom
-          sx={{ textAlign: "center", mb: 6 }}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
-          Our Services
-        </Typography>
+          <Typography
+            variant="h2"
+            component="h2"
+            gutterBottom
+            sx={{ textAlign: "center", mb: 6 }}
+          >
+            Our Services
+          </Typography>
+        </motion.div>
         <Grid container spacing={4}>
           {services.map((service, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
-              <Card
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  transition: "transform 0.3s, box-shadow 0.3s",
-                  "&:hover": {
-                    transform: "translateY(-8px)",
-                    boxShadow: 6,
-                  },
-                }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <CardContent sx={{ flexGrow: 1, textAlign: "center", pt: 4 }}>
-                  <Box sx={{ mb: 2 }}>{service.icon}</Box>
-                  <Typography variant="h5" component="h3" gutterBottom>
-                    {service.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {service.description}
-                  </Typography>
-                </CardContent>
-                <CardActions sx={{ justifyContent: "center", pb: 2 }}>
-                  <Button size="small" color="primary">
-                    Learn More
-                  </Button>
-                </CardActions>
-              </Card>
+                <Card
+                  sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    transition: "transform 0.3s, box-shadow 0.3s",
+                    "&:hover": {
+                      transform: "translateY(-8px) scale(1.02)",
+                      boxShadow: 6,
+                    },
+                  }}
+                >
+                  <CardContent sx={{ flexGrow: 1, textAlign: "center", pt: 4 }}>
+                    <Box sx={{ mb: 2 }}>{service.icon}</Box>
+                    <Typography variant="h5" component="h3" gutterBottom>
+                      {service.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {service.description}
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{ justifyContent: "center", pb: 2 }}>
+                    <Button size="small" color="primary">
+                      Learn More
+                    </Button>
+                  </CardActions>
+                </Card>
+              </motion.div>
             </Grid>
           ))}
         </Grid>

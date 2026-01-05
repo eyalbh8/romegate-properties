@@ -17,6 +17,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { motion } from "framer-motion";
 
 interface ContactFormData {
   name: string;
@@ -69,158 +70,181 @@ const Contact: React.FC = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Typography
-          variant="h2"
-          component="h2"
-          gutterBottom
-          sx={{ textAlign: "center", mb: 2 }}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
-          Contact Us
-        </Typography>
-        <Typography
-          variant="h6"
-          component="p"
-          sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
-        >
-          Get in touch with our team - we're here to help
-        </Typography>
+          <Typography
+            variant="h2"
+            component="h2"
+            gutterBottom
+            sx={{ textAlign: "center", mb: 2 }}
+          >
+            Contact Us
+          </Typography>
+          <Typography
+            variant="h6"
+            component="p"
+            sx={{ textAlign: "center", mb: 6, color: "text.secondary" }}
+          >
+            Get in touch with our team - we're here to help
+          </Typography>
+        </motion.div>
 
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
-            <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
-              <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
-                Send us a Message
-              </Typography>
-              <form onSubmit={handleSubmit}>
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-                  <TextField
-                    name="name"
-                    label="Your Name"
-                    variant="outlined"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                  />
-                  <TextField
-                    name="email"
-                    label="Your Email"
-                    type="email"
-                    variant="outlined"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                  <TextField
-                    name="phone"
-                    label="Phone Number"
-                    variant="outlined"
-                    value={formData.phone}
-                    onChange={handleChange}
-                  />
-                  <TextField
-                    name="subject"
-                    label="Subject"
-                    variant="outlined"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                  />
-                  <TextField
-                    name="message"
-                    label="Your Message"
-                    multiline
-                    rows={5}
-                    variant="outlined"
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                  />
-                  <Button
-                    type="submit"
-                    variant="contained"
-                    size="large"
-                    sx={{ py: 1.5 }}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
+                <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
+                  Send us a Message
+                </Typography>
+                <form onSubmit={handleSubmit}>
+                  <Box
+                    sx={{ display: "flex", flexDirection: "column", gap: 3 }}
                   >
-                    Send Message
-                  </Button>
-                </Box>
-              </form>
-            </Paper>
+                    <TextField
+                      name="name"
+                      label="Your Name"
+                      variant="outlined"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                    <TextField
+                      name="email"
+                      label="Your Email"
+                      type="email"
+                      variant="outlined"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                    <TextField
+                      name="phone"
+                      label="Phone Number"
+                      variant="outlined"
+                      value={formData.phone}
+                      onChange={handleChange}
+                    />
+                    <TextField
+                      name="subject"
+                      label="Subject"
+                      variant="outlined"
+                      required
+                      value={formData.subject}
+                      onChange={handleChange}
+                    />
+                    <TextField
+                      name="message"
+                      label="Your Message"
+                      multiline
+                      rows={5}
+                      variant="outlined"
+                      required
+                      value={formData.message}
+                      onChange={handleChange}
+                    />
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      size="large"
+                      sx={{ py: 1.5 }}
+                    >
+                      Send Message
+                    </Button>
+                  </Box>
+                </form>
+              </Paper>
+            </motion.div>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
-              <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
-                Contact Information
-              </Typography>
-              <Stack spacing={3}>
-                <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
-                  <LocationOnIcon color="primary" sx={{ mt: 0.5 }} />
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Paper elevation={3} sx={{ p: 4, height: "100%" }}>
+                <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
+                  Contact Information
+                </Typography>
+                <Stack spacing={3}>
+                  <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
+                    <LocationOnIcon color="primary" sx={{ mt: 0.5 }} />
+                    <Box>
+                      <Typography variant="h6" gutterBottom>
+                        Office Address
+                      </Typography>
+                      <Typography variant="body1" color="text.secondary">
+                        Via Manzoni 37
+                        <br />
+                        20121 Milano, Italy
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
+                    <PhoneIcon color="primary" sx={{ mt: 0.5 }} />
+                    <Box>
+                      <Typography variant="h6" gutterBottom>
+                        Phone
+                      </Typography>
+                      <Typography variant="body1" color="text.secondary">
+                        +39 02 1234 5678
+                      </Typography>
+                    </Box>
+                  </Box>
+                  <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
+                    <EmailIcon color="primary" sx={{ mt: 0.5 }} />
+                    <Box>
+                      <Typography variant="h6" gutterBottom>
+                        Email
+                      </Typography>
+                      <Typography variant="body1" color="text.secondary">
+                        info@romegate.it
+                      </Typography>
+                    </Box>
+                  </Box>
                   <Box>
                     <Typography variant="h6" gutterBottom>
-                      Office Address
+                      Follow Us
                     </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      Via Manzoni 37
-                      <br />
-                      20121 Milano, Italy
-                    </Typography>
+                    <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
+                      <Button
+                        variant="outlined"
+                        startIcon={<FacebookIcon />}
+                        href="https://facebook.com"
+                        target="_blank"
+                      >
+                        Facebook
+                      </Button>
+                      <Button
+                        variant="outlined"
+                        startIcon={<InstagramIcon />}
+                        href="https://instagram.com"
+                        target="_blank"
+                      >
+                        Instagram
+                      </Button>
+                      <Button
+                        variant="outlined"
+                        startIcon={<LinkedInIcon />}
+                        href="https://linkedin.com"
+                        target="_blank"
+                      >
+                        LinkedIn
+                      </Button>
+                    </Stack>
                   </Box>
-                </Box>
-                <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
-                  <PhoneIcon color="primary" sx={{ mt: 0.5 }} />
-                  <Box>
-                    <Typography variant="h6" gutterBottom>
-                      Phone
-                    </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      +39 02 1234 5678
-                    </Typography>
-                  </Box>
-                </Box>
-                <Box sx={{ display: "flex", alignItems: "start", gap: 2 }}>
-                  <EmailIcon color="primary" sx={{ mt: 0.5 }} />
-                  <Box>
-                    <Typography variant="h6" gutterBottom>
-                      Email
-                    </Typography>
-                    <Typography variant="body1" color="text.secondary">
-                      info@romegate.it
-                    </Typography>
-                  </Box>
-                </Box>
-                <Box>
-                  <Typography variant="h6" gutterBottom>
-                    Follow Us
-                  </Typography>
-                  <Stack direction="row" spacing={2} sx={{ mt: 2 }}>
-                    <Button
-                      variant="outlined"
-                      startIcon={<FacebookIcon />}
-                      href="https://facebook.com"
-                      target="_blank"
-                    >
-                      Facebook
-                    </Button>
-                    <Button
-                      variant="outlined"
-                      startIcon={<InstagramIcon />}
-                      href="https://instagram.com"
-                      target="_blank"
-                    >
-                      Instagram
-                    </Button>
-                    <Button
-                      variant="outlined"
-                      startIcon={<LinkedInIcon />}
-                      href="https://linkedin.com"
-                      target="_blank"
-                    >
-                      LinkedIn
-                    </Button>
-                  </Stack>
-                </Box>
-              </Stack>
-            </Paper>
+                </Stack>
+              </Paper>
+            </motion.div>
           </Grid>
         </Grid>
         <Snackbar

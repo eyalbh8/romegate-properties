@@ -9,6 +9,7 @@ import {
   Snackbar,
   Alert,
 } from "@mui/material";
+import { motion } from "framer-motion";
 
 interface FormData {
   name: string;
@@ -56,93 +57,100 @@ const QuickMessage: React.FC = () => {
       }}
     >
       <Container maxWidth="md">
-        <Paper
-          elevation={3}
-          sx={{
-            p: 4,
-            backgroundColor: "primary.main",
-            color: "white",
-          }}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
         >
-          <Typography
-            variant="h3"
-            component="h2"
-            gutterBottom
-            sx={{ textAlign: "center", mb: 4 }}
+          <Paper
+            elevation={3}
+            sx={{
+              p: 4,
+              backgroundColor: "primary.main",
+              color: "white",
+            }}
           >
-            Have a Question? Leave Us a Message
-          </Typography>
-          <form onSubmit={handleSubmit}>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
-              <TextField
-                name="name"
-                label="Your Name"
-                variant="outlined"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                sx={{
-                  backgroundColor: "white",
-                  "& .MuiOutlinedInput-root": {
-                    "& fieldset": {
-                      borderColor: "rgba(255, 255, 255, 0.5)",
+            <Typography
+              variant="h3"
+              component="h2"
+              gutterBottom
+              sx={{ textAlign: "center", mb: 4 }}
+            >
+              Have a Question? Leave Us a Message
+            </Typography>
+            <form onSubmit={handleSubmit}>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                <TextField
+                  name="name"
+                  label="Your Name"
+                  variant="outlined"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  sx={{
+                    backgroundColor: "white",
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "rgba(255, 255, 255, 0.5)",
+                      },
                     },
-                  },
-                }}
-              />
-              <TextField
-                name="email"
-                label="Your Email"
-                type="email"
-                variant="outlined"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                sx={{
-                  backgroundColor: "white",
-                  "& .MuiOutlinedInput-root": {
-                    "& fieldset": {
-                      borderColor: "rgba(255, 255, 255, 0.5)",
+                  }}
+                />
+                <TextField
+                  name="email"
+                  label="Your Email"
+                  type="email"
+                  variant="outlined"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  sx={{
+                    backgroundColor: "white",
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "rgba(255, 255, 255, 0.5)",
+                      },
                     },
-                  },
-                }}
-              />
-              <TextField
-                name="message"
-                label="Your Message"
-                multiline
-                rows={4}
-                variant="outlined"
-                required
-                value={formData.message}
-                onChange={handleChange}
-                sx={{
-                  backgroundColor: "white",
-                  "& .MuiOutlinedInput-root": {
-                    "& fieldset": {
-                      borderColor: "rgba(255, 255, 255, 0.5)",
+                  }}
+                />
+                <TextField
+                  name="message"
+                  label="Your Message"
+                  multiline
+                  rows={4}
+                  variant="outlined"
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
+                  sx={{
+                    backgroundColor: "white",
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": {
+                        borderColor: "rgba(255, 255, 255, 0.5)",
+                      },
                     },
-                  },
-                }}
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                size="large"
-                sx={{
-                  backgroundColor: "secondary.main",
-                  color: "white",
-                  py: 1.5,
-                  "&:hover": {
-                    backgroundColor: "secondary.dark",
-                  },
-                }}
-              >
-                Send Message
-              </Button>
-            </Box>
-          </form>
-        </Paper>
+                  }}
+                />
+                <Button
+                  type="submit"
+                  variant="contained"
+                  size="large"
+                  sx={{
+                    backgroundColor: "secondary.main",
+                    color: "white",
+                    py: 1.5,
+                    "&:hover": {
+                      backgroundColor: "secondary.dark",
+                    },
+                  }}
+                >
+                  Send Message
+                </Button>
+              </Box>
+            </form>
+          </Paper>
+        </motion.div>
         <Snackbar
           open={open}
           autoHideDuration={6000}
