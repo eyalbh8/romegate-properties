@@ -100,6 +100,17 @@ const QuickMessage: React.FC = () => {
                         borderColor: "rgba(255, 255, 255, 0.5)",
                       },
                     },
+                    "& .MuiInputLabel-root": {
+                      color: "rgba(255, 255, 255, 0.7)",
+                      "&.Mui-focused": {
+                        color: "white",
+                      },
+                    },
+                    "& .MuiInputLabel-root.MuiInputLabel-shrink": {
+                      backgroundColor: "primary.main",
+                      padding: "0 8px",
+                      color: "white",
+                    },
                   }}
                 />
                 <Box id="quick-name-description" sx={{ display: "none" }}>
@@ -122,6 +133,17 @@ const QuickMessage: React.FC = () => {
                       "& fieldset": {
                         borderColor: "rgba(255, 255, 255, 0.5)",
                       },
+                    },
+                    "& .MuiInputLabel-root": {
+                      color: "rgba(255, 255, 255, 0.7)",
+                      "&.Mui-focused": {
+                        color: "white",
+                      },
+                    },
+                    "& .MuiInputLabel-root.MuiInputLabel-shrink": {
+                      backgroundColor: "primary.main",
+                      padding: "0 8px",
+                      color: "white",
                     },
                   }}
                 />
@@ -146,6 +168,17 @@ const QuickMessage: React.FC = () => {
                       "& fieldset": {
                         borderColor: "rgba(255, 255, 255, 0.5)",
                       },
+                    },
+                    "& .MuiInputLabel-root": {
+                      color: "rgba(255, 255, 255, 0.7)",
+                      "&.Mui-focused": {
+                        color: "white",
+                      },
+                    },
+                    "& .MuiInputLabel-root.MuiInputLabel-shrink": {
+                      backgroundColor: "primary.main",
+                      padding: "0 8px",
+                      color: "white",
                     },
                   }}
                 />
