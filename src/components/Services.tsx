@@ -26,22 +26,22 @@ const Services: React.FC = () => {
   const { t } = useTranslation();
   const services: Service[] = [
     {
-      icon: <HomeIcon sx={{ fontSize: 60, color: "primary.main" }} />,
+      icon: <HomeIcon sx={{ fontSize: 60, color: "white" }} />,
       title: t("services.buyingProperties.title"),
       description: t("services.buyingProperties.description"),
     },
     {
-      icon: <AttachMoneyIcon sx={{ fontSize: 60, color: "primary.main" }} />,
+      icon: <AttachMoneyIcon sx={{ fontSize: 60, color: "white" }} />,
       title: t("services.sellingProperties.title"),
       description: t("services.sellingProperties.description"),
     },
     {
-      icon: <BuildIcon sx={{ fontSize: 60, color: "primary.main" }} />,
+      icon: <BuildIcon sx={{ fontSize: 60, color: "white" }} />,
       title: t("services.propertyManagement.title"),
       description: t("services.propertyManagement.description"),
     },
     {
-      icon: <SchoolIcon sx={{ fontSize: 60, color: "primary.main" }} />,
+      icon: <SchoolIcon sx={{ fontSize: 60, color: "white" }} />,
       title: t("services.studentAccommodation.title"),
       description: t("services.studentAccommodation.description"),
     },
@@ -177,13 +177,33 @@ const Services: React.FC = () => {
                       "&:hover": {
                         transform: "translateY(-8px) scale(1.02)",
                         boxShadow: 3,
+                        "& .icon-container": {
+                          backgroundColor: "primary.main",
+                          transform: "scale(1.1)",
+                        },
                       },
                     }}
                   >
                     <CardContent
                       sx={{ flexGrow: 1, textAlign: "center", pt: 4 }}
                     >
-                      <Box sx={{ mb: 2 }}>{service.icon}</Box>
+                      <Box
+                        className="icon-container"
+                        sx={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          width: 100,
+                          height: 100,
+                          borderRadius: "50%",
+                          backgroundColor: "primary.light",
+                          color: "white",
+                          mb: 2,
+                          transition: "all 0.3s ease",
+                        }}
+                      >
+                        {service.icon}
+                      </Box>
                       <Typography variant="h5" component="h3" gutterBottom>
                         {service.title}
                       </Typography>
