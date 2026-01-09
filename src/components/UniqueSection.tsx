@@ -154,7 +154,15 @@ const UniqueSection: React.FC = () => {
                       <img
                         src={`${item.img}?w=400&fit=crop&auto=format`}
                         srcSet={`${item.img}?w=400&fit=crop&auto=format&dpr=2 2x`}
-                        alt={`${item.title} - Rome real estate and property showcase`}
+                        alt={`${item.title} - ${
+                          item.title === "Historic Rome"
+                            ? "Historic architecture and landmarks in Rome, Italy"
+                            : item.title === "Modern Living"
+                            ? "Modern apartments and residential properties in Rome"
+                            : item.title === "Student Community"
+                            ? "Student accommodation and housing near universities in Rome"
+                            : "Beautiful real estate properties and apartments in Rome, Italy"
+                        } - Romegate Properties showcase`}
                         loading="lazy"
                         style={{
                           borderRadius: "8px",

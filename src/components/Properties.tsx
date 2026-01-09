@@ -145,39 +145,89 @@ const Properties: React.FC = () => {
   return (
     <>
       {/* Product/Offer Schema for each property */}
-      {properties.map((property) => (
-        <script
-          key={`schema-${property.id}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Product",
-              name: property.title,
-              image: property.image,
-              description: `${property.title} located in ${property.location}, Rome. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area} m²`,
-              offers: {
-                "@type": "Offer",
-                price: property.price,
-                priceCurrency: "EUR",
-                availability: "https://schema.org/InStock",
-                url: `https://romegate.it/#properties?id=${property.id}`,
-                priceSpecification: {
-                  "@type": "UnitPriceSpecification",
+      {properties.map((property) => {
+        // Determine related services based on property type
+        const relatedServices = [];
+        if (property.type === "sale") {
+          relatedServices.push("Property Buying", "Property Selling");
+        } else if (property.type === "rent") {
+          if (
+            property.location.includes("Sapienza") ||
+            property.location.includes("San Lorenzo") ||
+            property.price < 700
+          ) {
+            relatedServices.push(
+              "Student Accommodation",
+              "Property Management"
+            );
+          } else {
+            relatedServices.push("Property Management");
+          }
+        }
+
+        // Extract neighborhood from location
+        const neighborhood = property.location.split(",")[0];
+
+        return (
+          <script
+            key={`schema-${property.id}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                name: property.title,
+                image: property.image,
+                description: `${property.title} located in ${property.location}, Rome. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area} m²`,
+                keywords: [
+                  property.location,
+                  property.type === "rent" ? "rental" : "sale",
+                  `${property.bedrooms} bedroom`,
+                  `${property.area} m²`,
+                  "Rome",
+                  neighborhood,
+                ].join(", "),
+                about: relatedServices.map((service) => ({
+                  "@type": "Service",
+                  name: service,
+                })),
+                mentions: [
+                  {
+                    "@type": "Place",
+                    name: neighborhood,
+                    addressLocality: "Rome",
+                    addressRegion: "Lazio",
+                    addressCountry: "IT",
+                  },
+                  {
+                    "@type": "City",
+                    name: "Rome",
+                  },
+                ],
+                offers: {
+                  "@type": "Offer",
                   price: property.price,
                   priceCurrency: "EUR",
-                  unitCode: property.type === "rent" ? "MON" : "C62",
+                  availability: "https://schema.org/InStock",
+                  url: `https://romegate.it/#properties?id=${property.id}`,
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: property.price,
+                    priceCurrency: "EUR",
+                    unitCode: property.type === "rent" ? "MON" : "C62",
+                  },
                 },
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.5",
-                reviewCount: "12",
-              },
-            }),
-          }}
-        />
-      ))}
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.5",
+                  reviewCount: "12",
+                },
+                dateModified: new Date().toISOString(),
+              }),
+            }}
+          />
+        );
+      })}
       <Box
         id="properties"
         component="section"
@@ -261,6 +311,16 @@ const Properties: React.FC = () => {
                 >
                   <Card
                     component="article"
+                    data-content-type="property-listing"
+                    data-content-category={
+                      property.type === "rent" && property.price < 700
+                        ? "student-housing"
+                        : property.type === "sale" && property.price > 500000
+                        ? "luxury"
+                        : property.type === "sale"
+                        ? "investment"
+                        : "residential"
+                    }
                     sx={{
                       height: "100%",
                       display: "flex",
@@ -276,7 +336,15 @@ const Properties: React.FC = () => {
                       component="img"
                       height="200"
                       image={property.image}
-                      alt={`${property.title} - ${property.location}, Rome`}
+                      alt={`${property.title} - ${property.bedrooms} bedroom ${
+                        property.type === "rent"
+                          ? "rental"
+                          : "property for sale"
+                      } in ${property.location}, Rome. ${
+                        property.area
+                      } m² with ${property.bathrooms} bathroom${
+                        property.bathrooms > 1 ? "s" : ""
+                      }. Price: ${formatPrice(property.price, property.type)}`}
                       loading="lazy"
                     />
                     <CardContent sx={{ flexGrow: 1 }}>

@@ -50,29 +50,77 @@ const Services: React.FC = () => {
   return (
     <>
       {/* Service Schema for each service */}
-      {services.map((service, index) => (
-        <script
-          key={`schema-service-${index}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              serviceType: service.title,
-              provider: {
-                "@type": "RealEstateAgent",
-                name: "Romegate Properties",
-                url: "https://romegate.it",
-              },
-              areaServed: {
-                "@type": "City",
-                name: "Rome",
-              },
-              description: service.description,
-            }),
-          }}
-        />
-      ))}
+      {services.map((service, index) => {
+        // Determine target audience and related property types
+        let targetAudience: string[] = [];
+        let relatedPropertyTypes: string[] = [];
+
+        if (service.title.includes("Buying")) {
+          targetAudience = ["Property Buyers", "Investors"];
+          relatedPropertyTypes = ["sale", "luxury", "investment"];
+        } else if (service.title.includes("Selling")) {
+          targetAudience = ["Property Owners", "Landlords"];
+          relatedPropertyTypes = ["sale", "luxury", "investment"];
+        } else if (service.title.includes("Management")) {
+          targetAudience = ["Landlords", "Property Owners"];
+          relatedPropertyTypes = ["rent", "investment"];
+        } else if (service.title.includes("Student")) {
+          targetAudience = ["Erasmus Students", "International Students"];
+          relatedPropertyTypes = ["rent", "student-housing"];
+        }
+
+        return (
+          <script
+            key={`schema-service-${index}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Service",
+                serviceType: service.title,
+                provider: {
+                  "@type": "RealEstateAgent",
+                  name: "Romegate Properties",
+                  url: "https://romegate.it",
+                },
+                areaServed: {
+                  "@type": "City",
+                  name: "Rome",
+                },
+                description: service.description,
+                keywords: [
+                  service.title,
+                  "Rome",
+                  "real estate",
+                  ...targetAudience,
+                ].join(", "),
+                audience: targetAudience.map((audience) => ({
+                  "@type": "Audience",
+                  audienceType: audience,
+                })),
+                about: relatedPropertyTypes.map((type) => ({
+                  "@type": "Thing",
+                  name:
+                    type === "student-housing"
+                      ? "Student Housing"
+                      : type === "rent"
+                      ? "Rental Properties"
+                      : type === "sale"
+                      ? "Properties for Sale"
+                      : type,
+                })),
+                relatedTo: services
+                  .filter((_, i) => i !== index)
+                  .map((s) => ({
+                    "@type": "Service",
+                    name: s.title,
+                  })),
+                dateModified: new Date().toISOString(),
+              }),
+            }}
+          />
+        );
+      })}
       <Box
         id="services"
         component="section"
@@ -116,6 +164,10 @@ const Services: React.FC = () => {
                   style={{ width: "100%", display: "flex" }}
                 >
                   <Card
+                    data-content-type="service-offering"
+                    data-content-category={service.title
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}
                     sx={{
                       height: "100%",
                       width: "100%",

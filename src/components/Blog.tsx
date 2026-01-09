@@ -179,35 +179,99 @@ const Blog: React.FC = () => {
   return (
     <>
       {/* BlogPosting Schema for each post */}
-      {blogPosts.map((post) => (
-        <script
-          key={`schema-${post.id}`}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              headline: post.title,
-              image: post.image,
-              datePublished: new Date(post.date).toISOString(),
-              author: {
-                "@type": "Person",
-                name: post.author,
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Romegate Properties",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://romegate.it/logo.png",
+      {blogPosts.map((post) => {
+        // Determine related services and locations based on category
+        let relatedServices = [];
+        let mentionedLocations = ["Rome"];
+
+        if (post.category === "Student Life") {
+          relatedServices.push("Student Accommodation");
+          mentionedLocations.push(
+            "Trastevere",
+            "San Lorenzo",
+            "Testaccio",
+            "Centro Storico"
+          );
+        } else if (post.category === "Real Estate") {
+          relatedServices.push(
+            "Buying Properties",
+            "Selling Properties",
+            "Property Management"
+          );
+        } else if (post.category === "Investment") {
+          relatedServices.push("Buying Properties", "Property Management");
+        } else if (post.category === "Legal") {
+          relatedServices.push("Buying Properties", "Selling Properties");
+        }
+
+        // Extract neighborhoods from title/excerpt if mentioned
+        const neighborhoods = [
+          "Trastevere",
+          "Monti",
+          "Centro Storico",
+          "Prati",
+          "San Lorenzo",
+          "Testaccio",
+        ];
+        const mentionedNeighborhoods = neighborhoods.filter(
+          (n) => post.title.includes(n) || post.excerpt.includes(n)
+        );
+        mentionedLocations.push(...mentionedNeighborhoods);
+
+        return (
+          <script
+            key={`schema-${post.id}`}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                headline: post.title,
+                image: post.image,
+                datePublished: new Date(post.date).toISOString(),
+                dateModified: new Date(post.date).toISOString(),
+                author: {
+                  "@type": "Person",
+                  name: post.author,
                 },
-              },
-              description: post.excerpt,
-              articleSection: post.category,
-            }),
-          }}
-        />
-      ))}
+                publisher: {
+                  "@type": "Organization",
+                  name: "Romegate Properties",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://romegate.it/logo.png",
+                  },
+                },
+                description: post.excerpt,
+                articleSection: post.category,
+                keywords: [
+                  post.category,
+                  "Rome",
+                  "real estate",
+                  ...mentionedLocations,
+                ].join(", "),
+                about: [
+                  {
+                    "@type": "Thing",
+                    name: post.category,
+                  },
+                  ...relatedServices.map((service) => ({
+                    "@type": "Service",
+                    name: service,
+                  })),
+                ],
+                mentions: mentionedLocations.map((location) => ({
+                  "@type": location === "Rome" ? "City" : "Place",
+                  name: location,
+                  addressLocality: "Rome",
+                  addressRegion: "Lazio",
+                  addressCountry: "IT",
+                })),
+              }),
+            }}
+          />
+        );
+      })}
       <Box
         id="blog"
         component="section"
@@ -293,6 +357,10 @@ const Blog: React.FC = () => {
                 >
                   <Card
                     component="article"
+                    data-content-type="blog-post"
+                    data-content-category={post.category
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}
                     sx={{
                       height: "100%",
                       width: "100%",
@@ -309,7 +377,11 @@ const Blog: React.FC = () => {
                       component="img"
                       height="200"
                       image={post.image}
-                      alt={`${post.title} - ${post.category} article image`}
+                      alt={`${post.title} - ${
+                        post.category
+                      } article about real estate in Rome by ${
+                        post.author
+                      }. ${post.excerpt.substring(0, 100)}...`}
                       loading="lazy"
                       sx={{
                         objectFit: "cover",

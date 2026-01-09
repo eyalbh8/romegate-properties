@@ -124,6 +124,7 @@ const FAQ: React.FC = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Accordion
+                  data-content-type="faq-item"
                   expanded={expanded === `panel${index}`}
                   onChange={handleChange(`panel${index}`)}
                   sx={{

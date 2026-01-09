@@ -25,14 +25,23 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   const breadcrumbList = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.label,
-      item: item.href
-        ? `https://romegate.it${item.href}`
-        : "https://romegate.it",
-    })),
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: t("common.home"),
+        item: "https://romegate.it",
+      },
+      ...items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 2,
+        name: item.label,
+        item: item.href
+          ? `https://romegate.it${item.href}`
+          : "https://romegate.it",
+      })),
+    ],
+    numberOfItems: items.length + 1,
   };
 
   return (
