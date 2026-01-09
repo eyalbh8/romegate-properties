@@ -251,9 +251,9 @@ export default {
     linkedin: "LinkedIn",
     successMessage: "Messaggio inviato con successo! Ti risponderemo presto.",
     errorMessage: "Qualcosa è andato storto. Per favore riprova.",
-    addressLine1: "Via Manzoni 37",
-    addressLine2: "20121 Milano, Italia",
-    phoneNumber: "+39 02 1234 5678",
+    addressLine1: "Via del Corso 123",
+    addressLine2: "00186 Roma, Italia",
+    phoneNumber: "+39 06 1234 5678",
     emailAddress: "info@romegate.it",
   },
   footer: {
@@ -272,5 +272,13 @@ export default {
   common: {
     home: "Home",
     minRead: "min di lettura",
+  },
+  seo: {
+    title:
+      "Romegate - La Tua Porta d'Accesso alle Proprietà di Roma | Immobiliare a Roma",
+    description:
+      "Romegate - La Tua Porta d'Accesso alle Proprietà di Roma. Acquista, vendi e gestisci proprietà a Roma. Servizi specializzati per studenti Erasmus e clienti internazionali.",
+    keywords:
+      "immobiliare Roma, proprietà Roma, alloggi Erasmus, alloggi studenti Roma, comprare proprietà Roma, vendere proprietà Roma, gestione proprietà Roma, appartamenti Roma, agenzia immobiliare Roma",
   },
 };

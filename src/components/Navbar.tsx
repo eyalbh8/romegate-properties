@@ -19,6 +19,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 
 interface NavItem {
   label: string;
@@ -27,6 +28,8 @@ interface NavItem {
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [langAnchorEl, setLangAnchorEl] = useState<null | HTMLElement>(null);
   const theme = useTheme();
@@ -46,6 +49,9 @@ const Navbar: React.FC = () => {
 
   const handleLanguageChange = (lang: string): void => {
     i18n.changeLanguage(lang);
+    // Navigate to the new language route while preserving hash
+    const currentHash = location.hash || "";
+    navigate(`/${lang}${currentHash}`, { replace: true });
     handleLangMenuClose();
   };
 
@@ -147,7 +153,8 @@ const Navbar: React.FC = () => {
             }}
             tabIndex={0}
           >
-            ROME<span style={{ color: theme.palette.secondary.main }}>GATE</span>
+            ROME
+            <span style={{ color: theme.palette.secondary.main }}>GATE</span>
           </Typography>
           {isMobile ? (
             <Box

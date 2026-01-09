@@ -77,7 +77,13 @@
     <link rel="me" href="https://www.linkedin.com/company/romegate" />
     <link rel="me" href="https://twitter.com/romegate" />
 
-    <!-- Verification Meta Tags (Placeholders - replace with actual verification codes) -->
+    <!-- Verification Meta Tags -->
+    <!-- 
+      To add verification codes:
+      1. Get verification codes from Google Search Console, Bing Webmaster Tools, and Facebook Business
+      2. Replace the placeholder values below with your actual codes
+      3. Or use environment variables in a build script to inject them automatically
+    -->
     <meta
       name="google-site-verification"
       content="YOUR_GOOGLE_VERIFICATION_CODE"
@@ -128,7 +134,7 @@
         "description": "Premier real estate agency specializing in buying, selling, and managing properties in Rome, Italy. Specialized services for Erasmus students and international clients.",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+39-02-1234-5678",
+          "telephone": "+39-06-1234-5678",
           "contactType": "customer service",
           "email": "info@romegate.it",
           "availableLanguage": [
@@ -141,9 +147,10 @@
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Via Manzoni 37",
-          "addressLocality": "Milano",
-          "postalCode": "20121",
+          "streetAddress": "Via del Corso 123",
+          "addressLocality": "Rome",
+          "addressRegion": "Lazio",
+          "postalCode": "00186",
           "addressCountry": "IT"
         },
         "areaServed": {
@@ -196,16 +203,16 @@
         "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Via Manzoni 37",
-          "addressLocality": "Milano",
-          "addressRegion": "Lombardy",
-          "postalCode": "20121",
+          "streetAddress": "Via del Corso 123",
+          "addressLocality": "Rome",
+          "addressRegion": "Lazio",
+          "postalCode": "00186",
           "addressCountry": "IT"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 45.4642,
-          "longitude": 9.19
+          "latitude": 41.9028,
+          "longitude": 12.4964
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -230,7 +237,7 @@
         "url": "https://romegate.it",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://romegate.it/#properties?search={search_term_string}",
+          "target": "https://romegate.it/en/#properties?search={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }

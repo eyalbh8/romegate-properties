@@ -244,9 +244,9 @@ export default {
     linkedin: "LinkedIn",
     successMessage: "Message sent successfully! We'll get back to you soon.",
     errorMessage: "Something went wrong. Please try again.",
-    addressLine1: "Via Manzoni 37",
-    addressLine2: "20121 Milano, Italy",
-    phoneNumber: "+39 02 1234 5678",
+    addressLine1: "Via del Corso 123",
+    addressLine2: "00186 Rome, Italy",
+    phoneNumber: "+39 06 1234 5678",
     emailAddress: "info@romegate.it",
   },
   footer: {
@@ -265,5 +265,12 @@ export default {
   common: {
     home: "Home",
     minRead: "min read",
+  },
+  seo: {
+    title: "Romegate - Your Gateway to Roman Properties | Real Estate in Rome",
+    description:
+      "Romegate - Your Gateway to Roman Properties. Buy, sell, and manage properties in Rome. Specialized services for Erasmus students and international clients.",
+    keywords:
+      "real estate Rome, property Rome, Erasmus accommodation, student housing Rome, buy property Rome, sell property Rome, property management Rome, Rome apartments, Rome real estate agency",
   },
 };

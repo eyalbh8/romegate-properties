@@ -1,47 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- English Pages -->
   <url>
-    <loc>https://romegate.it/</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://romegate.it/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://romegate.it/en/" />
+    <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://romegate.it/#properties</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://romegate.it/en/#properties</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#properties" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#properties" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#properties" />
+    <lastmod>2025-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://romegate.it/#services</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://romegate.it/en/#services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#services" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#services" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#services" />
+    <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://romegate.it/#about</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://romegate.it/#erasmus</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://romegate.it/en/#erasmus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#erasmus" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#erasmus" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#erasmus" />
+    <lastmod>2025-01-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://romegate.it/#blog</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://romegate.it/en/#blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#blog" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#blog" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#blog" />
+    <lastmod>2025-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://romegate.it/#contact</loc>
-    <lastmod>2025-01-05</lastmod>
+    <loc>https://romegate.it/en/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#contact" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#contact" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Italian Pages -->
+  <url>
+    <loc>https://romegate.it/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://romegate.it/en/" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/it/#properties</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#properties" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#properties" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#properties" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/it/#services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#services" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#services" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#services" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/it/#erasmus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#erasmus" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#erasmus" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#erasmus" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/it/#blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#blog" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#blog" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#blog" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/it/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#contact" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#contact" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Hebrew Pages -->
+  <url>
+    <loc>https://romegate.it/he/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://romegate.it/en/" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/he/#properties</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#properties" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#properties" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#properties" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/he/#services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#services" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#services" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#services" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/he/#erasmus</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#erasmus" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#erasmus" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#erasmus" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/he/#blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#blog" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#blog" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#blog" />
+    <lastmod>2025-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://romegate.it/he/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://romegate.it/en/#contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://romegate.it/it/#contact" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://romegate.it/he/#contact" />
+    <lastmod>2025-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
