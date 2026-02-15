@@ -25,107 +25,17 @@ import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-
-interface Property {
-  id: number;
-  title: string;
-  location: string;
-  price: number;
-  bedrooms: number;
-  bathrooms: number;
-  area: number;
-  type: string;
-  image: string;
-}
+import { properties as propertiesData } from "../data/properties";
 
 const Properties: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filterType, setFilterType] = useState<string>("all");
 
-  const propertyTitleKeys: { [key: number]: string } = {
-    1: "properties.propertyTitles.modernApartmentTrastevere",
-    2: "properties.propertyTitles.luxuryVillaNearColosseum",
-    3: "properties.propertyTitles.studentStudioNearSapienza",
-    4: "properties.propertyTitles.cozyApartmentCentroStorico",
-    5: "properties.propertyTitles.elegantPenthouseWithTerrace",
-    6: "properties.propertyTitles.sharedStudentRoom",
-  };
-
-  const properties: Property[] = [
-    {
-      id: 1,
-      title: t(propertyTitleKeys[1]),
-      location: "Trastevere, Rome",
-      price: 1200,
-      bedrooms: 2,
-      bathrooms: 1,
-      area: 75,
-      type: "rent",
-      image:
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-    },
-    {
-      id: 2,
-      title: t(propertyTitleKeys[2]),
-      location: "Monti, Rome",
-      price: 450000,
-      bedrooms: 4,
-      bathrooms: 3,
-      area: 200,
-      type: "sale",
-      image:
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-    },
-    {
-      id: 3,
-      title: t(propertyTitleKeys[3]),
-      location: "San Lorenzo, Rome",
-      price: 650,
-      bedrooms: 1,
-      bathrooms: 1,
-      area: 35,
-      type: "rent",
-      image:
-        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800",
-    },
-    {
-      id: 4,
-      title: t(propertyTitleKeys[4]),
-      location: "Centro Storico, Rome",
-      price: 1800,
-      bedrooms: 3,
-      bathrooms: 2,
-      area: 100,
-      type: "rent",
-      image:
-        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    },
-    {
-      id: 5,
-      title: t(propertyTitleKeys[5]),
-      location: "Prati, Rome",
-      price: 680000,
-      bedrooms: 3,
-      bathrooms: 2,
-      area: 150,
-      type: "sale",
-      image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-    },
-    {
-      id: 6,
-      title: t(propertyTitleKeys[6]),
-      location: "Testaccio, Rome",
-      price: 450,
-      bedrooms: 1,
-      bathrooms: 1,
-      area: 20,
-      type: "rent",
-      image:
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-    },
-  ];
+  const properties = propertiesData.map((prop) => ({
+    ...prop,
+    title: t(prop.titleKey),
+  }));
 
   const filteredProperties = properties.filter((property) => {
     const matchesSearch =
@@ -436,7 +346,17 @@ const Properties: React.FC = () => {
                       </Box>
                     </CardContent>
                     <CardActions sx={{ p: 2, pt: 0 }}>
-                      <Button size="small" color="primary" fullWidth>
+                      <Button
+                        size="small"
+                        color="primary"
+                        fullWidth
+                        component="a"
+                        href={`/${i18n.language || "en"}/properties/${property.id}/${property.slug}`}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.location.href = `/${i18n.language || "en"}/properties/${property.id}/${property.slug}`;
+                        }}
+                      >
                         {t("properties.viewDetails")}
                       </Button>
                     </CardActions>

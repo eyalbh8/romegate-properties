@@ -1,16 +1,24 @@
 /* TEAM */
 Developer: Romegate Development Team
 Contact: info@romegate.it
+Twitter: @romegate
 Location: Rome, Italy
 
 /* THANKS */
-MUI Team
-React Team
-Framer Motion
+MUI Team - Material-UI component library
+React Team - React framework
+Framer Motion - Animation library
+i18next - Internationalization
+React Router - Navigation
+React Helmet Async - SEO meta tags
 
 /* SITE */
-Last update: 2025/01/05
-Standards: HTML5, CSS3, JavaScript ES6+
-Components: React, Material-UI, TypeScript
-Software: Visual Studio Code
+Last update: 2026/02/15
+Languages: English, Italian, Hebrew
+Standards: HTML5, CSS3, JavaScript ES6+, TypeScript
+Components: React 18, Material-UI 5, Framer Motion
+IDE: Visual Studio Code, Cursor
+Hosting: TBD
+Analytics: Google Analytics 4 (to be configured)
+SEO: Optimized for search engines and AI crawlers
 

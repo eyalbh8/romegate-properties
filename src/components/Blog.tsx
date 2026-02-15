@@ -10,13 +10,13 @@ import {
   CardActions,
   Button,
   Chip,
-  Avatar,
   Stack,
 } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PersonIcon from "@mui/icons-material/Person";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { blogPosts as blogPostsData } from "../data/blogPosts";
 
 interface BlogPost {
   id: number;
@@ -30,7 +30,7 @@ interface BlogPost {
 }
 
 const Blog: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const blogPostKeys: {
     [key: number]: { title: string; excerpt: string; category: string };
@@ -436,7 +436,13 @@ const Blog: React.FC = () => {
                       </Typography>
                     </CardContent>
                     <CardActions sx={{ p: 2, pt: 0 }}>
-                      <Button size="small" color="primary" fullWidth>
+                      <Button
+                        size="small"
+                        color="primary"
+                        fullWidth
+                        component="a"
+                        href={`/${i18n.language || "en"}/blog/${blogPostsData[index]?.slug || post.id}`}
+                      >
                         {t("blog.readMore")}
                       </Button>
                     </CardActions>

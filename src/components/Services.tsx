@@ -15,6 +15,7 @@ import BuildIcon from "@mui/icons-material/Build";
 import SchoolIcon from "@mui/icons-material/School";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { services as servicesData } from "../data/services";
 
 interface Service {
   icon: React.ReactNode;
@@ -23,7 +24,7 @@ interface Service {
 }
 
 const Services: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const services: Service[] = [
     {
       icon: <HomeIcon sx={{ fontSize: 60, color: "white" }} />,
@@ -212,7 +213,14 @@ const Services: React.FC = () => {
                       </Typography>
                     </CardContent>
                     <CardActions sx={{ justifyContent: "center", pb: 2 }}>
-                      <Button size="small" color="primary">
+                      <Button
+                        size="small"
+                        color="primary"
+                        component="a"
+                        href={`/${i18n.language || "en"}/services/${
+                          servicesData[index]?.slug || service.title.toLowerCase().replace(/\s+/g, "-")
+                        }`}
+                      >
                         {t("services.learnMore")}
                       </Button>
                     </CardActions>

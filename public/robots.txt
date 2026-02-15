@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Crawl-delay: 1
 
 # AI Crawlers
 User-agent: GPTBot
@@ -28,5 +29,7 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+# Sitemaps
 Sitemap: https://romegate.it/sitemap.xml
+Sitemap: https://romegate.it/sitemap-images.xml
 

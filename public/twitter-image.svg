@@ -1,0 +1,35 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#8B0000"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="120" r="180" fill="#A00000" opacity="0.3"/>
+  <circle cx="150" cy="555" r="140" fill="#A00000" opacity="0.3"/>
+  
+  <!-- Content container -->
+  <rect x="80" y="160" width="1040" height="355" fill="white" rx="10"/>
+  
+  <!-- Main text -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#8B0000" text-anchor="middle">
+    ROMEGATE
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="38" fill="#333333" text-anchor="middle">
+    Your Gateway to Roman Properties
+  </text>
+  
+  <!-- Services -->
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="26" fill="#666666" text-anchor="middle">
+    Real Estate in Rome, Italy
+  </text>
+  
+  <text x="600" y="455" font-family="Arial, sans-serif" font-size="24" fill="#666666" text-anchor="middle">
+    Buy " Sell " Manage " Student Accommodation
+  </text>
+  
+  <!-- Website -->
+  <text x="600" y="600" font-family="Arial, sans-serif" font-size="30" fill="white" text-anchor="middle">
+    romegate.it
+  </text>
+</svg>
