@@ -231,7 +231,7 @@ const UniqueSection: React.FC = () => {
                                 : image.title === "Student Community"
                                 ? "Student accommodation and housing near universities in Rome"
                                 : "Beautiful real estate properties and apartments in Rome, Italy"
-                            } - Romegate Properties showcase`}
+                            } - Vero Properties showcase`}
                             loading="lazy"
                             style={{
                               borderRadius: "8px",

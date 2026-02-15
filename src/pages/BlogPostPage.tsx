@@ -27,7 +27,7 @@ const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   const post = getBlogPostBySlug(slug || "");
 
@@ -58,7 +58,7 @@ const BlogPostPage: React.FC = () => {
     },
     publisher: {
       "@type": "Organization",
-      name: "Romegate Properties",
+      name: "Vero Properties",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/logo.png`,
@@ -73,7 +73,7 @@ const BlogPostPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{title} | Romegate Blog</title>
+        <title>{title} | Vero Blog</title>
         <meta name="description" content={excerpt} />
         <link
           rel="canonical"

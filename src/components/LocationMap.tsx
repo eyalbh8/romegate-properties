@@ -13,7 +13,7 @@ interface LocationMapProps {
 const LocationMap: React.FC<LocationMapProps> = ({
   lat = 41.9028,
   lng = 12.4964,
-  title = "Romegate Properties",
+  title = "Vero Properties",
   address = "Via del Corso 123, 00186 Rome, Italy",
 }) => {
   const { t } = useTranslation();

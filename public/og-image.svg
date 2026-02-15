@@ -11,12 +11,12 @@
   
   <!-- Main text -->
   <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#8B0000" text-anchor="middle">
-    ROMEGATE
+    VERO
   </text>
   
   <!-- Subtitle -->
   <text x="600" y="340" font-family="Arial, sans-serif" font-size="36" fill="#333333" text-anchor="middle">
-    Your Gateway to Roman Properties
+    Authentic Italian Properties
   </text>
   
   <!-- Services -->
@@ -26,6 +26,6 @@
   
   <!-- Website -->
   <text x="600" y="560" font-family="Arial, sans-serif" font-size="28" fill="white" text-anchor="middle">
-    romegate.it
+    vero.it
   </text>
 </svg>

@@ -42,7 +42,7 @@ const ReviewSection: React.FC = () => {
       rating: 5,
       date: "2025-12-10",
       reviewBody:
-        "Great experience working with Romegate. They made the property search process easy and helped with all the paperwork.",
+        "Great experience working with Vero. They made the property search process easy and helped with all the paperwork.",
       avatar: "T",
     },
     {
@@ -72,7 +72,7 @@ const ReviewSection: React.FC = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "RealEstateAgent",
-            name: "Romegate Properties",
+            name: "Vero Properties",
             aggregateRating: aggregateRating,
           }),
         }}

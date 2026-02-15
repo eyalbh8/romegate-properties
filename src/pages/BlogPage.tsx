@@ -26,7 +26,7 @@ import { blogPosts } from "../data/blogPosts";
 const BlogPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   const categories = [
     t("blog.categories.all"),
@@ -71,7 +71,7 @@ const BlogPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{t("blog.title")} | Romegate Properties</title>
+        <title>{t("blog.title")} | Vero Properties</title>
         <meta
           name="description"
           content={t("blog.metaDescription", {

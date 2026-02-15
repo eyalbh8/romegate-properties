@@ -10,7 +10,7 @@ const SEOHead: React.FC = () => {
   const currentLang = lang || i18n.language || "en";
 
   // Base URL
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   // Language-specific URLs
   const langUrls: Record<string, string> = {
@@ -46,8 +46,8 @@ const SEOHead: React.FC = () => {
   const realEstateAgentSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    name: "Romegate Properties",
-    alternateName: "Romegate",
+    name: "Vero Properties",
+    alternateName: "Vero",
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     description: description,
@@ -56,7 +56,7 @@ const SEOHead: React.FC = () => {
       "@type": "ContactPoint",
       telephone: "+39-06-1234-5678",
       contactType: "customer service",
-      email: "info@romegate.it",
+      email: "info@vero.it",
       availableLanguage: [
         "English",
         "Italian",
@@ -75,9 +75,9 @@ const SEOHead: React.FC = () => {
       addressCountry: "IT",
     },
     areaServed: {
-      "@type": "City",
-      name: "Rome",
-      "@id": "https://www.wikidata.org/wiki/Q220",
+      "@type": "Country",
+      name: "Italy",
+      "@id": "https://www.wikidata.org/wiki/Q38",
     },
     serviceType: [
       "Property Sales",
@@ -88,32 +88,32 @@ const SEOHead: React.FC = () => {
     ],
     priceRange: "$$",
     sameAs: [
-      "https://www.facebook.com/romegate",
-      "https://www.instagram.com/romegate",
-      "https://www.linkedin.com/company/romegate",
+      "https://www.facebook.com/vero",
+      "https://www.instagram.com/vero",
+      "https://www.linkedin.com/company/vero",
     ],
   };
 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Romegate Properties",
-    alternateName: "Romegate",
+    name: "Vero Properties",
+    alternateName: "Vero",
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     description: description,
     inLanguage: currentLang,
     sameAs: [
-      "https://www.facebook.com/romegate",
-      "https://www.instagram.com/romegate",
-      "https://www.linkedin.com/company/romegate",
+      "https://www.facebook.com/vero",
+      "https://www.instagram.com/vero",
+      "https://www.linkedin.com/company/vero",
     ],
   };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Romegate Properties",
+    name: "Vero Properties",
     image: `${baseUrl}/logo.png`,
     "@id": baseUrl,
     url: baseUrl,
@@ -141,9 +141,9 @@ const SEOHead: React.FC = () => {
       closes: "18:00",
     },
     sameAs: [
-      "https://www.facebook.com/romegate",
-      "https://www.instagram.com/romegate",
-      "https://www.linkedin.com/company/romegate",
+      "https://www.facebook.com/vero",
+      "https://www.instagram.com/vero",
+      "https://www.linkedin.com/company/vero",
     ],
   };
 
@@ -166,7 +166,7 @@ const SEOHead: React.FC = () => {
       <meta name="ai-language" content={currentLang} />
       <meta
         name="ai-summary"
-        content={`Romegate Properties is a premier real estate agency in Rome, Italy, specializing in buying, selling, and managing properties with a focus on student accommodation for Erasmus and international students. Services include property sales, rentals, management, and specialized student housing in neighborhoods like Trastevere, San Lorenzo, Testaccio, and Centro Storico. Available in ${
+        content={`Vero Properties is a premier real estate agency operating throughout Italy, specializing in buying, selling, and managing properties with a focus on student accommodation for Erasmus and international students. Services include property sales, rentals, management, and specialized student housing across Italian cities including Rome (neighborhoods like Trastevere, San Lorenzo, Testaccio, and Centro Storico). Available in ${
           languageNames[currentLang] || "English"
         }.`}
       />
@@ -189,7 +189,7 @@ const SEOHead: React.FC = () => {
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content={ogLocale} />
-      <meta property="og:site_name" content="Romegate Properties" />
+      <meta property="og:site_name" content="Vero Properties" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

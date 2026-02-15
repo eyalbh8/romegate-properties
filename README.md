@@ -1,1 +1,1 @@
-# romegate-properties
+# vero-properties

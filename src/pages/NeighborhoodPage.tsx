@@ -29,7 +29,7 @@ const NeighborhoodPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   const neighborhood = getNeighborhoodBySlug(slug || "");
 
@@ -67,7 +67,7 @@ const NeighborhoodPage: React.FC = () => {
     <>
       <Helmet>
         <title>
-          {name} - {t("neighborhoods.title")} | Romegate Properties
+          {name} - {t("neighborhoods.title")} | Vero Properties
         </title>
         <meta name="description" content={fullDescription} />
         <link

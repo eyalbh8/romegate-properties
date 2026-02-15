@@ -31,7 +31,7 @@ const ServiceDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   const service = getServiceBySlug(slug || "");
 
@@ -48,7 +48,7 @@ const ServiceDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{title} | Romegate Properties</title>
+        <title>{title} | Vero Properties</title>
         <meta name="description" content={description} />
         <link
           rel="canonical"

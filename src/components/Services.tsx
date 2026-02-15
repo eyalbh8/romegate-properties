@@ -81,12 +81,12 @@ const Services: React.FC = () => {
                 serviceType: service.title,
                 provider: {
                   "@type": "RealEstateAgent",
-                  name: "Romegate Properties",
-                  url: "https://romegate.it",
+                  name: "Vero Properties",
+                  url: "https://vero.it",
                 },
                 areaServed: {
-                  "@type": "City",
-                  name: "Rome",
+                  "@type": "Country",
+                  name: "Italy",
                 },
                 description: service.description,
                 keywords: [

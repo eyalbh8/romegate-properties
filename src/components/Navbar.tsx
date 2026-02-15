@@ -137,7 +137,7 @@ const Navbar: React.FC = () => {
             variant="h5"
             component="div"
             role="banner"
-            aria-label="Romegate logo - Home"
+            aria-label="Vero logo - Home"
             sx={{
               flexGrow: { xs: 1, md: 0 },
               fontWeight: 700,

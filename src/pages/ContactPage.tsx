@@ -10,17 +10,17 @@ import Contact from "../components/Contact";
 const ContactPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   return (
     <>
       <Helmet>
-        <title>{t("common.contact")} | Romegate Properties</title>
+        <title>{t("common.contact")} | Vero Properties</title>
         <meta
           name="description"
           content={t("contact.metaDescription", {
             defaultValue:
-              "Get in touch with Romegate Properties. Contact us for property inquiries, viewings, and expert advice on real estate in Rome.",
+              "Get in touch with Vero Properties. Contact us for property inquiries, viewings, and expert advice on real estate in Italy.",
           })}
         />
         <link rel="canonical" href={`${baseUrl}/${currentLang}/contact`} />

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Vero Properties Blog</title>
+    <link>https://vero.it/en/blog</link>
+    <description>Latest news, insights, and guides on Italian real estate, student accommodation, and property investment</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Feb 2026 22:37:08 GMT</lastBuildDate>
+    <atom:link href="https://vero.it/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://vero.it/logo.png</url>
+      <title>Vero Properties</title>
+      <link>https://vero.it/en/blog</link>
+    </image>
+
+    <item>
+      <title>Top 5 Neighborhoods for Erasmus Students in Rome</title>
+      <link>https://vero.it/en/blog/top-5-neighborhoods-erasmus-students-rome</link>
+      <guid isPermaLink="true">https://vero.it/en/blog/top-5-neighborhoods-erasmus-students-rome</guid>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Maria Rossi</dc:creator>
+      <category>Student Life</category>
+      <description>Discover the best neighborhoods in Rome for international students...</description>
+      <content:encoded><![CDATA[
+        <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800" alt="Top 5 Neighborhoods for Erasmus Students in Rome" />
+        <p>Discover the best neighborhoods in Rome for international students...</p>
+        <p><a href="https://vero.it/en/blog/top-5-neighborhoods-erasmus-students-rome">Read full article</a></p>
+      ]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Understanding Rome&apos;s Rental Market in 2026</title>
+      <link>https://vero.it/en/blog/understanding-rental-market-rome-2026</link>
+      <guid isPermaLink="true">https://vero.it/en/blog/understanding-rental-market-rome-2026</guid>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Giuseppe Bianchi</dc:creator>
+      <category>Real Estate</category>
+      <description>A comprehensive guide to the current state of Rome&apos;s rental market...</description>
+      <content:encoded><![CDATA[
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Understanding Rome&apos;s Rental Market in 2026" />
+        <p>A comprehensive guide to the current state of Rome's rental market...</p>
+        <p><a href="https://vero.it/en/blog/understanding-rental-market-rome-2026">Read full article</a></p>
+      ]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Property Investment Trends in Rome for 2026</title>
+      <link>https://vero.it/en/blog/property-investment-trends-rome-2026</link>
+      <guid isPermaLink="true">https://vero.it/en/blog/property-investment-trends-rome-2026</guid>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Francesca Romano</dc:creator>
+      <category>Investment</category>
+      <description>Explore the latest trends in Rome&apos;s property investment landscape...</description>
+      <content:encoded><![CDATA[
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Property Investment Trends in Rome for 2026" />
+        <p>Explore the latest trends in Rome's property investment landscape...</p>
+        <p><a href="https://vero.it/en/blog/property-investment-trends-rome-2026">Read full article</a></p>
+      ]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Erasmus Success Stories from Rome</title>
+      <link>https://vero.it/en/blog/erasmus-success-stories-rome</link>
+      <guid isPermaLink="true">https://vero.it/en/blog/erasmus-success-stories-rome</guid>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 GMT</pubDate>
+      <dc:creator>Sofia Conti</dc:creator>
+      <category>Student Life</category>
+      <description>Hear from students who found their perfect home with Vero...</description>
+      <content:encoded><![CDATA[
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Erasmus Success Stories from Rome" />
+        <p>Hear from students who found their perfect home with Vero...</p>
+        <p><a href="https://vero.it/en/blog/erasmus-success-stories-rome">Read full article</a></p>
+      ]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Navigating Property Laws in Italy for Foreigners</title>
+      <link>https://vero.it/en/blog/navigating-property-laws-italy-foreigners</link>
+      <guid isPermaLink="true">https://vero.it/en/blog/navigating-property-laws-italy-foreigners</guid>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
+      <dc:creator>Marco De Luca</dc:creator>
+      <category>Legal</category>
+      <description>Everything you need to know about Italian property law as a foreigner...</description>
+      <content:encoded><![CDATA[
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800" alt="Navigating Property Laws in Italy for Foreigners" />
+        <p>Everything you need to know about Italian property law as a foreigner...</p>
+        <p><a href="https://vero.it/en/blog/navigating-property-laws-italy-foreigners">Read full article</a></p>
+      ]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>Best Time to Buy or Rent in Rome</title>
+      <link>https://vero.it/en/blog/best-time-buy-rent-rome</link>
+      <guid isPermaLink="true">https://vero.it/en/blog/best-time-buy-rent-rome</guid>
+      <pubDate>Sun, 15 Dec 2024 00:00:00 GMT</pubDate>
+      <dc:creator>Elena Ferrari</dc:creator>
+      <category>Real Estate</category>
+      <description>Timing is everything in real estate. Learn when to make your move...</description>
+      <content:encoded><![CDATA[
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800" alt="Best Time to Buy or Rent in Rome" />
+        <p>Timing is everything in real estate. Learn when to make your move...</p>
+        <p><a href="https://vero.it/en/blog/best-time-buy-rent-rome">Read full article</a></p>
+      ]]></content:encoded>
+      <enclosure url="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800" type="image/jpeg"/>
+    </item>
+  </channel>
+</rss>

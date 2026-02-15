@@ -102,10 +102,10 @@ export const generateBlogPostSchema = (post: BlogPostSchema): object => {
     },
     publisher: {
       "@type": "Organization",
-      name: "Romegate Properties",
+      name: "Vero Properties",
       logo: {
         "@type": "ImageObject",
-        url: "https://romegate.it/logo.png",
+        url: "https://vero.it/logo.png",
       },
     },
     mainEntityOfPage: {

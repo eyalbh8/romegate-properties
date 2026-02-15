@@ -1,29 +1,29 @@
-# Romegate Properties - Real Estate in Rome
+# Vero Properties - Real Estate in Italy
 
 ## About
-Romegate is a premier real estate agency specializing in buying, selling, and managing properties in Rome, Italy. We provide specialized services for Erasmus students and international clients seeking accommodation in the Eternal City.
+Vero is a premier real estate agency specializing in buying, selling, and managing properties throughout Italy. We provide specialized services for Erasmus students and international clients seeking accommodation across Italian cities including Rome, Milan, Florence, and more.
 
 ## Services
-- Property Buying: Expert guidance through Rome's real estate market
+- Property Buying: Expert guidance through Italy's real estate market
 - Property Selling: Professional marketing, valuation, and negotiation
 - Property Management: Complete management services including maintenance and tenant relations
 - Student Accommodation: Specialized services for Erasmus and international students
 
 ## Key Features
-- Deep knowledge of Roman neighborhoods and real estate market
+- Deep knowledge of Italian neighborhoods and real estate market
 - Multilingual support (English, Italian, Spanish, French, German)
 - Prime locations near universities and public transport
 - Fast and efficient service, especially for students
 - Personalized service for all clients
 
 ## Contact
-- Email: info@romegate.it
+- Email: info@vero.it
 - Phone: +39 06 1234 5678
 - Address: Via del Corso 123, 00186 Rome, Italy
-- Website: https://romegate.it
+- Website: https://vero.it
 
 ## Target Audience
-- Property buyers and sellers in Rome
+- Property buyers and sellers in Italy
 - Erasmus students seeking accommodation
 - International students and expatriates
 - Property investors
@@ -41,7 +41,7 @@ Real estate listings, student housing guides, market insights, property manageme
 English, Italian, Hebrew, Spanish, French, German
 
 ## Service Areas
-Rome, Italy - All neighborhoods including Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio
+Italy - All regions and cities including Rome (Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio), Milan, Florence, and other major Italian cities
 
 ## Content Structure and Hierarchy
 
@@ -49,7 +49,7 @@ Rome, Italy - All neighborhoods including Trastevere, Monti, Centro Storico, Pra
 The website follows a single-page application (SPA) structure with hash-based navigation:
 - Home section (#home): Hero section with main call-to-action
 - Services section (#services): Four main service offerings
-- Unique section (#about): What makes Romegate unique
+- Unique section (#about): What makes Vero unique
 - Erasmus section (#erasmus): Specialized student services
 - Properties section (#properties): Property listings with filtering
 - Blog section (#blog): News and insights articles
@@ -79,9 +79,9 @@ The website follows a single-page application (SPA) structure with hash-based na
 ### Multilingual Content Structure
 
 #### Language-Specific URL Patterns
-- English: https://romegate.it/en/
-- Italian: https://romegate.it/it/
-- Hebrew: https://romegate.it/he/
+- English: https://vero.it/en/
+- Italian: https://vero.it/it/
+- Hebrew: https://vero.it/he/
 
 #### Content Translation Relationships
 - All content sections are available in all three languages (en, it, he)
@@ -205,8 +205,8 @@ The website follows a single-page application (SPA) structure with hash-based na
 - **Consulting**: Real estate consulting services
 
 ## Neighborhoods Covered
-Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio, and all other neighborhoods in Rome, Italy.
+Throughout Italy - Major cities and neighborhoods including Rome (Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio), Milan, Florence, Venice, Naples, and more.
 
 ## Geographic Coverage
-Primary focus: Rome, Lazio, Italy
-Coordinates: Latitude 41.9028, Longitude 12.4964
+Primary focus: Italy nationwide
+Main office: Rome, Lazio, Italy (Latitude 41.9028, Longitude 12.4964)

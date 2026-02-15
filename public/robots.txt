@@ -30,6 +30,6 @@ User-agent: Applebot-Extended
 Allow: /
 
 # Sitemaps
-Sitemap: https://romegate.it/sitemap.xml
-Sitemap: https://romegate.it/sitemap-images.xml
+Sitemap: https://vero.it/sitemap.xml
+Sitemap: https://vero.it/sitemap-images.xml
 

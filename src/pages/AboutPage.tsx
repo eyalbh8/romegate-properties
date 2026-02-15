@@ -11,17 +11,17 @@ import ErasmusSection from "../components/ErasmusSection";
 const AboutPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   return (
     <>
       <Helmet>
-        <title>{t("common.about")} | Romegate Properties</title>
+        <title>{t("common.about")} | Vero Properties</title>
         <meta
           name="description"
           content={t("about.metaDescription", {
             defaultValue:
-              "Learn about Romegate Properties - Your trusted real estate partner in Rome specializing in property sales, rentals, management, and student accommodation.",
+              "Learn about Vero Properties - Your trusted real estate partner in Italy specializing in property sales, rentals, management, and student accommodation.",
           })}
         />
         <link rel="canonical" href={`${baseUrl}/${currentLang}/about`} />

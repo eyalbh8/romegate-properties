@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const baseUrl = "https://romegate.it";
+const baseUrl = "https://vero.it";
 
 const propertyImages = [
   {

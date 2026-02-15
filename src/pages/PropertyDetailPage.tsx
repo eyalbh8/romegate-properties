@@ -35,7 +35,7 @@ const PropertyDetailPage: React.FC = () => {
   const { slug, id } = useParams<{ slug: string; id: string }>();
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   const property = getPropertyBySlug(slug || "");
 
@@ -104,7 +104,7 @@ const PropertyDetailPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{title} | Romegate Properties</title>
+        <title>{title} | Vero Properties</title>
         <meta name="description" content={description} />
         <link
           rel="canonical"

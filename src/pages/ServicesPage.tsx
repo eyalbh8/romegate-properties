@@ -10,17 +10,17 @@ import Services from "../components/Services";
 const ServicesPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   return (
     <>
       <Helmet>
-        <title>{t("services.title")} | Romegate Properties</title>
+        <title>{t("services.title")} | Vero Properties</title>
         <meta
           name="description"
           content={t("services.metaDescription", {
             defaultValue:
-              "Comprehensive real estate services in Rome: property buying, selling, management, and student accommodation. Expert guidance for all your property needs.",
+              "Comprehensive real estate services in Italy: property buying, selling, management, and student accommodation. Expert guidance for all your property needs.",
           })}
         />
         <link rel="canonical" href={`${baseUrl}/${currentLang}/services`} />

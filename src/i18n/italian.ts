@@ -97,13 +97,13 @@ export default {
     whatOurStudentsSay: "Cosa Dicono i Nostri Studenti",
     testimonials: {
       maria: {
-        text: "Romegate ha reso la ricerca di alloggi a Roma così facile! Hanno capito esattamente di cosa avevo bisogno come studentessa Erasmus e mi hanno trovato il posto perfetto vicino alla mia università.",
+        text: "Vero ha reso la ricerca di alloggi a Roma così facile! Hanno capito esattamente di cosa avevo bisogno come studentessa Erasmus e mi hanno trovato il posto perfetto vicino alla mia università.",
       },
       thomas: {
-        text: "Il team di Romegate parla più lingue e mi ha aiutato con tutte le pratiche burocratiche. Mi sono sentito supportato durante tutto il mio soggiorno a Roma.",
+        text: "Il team di Vero parla più lingue e mi ha aiutato con tutte le pratiche burocratiche. Mi sono sentito supportato durante tutto il mio soggiorno a Roma.",
       },
       sophie: {
-        text: "Come studentessa Erasmus, avevo bisogno di termini di affitto flessibili. Romegate mi ha trovato un grande appartamento con un contratto semestrale. Lo consiglio vivamente!",
+        text: "Come studentessa Erasmus, avevo bisogno di termini di affitto flessibili. Vero mi ha trovato un grande appartamento con un contratto semestrale. Lo consiglio vivamente!",
       },
     },
   },
@@ -254,11 +254,11 @@ export default {
     addressLine1: "Via del Corso 123",
     addressLine2: "00186 Roma, Italia",
     phoneNumber: "+39 06 1234 5678",
-    emailAddress: "info@romegate.it",
+    emailAddress: "info@vero.it",
   },
   footer: {
     description:
-      "Il tuo partner affidabile per immobili a Roma. Specializzati in acquisto, vendita e gestione proprietà con focus su alloggi per studenti.",
+      "Il tuo partner affidabile per immobili in Italia. Specializzati in acquisto, vendita e gestione proprietà con focus su alloggi per studenti.",
     quickLinks: "Link Rapidi",
     services: "Servizi",
     contact: "Contatti",
@@ -267,7 +267,7 @@ export default {
     propertyManagement: "Gestione Proprietà",
     studentAccommodation: "Alloggi per Studenti",
     aboutUs: "Chi Siamo",
-    copyright: "Romegate Properties. Tutti i diritti riservati.",
+    copyright: "Vero Properties. Tutti i diritti riservati.",
   },
   common: {
     home: "Home",
@@ -275,10 +275,10 @@ export default {
   },
   seo: {
     title:
-      "Romegate - La Tua Porta d'Accesso alle Proprietà di Roma | Immobiliare a Roma",
+      "Vero - Proprietà Italiane Autentiche | Immobiliare in Italia",
     description:
-      "Romegate - La Tua Porta d'Accesso alle Proprietà di Roma. Acquista, vendi e gestisci proprietà a Roma. Servizi specializzati per studenti Erasmus e clienti internazionali.",
+      "Vero - Proprietà Italiane Autentiche. Acquista, vendi e gestisci proprietà in tutta Italia. Servizi specializzati per studenti Erasmus e clienti internazionali.",
     keywords:
-      "immobiliare Roma, proprietà Roma, alloggi Erasmus, alloggi studenti Roma, comprare proprietà Roma, vendere proprietà Roma, gestione proprietà Roma, appartamenti Roma, agenzia immobiliare Roma",
+      "immobiliare Italia, proprietà Italia, alloggi Erasmus, alloggi studenti Italia, comprare proprietà Italia, vendere proprietà Italia, gestione proprietà Italia, appartamenti Italia, agenzia immobiliare Italia, proprietà Roma, proprietà Milano, proprietà Firenze",
   },
 };

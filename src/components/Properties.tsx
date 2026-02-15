@@ -119,7 +119,7 @@ const Properties: React.FC = () => {
                   price: property.price,
                   priceCurrency: "EUR",
                   availability: "https://schema.org/InStock",
-                  url: `https://romegate.it/#properties?id=${property.id}`,
+                  url: `https://vero.it/#properties?id=${property.id}`,
                   priceSpecification: {
                     "@type": "UnitPriceSpecification",
                     price: property.price,

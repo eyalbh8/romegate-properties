@@ -57,12 +57,12 @@ const PropertiesPage: React.FC = () => {
   };
 
   const currentLang = i18n.language || "en";
-  const baseUrl = "https://romegate.it";
+  const baseUrl = "https://vero.it";
 
   return (
     <>
       <Helmet>
-        <title>{t("properties.title")} | Romegate Properties</title>
+        <title>{t("properties.title")} | Vero Properties</title>
         <meta
           name="description"
           content={t("properties.metaDescription", {

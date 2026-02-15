@@ -94,13 +94,13 @@ export default {
     whatOurStudentsSay: "What Our Students Say",
     testimonials: {
       maria: {
-        text: "Romegate made finding accommodation in Rome so easy! They understood exactly what I needed as an Erasmus student and found me the perfect place near my university.",
+        text: "Vero made finding accommodation in Rome so easy! They understood exactly what I needed as an Erasmus student and found me the perfect place near my university.",
       },
       thomas: {
-        text: "The team at Romegate speaks multiple languages and helped me with all the paperwork. I felt supported throughout my entire stay in Rome.",
+        text: "The team at Vero speaks multiple languages and helped me with all the paperwork. I felt supported throughout my entire stay in Rome.",
       },
       sophie: {
-        text: "As an Erasmus student, I needed flexible lease terms. Romegate found me a great apartment with a semester-based lease. Highly recommend!",
+        text: "As an Erasmus student, I needed flexible lease terms. Vero found me a great apartment with a semester-based lease. Highly recommend!",
       },
     },
   },
@@ -247,11 +247,11 @@ export default {
     addressLine1: "Via del Corso 123",
     addressLine2: "00186 Rome, Italy",
     phoneNumber: "+39 06 1234 5678",
-    emailAddress: "info@romegate.it",
+    emailAddress: "info@vero.it",
   },
   footer: {
     description:
-      "Your trusted partner for real estate in Rome. Specializing in buying, selling, and managing properties with a focus on student accommodation.",
+      "Your trusted partner for real estate in Italy. Specializing in buying, selling, and managing properties with a focus on student accommodation.",
     quickLinks: "Quick Links",
     services: "Services",
     contact: "Contact",
@@ -260,17 +260,17 @@ export default {
     propertyManagement: "Property Management",
     studentAccommodation: "Student Accommodation",
     aboutUs: "About Us",
-    copyright: "Romegate Properties. All rights reserved.",
+    copyright: "Vero Properties. All rights reserved.",
   },
   common: {
     home: "Home",
     minRead: "min read",
   },
   seo: {
-    title: "Romegate - Your Gateway to Roman Properties | Real Estate in Rome",
+    title: "Vero - Authentic Italian Properties | Real Estate in Italy",
     description:
-      "Romegate - Your Gateway to Roman Properties. Buy, sell, and manage properties in Rome. Specialized services for Erasmus students and international clients.",
+      "Vero - Authentic Italian Properties. Buy, sell, and manage properties throughout Italy. Specialized services for Erasmus students and international clients.",
     keywords:
-      "real estate Rome, property Rome, Erasmus accommodation, student housing Rome, buy property Rome, sell property Rome, property management Rome, Rome apartments, Rome real estate agency",
+      "real estate Italy, property Italy, Erasmus accommodation, student housing Italy, buy property Italy, sell property Italy, property management Italy, Italian apartments, Italy real estate agency, Rome properties, Milan properties, Florence properties",
   },
 };

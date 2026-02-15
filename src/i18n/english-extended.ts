@@ -70,7 +70,7 @@ export default {
 <p>If you're willing to spend a bit more for a central location, Monti offers boutique charm, excellent cafes, and easy access to everything Rome has to offer. Average rent: €800-1000/month.</p>
 
 <h2>Conclusion</h2>
-<p>Each neighborhood has its unique character. Visit them in person before deciding, and don't hesitate to contact Romegate Properties for expert guidance on finding your perfect Roman home.</p>`,
+<p>Each neighborhood has its unique character. Visit them in person before deciding, and don't hesitate to contact Vero Properties for expert guidance on finding your perfect Roman home.</p>`,
       },
     },
     aboutAuthor: "About the Author",
@@ -304,7 +304,7 @@ export default {
     mapTitle: "Office Location Map",
     directionsNote: "Click on the map to open in Google Maps for directions",
     metaDescription:
-      "Get in touch with Romegate Properties. Contact us for property inquiries, viewings, and expert advice on real estate in Rome.",
+      "Get in touch with Vero Properties. Contact us for property inquiries, viewings, and expert advice on real estate in Italy.",
   },
 
   // Reviews

@@ -14,8 +14,8 @@ interface SocialShareProps {
 const SocialShare: React.FC<SocialShareProps> = ({
   url = typeof window !== "undefined"
     ? window.location.href
-    : "https://romegate.it",
-  title = "Romegate Properties",
+    : "https://vero.it",
+  title = "Vero Properties",
   description = "Your Gateway to Roman Properties",
 }) => {
   const encodedUrl = encodeURIComponent(url);

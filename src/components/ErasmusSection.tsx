@@ -204,7 +204,7 @@ const ErasmusSection: React.FC = () => {
                     >
                       <Avatar
                         src={testimonial.avatar}
-                        alt={`${testimonial.name}, Erasmus student from ${testimonial.country} - Testimonial about Romegate Properties student accommodation services`}
+                        alt={`${testimonial.name}, Erasmus student from ${testimonial.country} - Testimonial about Vero Properties student accommodation services`}
                         sx={{ width: 56, height: 56 }}
                       />
                       <Box>

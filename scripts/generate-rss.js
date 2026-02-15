@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const baseUrl = "https://romegate.it";
+const baseUrl = "https://vero.it";
 
 const blogPosts = [
   {
@@ -34,7 +34,7 @@ const blogPosts = [
   {
     slug: "erasmus-success-stories-rome",
     title: "Erasmus Success Stories from Rome",
-    excerpt: "Hear from students who found their perfect home with Romegate...",
+    excerpt: "Hear from students who found their perfect home with Vero...",
     author: "Sofia Conti",
     date: "2024-12-28",
     category: "Student Life",
@@ -75,15 +75,15 @@ function generateRss() {
   let rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Romegate Properties Blog</title>
+    <title>Vero Properties Blog</title>
     <link>${baseUrl}/en/blog</link>
-    <description>Latest news, insights, and guides on Rome real estate, student accommodation, and property investment</description>
+    <description>Latest news, insights, and guides on Italian real estate, student accommodation, and property investment</description>
     <language>en</language>
     <lastBuildDate>${currentDate}</lastBuildDate>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>${baseUrl}/logo.png</url>
-      <title>Romegate Properties</title>
+      <title>Vero Properties</title>
       <link>${baseUrl}/en/blog</link>
     </image>
 `;

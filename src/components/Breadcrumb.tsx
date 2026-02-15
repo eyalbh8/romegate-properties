@@ -30,15 +30,15 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
         "@type": "ListItem",
         position: 1,
         name: t("common.home"),
-        item: "https://romegate.it",
+        item: "https://vero.it",
       },
       ...items.map((item, index) => ({
         "@type": "ListItem",
         position: index + 2,
         name: item.label,
         item: item.href
-          ? `https://romegate.it${item.href}`
-          : "https://romegate.it",
+          ? `https://vero.it${item.href}`
+          : "https://vero.it",
       })),
     ],
     numberOfItems: items.length + 1,

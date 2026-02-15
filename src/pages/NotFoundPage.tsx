@@ -15,7 +15,7 @@ const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>404 - {t("common.pageNotFound")} | Romegate Properties</title>
+        <title>404 - {t("common.pageNotFound")} | Vero Properties</title>
         <meta name="robots" content="noindex" />
       </Helmet>
 
