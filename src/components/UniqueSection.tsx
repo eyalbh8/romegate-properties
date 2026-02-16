@@ -53,7 +53,7 @@ const UniqueSection: React.FC = () => {
   const images = [
     {
       img: "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=800",
-      title: "Historic Rome",
+      title: "Historic Italy",
     },
     {
       img: "https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800",
@@ -149,11 +149,12 @@ const UniqueSection: React.FC = () => {
                                     transition:
                                       "transform 0.3s, box-shadow 0.3s",
                                     "&:hover": {
-                                      transform: "translateY(-4px) scale(1.02)",
+                                      transform: "translateY(-4px)",
                                       boxShadow: 4,
                                       "& .icon-container": {
                                         backgroundColor: "primary.main",
-                                        transform: "scale(1.1) rotate(5deg)",
+                                        borderColor: "primary.main",
+                                        color: "white",
                                       },
                                     },
                                   }}
@@ -166,9 +167,11 @@ const UniqueSection: React.FC = () => {
                                       justifyContent: "center",
                                       width: 64,
                                       height: 64,
-                                      borderRadius: "50%",
-                                      backgroundColor: "primary.light",
-                                      color: "white",
+                                      borderRadius: 2,
+                                      border: "2px solid",
+                                      borderColor: "text.primary",
+                                      backgroundColor: "transparent",
+                                      color: "primary.main",
                                       mb: 2,
                                       transition: "all 0.3s ease",
                                     }}
@@ -179,14 +182,14 @@ const UniqueSection: React.FC = () => {
                                     variant="h5"
                                     component="h3"
                                     gutterBottom
-                                    sx={{ mb: 2 }}
+                                    sx={{ mb: 2, fontWeight: 600, fontSize: "1.25rem" }}
                                   >
                                     {feature.title}
                                   </Typography>
                                   <Typography
                                     variant="body1"
                                     color="text.secondary"
-                                    sx={{ flexGrow: 1 }}
+                                    sx={{ flexGrow: 1, fontSize: "0.9375rem" }}
                                   >
                                     {feature.description}
                                   </Typography>
@@ -224,13 +227,13 @@ const UniqueSection: React.FC = () => {
                             src={`${image.img}?w=400&fit=crop&auto=format`}
                             srcSet={`${image.img}?w=400&fit=crop&auto=format&dpr=2 2x`}
                             alt={`${image.title} - ${
-                              image.title === "Historic Rome"
-                                ? "Historic architecture and landmarks in Rome, Italy"
+                              image.title === "Historic Italy"
+                                ? "Historic architecture and landmarks in Italy"
                                 : image.title === "Modern Living"
-                                ? "Modern apartments and residential properties in Rome"
+                                ? "Modern apartments and residential properties in Italy"
                                 : image.title === "Student Community"
-                                ? "Student accommodation and housing near universities in Rome"
-                                : "Beautiful real estate properties and apartments in Rome, Italy"
+                                ? "Student accommodation and housing near universities in Italy"
+                                : "Beautiful real estate properties and apartments in Italy"
                             } - Vero Properties showcase`}
                             loading="lazy"
                             style={{

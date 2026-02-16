@@ -1,64 +1,89 @@
 import { createTheme } from "@mui/material/styles";
 
-// iGEO-inspired color palette - gentle, muted blue-gray tones
+// Noah's Ark–inspired palette: green accent, dark header/footer
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#2C3E50", // Muted dark blue-gray
-      light: "#34495E",
-      dark: "#1A252F",
+      main: "#398B4B", // Noah-style green (CTA, checkmarks)
+      light: "#4A856A",
+      dark: "#2d6b3a",
       contrastText: "#FFFFFF",
     },
     secondary: {
-      main: "#5A8BA8", // Soft blue-teal
-      light: "#7BA4C2",
-      dark: "#457B9D",
+      main: "#70A68F", // Lighter green (borders, secondary)
+      light: "#84C4AB",
+      dark: "#5a8b75",
       contrastText: "#FFFFFF",
     },
+    // Dark for header, footer, cookie bar
+    grey: {
+      900: "#1A1A1A",
+      800: "#212121",
+      700: "#282828",
+    },
     background: {
-      default: "#FAFBFC", // Softer white
+      default: "#FAFBFC",
       paper: "#FFFFFF",
     },
     text: {
-      primary: "#2D3436", // Soft dark gray (WCAG AA compliant)
-      secondary: "#636E72", // Gentle medium gray
+      primary: "#212121",
+      secondary: "#666666",
     },
     error: {
-      main: "#C62828", // Slightly softened error color
+      main: "#C62828",
     },
     warning: {
-      main: "#E65100", // Slightly softened warning color
+      main: "#E65100",
     },
     info: {
-      main: "#0277BD", // Slightly softened info color
+      main: "#0277BD",
     },
     success: {
-      main: "#2E7D32", // Keep success color as is
+      main: "#2E7D32",
     },
   },
   typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 700,
-      fontSize: "3.5rem",
+      fontSize: "4rem",
       "@media (max-width:600px)": {
         fontSize: "2.5rem",
       },
     },
     h2: {
-      fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2.5rem",
+      "@media (max-width:600px)": {
+        fontSize: "2rem",
+      },
     },
     h3: {
-      fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2rem",
     },
     h4: {
       fontWeight: 600,
       fontSize: "1.5rem",
+    },
+    h5: {
+      fontWeight: 600,
+      fontSize: "1.25rem",
+    },
+    h6: {
+      fontWeight: 600,
+      fontSize: "1rem",
+    },
+    body1: {
+      fontSize: "1rem",
+      lineHeight: 1.6,
+    },
+    body2: {
+      fontSize: "0.875rem",
+      lineHeight: 1.5,
     },
     button: {
       textTransform: "none",
@@ -70,7 +95,8 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 8,
-          padding: "10px 24px",
+          padding: "12px 28px",
+          fontSize: "1rem",
           "&:focus-visible": {
             outline: "3px solid",
             outlineColor: "primary.main",
@@ -84,6 +110,9 @@ const theme = createTheme({
         root: {
           borderRadius: 12,
           boxShadow: "0 2px 4px rgba(0, 0, 0, 0.08)",
+          "&:hover": {
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.12)",
+          },
         },
       },
     },

@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
         {/* Fallback image if video doesn't load */}
         <img
           src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920"
-          alt="Beautiful view of Rome, Italy - Historic architecture and cityscape"
+          alt="Beautiful view of Italy - Historic architecture and cityscape"
           loading="lazy"
           style={{
             position: "absolute",
@@ -102,10 +102,24 @@ const Hero: React.FC = () => {
             component="h1"
             gutterBottom
             sx={{
+              fontFamily: '"Great Vibes", cursive',
+              fontWeight: 400,
+              mb: 0,
+              textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+              fontSize: { xs: "3rem", sm: "4rem", md: "5rem" },
+            }}
+          >
+            Vero
+          </Typography>
+          <Typography
+            variant="h1"
+            component="span"
+            sx={{
               fontWeight: 700,
               mb: 2,
               textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
-              fontSize: { xs: "2.5rem", sm: "3.5rem", md: "4.5rem" },
+              fontSize: { xs: "2.5rem", sm: "3.5rem", md: "4rem" },
+              display: "block",
             }}
           >
             {t("hero.title")}
@@ -126,6 +140,9 @@ const Hero: React.FC = () => {
               maxWidth: "800px",
               mx: "auto",
               lineHeight: 1.6,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+              fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.25rem" },
             }}
           >
             {t("hero.subtitle")}

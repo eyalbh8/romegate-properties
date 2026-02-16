@@ -88,13 +88,13 @@ const Properties: React.FC = () => {
                 "@type": "Product",
                 name: property.title,
                 image: property.image,
-                description: `${property.title} located in ${property.location}, Rome. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area} m²`,
+                description: `${property.title} located in ${property.location}, Italy. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area} m²`,
                 keywords: [
                   property.location,
                   property.type === "rent" ? "rental" : "sale",
                   `${property.bedrooms} bedroom`,
                   `${property.area} m²`,
-                  "Rome",
+                  "Italy",
                   neighborhood,
                 ].join(", "),
                 about: relatedServices.map((service) => ({
@@ -250,7 +250,7 @@ const Properties: React.FC = () => {
                         property.type === "rent"
                           ? "rental"
                           : "property for sale"
-                      } in ${property.location}, Rome. ${
+                      } in ${property.location}, Italy. ${
                         property.area
                       } m² with ${property.bathrooms} bathroom${
                         property.bathrooms > 1 ? "s" : ""

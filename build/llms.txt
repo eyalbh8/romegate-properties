@@ -1,0 +1,212 @@
+# Vero Properties - Real Estate in Italy
+
+## About
+Vero is a premier real estate agency specializing in buying, selling, and managing properties throughout Italy. We provide specialized services for Erasmus students and international clients seeking accommodation across Italian cities including Rome, Milan, Florence, and more.
+
+## Services
+- Property Buying: Expert guidance through Italy's real estate market
+- Property Selling: Professional marketing, valuation, and negotiation
+- Property Management: Complete management services including maintenance and tenant relations
+- Student Accommodation: Specialized services for Erasmus and international students
+
+## Key Features
+- Deep knowledge of Italian neighborhoods and real estate market
+- Multilingual support (English, Italian, Spanish, French, German)
+- Prime locations near universities and public transport
+- Fast and efficient service, especially for students
+- Personalized service for all clients
+
+## Contact
+- Email: info@vero.it
+- Phone: +39 06 1234 5678
+- Address: Via del Corso 123, 00186 Rome, Italy
+- Website: https://vero.it
+
+## Target Audience
+- Property buyers and sellers in Italy
+- Erasmus students seeking accommodation
+- International students and expatriates
+- Property investors
+
+## Content Focus
+Real estate listings, student housing guides, market insights, property management services, neighborhood information, legal guidance for property transactions in Italy.
+
+## Specializations
+- Student Housing: Erasmus accommodation, semester-based leases, university proximity
+- Luxury Properties: High-end apartments and villas in prime locations
+- Investment Properties: Commercial and residential investment opportunities
+- Property Management: Full-service management for landlords
+
+## Languages Supported
+English, Italian, Hebrew, Spanish, French, German
+
+## Service Areas
+Italy - All regions and cities including Rome (Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio), Milan, Florence, and other major Italian cities
+
+## Content Structure and Hierarchy
+
+### Page Structure
+The website follows a single-page application (SPA) structure with hash-based navigation:
+- Home section (#home): Hero section with main call-to-action
+- Services section (#services): Four main service offerings
+- Unique section (#about): What makes Vero unique
+- Erasmus section (#erasmus): Specialized student services
+- Properties section (#properties): Property listings with filtering
+- Blog section (#blog): News and insights articles
+- FAQ section (#faq): Frequently asked questions
+- Contact section (#contact): Contact form and information
+
+### Content Relationships
+
+#### Properties ↔ Services
+- Property Buying service relates to: All properties for sale
+- Property Selling service relates to: All properties listed for sale
+- Property Management service relates to: Rental properties and investment properties
+- Student Accommodation service relates to: Student housing properties (rent type, near universities)
+
+#### Blog Posts ↔ Categories
+- Student Life category: Articles about student accommodation, neighborhoods for students, Erasmus guides
+- Real Estate category: Market analysis, rental guides, buying/selling information
+- Investment category: Property investment trends, market opportunities
+- Legal category: Property laws, regulations, requirements for foreigners
+
+#### Services ↔ Target Audiences
+- Student Accommodation → Erasmus students, international students
+- Property Buying → Property buyers, investors
+- Property Selling → Property owners, landlords
+- Property Management → Landlords, property owners
+
+### Multilingual Content Structure
+
+#### Language-Specific URL Patterns
+- English: https://vero.it/en/
+- Italian: https://vero.it/it/
+- Hebrew: https://vero.it/he/
+
+#### Content Translation Relationships
+- All content sections are available in all three languages (en, it, he)
+- Structured data (JSON-LD) is language-aware and reflects current language
+- Meta tags and descriptions are translated per language
+- Content relationships remain consistent across languages
+
+#### Language-Specific Structured Data
+- RealEstateAgent schema includes `inLanguage` property
+- Organization and LocalBusiness schemas have language-specific descriptions
+- All text fields in structured data reflect current language context
+
+## Data Format Specifications
+
+### Property Listing Structure
+```json
+{
+  "id": "number",
+  "title": "string (translated)",
+  "location": "string (neighborhood, Rome)",
+  "price": "number (EUR)",
+  "bedrooms": "number",
+  "bathrooms": "number",
+  "area": "number (square meters)",
+  "type": "string (rent|sale)",
+  "image": "string (URL)",
+  "amenities": "array (optional)",
+  "availability": "string (InStock|OutOfStock)"
+}
+```
+
+### Blog Post Structure
+```json
+{
+  "id": "number",
+  "title": "string (translated)",
+  "excerpt": "string (translated)",
+  "author": "string",
+  "date": "string (ISO date)",
+  "category": "string (Student Life|Real Estate|Investment|Legal)",
+  "image": "string (URL)",
+  "readTime": "string",
+  "content": "string (full article text)"
+}
+```
+
+### Service Structure
+```json
+{
+  "title": "string (translated)",
+  "description": "string (translated)",
+  "serviceType": "string (Buying Properties|Selling Properties|Property Management|Student Accommodation)",
+  "targetAudience": "array (students|investors|buyers|sellers)",
+  "relatedPropertyTypes": "array (rent|sale|student-housing|luxury|investment)"
+}
+```
+
+### FAQ Structure
+```json
+{
+  "question": "string (translated)",
+  "answer": "string (translated)"
+}
+```
+
+## Content Update Frequencies
+
+- **Property listings**: Updated daily with new properties, price changes, and availability updates
+- **Blog posts**: Updated weekly with new articles about real estate trends, student guides, and market insights
+- **Student accommodation**: Updated weekly during academic semesters, daily during peak enrollment periods (August-September, January-February)
+- **Market insights**: Updated monthly with comprehensive market analysis and trends
+- **Service information**: Updated quarterly or as services evolve
+- **FAQ content**: Updated as needed when new common questions arise
+- **Contact information**: Updated as needed when contact details change
+
+## API Endpoints (Future Implementation)
+- Properties API: /api/properties - GET endpoint for property listings with filtering
+- Search API: /api/search - POST endpoint for property search with advanced filters
+- Contact API: /api/contact - POST endpoint for contact form submissions
+- Blog API: /api/blog - GET endpoint for blog posts with pagination
+
+## Structured Data Types Used
+
+### Primary Schemas
+- RealEstateAgent: Main business entity
+- Organization: Company information
+- LocalBusiness: Physical location and business details
+- Service: Individual service offerings (4 services)
+- Product: Property listings with Offer details
+- BlogPosting: Blog articles
+- FAQPage: Frequently asked questions
+- BreadcrumbList: Navigation breadcrumbs
+- WebSite: Site-wide information with SearchAction
+
+### Schema Relationships
+- Properties (Product) link to Services via `about` property
+- Services link to Property Types via `relatedTo` property
+- Blog Posts link to Categories via `articleSection` property
+- Blog Posts mention Locations via `mentions` property
+- Services link to Target Audiences via `audience` property
+
+## Content Types
+
+### Property Listings
+- **Residential**: Apartments, houses, studios
+- **Commercial**: Business properties, offices
+- **Student Housing**: Shared rooms, studios, apartments near universities
+- **Luxury**: High-end apartments and villas
+- **Investment**: Properties for investment purposes
+
+### Blog Articles
+- **Market Analysis**: Real estate trends, market insights
+- **Guides**: Student guides, neighborhood guides, legal guides
+- **Student Resources**: Erasmus information, accommodation tips
+- **Legal Information**: Property laws, regulations, requirements
+
+### Service Descriptions
+- **Buying**: Property purchase assistance
+- **Selling**: Property sale services
+- **Management**: Full property management
+- **Consulting**: Real estate consulting services
+
+## Neighborhoods Covered
+Throughout Italy - Major cities and neighborhoods including Rome (Trastevere, Monti, Centro Storico, Prati, San Lorenzo, Testaccio), Milan, Florence, Venice, Naples, and more.
+
+## Geographic Coverage
+Primary focus: Italy nationwide
+Main office: Rome, Lazio, Italy (Latitude 41.9028, Longitude 12.4964)

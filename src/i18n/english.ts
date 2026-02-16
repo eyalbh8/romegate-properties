@@ -1,4 +1,13 @@
 export default {
+  whatsappFloat: {
+    text: "Need help choosing a property?",
+    ariaLabel: "Contact us on WhatsApp",
+  },
+  cookieConsent: {
+    text: "We use cookies to improve your experience. By continuing, you agree to our",
+    privacyPolicy: "Privacy Policy",
+    accept: "Accept",
+  },
   navbar: {
     home: "Home",
     properties: "Properties",
@@ -10,17 +19,19 @@ export default {
     skipToMainContent: "Skip to main content",
   },
   hero: {
-    title: "Your Gateway to Roman Properties",
-    subtitle: "Buying • Selling • Managing • Student Accommodation",
+    title: "Your Gateway to Italian Properties",
+    subtitle: "Buying • Selling • Managing • Student Accommodation — Across Italy",
     browseProperties: "Browse Properties",
     getStarted: "Get Started",
   },
   services: {
     title: "Our Services",
+    intro:
+      "Vero is your partner for buying, selling, and managing properties across Italy. We specialize in residential real estate and tailored services for international clients and Erasmus students.",
     buyingProperties: {
       title: "Buying Properties",
       description:
-        "Expert guidance through Rome's real estate market. Find your perfect property with our comprehensive search and personalized service.",
+        "Expert guidance through Italy's real estate market. Find your perfect property with our comprehensive search and personalized service.",
     },
     sellingProperties: {
       title: "Selling Properties",
@@ -39,12 +50,32 @@ export default {
     },
     learnMore: "Learn More",
   },
+  stats: {
+    happyClients: "Happy clients",
+    yearsExperience: "Years of experience",
+    propertiesManaged: "Properties managed",
+    cities: "Cities",
+  },
+  leadCapture: {
+    title: "Get the best offer in Italy",
+    bonus: "Bonus: neighbourhood guides and market insights",
+    subtitle: "Discover property availability, areas, and transparent pricing.",
+    name: "Name",
+    phone: "Phone",
+    email: "Email",
+    countryCode: "Code",
+    cta: "Get the Catalogue & Offers",
+    checkmark1: "On-time completion guarantee",
+    checkmark2: "7+ years of experience",
+    checkmark3: "Directly from your local partner",
+    successMessage: "Thank you! We'll send you the catalogue and offers shortly.",
+  },
   uniqueSection: {
     title: "What Makes Us Unique",
     deepRomanHeritage: {
-      title: "Deep Roman Heritage",
+      title: "Deep Italian Heritage",
       description:
-        "We understand Rome's neighborhoods, history, and real estate market like no other. Our team has lived and worked in Rome for generations.",
+        "We understand Italy's cities, neighborhoods, and real estate market like no other. Our team has lived and worked across Italy for generations.",
     },
     erasmusStudentSpecialists: {
       title: "Erasmus Student Specialists",
@@ -59,7 +90,7 @@ export default {
     primeLocations: {
       title: "Prime Locations",
       description:
-        "Properties near universities, public transport, and Rome's most vibrant neighborhoods. We know where students want to live.",
+        "Properties near universities, public transport, and vibrant neighborhoods across Italy—from Rome to Milan and Florence. We know where students want to live.",
     },
     personalizedService: {
       title: "Personalized Service",
@@ -74,7 +105,7 @@ export default {
   },
   erasmusSection: {
     title: "Specialized Services for Erasmus Students",
-    subtitle: "Your home away from home in the Eternal City",
+    subtitle: "Your home away from home in Italy",
     nearUniversities: {
       title: "Near Universities",
       description: "Properties within walking distance of major universities",
@@ -89,15 +120,15 @@ export default {
     },
     fullSupport: {
       title: "Full Support",
-      description: "Help with paperwork, utilities, and settling into Rome",
+      description: "Help with paperwork, utilities, and settling in Italy",
     },
     whatOurStudentsSay: "What Our Students Say",
     testimonials: {
       maria: {
-        text: "Vero made finding accommodation in Rome so easy! They understood exactly what I needed as an Erasmus student and found me the perfect place near my university.",
+        text: "Vero made finding accommodation in Italy so easy! They understood exactly what I needed as an Erasmus student and found me the perfect place near my university.",
       },
       thomas: {
-        text: "The team at Vero speaks multiple languages and helped me with all the paperwork. I felt supported throughout my entire stay in Rome.",
+        text: "The team at Vero speaks multiple languages and helped me with all the paperwork. I felt supported throughout my entire stay in Italy.",
       },
       sophie: {
         text: "As an Erasmus student, I needed flexible lease terms. Vero found me a great apartment with a semester-based lease. Highly recommend!",
@@ -106,7 +137,7 @@ export default {
   },
   properties: {
     title: "Featured Properties",
-    subtitle: "Discover your perfect home in Rome",
+    subtitle: "Discover your perfect home in Italy",
     searchPlaceholder: "Search by location or property name...",
     propertyType: "Property Type",
     allProperties: "All Properties",
@@ -145,29 +176,29 @@ export default {
           "Discover the best areas in Rome for international students, from affordable housing to vibrant nightlife and easy access to universities.",
       },
       understandingRentalMarket: {
-        title: "Understanding Rome's Rental Market: A Complete Guide",
+        title: "Understanding Italy's Rental Market: A Complete Guide",
         excerpt:
-          "Everything you need to know about renting in Rome, from average prices to legal requirements and what to look for in a rental contract.",
+          "Everything you need to know about renting in Italy, from average prices to legal requirements and what to look for in a rental contract.",
       },
       propertyInvestmentTrends: {
-        title: "Property Investment in Rome: Trends for 2025",
+        title: "Property Investment in Italy: Trends for 2025",
         excerpt:
-          "Explore the latest trends in Rome's real estate market, including emerging neighborhoods and investment opportunities for the year ahead.",
+          "Explore the latest trends in Italy's real estate market, including emerging neighborhoods and investment opportunities for the year ahead.",
       },
       erasmusSuccessStories: {
-        title: "Erasmus Student Success Stories: Finding Home in Rome",
+        title: "Erasmus Student Success Stories: Finding Home in Italy",
         excerpt:
-          "Read inspiring stories from Erasmus students who found their perfect accommodation in Rome and made the most of their study abroad experience.",
+          "Read inspiring stories from Erasmus students who found their perfect accommodation in Italy and made the most of their study abroad experience.",
       },
       navigatingPropertyLaws: {
         title: "Navigating Italian Property Laws: What Foreigners Need to Know",
         excerpt:
-          "A comprehensive guide to Italian property laws, regulations, and requirements for foreign buyers and renters in Rome.",
+          "A comprehensive guide to Italian property laws, regulations, and requirements for foreign buyers and renters in Italy.",
       },
       bestTimeToBuyOrRent: {
-        title: "Best Time to Buy or Rent in Rome: Seasonal Market Insights",
+        title: "Best Time to Buy or Rent in Italy: Seasonal Market Insights",
         excerpt:
-          "Learn about the best times of year to search for properties in Rome, including seasonal price fluctuations and market availability.",
+          "Learn about the best times of year to search for properties in Italy, including seasonal price fluctuations and market availability.",
       },
     },
   },
@@ -176,12 +207,12 @@ export default {
     subtitle: "Find answers to common questions about our services",
     questions: {
       findStudentAccommodation: {
-        question: "How do I find student accommodation in Rome?",
+        question: "How do I find student accommodation in Italy?",
         answer:
-          "We specialize in helping Erasmus and international students find accommodation in Rome. Simply contact us with your requirements, budget, and preferred location, and we'll match you with suitable properties near universities.",
+          "We specialize in helping Erasmus and international students find accommodation in Italy. Simply contact us with your requirements, budget, and preferred location, and we'll match you with suitable properties near universities.",
       },
       documentsForRenting: {
-        question: "What documents do I need to rent a property in Rome?",
+        question: "What documents do I need to rent a property in Italy?",
         answer:
           "Typically, you'll need a valid ID or passport, proof of income or a guarantor, and sometimes a tax code (codice fiscale). For students, we can help you navigate the requirements and provide guidance on obtaining necessary documents.",
       },
@@ -196,14 +227,14 @@ export default {
           "Yes, we provide comprehensive property management services including maintenance, tenant relations, rent collection, and financial reporting. We handle all aspects of property management so you don't have to.",
       },
       areasCovered: {
-        question: "What areas of Rome do you cover?",
+        question: "What areas of Italy do you cover?",
         answer:
-          "We cover all neighborhoods in Rome, with special expertise in areas popular with students such as Trastevere, San Lorenzo, Testaccio, and Centro Storico. We also serve luxury markets in Prati, Monti, and other prime locations.",
+          "We cover major Italian cities including Rome, Milan, Florence, Bologna, and more. In Rome we have special expertise in areas popular with students such as Trastevere, San Lorenzo, Testaccio, and Centro Storico, and we also serve luxury markets in Prati, Monti, and other prime locations.",
       },
       propertyInvestment: {
-        question: "Can you help with property investment in Rome?",
+        question: "Can you help with property investment in Italy?",
         answer:
-          "Absolutely! We provide investment consulting services, market analysis, and help identify profitable investment opportunities in Rome's real estate market. We work with both local and international investors.",
+          "Absolutely! We provide investment consulting services, market analysis, and help identify profitable investment opportunities across Italy's real estate market. We work with both local and international investors.",
       },
       languagesSpoken: {
         question: "What languages do you speak?",

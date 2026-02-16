@@ -30,7 +30,7 @@ export default {
       shared_kitchen: "Shared Kitchen",
     },
     metaDescription:
-      "Browse available properties for rent and sale in Rome. Find apartments, studios, and luxury properties in Trastevere, San Lorenzo, Centro Storico, and more neighborhoods.",
+      "Browse available properties for rent and sale across Italy. Find apartments, studios, and luxury properties in Rome, Milan, Florence, and more.",
     available: "Available",
     propertyDetails: "Property Details",
     availableFrom: "Available From",
@@ -76,14 +76,14 @@ export default {
     aboutAuthor: "About the Author",
     relatedPosts: "Related Posts",
     metaDescription:
-      "Read our blog for insights on Rome real estate, student accommodation guides, market trends, and property investment advice.",
+      "Read our blog for insights on Italian real estate, student accommodation guides, market trends, and property investment advice.",
   },
 
   // Service details
   services: {
     buyingProperties: {
       fullDescription:
-        "Our property buying service provides comprehensive support throughout your journey to homeownership in Rome. We understand that buying property in a foreign country can be complex, which is why we guide you through every step, from initial search to final closing.",
+        "Our property buying service provides comprehensive support throughout your journey to homeownership in Italy. We understand that buying property in a foreign country can be complex, which is why we guide you through every step, from initial search to final closing.",
       process: {
         step1: {
           title: "Initial Consultation",
@@ -177,12 +177,12 @@ export default {
     },
     studentAccommodation: {
       fullDescription:
-        "We specialize in helping international and Erasmus students find safe, affordable accommodation in Rome. We understand student needs and work with you to find the perfect home for your study period.",
+        "We specialize in helping international and Erasmus students find safe, affordable accommodation across Italy. We understand student needs and work with you to find the perfect home for your study period.",
       process: {
         step1: {
           title: "Requirements Discussion",
           description:
-            "Tell us about your university, budget, and preferences. We'll explain your options in Rome.",
+            "Tell us about your university, budget, and preferences. We'll explain your options across Italy.",
         },
         step2: {
           title: "Property Selection",
@@ -197,7 +197,7 @@ export default {
         step4: {
           title: "Move-in Support",
           description:
-            "We handle all paperwork, coordinate move-in, and provide orientation to help you settle in Rome.",
+            "We handle all paperwork, coordinate move-in, and provide orientation to help you settle in Italy.",
         },
       },
       pricing:
@@ -211,7 +211,7 @@ export default {
     contactUs: "Contact Us",
     browseProperties: "Browse Properties",
     metaDescription:
-      "Comprehensive real estate services in Rome: property buying, selling, management, and student accommodation. Expert guidance for all your property needs.",
+      "Comprehensive real estate services across Italy: property buying, selling, management, and student accommodation. Expert guidance for all your property needs.",
   },
 
   // Neighborhoods

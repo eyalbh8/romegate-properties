@@ -1,4 +1,13 @@
 export default {
+  whatsappFloat: {
+    text: "Serve aiuto per scegliere una proprietà?",
+    ariaLabel: "Contattaci su WhatsApp",
+  },
+  cookieConsent: {
+    text: "Utilizziamo i cookie per migliorare la tua esperienza. Continuando, accetti la nostra",
+    privacyPolicy: "Informativa sulla privacy",
+    accept: "Accetta",
+  },
   navbar: {
     home: "Home",
     properties: "Proprietà",
@@ -10,17 +19,19 @@ export default {
     skipToMainContent: "Salta al contenuto principale",
   },
   hero: {
-    title: "La Tua Porta d'Accesso alle Proprietà di Roma",
-    subtitle: "Acquisto • Vendita • Gestione • Alloggi per Studenti",
+    title: "La Tua Porta d'Accesso alle Proprietà in Italia",
+    subtitle: "Acquisto • Vendita • Gestione • Alloggi per Studenti — In Tutta Italia",
     browseProperties: "Sfoglia Proprietà",
     getStarted: "Inizia",
   },
   services: {
     title: "I Nostri Servizi",
+    intro:
+      "Vero è il tuo partner per acquistare, vendere e gestire immobili in Italia. Siamo specializzati in immobili residenziali e servizi su misura per clienti internazionali e studenti Erasmus.",
     buyingProperties: {
       title: "Acquisto Proprietà",
       description:
-        "Consulenza esperta nel mercato immobiliare di Roma. Trova la proprietà perfetta con la nostra ricerca completa e servizio personalizzato.",
+        "Consulenza esperta nel mercato immobiliare italiano. Trova la proprietà perfetta con la nostra ricerca completa e servizio personalizzato.",
     },
     sellingProperties: {
       title: "Vendita Proprietà",
@@ -39,12 +50,32 @@ export default {
     },
     learnMore: "Scopri di Più",
   },
+  stats: {
+    happyClients: "Clienti soddisfatti",
+    yearsExperience: "Anni di esperienza",
+    propertiesManaged: "Proprietà gestite",
+    cities: "Città",
+  },
+  leadCapture: {
+    title: "Ottieni la migliore offerta in Italia",
+    bonus: "Bonus: guide ai quartieri e approfondimenti sul mercato",
+    subtitle: "Scopri disponibilità di proprietà, aree e prezzi trasparenti.",
+    name: "Nome",
+    phone: "Telefono",
+    email: "Email",
+    countryCode: "Prefisso",
+    cta: "Ricevi Catalogo e Offerte",
+    checkmark1: "Garanzia di completamento nei tempi",
+    checkmark2: "Oltre 7 anni di esperienza",
+    checkmark3: "Direttamente dal tuo partner locale",
+    successMessage: "Grazie! Ti invieremo il catalogo e le offerte a breve.",
+  },
   uniqueSection: {
     title: "Cosa Ci Rende Unici",
     deepRomanHeritage: {
-      title: "Profonda Eredità Romana",
+      title: "Profonda Eredità Italiana",
       description:
-        "Conosciamo i quartieri, la storia e il mercato immobiliare di Roma come nessun altro. Il nostro team vive e lavora a Roma da generazioni.",
+        "Conosciamo le città, i quartieri e il mercato immobiliare italiano come nessun altro. Il nostro team vive e lavora in tutta Italia da generazioni.",
     },
     erasmusStudentSpecialists: {
       title: "Specialisti per Studenti Erasmus",
@@ -59,7 +90,7 @@ export default {
     primeLocations: {
       title: "Posizioni Prime",
       description:
-        "Proprietà vicino alle università, ai trasporti pubblici e ai quartieri più vivaci di Roma. Sappiamo dove vogliono vivere gli studenti.",
+        "Proprietà vicino alle università, ai trasporti pubblici e ai quartieri più vivaci in tutta Italia, da Roma a Milano e Firenze. Sappiamo dove vogliono vivere gli studenti.",
     },
     personalizedService: {
       title: "Servizio Personalizzato",
@@ -74,7 +105,7 @@ export default {
   },
   erasmusSection: {
     title: "Servizi Specializzati per Studenti Erasmus",
-    subtitle: "La tua casa lontano da casa nella Città Eterna",
+    subtitle: "La tua casa lontano da casa in Italia",
     nearUniversities: {
       title: "Vicino alle Università",
       description: "Proprietà a pochi passi dalle principali università",
@@ -92,15 +123,15 @@ export default {
     fullSupport: {
       title: "Supporto Completo",
       description:
-        "Aiuto con pratiche burocratiche, utenze e inserimento a Roma",
+        "Aiuto con pratiche burocratiche, utenze e inserimento in Italia",
     },
     whatOurStudentsSay: "Cosa Dicono i Nostri Studenti",
     testimonials: {
       maria: {
-        text: "Vero ha reso la ricerca di alloggi a Roma così facile! Hanno capito esattamente di cosa avevo bisogno come studentessa Erasmus e mi hanno trovato il posto perfetto vicino alla mia università.",
+        text: "Vero ha reso la ricerca di alloggi in Italia così facile! Hanno capito esattamente di cosa avevo bisogno come studentessa Erasmus e mi hanno trovato il posto perfetto vicino alla mia università.",
       },
       thomas: {
-        text: "Il team di Vero parla più lingue e mi ha aiutato con tutte le pratiche burocratiche. Mi sono sentito supportato durante tutto il mio soggiorno a Roma.",
+        text: "Il team di Vero parla più lingue e mi ha aiutato con tutte le pratiche burocratiche. Mi sono sentito supportato durante tutto il mio soggiorno in Italia.",
       },
       sophie: {
         text: "Come studentessa Erasmus, avevo bisogno di termini di affitto flessibili. Vero mi ha trovato un grande appartamento con un contratto semestrale. Lo consiglio vivamente!",
@@ -109,7 +140,7 @@ export default {
   },
   properties: {
     title: "Proprietà in Evidenza",
-    subtitle: "Scopri la tua casa perfetta a Roma",
+    subtitle: "Scopri la tua casa perfetta in Italia",
     searchPlaceholder: "Cerca per ubicazione o nome proprietà...",
     propertyType: "Tipo di Proprietà",
     allProperties: "Tutte le Proprietà",
@@ -149,31 +180,31 @@ export default {
           "Scopri le migliori zone di Roma per studenti internazionali, da alloggi convenienti a vita notturna vivace e facile accesso alle università.",
       },
       understandingRentalMarket: {
-        title: "Capire il Mercato degli Affitti di Roma: Una Guida Completa",
+        title: "Capire il Mercato degli Affitti in Italia: Una Guida Completa",
         excerpt:
-          "Tutto quello che devi sapere sugli affitti a Roma, dai prezzi medi ai requisiti legali e cosa cercare in un contratto di affitto.",
+          "Tutto quello che devi sapere sugli affitti in Italia, dai prezzi medi ai requisiti legali e cosa cercare in un contratto di affitto.",
       },
       propertyInvestmentTrends: {
-        title: "Investimenti Immobiliari a Roma: Tendenze per il 2025",
+        title: "Investimenti Immobiliari in Italia: Tendenze per il 2025",
         excerpt:
-          "Esplora le ultime tendenze nel mercato immobiliare di Roma, inclusi i quartieri emergenti e le opportunità di investimento per l'anno a venire.",
+          "Esplora le ultime tendenze nel mercato immobiliare italiano, inclusi i quartieri emergenti e le opportunità di investimento per l'anno a venire.",
       },
       erasmusSuccessStories: {
-        title: "Storie di Successo di Studenti Erasmus: Trovare Casa a Roma",
+        title: "Storie di Successo di Studenti Erasmus: Trovare Casa in Italia",
         excerpt:
-          "Leggi storie ispiratrici di studenti Erasmus che hanno trovato il loro alloggio perfetto a Roma e hanno sfruttato al meglio la loro esperienza di studio all'estero.",
+          "Leggi storie ispiratrici di studenti Erasmus che hanno trovato il loro alloggio perfetto in Italia e hanno sfruttato al meglio la loro esperienza di studio all'estero.",
       },
       navigatingPropertyLaws: {
         title:
           "Navigare le Leggi Immobiliari Italiane: Cosa Devono Sapere gli Stranieri",
         excerpt:
-          "Una guida completa alle leggi, regolamenti e requisiti immobiliari italiani per acquirenti e affittuari stranieri a Roma.",
+          "Una guida completa alle leggi, regolamenti e requisiti immobiliari italiani per acquirenti e affittuari stranieri in Italia.",
       },
       bestTimeToBuyOrRent: {
         title:
-          "Miglior Periodo per Comprare o Affittare a Roma: Approfondimenti sul Mercato Stagionale",
+          "Miglior Periodo per Comprare o Affittare in Italia: Approfondimenti sul Mercato Stagionale",
         excerpt:
-          "Scopri i migliori periodi dell'anno per cercare proprietà a Roma, inclusi le fluttuazioni dei prezzi stagionali e la disponibilità di mercato.",
+          "Scopri i migliori periodi dell'anno per cercare proprietà in Italia, inclusi le fluttuazioni dei prezzi stagionali e la disponibilità di mercato.",
       },
     },
   },
@@ -182,12 +213,12 @@ export default {
     subtitle: "Trova risposte alle domande comuni sui nostri servizi",
     questions: {
       findStudentAccommodation: {
-        question: "Come posso trovare un alloggio per studenti a Roma?",
+        question: "Come posso trovare un alloggio per studenti in Italia?",
         answer:
-          "Ci specializziamo nell'aiutare studenti Erasmus e internazionali a trovare alloggi a Roma. Contattaci semplicemente con i tuoi requisiti, budget e ubicazione preferita, e ti abbiniamo a proprietà adatte vicino alle università.",
+          "Ci specializziamo nell'aiutare studenti Erasmus e internazionali a trovare alloggi in Italia. Contattaci semplicemente con i tuoi requisiti, budget e ubicazione preferita, e ti abbiniamo a proprietà adatte vicino alle università.",
       },
       documentsForRenting: {
-        question: "Quali documenti servono per affittare una proprietà a Roma?",
+        question: "Quali documenti servono per affittare una proprietà in Italia?",
         answer:
           "Tipicamente, avrai bisogno di un documento d'identità valido o passaporto, prova di reddito o garante, e a volte un codice fiscale. Per gli studenti, possiamo aiutarti a navigare i requisiti e fornire indicazioni su come ottenere i documenti necessari.",
       },
@@ -202,14 +233,14 @@ export default {
           "Sì, forniamo servizi completi di gestione proprietà inclusi manutenzione, relazioni con gli inquilini, riscossione affitti e rendicontazione finanziaria. Gestiamo tutti gli aspetti della gestione proprietà così non devi farlo tu.",
       },
       areasCovered: {
-        question: "Quali zone di Roma coprite?",
+        question: "Quali zone d'Italia coprite?",
         answer:
-          "Copriamo tutti i quartieri di Roma, con competenza speciale nelle zone popolari tra gli studenti come Trastevere, San Lorenzo, Testaccio e Centro Storico. Serviamo anche mercati di lusso a Prati, Monti e altre location prime.",
+          "Copriamo le principali città italiane tra cui Roma, Milano, Firenze, Bologna e altre. A Roma abbiamo competenza speciale nelle zone popolari tra gli studenti come Trastevere, San Lorenzo, Testaccio e Centro Storico, e serviamo anche mercati di lusso a Prati, Monti e altre location prime.",
       },
       propertyInvestment: {
-        question: "Potete aiutare con investimenti immobiliari a Roma?",
+        question: "Potete aiutare con investimenti immobiliari in Italia?",
         answer:
-          "Assolutamente! Forniamo servizi di consulenza per investimenti, analisi di mercato e aiutiamo a identificare opportunità di investimento redditizie nel mercato immobiliare di Roma. Lavoriamo sia con investitori locali che internazionali.",
+          "Assolutamente! Forniamo servizi di consulenza per investimenti, analisi di mercato e aiutiamo a identificare opportunità di investimento redditizie nel mercato immobiliare italiano. Lavoriamo sia con investitori locali che internazionali.",
       },
       languagesSpoken: {
         question: "Che lingue parlate?",

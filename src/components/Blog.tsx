@@ -182,7 +182,7 @@ const Blog: React.FC = () => {
       {blogPosts.map((post) => {
         // Determine related services and locations based on category
         let relatedServices = [];
-        let mentionedLocations = ["Rome"];
+        let mentionedLocations = ["Italy"];
 
         if (post.category === "Student Life") {
           relatedServices.push("Student Accommodation");
@@ -246,7 +246,7 @@ const Blog: React.FC = () => {
                 articleSection: post.category,
                 keywords: [
                   post.category,
-                  "Rome",
+                  "Italy",
                   "real estate",
                   ...mentionedLocations,
                 ].join(", "),
@@ -260,13 +260,21 @@ const Blog: React.FC = () => {
                     name: service,
                   })),
                 ],
-                mentions: mentionedLocations.map((location) => ({
-                  "@type": location === "Rome" ? "City" : "Place",
-                  name: location,
-                  addressLocality: "Rome",
-                  addressRegion: "Lazio",
-                  addressCountry: "IT",
-                })),
+                mentions: mentionedLocations.map((location) =>
+                  location === "Italy"
+                    ? {
+                        "@type": "Country",
+                        name: "Italy",
+                        "@id": "https://www.wikidata.org/wiki/Q38",
+                      }
+                    : {
+                        "@type": "Place",
+                        name: location,
+                        addressLocality: "Rome",
+                        addressRegion: "Lazio",
+                        addressCountry: "IT",
+                      }
+                ),
               }),
             }}
           />
@@ -379,7 +387,7 @@ const Blog: React.FC = () => {
                       image={post.image}
                       alt={`${post.title} - ${
                         post.category
-                      } article about real estate in Rome by ${
+                      } article about real estate in Italy by ${
                         post.author
                       }. ${post.excerpt.substring(0, 100)}...`}
                       loading="lazy"

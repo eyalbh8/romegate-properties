@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     excerptKey: "blog.posts.top5Neighborhoods.excerpt",
     author: "Maria Rossi",
     authorBio:
-      "Maria is a real estate expert specializing in student accommodation in Rome. She has helped hundreds of Erasmus students find their perfect home.",
+      "Maria is a real estate expert specializing in student accommodation across Italy. She has helped hundreds of Erasmus students find their perfect home.",
     date: "2025-01-15",
     category: "Student Life",
     image: "https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800",
@@ -44,13 +44,13 @@ export const blogPosts: BlogPost[] = [
     excerptKey: "blog.posts.understandingRentalMarket.excerpt",
     author: "Giuseppe Bianchi",
     authorBio:
-      "Giuseppe has over 15 years of experience in the Roman real estate market. He provides insights on market trends and investment opportunities.",
+      "Giuseppe has over 15 years of experience in the Italian real estate market. He provides insights on market trends and investment opportunities.",
     date: "2025-01-10",
     category: "Real Estate",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
     readTime: "8",
     contentKey: "blog.posts.understandingRentalMarket.content",
-    tags: ["Rental Market", "Rome", "Market Analysis", "Trends"],
+    tags: ["Rental Market", "Italy", "Market Analysis", "Trends"],
     relatedPosts: [3, 6],
   },
   {
@@ -60,7 +60,7 @@ export const blogPosts: BlogPost[] = [
     excerptKey: "blog.posts.propertyInvestmentTrends.excerpt",
     author: "Francesca Romano",
     authorBio:
-      "Francesca is an investment advisor specializing in real estate. She helps clients make informed decisions about property investments in Rome.",
+      "Francesca is an investment advisor specializing in real estate. She helps clients make informed decisions about property investments in Italy.",
     date: "2025-01-05",
     category: "Investment",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
     excerptKey: "blog.posts.erasmusSuccessStories.excerpt",
     author: "Sofia Conti",
     authorBio:
-      "Sofia coordinates our Erasmus student program. She works directly with international students to ensure they have the best experience in Rome.",
+      "Sofia coordinates our Erasmus student program. She works directly with international students to ensure they have the best experience in Italy.",
     date: "2024-12-28",
     category: "Student Life",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
     excerptKey: "blog.posts.bestTimeToBuyOrRent.excerpt",
     author: "Elena Ferrari",
     authorBio:
-      "Elena is a market analyst who tracks real estate trends in Rome. She provides timing advice for buyers and renters.",
+      "Elena is a market analyst who tracks real estate trends across Italy. She provides timing advice for buyers and renters.",
     date: "2024-12-15",
     category: "Real Estate",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",

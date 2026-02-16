@@ -82,8 +82,8 @@ const blogImages = [
     images: [
       {
         loc: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-        caption: "Understanding Rome's Rental Market",
-        title: "Rome Rental Market 2026",
+        caption: "Understanding Italy's Rental Market",
+        title: "Italy Rental Market 2026",
       },
     ],
   },

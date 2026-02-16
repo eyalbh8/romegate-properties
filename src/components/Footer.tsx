@@ -13,7 +13,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "@mui/material/styles";
 import { SvgIcon } from "@mui/material";
 
 // WhatsApp Icon Component
@@ -25,7 +24,6 @@ const WhatsAppIcon: React.FC<{ sx?: any }> = ({ sx }) => (
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
-  const theme = useTheme();
   const handleNavClick = (href: string): void => {
     const element = document.querySelector(href);
     if (element) {
@@ -39,7 +37,7 @@ const Footer: React.FC = () => {
       role="contentinfo"
       aria-label="Site footer"
       sx={{
-        backgroundColor: "primary.dark",
+        backgroundColor: "#212121",
         color: "white",
         pt: 6,
         pb: 3,
@@ -56,8 +54,7 @@ const Footer: React.FC = () => {
                 mb: 2,
               }}
             >
-              ROME
-              <span style={{ color: theme.palette.secondary.main }}>GATE</span>
+              Vero
             </Typography>
             <Typography
               variant="body2"
@@ -95,7 +92,7 @@ const Footer: React.FC = () => {
                 <TwitterIcon />
               </Link>
               <Link
-                href="https://wa.me/35794202215?text=Hello!%20I%20am%20interested%20in%20your%20real%20estate%20services%20in%20Rome.%20I%20would%20like%20to%20learn%20more%20about%20available%20properties,%20student%20accommodation%20options,%20and%20your%20professional%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information?%20Thank%20you!"
+                href="https://wa.me/35794202215?text=Hello!%20I%20am%20interested%20in%20your%20real%20estate%20services%20in%20Italy.%20I%20would%20like%20to%20learn%20more%20about%20available%20properties,%20student%20accommodation%20options,%20and%20your%20professional%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information?%20Thank%20you!"
                 target="_blank"
                 sx={{ color: "white", "&:hover": { color: "secondary.light" } }}
               >

@@ -27,22 +27,22 @@ const Services: React.FC = () => {
   const { t, i18n } = useTranslation();
   const services: Service[] = [
     {
-      icon: <HomeIcon sx={{ fontSize: 60, color: "white" }} />,
+      icon: <HomeIcon sx={{ fontSize: 48 }} />,
       title: t("services.buyingProperties.title"),
       description: t("services.buyingProperties.description"),
     },
     {
-      icon: <AttachMoneyIcon sx={{ fontSize: 60, color: "white" }} />,
+      icon: <AttachMoneyIcon sx={{ fontSize: 48 }} />,
       title: t("services.sellingProperties.title"),
       description: t("services.sellingProperties.description"),
     },
     {
-      icon: <BuildIcon sx={{ fontSize: 60, color: "white" }} />,
+      icon: <BuildIcon sx={{ fontSize: 48 }} />,
       title: t("services.propertyManagement.title"),
       description: t("services.propertyManagement.description"),
     },
     {
-      icon: <SchoolIcon sx={{ fontSize: 60, color: "white" }} />,
+      icon: <SchoolIcon sx={{ fontSize: 48 }} />,
       title: t("services.studentAccommodation.title"),
       description: t("services.studentAccommodation.description"),
     },
@@ -91,7 +91,7 @@ const Services: React.FC = () => {
                 description: service.description,
                 keywords: [
                   service.title,
-                  "Rome",
+                  "Italy",
                   "real estate",
                   ...targetAudience,
                 ].join(", "),
@@ -142,9 +142,21 @@ const Services: React.FC = () => {
               variant="h2"
               component="h2"
               gutterBottom
-              sx={{ textAlign: "center", mb: 6 }}
+              sx={{ textAlign: "center", mb: 2 }}
             >
               {t("services.title")}
+            </Typography>
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{
+                textAlign: "center",
+                maxWidth: 720,
+                mx: "auto",
+                mb: 6,
+              }}
+            >
+              {t("services.intro")}
             </Typography>
           </motion.div>
           <Grid container spacing={4} sx={{ alignItems: "stretch" }}>
@@ -175,12 +187,13 @@ const Services: React.FC = () => {
                       display: "flex",
                       flexDirection: "column",
                       transition: "transform 0.3s, box-shadow 0.3s",
-                      "&:hover": {
-                        transform: "translateY(-8px) scale(1.02)",
+                        "&:hover": {
+                        transform: "translateY(-6px)",
                         boxShadow: 3,
                         "& .icon-container": {
                           backgroundColor: "primary.main",
-                          transform: "scale(1.1)",
+                          borderColor: "primary.main",
+                          color: "white",
                         },
                       },
                     }}
@@ -194,21 +207,28 @@ const Services: React.FC = () => {
                           display: "inline-flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          width: 100,
-                          height: 100,
-                          borderRadius: "50%",
-                          backgroundColor: "primary.light",
-                          color: "white",
+                          width: 80,
+                          height: 80,
+                          borderRadius: 2,
+                          border: "2px solid",
+                          borderColor: "text.primary",
+                          backgroundColor: "transparent",
+                          color: "primary.main",
                           mb: 2,
                           transition: "all 0.3s ease",
                         }}
                       >
                         {service.icon}
                       </Box>
-                      <Typography variant="h5" component="h3" gutterBottom>
+                      <Typography
+                        variant="h5"
+                        component="h3"
+                        gutterBottom
+                        sx={{ fontWeight: 600, fontSize: "1.25rem" }}
+                      >
                         {service.title}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.secondary" sx={{ fontSize: "0.9375rem" }}>
                         {service.description}
                       </Typography>
                     </CardContent>

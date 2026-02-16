@@ -67,7 +67,7 @@ const PropertiesPage: React.FC = () => {
           name="description"
           content={t("properties.metaDescription", {
             defaultValue:
-              "Browse available properties for rent and sale in Rome. Find apartments, studios, and luxury properties in Trastevere, San Lorenzo, Centro Storico, and more.",
+              "Browse available properties for rent and sale across Italy. Find apartments, studios, and luxury properties in Rome, Milan, Florence, and more.",
           })}
         />
         <link

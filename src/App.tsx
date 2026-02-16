@@ -5,6 +5,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { Box, CircularProgress } from "@mui/material";
 import theme from "./theme";
 import i18n from "./i18n";
+import WhatsAppFloat from "./components/WhatsAppFloat";
+import CookieConsent from "./components/CookieConsent";
 
 // Lazy load pages for better performance
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -59,6 +61,8 @@ const App: React.FC = () => {
       <Box
         sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
+        <WhatsAppFloat />
+        <CookieConsent />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             {/* Root redirect to default language */}

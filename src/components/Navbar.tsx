@@ -80,14 +80,14 @@ const Navbar: React.FC = () => {
       aria-label="Mobile navigation menu"
       sx={{ textAlign: "center" }}
     >
-      <Typography variant="h6" sx={{ my: 2, color: "primary.main" }}>
-        ROME<span style={{ color: "secondary.main" }}>GATE</span>
+      <Typography variant="h6" sx={{ my: 2, color: "white", fontWeight: 700 }}>
+        Vero
       </Typography>
       <List role="list">
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding role="listitem">
             <ListItemButton
-              sx={{ textAlign: "center" }}
+              sx={{ textAlign: "center", color: "rgba(255,255,255,0.9)" }}
               onClick={() => handleNavClick(item.href)}
               aria-label={`Navigate to ${item.label} section`}
             >
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
           position: "absolute",
           top: -40,
           left: 0,
-          backgroundColor: "primary.main",
+          backgroundColor: "#212121",
           color: "white",
           padding: 1,
           textDecoration: "none",
@@ -127,9 +127,8 @@ const Navbar: React.FC = () => {
         role="navigation"
         aria-label="Main navigation"
         sx={{
-          backgroundColor: "rgba(44, 62, 80, 0.92)",
-          backdropFilter: "blur(10px)",
-          boxShadow: 3,
+          backgroundColor: "#212121",
+          boxShadow: 2,
         }}
       >
         <Toolbar role="toolbar">
@@ -153,8 +152,7 @@ const Navbar: React.FC = () => {
             }}
             tabIndex={0}
           >
-            ROME
-            <span style={{ color: theme.palette.secondary.main }}>GATE</span>
+            Vero
           </Typography>
           {isMobile ? (
             <Box
@@ -244,7 +242,12 @@ const Navbar: React.FC = () => {
         }}
         sx={{
           display: { xs: "block", md: "none" },
-          "& .MuiDrawer-paper": { boxSizing: "border-box", width: 240 },
+          "& .MuiDrawer-paper": {
+            boxSizing: "border-box",
+            width: 240,
+            backgroundColor: "#212121",
+            color: "white",
+          },
         }}
       >
         {drawer}

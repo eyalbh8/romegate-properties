@@ -15,8 +15,8 @@ const blogPosts = [
   },
   {
     slug: "understanding-rental-market-rome-2026",
-    title: "Understanding Rome's Rental Market in 2026",
-    excerpt: "A comprehensive guide to the current state of Rome's rental market...",
+    title: "Understanding Italy's Rental Market in 2026",
+    excerpt: "A comprehensive guide to the current state of Italy's rental market...",
     author: "Giuseppe Bianchi",
     date: "2025-01-10",
     category: "Real Estate",
@@ -24,8 +24,8 @@ const blogPosts = [
   },
   {
     slug: "property-investment-trends-rome-2026",
-    title: "Property Investment Trends in Rome for 2026",
-    excerpt: "Explore the latest trends in Rome's property investment landscape...",
+    title: "Property Investment Trends in Italy for 2026",
+    excerpt: "Explore the latest trends in Italy's property investment landscape...",
     author: "Francesca Romano",
     date: "2025-01-05",
     category: "Investment",
@@ -33,7 +33,7 @@ const blogPosts = [
   },
   {
     slug: "erasmus-success-stories-rome",
-    title: "Erasmus Success Stories from Rome",
+    title: "Erasmus Success Stories from Italy",
     excerpt: "Hear from students who found their perfect home with Vero...",
     author: "Sofia Conti",
     date: "2024-12-28",
@@ -51,7 +51,7 @@ const blogPosts = [
   },
   {
     slug: "best-time-buy-rent-rome",
-    title: "Best Time to Buy or Rent in Rome",
+    title: "Best Time to Buy or Rent in Italy",
     excerpt: "Timing is everything in real estate. Learn when to make your move...",
     author: "Elena Ferrari",
     date: "2024-12-15",

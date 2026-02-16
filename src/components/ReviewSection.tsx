@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
+  Container,
   Typography,
-  Card,
-  CardContent,
-  Avatar,
-  Rating,
-  Grid,
+  IconButton,
   Paper,
 } from "@mui/material";
-import StarIcon from "@mui/icons-material/Star";
+import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { useTranslation } from "react-i18next";
 import { generateReviewSchema, generateAggregateRatingSchema } from "../utils/schemaGenerator";
 
@@ -24,6 +22,7 @@ interface Review {
 
 const ReviewSection: React.FC = () => {
   const { t } = useTranslation();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   // Sample reviews - replace with actual data
   const reviews: Review[] = [
@@ -33,7 +32,7 @@ const ReviewSection: React.FC = () => {
       rating: 5,
       date: "2026-01-15",
       reviewBody:
-        "Excellent service! They helped me find the perfect apartment for my Erasmus stay in Rome. Very professional and responsive.",
+        "Excellent service! They helped me find the perfect apartment for my Erasmus stay in Italy. Very professional and responsive.",
       avatar: "M",
     },
     {
@@ -57,6 +56,13 @@ const ReviewSection: React.FC = () => {
   ];
 
   const averageRating = reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length;
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setCurrentIndex((i) => (i === reviews.length - 1 ? 0 : i + 1));
+    }, 5000);
+    return () => clearInterval(id);
+  }, [reviews.length]);
 
   const aggregateRating = generateAggregateRatingSchema({
     ratingValue: averageRating,
@@ -97,59 +103,80 @@ const ReviewSection: React.FC = () => {
         );
       })}
 
-      <Box sx={{ py: 6 }}>
-        <Typography variant="h4" align="center" gutterBottom>
-          {t("reviews.title", { defaultValue: "What Our Clients Say" })}
-        </Typography>
-
-        <Paper
-          sx={{
-            p: 3,
-            mb: 4,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 1 }}>
-            <Typography variant="h3" fontWeight="bold">
-              {averageRating.toFixed(1)}
-            </Typography>
-            <StarIcon sx={{ fontSize: 48, color: "warning.main" }} />
-          </Box>
-          <Rating value={averageRating} precision={0.1} readOnly size="large" />
-          <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-            {t("reviews.basedOn", { count: reviews.length, defaultValue: `Based on ${reviews.length} reviews` })}
+      <Box
+        id="testimonials"
+        component="section"
+        aria-label="Testimonials"
+        sx={{ py: 8, backgroundColor: "background.default" }}
+      >
+        <Container maxWidth="lg">
+          <Typography
+            variant="h2"
+            component="h2"
+            align="center"
+            gutterBottom
+            sx={{ mb: 6, textTransform: "uppercase", letterSpacing: "0.02em", fontSize: "1.75rem" }}
+          >
+            {t("reviews.title", { defaultValue: "What Our Clients Say" })}
           </Typography>
-        </Paper>
 
-        <Grid container spacing={3}>
-          {reviews.map((review) => (
-            <Grid item xs={12} md={4} key={review.id}>
-              <Card sx={{ height: "100%" }}>
-                <CardContent>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
-                    <Avatar sx={{ bgcolor: "primary.main" }}>
-                      {review.avatar || review.author[0]}
-                    </Avatar>
-                    <Box>
-                      <Typography variant="subtitle1" fontWeight="bold">
-                        {review.author}
-                      </Typography>
-                      <Typography variant="caption" color="text.secondary">
-                        {new Date(review.date).toLocaleDateString()}
-                      </Typography>
-                    </Box>
-                  </Box>
-                  <Rating value={review.rating} readOnly size="small" sx={{ mb: 1 }} />
-                  <Typography variant="body2" color="text.secondary">
-                    {review.reviewBody}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+            <IconButton
+              aria-label="Previous testimonial"
+              onClick={() => setCurrentIndex((i) => (i === 0 ? reviews.length - 1 : i - 1))}
+              sx={{ color: "primary.main" }}
+            >
+              <NavigateBeforeIcon fontSize="large" />
+            </IconButton>
+            <Paper
+              elevation={0}
+              sx={{
+                flex: 1,
+                p: 4,
+                textAlign: "center",
+                border: "1px solid",
+                borderColor: "divider",
+                borderRadius: 2,
+              }}
+            >
+              <Typography variant="body1" sx={{ mb: 2, fontStyle: "italic", fontSize: "1.125rem" }}>
+                "{reviews[currentIndex].reviewBody}"
+              </Typography>
+              <Typography variant="subtitle1" fontWeight={600}>
+                {reviews[currentIndex].author}
+              </Typography>
+            </Paper>
+            <IconButton
+              aria-label="Next testimonial"
+              onClick={() => setCurrentIndex((i) => (i === reviews.length - 1 ? 0 : i + 1))}
+              sx={{ color: "primary.main" }}
+            >
+              <NavigateNextIcon fontSize="large" />
+            </IconButton>
+          </Box>
+
+          <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5, mt: 3 }}>
+            {reviews.map((_, i) => (
+              <Box
+                key={i}
+                onClick={() => setCurrentIndex(i)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") setCurrentIndex(i);
+                }}
+                aria-label={`Go to testimonial ${i + 1}`}
+                sx={{
+                  width: 10,
+                  height: 10,
+                  borderRadius: "50%",
+                  bgcolor: currentIndex === i ? "primary.main" : "grey.400",
+                  cursor: "pointer",
+                }}
+              />
+            ))}
+          </Box>
+        </Container>
       </Box>
     </>
   );

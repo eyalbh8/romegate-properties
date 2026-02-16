@@ -76,7 +76,7 @@ const BlogPage: React.FC = () => {
           name="description"
           content={t("blog.metaDescription", {
             defaultValue:
-              "Read our blog for insights on Rome real estate, student accommodation guides, market trends, and property investment advice.",
+              "Read our blog for insights on Italian real estate, student accommodation guides, market trends, and property investment advice.",
           })}
         />
         <link rel="canonical" href={`${baseUrl}/${currentLang}/blog`} />
