@@ -1,7 +1,13 @@
+/** Localized text: lang code -> text (e.g. { en: "...", it: "...", he: "..." }) */
+export type LocalizedText = Record<string, string>;
+
 export interface Property {
   id: number;
   slug: string;
-  titleKey: string;
+  /** i18n key for title; used when title (localized) is not set */
+  titleKey?: string;
+  /** Localized title from JSON; takes precedence over titleKey when present */
+  title?: LocalizedText;
   location: string;
   neighborhood: string;
   price: number;
@@ -11,7 +17,10 @@ export interface Property {
   type: "rent" | "sale";
   image: string;
   images?: string[];
-  descriptionKey: string;
+  /** i18n key for description; used when description (localized) is not set */
+  descriptionKey?: string;
+  /** Localized description from JSON; takes precedence over descriptionKey when present */
+  description?: LocalizedText;
   amenities: string[];
   available: boolean;
   availableFrom?: string;
@@ -30,7 +39,8 @@ export interface Property {
   };
 }
 
-export const properties: Property[] = [
+/** Fallback when properties.json fetch fails; allows site to still work */
+export const FALLBACK_PROPERTIES: Property[] = [
   {
     id: 1,
     slug: "modern-apartment-trastevere",
@@ -234,22 +244,38 @@ export const properties: Property[] = [
   },
 ];
 
-export const getPropertyBySlug = (slug: string): Property | undefined => {
-  return properties.find((p) => p.slug === slug);
-};
+export function getPropertyBySlug(
+  list: Property[],
+  slug: string
+): Property | undefined {
+  return list.find((p) => p.slug === slug);
+}
 
-export const getPropertyById = (id: number): Property | undefined => {
-  return properties.find((p) => p.id === id);
-};
+export function getPropertyById(
+  list: Property[],
+  id: number
+): Property | undefined {
+  return list.find((p) => p.id === id);
+}
 
-export const getPropertiesByNeighborhood = (
+export function getPropertiesByNeighborhood(
+  list: Property[],
   neighborhood: string
-): Property[] => {
-  return properties.filter(
+): Property[] {
+  return list.filter(
     (p) => p.neighborhood.toLowerCase() === neighborhood.toLowerCase()
   );
-};
+}
 
-export const getPropertiesByType = (type: "rent" | "sale"): Property[] => {
-  return properties.filter((p) => p.type === type);
-};
+export function getPropertiesByType(
+  list: Property[],
+  type: "rent" | "sale"
+): Property[] {
+  return list.filter((p) => p.type === type);
+}
+
+/** JSON payload from /properties.json */
+export interface PropertiesPayload {
+  updated?: string;
+  properties: Property[];
+}

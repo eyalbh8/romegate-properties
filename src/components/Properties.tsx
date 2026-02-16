@@ -17,6 +17,8 @@ import {
   FormControl,
   InputLabel,
   SelectChangeEvent,
+  CircularProgress,
+  Alert,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -25,16 +27,18 @@ import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { properties as propertiesData } from "../data/properties";
+import { useProperties, resolvePropertyTitle } from "../context/PropertiesContext";
 
 const Properties: React.FC = () => {
   const { t, i18n } = useTranslation();
+  const { properties: propertiesData, loading, error } = useProperties();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filterType, setFilterType] = useState<string>("all");
 
+  const lang = i18n.language || "en";
   const properties = propertiesData.map((prop) => ({
     ...prop,
-    title: t(prop.titleKey),
+    title: resolvePropertyTitle(prop, lang, t),
   }));
 
   const filteredProperties = properties.filter((property) => {
@@ -51,6 +55,18 @@ const Properties: React.FC = () => {
     }
     return `€${price}/month`;
   };
+
+  if (loading) {
+    return (
+      <Box
+        id="properties"
+        component="section"
+        sx={{ py: 8, backgroundColor: "background.paper", display: "flex", justifyContent: "center", alignItems: "center", minHeight: 200 }}
+      >
+        <CircularProgress />
+      </Box>
+    );
+  }
 
   return (
     <>
@@ -148,6 +164,11 @@ const Properties: React.FC = () => {
         }}
       >
         <Container maxWidth="lg">
+          {error && (
+            <Alert severity="warning" sx={{ mb: 2 }}>
+              {t("properties.loadError", { defaultValue: "Properties could not be loaded. Showing cached list." })}
+            </Alert>
+          )}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

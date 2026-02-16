@@ -4,15 +4,16 @@ const path = require("path");
 const baseUrl = "https://vero.it";
 const languages = ["en", "it", "he"];
 
-// Import data (we'll use require since this is a Node.js script)
-const propertiesData = [
-  { id: 1, slug: "modern-apartment-trastevere" },
-  { id: 2, slug: "luxury-villa-near-colosseum" },
-  { id: 3, slug: "student-studio-near-sapienza" },
-  { id: 4, slug: "cozy-apartment-centro-storico" },
-  { id: 5, slug: "elegant-penthouse-with-terrace" },
-  { id: 6, slug: "shared-student-room-testaccio" },
-];
+// Read properties from public/properties.json (single source of truth)
+const propertiesJsonPath = path.join(__dirname, "..", "public", "properties.json");
+let propertiesData = [];
+try {
+  const raw = fs.readFileSync(propertiesJsonPath, "utf8");
+  const data = JSON.parse(raw);
+  propertiesData = Array.isArray(data.properties) ? data.properties.map((p) => ({ id: p.id, slug: p.slug })) : [];
+} catch (err) {
+  console.warn("⚠️ Could not read public/properties.json, property URLs will be omitted from sitemap:", err.message);
+}
 
 const blogPostsData = [
   { slug: "top-5-neighborhoods-erasmus-students-rome" },

@@ -23,11 +23,12 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import { getNeighborhoodBySlug } from "../data/neighborhoods";
-import { getPropertiesByNeighborhood } from "../data/properties";
+import { useProperties } from "../context/PropertiesContext";
 
 const NeighborhoodPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
+  const { getPropertiesByNeighborhood } = useProperties();
   const currentLang = i18n.language || "en";
   const baseUrl = "https://vero.it";
 

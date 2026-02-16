@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { Box, CircularProgress } from "@mui/material";
 import theme from "./theme";
 import i18n from "./i18n";
+import { PropertiesProvider } from "./context/PropertiesContext";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import CookieConsent from "./components/CookieConsent";
 
@@ -59,12 +60,13 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box
-        sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-      >
-        <WhatsAppFloat />
-        <CookieConsent />
-        <Suspense fallback={<LoadingFallback />}>
+      <PropertiesProvider>
+        <Box
+          sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+        >
+          <WhatsAppFloat />
+          <CookieConsent />
+          <Suspense fallback={<LoadingFallback />}>
           <Routes>
             {/* Root redirect to default language */}
             <Route
@@ -92,7 +94,8 @@ const App: React.FC = () => {
             <Route path="*" element={<Navigate to="/en" replace />} />
           </Routes>
         </Suspense>
-      </Box>
+        </Box>
+      </PropertiesProvider>
     </ThemeProvider>
   );
 };

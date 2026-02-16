@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -47,10 +47,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vero.it/" />
-    <meta
-      property="og:title"
-      content="Vero - Authentic Italian Properties"
-    />
+    <meta property="og:title" content="Vero - Authentic Italian Properties" />
     <meta
       property="og:description"
       content="Buy, sell, and manage properties throughout Italy. Specialized services for Erasmus students and international clients."
@@ -126,9 +123,7 @@
       content="black-translucent"
     />
     <meta name="apple-mobile-web-app-title" content="Vero" />
-    <title>
-      Vero - Authentic Italian Properties | Real Estate in Italy
-    </title>
+    <title>Vero - Authentic Italian Properties | Real Estate in Italy</title>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -252,6 +247,20 @@
     </script>
   </head>
   <body>
+    <!-- Defer ResizeObserver callbacks to avoid "loop completed with undelivered notifications" (prevents dev overlay) -->
+    <script>
+      (function () {
+        var Ro = window.ResizeObserver;
+        if (!Ro) return;
+        window.ResizeObserver = function (callback) {
+          return new Ro(function (entries, observer) {
+            requestAnimationFrame(function () {
+              callback(entries, observer);
+            });
+          });
+        };
+      })();
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

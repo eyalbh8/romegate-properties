@@ -18,6 +18,8 @@ import {
   FormControl,
   InputLabel,
   SelectChangeEvent,
+  CircularProgress,
+  Alert,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -30,18 +32,20 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
-import { properties } from "../data/properties";
+import { useProperties, resolvePropertyTitle } from "../context/PropertiesContext";
 
 const PropertiesPage: React.FC = () => {
   const { t, i18n } = useTranslation();
+  const { properties, loading, error } = useProperties();
   const [searchParams] = useSearchParams();
   const initialSearch = searchParams.get("search") || "";
 
   const [searchTerm, setSearchTerm] = useState<string>(initialSearch);
   const [filterType, setFilterType] = useState<string>("all");
 
+  const currentLang = i18n.language || "en";
   const filteredProperties = properties.filter((property) => {
-    const title = t(property.titleKey);
+    const title = resolvePropertyTitle(property, currentLang, t);
     const matchesSearch =
       title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       property.location.toLowerCase().includes(searchTerm.toLowerCase());
@@ -56,8 +60,20 @@ const PropertiesPage: React.FC = () => {
     return `€${price}/${t("common.month")}`;
   };
 
-  const currentLang = i18n.language || "en";
   const baseUrl = "https://vero.it";
+
+  if (loading) {
+    return (
+      <>
+        <Navbar />
+        <Breadcrumb items={[{ label: t("properties.title") }]} />
+        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "60vh" }}>
+          <CircularProgress />
+        </Box>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
@@ -92,8 +108,13 @@ const PropertiesPage: React.FC = () => {
         }}
       >
         <Container maxWidth="lg">
+          {error && (
+            <Alert severity="warning" sx={{ mb: 2 }}>
+              {t("properties.loadError", { defaultValue: "Properties could not be loaded. Showing cached list." })}
+            </Alert>
+          )}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
@@ -157,7 +178,7 @@ const PropertiesPage: React.FC = () => {
             {filteredProperties.map((property, index) => (
               <Grid item xs={12} sm={6} md={4} key={property.id}>
                 <motion.div
-                  initial={{ opacity: 0, y: 50 }}
+                  initial={false}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
@@ -178,7 +199,7 @@ const PropertiesPage: React.FC = () => {
                       component="img"
                       height="200"
                       image={property.image}
-                      alt={t(property.titleKey)}
+                      alt={resolvePropertyTitle(property, currentLang, t)}
                       loading="lazy"
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
@@ -209,7 +230,7 @@ const PropertiesPage: React.FC = () => {
                         </Typography>
                       </Box>
                       <Typography variant="h6" component="h2" gutterBottom>
-                        {t(property.titleKey)}
+                        {resolvePropertyTitle(property, currentLang, t)}
                       </Typography>
                       <Box
                         sx={{

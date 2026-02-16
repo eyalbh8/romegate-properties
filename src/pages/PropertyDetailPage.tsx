@@ -14,6 +14,7 @@ import {
   ListItemIcon,
   ListItemText,
   Paper,
+  CircularProgress,
 } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -29,24 +30,36 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import Contact from "../components/Contact";
-import { getPropertyBySlug, properties } from "../data/properties";
+import { useProperties, resolvePropertyTitle, resolvePropertyDescription } from "../context/PropertiesContext";
 
 const PropertyDetailPage: React.FC = () => {
   const { slug, id } = useParams<{ slug: string; id: string }>();
   const { t, i18n } = useTranslation();
+  const { properties, loading, getPropertyBySlug } = useProperties();
   const currentLang = i18n.language || "en";
   const baseUrl = "https://vero.it";
 
   const property = getPropertyBySlug(slug || "");
 
+  if (loading) {
+    return (
+      <>
+        <Navbar />
+        <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "60vh" }}>
+          <CircularProgress />
+        </Box>
+        <Footer />
+      </>
+    );
+  }
+
   if (!property || property.id.toString() !== id) {
     return <Navigate to={`/${currentLang}/properties`} replace />;
   }
 
-  const title = t(property.titleKey);
-  const description = t(property.descriptionKey, {
-    defaultValue: `${title} in ${property.location}. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area}m². ${property.type === "rent" ? "For rent" : "For sale"}.`,
-  });
+  const title = resolvePropertyTitle(property, currentLang, t);
+  const defaultDesc = `${title} in ${property.location}. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area}m². ${property.type === "rent" ? "For rent" : "For sale"}.`;
+  const description = resolvePropertyDescription(property, currentLang, t, defaultDesc);
 
   const formatPrice = (price: number, type: string): string => {
     if (type === "sale") {
@@ -353,12 +366,12 @@ const PropertyDetailPage: React.FC = () => {
                         <Box
                           component="img"
                           src={relProp.image}
-                          alt={t(relProp.titleKey)}
+                          alt={resolvePropertyTitle(relProp, currentLang, t)}
                           sx={{ width: "100%", height: 200, objectFit: "cover" }}
                         />
                         <CardContent>
                           <Typography variant="h6" gutterBottom>
-                            {t(relProp.titleKey)}
+                            {resolvePropertyTitle(relProp, currentLang, t)}
                           </Typography>
                           <Typography variant="body2" color="text.secondary" gutterBottom>
                             {relProp.location}

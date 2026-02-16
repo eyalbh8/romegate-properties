@@ -3,68 +3,26 @@ const path = require("path");
 
 const baseUrl = "https://vero.it";
 
-const propertyImages = [
-  {
-    pageUrl: `${baseUrl}/en/properties/1/modern-apartment-trastevere`,
+// Read properties from public/properties.json (single source of truth)
+const propertiesJsonPath = path.join(__dirname, "..", "public", "properties.json");
+let propertyImages = [];
+try {
+  const raw = fs.readFileSync(propertiesJsonPath, "utf8");
+  const data = JSON.parse(raw);
+  const list = Array.isArray(data.properties) ? data.properties : [];
+  propertyImages = list.map((p) => ({
+    pageUrl: `${baseUrl}/en/properties/${p.id}/${p.slug}`,
     images: [
       {
-        loc: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-        caption: "Modern Apartment in Trastevere - Main View",
-        title: "Modern Apartment in Trastevere",
+        loc: p.image,
+        caption: (p.title && p.title.en) || p.slug.replace(/-/g, " "),
+        title: (p.title && p.title.en) || p.slug.replace(/-/g, " "),
       },
     ],
-  },
-  {
-    pageUrl: `${baseUrl}/en/properties/2/luxury-villa-near-colosseum`,
-    images: [
-      {
-        loc: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-        caption: "Luxury Villa near Colosseum - Exterior",
-        title: "Luxury Villa near Colosseum",
-      },
-    ],
-  },
-  {
-    pageUrl: `${baseUrl}/en/properties/3/student-studio-near-sapienza`,
-    images: [
-      {
-        loc: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800",
-        caption: "Student Studio near Sapienza University",
-        title: "Student Studio near Sapienza",
-      },
-    ],
-  },
-  {
-    pageUrl: `${baseUrl}/en/properties/4/cozy-apartment-centro-storico`,
-    images: [
-      {
-        loc: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-        caption: "Cozy Apartment in Centro Storico",
-        title: "Cozy Apartment Centro Storico",
-      },
-    ],
-  },
-  {
-    pageUrl: `${baseUrl}/en/properties/5/elegant-penthouse-with-terrace`,
-    images: [
-      {
-        loc: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-        caption: "Elegant Penthouse with Terrace in Prati",
-        title: "Elegant Penthouse with Terrace",
-      },
-    ],
-  },
-  {
-    pageUrl: `${baseUrl}/en/properties/6/shared-student-room-testaccio`,
-    images: [
-      {
-        loc: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-        caption: "Shared Student Room in Testaccio",
-        title: "Shared Student Room Testaccio",
-      },
-    ],
-  },
-];
+  }));
+} catch (err) {
+  console.warn("⚠️ Could not read public/properties.json, property image sitemap will be empty:", err.message);
+}
 
 const blogImages = [
   {
