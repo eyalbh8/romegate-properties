@@ -1,6 +1,32 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      (function () {
+        var prevOnError = window.onerror;
+        window.onerror = function (message, source, lineno, colno, error) {
+          if (typeof message === "string" && message.includes("ResizeObserver")) return true;
+          return prevOnError ? prevOnError(message, source, lineno, colno, error) : false;
+        };
+        window.addEventListener("error", function (e) {
+          var msg = e.message || (e.error && e.error.message);
+          if (typeof msg === "string" && msg.includes("ResizeObserver")) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+          }
+        }, true);
+        var Ro = window.ResizeObserver;
+        if (Ro) {
+          window.ResizeObserver = function (callback) {
+            return new Ro(function (entries, observer) {
+              requestAnimationFrame(function () {
+                callback(entries, observer);
+              });
+            });
+          };
+        }
+      })();
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#212121" />
@@ -247,20 +273,6 @@
     </script>
   </head>
   <body>
-    <!-- Defer ResizeObserver callbacks to avoid "loop completed with undelivered notifications" (prevents dev overlay) -->
-    <script>
-      (function () {
-        var Ro = window.ResizeObserver;
-        if (!Ro) return;
-        window.ResizeObserver = function (callback) {
-          return new Ro(function (entries, observer) {
-            requestAnimationFrame(function () {
-              callback(entries, observer);
-            });
-          });
-        };
-      })();
-    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
