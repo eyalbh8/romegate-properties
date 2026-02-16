@@ -32,23 +32,175 @@ export default {
       title: "Acquisto Proprietà",
       description:
         "Consulenza esperta nel mercato immobiliare italiano. Trova la proprietà perfetta con la nostra ricerca completa e servizio personalizzato.",
+      fullDescription:
+        "Il nostro servizio di acquisto immobiliare offre supporto completo in tutto il percorso verso la proprietà in Italia. Sappiamo che comprare casa all'estero può essere complesso: per questo ti guidiamo in ogni passaggio, dalla ricerca iniziale alla firma finale.",
+      process: {
+        step1: {
+          title: "Consulenza Iniziale",
+          description:
+            "Ci incontriamo per capire esigenze, budget e preferenze. Ti spieghiamo il mercato immobiliare italiano e gli obblighi di legge.",
+        },
+        step2: {
+          title: "Ricerca della Proprietà",
+          description:
+            "Individuiamo gli immobili adatti ai tuoi criteri, organizziamo le visite e forniamo valutazioni oneste per ogni opzione.",
+        },
+        step3: {
+          title: "Offerta e Negoziazione",
+          description:
+            "Ti aiutiamo a presentare un'offerta competitiva e a negoziare il miglior prezzo e le condizioni possibili per tuo conto.",
+        },
+        step4: {
+          title: "Iter Legale",
+          description:
+            "Coordinandoci con avvocati, notai e altri professionisti, ci assicuriamo che tutti gli adempimenti legali siano rispettati.",
+        },
+        step5: {
+          title: "Rogito",
+          description:
+            "Siamo presenti alla firma finale e garantiamo un passaggio di consegne senza intoppi per la tua nuova proprietà.",
+        },
+      },
+      pricing:
+        "La nostra commissione è in genere il 3% del prezzo di acquisto, pagata dal venditore. L'acquirente paga solo servizi indipendenti come perizie e onorari legali.",
+      benefits: [
+        "Competenza approfondita del mercato locale",
+        "Accesso a annunci esclusivi",
+        "Supporto alla negoziazione",
+        "Assistenza legale",
+        "Supporto post-acquisto",
+      ],
     },
     sellingProperties: {
       title: "Vendita Proprietà",
       description:
         "Massimizza il valore della tua proprietà con i nostri servizi professionali di marketing, valutazione e negoziazione.",
+      fullDescription:
+        "Massimizza il valore del tuo immobile con il nostro servizio di vendita professionale. Uniamo competenza locale, marketing strategico e negoziazione esperta per ottenere il miglior risultato dalla vendita.",
+      process: {
+        step1: {
+          title: "Valutazione dell'Immobile",
+          description:
+            "Forniamo un'analisi di mercato completa e una valutazione accurata in base alle condizioni attuali del mercato.",
+        },
+        step2: {
+          title: "Strategia di Marketing",
+          description:
+            "Creiamo un piano di marketing su misura con fotografie professionali, annunci online e pubblicità mirata.",
+        },
+        step3: {
+          title: "Visite",
+          description:
+            "Gestiamo tutte le visite, selezionando i potenziali acquirenti e mettendo in risalto i punti di forza del tuo immobile.",
+        },
+        step4: {
+          title: "Gestione delle Offerte",
+          description:
+            "Presentiamo tutte le offerte, consigliamo sulle condizioni e negoziamo per ottenere il miglior prezzo e le migliori condizioni.",
+        },
+        step5: {
+          title: "Supporto al Rogito",
+          description:
+            "Coordinandoci con il notaio e le parti, assicuriamo una transazione fluida dall'accettazione alla vendita finale.",
+        },
+      },
+      pricing:
+        "Commissione standard dal 3% al 4% del prezzo di vendita. Tariffe competitive per immobili sopra i 500.000 €.",
+      benefits: [
+        "Valutazione immobiliare professionale",
+        "Ampia rete di acquirenti",
+        "Marketing e promozione",
+        "Gestione negoziazioni",
+        "Gestione della transazione",
+      ],
     },
     propertyManagement: {
       title: "Gestione Proprietà",
       description:
         "Servizi completi di gestione immobiliare inclusi manutenzione, relazioni con gli inquilini e rendicontazione finanziaria.",
+      fullDescription:
+        "Il nostro servizio di gestione immobiliare toglie lo stress dall'essere proprietari. Che tu viva all'estero o non abbia tempo per gestire il tuo immobile, ci occupiamo di tutto: dalla ricerca degli inquilini alla manutenzione.",
+      process: {
+        step1: {
+          title: "Valutazione dell'Immobile",
+          description:
+            "Valutiamo il tuo immobile e consigliamo eventuali miglioramenti per massimizzare il reddito da locazione.",
+        },
+        step2: {
+          title: "Ricerca Inquilini",
+          description:
+            "Pubblicizziamo il tuo immobile, selezioniamo accuratamente gli inquilini e gestiamo tutti i contratti di locazione.",
+        },
+        step3: {
+          title: "Riscossione Canoni",
+          description:
+            "Riscuotiamo l'affitto mensilmente, gestiamo eventuali problemi di pagamento e forniamo report finanziari periodici.",
+        },
+        step4: {
+          title: "Manutenzione",
+          description:
+            "Coordiniamo manutenzione e riparazioni con artigiani di fiducia a prezzi competitivi.",
+        },
+      },
+      pricing:
+        "Fee di gestione: 10% dell'affitto mensile. Fee per ricerca inquilino: un mese di affitto.",
+      benefits: [
+        "Selezione e collocamento inquilini",
+        "Riscossione canoni",
+        "Coordinamento manutenzione",
+        "Rendicontazione finanziaria",
+        "Conformità legale",
+      ],
     },
     studentAccommodation: {
       title: "Alloggi per Studenti",
       description:
         "Servizi specializzati per studenti Erasmus e internazionali. Trova alloggi sicuri e convenienti vicino alle università.",
+      fullDescription:
+        "Siamo specializzati nell'aiutare studenti internazionali ed Erasmus a trovare alloggi sicuri e convenienti in tutta Italia. Conosciamo le esigenze degli studenti e lavoriamo con te per trovare la casa ideale per il tuo periodo di studio.",
+      process: {
+        step1: {
+          title: "Colloquio sulle Esigenze",
+          description:
+            "Raccontaci università, budget e preferenze. Ti illustreremo le opzioni disponibili in Italia.",
+        },
+        step2: {
+          title: "Selezione della Proprietà",
+          description:
+            "Ti mostriamo opzioni adatte vicino alla tua università, tenendo conto di budget e stile di vita.",
+        },
+        step3: {
+          title: "Visita e Scelta",
+          description:
+            "Organizziamo le visite e ti aiutiamo a scegliere con consapevolezza la tua nuova casa.",
+        },
+        step4: {
+          title: "Supporto all'Ingresso",
+          description:
+            "Ci occupiamo di tutta la documentazione, coordiniamo l'ingresso e forniamo orientamento per ambientarti in Italia.",
+        },
+      },
+      pricing:
+        "Nessun costo per gli inquilini. Il servizio è gratuito per gli studenti. La fee di servizio è a carico del proprietario.",
+      benefits: [
+        "Contratti semestrali",
+        "Vicinanza alle università",
+        "Prezzi accessibili",
+        "Comunità studentesca",
+        "Inserimento rapido",
+      ],
     },
+    overview: "Panoramica",
+    howItWorks: "Come Funziona",
+    benefits: "Vantaggi Principali",
+    getStarted: "Inizia",
+    contactForMore:
+      "Contattaci per saperne di più su questo servizio e su come possiamo aiutarti.",
+    contactUs: "Contattaci",
+    browseProperties: "Sfoglia Proprietà",
     learnMore: "Scopri di Più",
+    metaDescription:
+      "Servizi immobiliari completi in Italia: acquisto, vendita, gestione e alloggi per studenti. Consulenza esperta per tutte le tue esigenze.",
   },
   stats: {
     happyClients: "Clienti soddisfatti",

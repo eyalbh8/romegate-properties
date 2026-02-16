@@ -113,6 +113,13 @@ export default {
       },
       pricing:
         "Our commission is typically 3% of the purchase price, paid by the seller. Buyers pay only for independent services like surveys and legal fees.",
+      benefits: [
+        "Expert local market knowledge",
+        "Access to exclusive listings",
+        "Negotiation support",
+        "Legal assistance",
+        "Post-purchase support",
+      ],
     },
     sellingProperties: {
       fullDescription:
@@ -146,6 +153,13 @@ export default {
       },
       pricing:
         "Standard commission is 3-4% of the sale price. We offer competitive rates for properties above €500,000.",
+      benefits: [
+        "Professional property valuation",
+        "Wide buyer network",
+        "Marketing and promotion",
+        "Handling negotiations",
+        "Transaction management",
+      ],
     },
     propertyManagement: {
       fullDescription:
@@ -174,6 +188,13 @@ export default {
       },
       pricing:
         "Management fee is 10% of monthly rent. Tenant placement fee is one month's rent.",
+      benefits: [
+        "Tenant screening and placement",
+        "Rent collection",
+        "Maintenance coordination",
+        "Financial reporting",
+        "Legal compliance",
+      ],
     },
     studentAccommodation: {
       fullDescription:
@@ -202,6 +223,13 @@ export default {
       },
       pricing:
         "No fees for tenants. Our service is free for students. Landlords pay the service fee.",
+      benefits: [
+        "Semester-based leases",
+        "University proximity",
+        "Affordable pricing",
+        "Student community",
+        "Quick placement",
+      ],
     },
     overview: "Overview",
     howItWorks: "How It Works",

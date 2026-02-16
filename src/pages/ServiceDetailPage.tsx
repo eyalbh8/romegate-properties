@@ -121,18 +121,18 @@ const ServiceDetailPage: React.FC = () => {
                   </Paper>
                 )}
 
-                {service.benefits && service.benefits.length > 0 && (
+                {service.benefitKeys && service.benefitKeys.length > 0 && (
                   <Paper sx={{ p: 4 }}>
                     <Typography variant="h4" gutterBottom>
                       {t("services.benefits")}
                     </Typography>
                     <List>
-                      {service.benefits.map((benefit, index) => (
+                      {service.benefitKeys.map((key, index) => (
                         <ListItem key={index}>
                           <ListItemIcon>
                             <CheckCircleIcon color="success" />
                           </ListItemIcon>
-                          <ListItemText primary={benefit} />
+                          <ListItemText primary={t(key)} />
                         </ListItem>
                       ))}
                     </List>
@@ -149,6 +149,11 @@ const ServiceDetailPage: React.FC = () => {
                     <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
                       {t("services.contactForMore")}
                     </Typography>
+                    {service.pricingKey && (
+                      <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+                        {t(service.pricingKey)}
+                      </Typography>
+                    )}
                     <Button
                       variant="contained"
                       fullWidth

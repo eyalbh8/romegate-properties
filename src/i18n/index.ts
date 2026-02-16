@@ -3,12 +3,32 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
 import english from "./english";
+import englishExtended from "./english-extended";
 import italian from "./italian";
 import hebrew from "./hebrew";
 
+function deepMerge(
+  target: Record<string, unknown>,
+  source: Record<string, unknown>
+): Record<string, unknown> {
+  const result = { ...target };
+  for (const key of Object.keys(source)) {
+    const sourceVal = source[key];
+    if (sourceVal != null && typeof sourceVal === "object" && !Array.isArray(sourceVal)) {
+      result[key] = deepMerge(
+        (result[key] as Record<string, unknown>) || {},
+        sourceVal as Record<string, unknown>
+      );
+    } else if (sourceVal !== undefined) {
+      result[key] = sourceVal;
+    }
+  }
+  return result;
+}
+
 const resources = {
   en: {
-    translation: english,
+    translation: deepMerge(english as Record<string, unknown>, englishExtended as Record<string, unknown>) as typeof english,
   },
   it: {
     translation: italian,

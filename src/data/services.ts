@@ -9,7 +9,7 @@ export interface Service {
     titleKey: string;
     descriptionKey: string;
   }[];
-  benefits: string[];
+  benefitKeys: string[];
   targetAudience: string[];
   relatedPropertyTypes: string[];
   pricingKey?: string;
@@ -46,12 +46,12 @@ export const services: Service[] = [
         descriptionKey: "services.buyingProperties.process.step5.description",
       },
     ],
-    benefits: [
-      "Expert local market knowledge",
-      "Access to exclusive listings",
-      "Negotiation support",
-      "Legal assistance",
-      "Post-purchase support",
+    benefitKeys: [
+      "services.buyingProperties.benefits.0",
+      "services.buyingProperties.benefits.1",
+      "services.buyingProperties.benefits.2",
+      "services.buyingProperties.benefits.3",
+      "services.buyingProperties.benefits.4",
     ],
     targetAudience: ["Property Buyers", "Investors", "Expats"],
     relatedPropertyTypes: ["sale", "luxury", "investment"],
@@ -87,12 +87,12 @@ export const services: Service[] = [
         descriptionKey: "services.sellingProperties.process.step5.description",
       },
     ],
-    benefits: [
-      "Professional property valuation",
-      "Wide buyer network",
-      "Marketing and promotion",
-      "Handling negotiations",
-      "Transaction management",
+    benefitKeys: [
+      "services.sellingProperties.benefits.0",
+      "services.sellingProperties.benefits.1",
+      "services.sellingProperties.benefits.2",
+      "services.sellingProperties.benefits.3",
+      "services.sellingProperties.benefits.4",
     ],
     targetAudience: ["Property Owners", "Landlords", "Investors"],
     relatedPropertyTypes: ["sale", "luxury", "investment"],
@@ -128,12 +128,12 @@ export const services: Service[] = [
           "services.propertyManagement.process.step4.description",
       },
     ],
-    benefits: [
-      "Tenant screening and placement",
-      "Rent collection",
-      "Maintenance coordination",
-      "Financial reporting",
-      "Legal compliance",
+    benefitKeys: [
+      "services.propertyManagement.benefits.0",
+      "services.propertyManagement.benefits.1",
+      "services.propertyManagement.benefits.2",
+      "services.propertyManagement.benefits.3",
+      "services.propertyManagement.benefits.4",
     ],
     targetAudience: ["Landlords", "Property Owners", "Investors"],
     relatedPropertyTypes: ["rent", "investment"],
@@ -169,12 +169,12 @@ export const services: Service[] = [
           "services.studentAccommodation.process.step4.description",
       },
     ],
-    benefits: [
-      "Semester-based leases",
-      "University proximity",
-      "Affordable pricing",
-      "Student community",
-      "Quick placement",
+    benefitKeys: [
+      "services.studentAccommodation.benefits.0",
+      "services.studentAccommodation.benefits.1",
+      "services.studentAccommodation.benefits.2",
+      "services.studentAccommodation.benefits.3",
+      "services.studentAccommodation.benefits.4",
     ],
     targetAudience: ["Erasmus Students", "International Students", "Students"],
     relatedPropertyTypes: ["rent", "student-housing"],
