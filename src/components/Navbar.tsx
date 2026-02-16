@@ -19,17 +19,20 @@ import LanguageIcon from "@mui/icons-material/Language";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, useParams } from "react-router-dom";
 
 interface NavItem {
   label: string;
-  href: string;
+  path: string;
 }
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
+  const { lang } = useParams<{ lang: string }>();
+  const currentLang = lang || "en";
+  const pathname = location.pathname;
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [langAnchorEl, setLangAnchorEl] = useState<null | HTMLElement>(null);
   const theme = useTheme();
@@ -47,29 +50,39 @@ const Navbar: React.FC = () => {
     setLangAnchorEl(null);
   };
 
-  const handleLanguageChange = (lang: string): void => {
-    i18n.changeLanguage(lang);
-    // Navigate to the new language route while preserving hash
-    const currentHash = location.hash || "";
-    navigate(`/${lang}${currentHash}`, { replace: true });
+  const handleLanguageChange = (newLang: string): void => {
+    i18n.changeLanguage(newLang);
+    // Navigate to the same page in the new language
+    const pathWithoutLang = pathname.replace(/^\/[^/]+/, "") || "/";
+    navigate(`/${newLang}${pathWithoutLang === "/" ? "" : pathWithoutLang}`, {
+      replace: true,
+    });
     handleLangMenuClose();
   };
 
   const navItems: NavItem[] = [
-    { label: t("navbar.home"), href: "#home" },
-    { label: t("navbar.properties"), href: "#properties" },
-    { label: t("navbar.services"), href: "#services" },
-    { label: t("navbar.about"), href: "#about" },
-    { label: t("navbar.erasmus"), href: "#erasmus" },
-    { label: t("navbar.blog"), href: "#blog" },
-    { label: t("navbar.contact"), href: "#contact" },
+    { label: t("navbar.home"), path: "" },
+    { label: t("navbar.properties"), path: "/properties" },
+    { label: t("navbar.services"), path: "/services" },
+    { label: t("navbar.about"), path: "/about" },
+    { label: t("navbar.erasmus"), path: "/erasmus" },
+    { label: t("navbar.blog"), path: "/blog" },
+    { label: t("navbar.contact"), path: "/contact" },
   ];
 
-  const handleNavClick = (href: string): void => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const getNavTo = (path: string): string =>
+    `/${currentLang}${path}`;
+
+  const isActive = (path: string): boolean => {
+    const to = getNavTo(path);
+    if (path === "") {
+      return pathname === `/${currentLang}` || pathname === `/${currentLang}/`;
     }
+    return pathname === to || pathname.startsWith(`${to}/`);
+  };
+
+  const handleNavClick = (path: string): void => {
+    navigate(getNavTo(path));
     setMobileOpen(false);
   };
 
@@ -87,9 +100,17 @@ const Navbar: React.FC = () => {
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding role="listitem">
             <ListItemButton
-              sx={{ textAlign: "center", color: "rgba(255,255,255,0.9)" }}
-              onClick={() => handleNavClick(item.href)}
-              aria-label={`Navigate to ${item.label} section`}
+              sx={{
+                textAlign: "center",
+                color: "rgba(255,255,255,0.9)",
+                ...(isActive(item.path) && {
+                  fontWeight: 700,
+                  textDecoration: "underline",
+                }),
+              }}
+              onClick={() => handleNavClick(item.path)}
+              aria-label={`Navigate to ${item.label}`}
+              aria-current={isActive(item.path) ? "page" : undefined}
             >
               <ListItemText primary={item.label} />
             </ListItemButton>
@@ -143,11 +164,11 @@ const Navbar: React.FC = () => {
               color: "white",
               cursor: "pointer",
             }}
-            onClick={() => handleNavClick("#home")}
+            onClick={() => handleNavClick("")}
             onKeyDown={(e) => {
               if (e.key === "Enter" || e.key === " ") {
                 e.preventDefault();
-                handleNavClick("#home");
+                handleNavClick("");
               }
             }}
             tabIndex={0}
@@ -190,9 +211,14 @@ const Navbar: React.FC = () => {
               {navItems.map((item) => (
                 <Button
                   key={item.label}
-                  onClick={() => handleNavClick(item.href)}
-                  aria-label={`Navigate to ${item.label} section`}
-                  sx={{ color: "white", fontWeight: 500 }}
+                  onClick={() => handleNavClick(item.path)}
+                  aria-label={`Navigate to ${item.label}`}
+                  aria-current={isActive(item.path) ? "page" : undefined}
+                  sx={{
+                    color: "white",
+                    fontWeight: isActive(item.path) ? 700 : 500,
+                    textDecoration: isActive(item.path) ? "underline" : "none",
+                  }}
                 >
                   {item.label}
                 </Button>

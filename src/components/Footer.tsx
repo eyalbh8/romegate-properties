@@ -13,6 +13,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useParams } from "react-router-dom";
 import { SvgIcon } from "@mui/material";
 
 // WhatsApp Icon Component
@@ -24,11 +25,12 @@ const WhatsAppIcon: React.FC<{ sx?: any }> = ({ sx }) => (
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
-  const handleNavClick = (href: string): void => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const navigate = useNavigate();
+  const { lang } = useParams<{ lang: string }>();
+  const currentLang = lang || "en";
+
+  const handleNavTo = (path: string): void => {
+    navigate(`/${currentLang}${path}`);
   };
 
   return (
@@ -108,7 +110,7 @@ const Footer: React.FC = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick={() => handleNavClick("#home")}
+                onClick={() => handleNavTo("")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
                   textAlign: "left",
@@ -121,7 +123,7 @@ const Footer: React.FC = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick={() => handleNavClick("#properties")}
+                onClick={() => handleNavTo("/properties")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
                   textAlign: "left",
@@ -134,7 +136,7 @@ const Footer: React.FC = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick={() => handleNavClick("#services")}
+                onClick={() => handleNavTo("/services")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
                   textAlign: "left",
@@ -147,7 +149,7 @@ const Footer: React.FC = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick={() => handleNavClick("#about")}
+                onClick={() => handleNavTo("/about")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
                   textAlign: "left",
@@ -160,7 +162,7 @@ const Footer: React.FC = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick={() => handleNavClick("#blog")}
+                onClick={() => handleNavTo("/blog")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
                   textAlign: "left",
@@ -216,7 +218,7 @@ const Footer: React.FC = () => {
               <Link
                 component="button"
                 variant="body2"
-                onClick={() => handleNavClick("#erasmus")}
+                onClick={() => handleNavTo("/erasmus")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
                   textAlign: "left",

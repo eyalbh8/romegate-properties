@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
     <>
       <SEOHead />
       <Navbar />
-      <Breadcrumb items={[{ label: t("common.home") }]} />
+      <Breadcrumb items={[]} />
       <Box id="main-content" component="main">
         <Hero />
         <LeadCaptureSection />

@@ -28,10 +28,7 @@ const ServicesPage: React.FC = () => {
 
       <Navbar />
       <Breadcrumb
-        items={[
-          { label: t("common.home"), href: `/${currentLang}` },
-          { label: t("services.title") },
-        ]}
+        items={[{ label: t("services.title") }]}
       />
 
       <Box sx={{ minHeight: "60vh" }}>

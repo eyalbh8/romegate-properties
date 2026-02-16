@@ -19,6 +19,7 @@ const BlogPostPage = lazy(() => import("./pages/BlogPostPage"));
 const NeighborhoodPage = lazy(() => import("./pages/NeighborhoodPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const ErasmusPage = lazy(() => import("./pages/ErasmusPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 // Loading fallback component
@@ -82,6 +83,7 @@ const App: React.FC = () => {
               <Route path="blog/:slug" element={<BlogPostPage />} />
               <Route path="neighborhoods/:slug" element={<NeighborhoodPage />} />
               <Route path="about" element={<AboutPage />} />
+              <Route path="erasmus" element={<ErasmusPage />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Route>

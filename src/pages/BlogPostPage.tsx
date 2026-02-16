@@ -93,7 +93,6 @@ const BlogPostPage: React.FC = () => {
       <Navbar />
       <Breadcrumb
         items={[
-          { label: t("common.home"), href: `/${currentLang}` },
           { label: t("blog.title"), href: `/${currentLang}/blog` },
           { label: title },
         ]}

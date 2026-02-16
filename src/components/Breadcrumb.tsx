@@ -2,6 +2,7 @@ import React from "react";
 import { Breadcrumbs, Link, Typography, Box } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import { Link as RouterLink, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 interface BreadcrumbItem {
@@ -15,12 +16,9 @@ interface BreadcrumbProps {
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   const { t } = useTranslation();
-  const handleClick = (href: string): void => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const { lang } = useParams<{ lang: string }>();
+  const currentLang = lang || "en";
+  const homePath = `/${currentLang}`;
 
   const breadcrumbList = {
     "@context": "https://schema.org",
@@ -42,6 +40,16 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
       })),
     ],
     numberOfItems: items.length + 1,
+  };
+
+  const linkSx = {
+    display: "flex",
+    alignItems: "center",
+    gap: 0.5,
+    textDecoration: "none",
+    "&:hover": {
+      textDecoration: "underline",
+    },
   };
 
   return (
@@ -66,21 +74,10 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
           aria-label="breadcrumb"
         >
           <Link
+            component={RouterLink}
+            to={homePath}
             color="inherit"
-            href="#home"
-            onClick={(e) => {
-              e.preventDefault();
-              handleClick("#home");
-            }}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: 0.5,
-              textDecoration: "none",
-              "&:hover": {
-                textDecoration: "underline",
-              },
-            }}
+            sx={linkSx}
           >
             <HomeIcon fontSize="small" />
             {t("common.home")}
@@ -93,14 +90,9 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
             ) : (
               <Link
                 key={index}
+                component={RouterLink}
+                to={item.href || homePath}
                 color="inherit"
-                href={item.href || "#"}
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (item.href) {
-                    handleClick(item.href);
-                  }
-                }}
                 sx={{
                   textDecoration: "none",
                   "&:hover": {

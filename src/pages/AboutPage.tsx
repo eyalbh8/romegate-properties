@@ -16,7 +16,7 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{t("common.about")} | Vero Properties</title>
+        <title>{t("navbar.about")} | Vero Properties</title>
         <meta
           name="description"
           content={t("about.metaDescription", {
@@ -29,10 +29,7 @@ const AboutPage: React.FC = () => {
 
       <Navbar />
       <Breadcrumb
-        items={[
-          { label: t("common.home"), href: `/${currentLang}` },
-          { label: t("common.about") },
-        ]}
+        items={[{ label: t("navbar.about") }]}
       />
 
       <Box sx={{ minHeight: "60vh" }}>

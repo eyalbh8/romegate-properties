@@ -59,7 +59,6 @@ const ServiceDetailPage: React.FC = () => {
       <Navbar />
       <Breadcrumb
         items={[
-          { label: t("common.home"), href: `/${currentLang}` },
           { label: t("services.title"), href: `/${currentLang}/services` },
           { label: title },
         ]}

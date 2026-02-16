@@ -84,10 +84,7 @@ const BlogPage: React.FC = () => {
 
       <Navbar />
       <Breadcrumb
-        items={[
-          { label: t("common.home"), href: `/${currentLang}` },
-          { label: t("blog.title") },
-        ]}
+        items={[{ label: t("blog.title") }]}
       />
 
       <Box

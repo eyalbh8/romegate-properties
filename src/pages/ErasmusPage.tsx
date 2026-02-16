@@ -5,9 +5,9 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
-import Contact from "../components/Contact";
+import ErasmusSection from "../components/ErasmusSection";
 
-const ContactPage: React.FC = () => {
+const ErasmusPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language || "en";
   const baseUrl = "https://vero.it";
@@ -15,24 +15,24 @@ const ContactPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>{t("navbar.contact")} | Vero Properties</title>
+        <title>{t("erasmusSection.title")} | Vero Properties</title>
         <meta
           name="description"
-          content={t("contact.metaDescription", {
+          content={t("erasmusSection.subtitle", {
             defaultValue:
-              "Get in touch with Vero Properties. Contact us for property inquiries, viewings, and expert advice on real estate in Italy.",
+              "Your home away from home in Italy. Specialized services for Erasmus and international students - find safe, affordable housing near universities.",
           })}
         />
-        <link rel="canonical" href={`${baseUrl}/${currentLang}/contact`} />
+        <link rel="canonical" href={`${baseUrl}/${currentLang}/erasmus`} />
       </Helmet>
 
       <Navbar />
       <Breadcrumb
-        items={[{ label: t("navbar.contact") }]}
+        items={[{ label: t("navbar.erasmus") }]}
       />
 
-      <Box sx={{ minHeight: "60vh", py: 4 }}>
-        <Contact />
+      <Box sx={{ minHeight: "60vh" }}>
+        <ErasmusSection />
       </Box>
 
       <Footer />
@@ -40,4 +40,4 @@ const ContactPage: React.FC = () => {
   );
 };
 
-export default ContactPage;
+export default ErasmusPage;

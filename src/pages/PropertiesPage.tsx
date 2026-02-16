@@ -79,7 +79,6 @@ const PropertiesPage: React.FC = () => {
       <Navbar />
       <Breadcrumb
         items={[
-          { label: t("common.home"), href: `/${currentLang}` },
           { label: t("properties.title") },
         ]}
       />

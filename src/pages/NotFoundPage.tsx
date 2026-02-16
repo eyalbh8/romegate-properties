@@ -96,7 +96,7 @@ const NotFoundPage: React.FC = () => {
                   <Typography color="primary">{t("blog.title")}</Typography>
                 </Link>
                 <Link to={`/${currentLang}/contact`}>
-                  <Typography color="primary">{t("common.contact")}</Typography>
+                  <Typography color="primary">{t("navbar.contact")}</Typography>
                 </Link>
               </Box>
             </Box>
