@@ -31,6 +31,7 @@ import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import Contact from "../components/Contact";
 import { useProperties, resolvePropertyTitle, resolvePropertyDescription } from "../context/PropertiesContext";
+import ImageCarousel, { type ImageCarouselProps } from "../components/ImageCarousel";
 
 const PropertyDetailPage: React.FC = () => {
   const { slug, id } = useParams<{ slug: string; id: string }>();
@@ -150,16 +151,12 @@ const PropertyDetailPage: React.FC = () => {
             <Grid container spacing={4}>
               {/* Main Image */}
               <Grid item xs={12}>
-                <Box
-                  component="img"
-                  src={property.image}
+                <ImageCarousel
+                  images={property.images ?? [property.image]}
                   alt={title}
-                  sx={{
-                    width: "100%",
-                    height: { xs: 300, md: 500 },
-                    objectFit: "cover",
-                    borderRadius: 2,
-                  }}
+                  height={{ xs: 300, md: 500 } as ImageCarouselProps["height"]}
+                  showDots
+                  showCaption
                 />
               </Grid>
 
@@ -363,11 +360,10 @@ const PropertyDetailPage: React.FC = () => {
                   {relatedProperties.map((relProp) => (
                     <Grid item xs={12} sm={6} md={4} key={relProp.id}>
                       <Card>
-                        <Box
-                          component="img"
-                          src={relProp.image}
+                        <ImageCarousel
+                          images={relProp.images ?? [relProp.image]}
                           alt={resolvePropertyTitle(relProp, currentLang, t)}
-                          sx={{ width: "100%", height: 200, objectFit: "cover" }}
+                          height={200}
                         />
                         <CardContent>
                           <Typography variant="h6" gutterBottom>

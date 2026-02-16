@@ -6,7 +6,6 @@ import {
   Typography,
   Grid,
   Card,
-  CardMedia,
   CardContent,
   CardActions,
   Button,
@@ -33,6 +32,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import { useProperties, resolvePropertyTitle } from "../context/PropertiesContext";
+import ImageCarousel from "../components/ImageCarousel";
 
 const PropertiesPage: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -195,12 +195,10 @@ const PropertiesPage: React.FC = () => {
                       },
                     }}
                   >
-                    <CardMedia
-                      component="img"
-                      height="200"
-                      image={property.image}
+                    <ImageCarousel
+                      images={property.images ?? [property.image]}
                       alt={resolvePropertyTitle(property, currentLang, t)}
-                      loading="lazy"
+                      height={200}
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
                       <Box

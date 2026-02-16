@@ -23,6 +23,21 @@ type TranslateFn = (key: string, options?: { defaultValue?: string }) => string;
 const PROPERTIES_URL =
   process.env.REACT_APP_PROPERTIES_URL || "/properties.json";
 
+const IMAGES_PER_PROPERTY = 10;
+
+/** Ensure a property has an `images` array of exactly IMAGES_PER_PROPERTY entries (pad with property.image). */
+function normalizePropertyImages(property: Property): Property {
+  const base = property.images?.length
+    ? property.images
+    : [property.image];
+  const pad = base[base.length - 1] ?? property.image;
+  const images: string[] = [...base];
+  while (images.length < IMAGES_PER_PROPERTY) {
+    images.push(pad);
+  }
+  return { ...property, images: images.slice(0, IMAGES_PER_PROPERTY) };
+}
+
 interface PropertiesContextValue {
   properties: Property[];
   loading: boolean;
@@ -36,7 +51,9 @@ interface PropertiesContextValue {
 const PropertiesContext = createContext<PropertiesContextValue | null>(null);
 
 export function PropertiesProvider({ children }: { children: ReactNode }) {
-  const [properties, setProperties] = useState<Property[]>(FALLBACK_PROPERTIES);
+  const [properties, setProperties] = useState<Property[]>(() =>
+    FALLBACK_PROPERTIES.map(normalizePropertyImages)
+  );
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -52,12 +69,13 @@ export function PropertiesProvider({ children }: { children: ReactNode }) {
         const data: PropertiesPayload = await res.json();
         const list = Array.isArray(data.properties) ? data.properties : [];
         if (!cancelled) {
-          setProperties(list.length > 0 ? list : FALLBACK_PROPERTIES);
+          const raw = list.length > 0 ? list : FALLBACK_PROPERTIES;
+          setProperties(raw.map(normalizePropertyImages));
         }
       } catch (e) {
         if (!cancelled) {
           setError(e instanceof Error ? e.message : "Failed to load properties");
-          setProperties(FALLBACK_PROPERTIES);
+          setProperties(FALLBACK_PROPERTIES.map(normalizePropertyImages));
         }
       } finally {
         if (!cancelled) setLoading(false);

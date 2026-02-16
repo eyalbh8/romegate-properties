@@ -5,7 +5,6 @@ import {
   Typography,
   Grid,
   Card,
-  CardMedia,
   CardContent,
   CardActions,
   Button,
@@ -28,6 +27,7 @@ import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useProperties, resolvePropertyTitle } from "../context/PropertiesContext";
+import ImageCarousel from "./ImageCarousel";
 
 const Properties: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -263,10 +263,8 @@ const Properties: React.FC = () => {
                       },
                     }}
                   >
-                    <CardMedia
-                      component="img"
-                      height="200"
-                      image={property.image}
+                    <ImageCarousel
+                      images={property.images ?? [property.image]}
                       alt={`${property.title} - ${property.bedrooms} bedroom ${
                         property.type === "rent"
                           ? "rental"
@@ -276,7 +274,7 @@ const Properties: React.FC = () => {
                       } m² with ${property.bathrooms} bathroom${
                         property.bathrooms > 1 ? "s" : ""
                       }. Price: ${formatPrice(property.price, property.type)}`}
-                      loading="lazy"
+                      height={200}
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
                       <Box
