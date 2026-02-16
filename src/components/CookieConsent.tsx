@@ -39,7 +39,7 @@ const CookieConsent: React.FC = () => {
         left: 0,
         right: 0,
         zIndex: 1200,
-        backgroundColor: "#212121",
+        backgroundColor: "grey.800",
         color: "white",
         px: 2,
         py: 2,
@@ -71,7 +71,7 @@ const CookieConsent: React.FC = () => {
         onClick={handleAccept}
         sx={{
           backgroundColor: "white",
-          color: "#212121",
+          color: "text.primary",
           "&:hover": { backgroundColor: "grey.200" },
         }}
       >

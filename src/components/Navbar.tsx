@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
           position: "absolute",
           top: -40,
           left: 0,
-          backgroundColor: "#212121",
+          backgroundColor: "grey.800",
           color: "white",
           padding: 1,
           textDecoration: "none",
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
         role="navigation"
         aria-label="Main navigation"
         sx={{
-          backgroundColor: "#212121",
+          backgroundColor: "grey.800",
           boxShadow: 2,
         }}
       >
@@ -245,7 +245,7 @@ const Navbar: React.FC = () => {
           "& .MuiDrawer-paper": {
             boxSizing: "border-box",
             width: 240,
-            backgroundColor: "#212121",
+            backgroundColor: "grey.800",
             color: "white",
           },
         }}

@@ -1,25 +1,25 @@
 import { createTheme } from "@mui/material/styles";
 
-// Noah's Ark–inspired palette: green accent, dark header/footer
+// Tyrian Purple (Roman emperor purple) – base #66023c
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#398B4B", // Noah-style green (CTA, checkmarks)
-      light: "#4A856A",
-      dark: "#2d6b3a",
+      main: "#66023c", // Tyrian Purple
+      light: "#843462",
+      dark: "#47012a",
       contrastText: "#FFFFFF",
     },
     secondary: {
-      main: "#70A68F", // Lighter green (borders, secondary)
-      light: "#84C4AB",
-      dark: "#5a8b75",
+      main: "#934d76",
+      light: "#b2809d",
+      dark: "#751b4f",
       contrastText: "#FFFFFF",
     },
-    // Dark for header, footer, cookie bar
+    // Dark purple for header, footer, cookie bar
     grey: {
-      900: "#1A1A1A",
-      800: "#212121",
-      700: "#282828",
+      900: "#1b0110",
+      800: "#34011f",
+      700: "#4d022d",
     },
     background: {
       default: "#FAFBFC",

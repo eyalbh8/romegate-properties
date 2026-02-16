@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       role="contentinfo"
       aria-label="Site footer"
       sx={{
-        backgroundColor: "#212121",
+        backgroundColor: "grey.800",
         color: "white",
         pt: 6,
         pb: 3,

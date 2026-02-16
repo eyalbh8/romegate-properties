@@ -52,42 +52,14 @@ const LeadCaptureSection: React.FC = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Grid container spacing={6} alignItems="center">
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={6} justifyContent="center">
+          <Grid item xs={12} md={8}>
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-            >
-              <Box
-                sx={{
-                  width: "100%",
-                  borderRadius: 2,
-                  overflow: "hidden",
-                  boxShadow: 2,
-                  minHeight: 380,
-                }}
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop"
-                  alt=""
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    minHeight: 380,
-                    objectFit: "cover",
-                  }}
-                />
-              </Box>
-            </motion.div>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              style={{ maxWidth: 520, margin: "0 auto" }}
             >
               <Typography variant="h2" component="h2" gutterBottom sx={{ mb: 1 }}>
                 {t("leadCapture.title")}

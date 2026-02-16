@@ -4,41 +4,19 @@ import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-const HeroSection = styled("section")({
+const HeroSection = styled("section")(({ theme }) => ({
   position: "relative",
-  minHeight: "90vh",
+  minHeight: "60vh",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   overflow: "hidden",
-  "&::before": {
-    content: '""',
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    backgroundColor: "rgba(0, 0, 0, 0.5)",
-    zIndex: 1,
-  },
-});
-
-const VideoBackground = styled("video")({
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  minWidth: "100%",
-  minHeight: "100%",
-  width: "auto",
-  height: "auto",
-  transform: "translate(-50%, -50%)",
-  zIndex: 0,
-  objectFit: "cover",
-});
+  background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.primary.dark} 100%)`,
+}));
 
 const HeroContent = styled(Container)(({ theme }) => ({
   position: "relative",
-  zIndex: 2,
+  zIndex: 1,
   textAlign: "center",
   color: "white",
   padding: theme.spacing(4),
@@ -62,35 +40,6 @@ const Hero: React.FC = () => {
 
   return (
     <HeroSection id="home" aria-label="Hero section">
-      <VideoBackground
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920"
-      >
-        <source
-          src="https://videos.pexels.com/video-files/2491284/2491284-hd_1920_1080_25fps.mp4"
-          type="video/mp4"
-        />
-        {/* Fallback image if video doesn't load */}
-        <img
-          src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1920"
-          alt="Beautiful view of Italy - Historic architecture and cityscape"
-          loading="lazy"
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            minWidth: "100%",
-            minHeight: "100%",
-            width: "auto",
-            height: "auto",
-            transform: "translate(-50%, -50%)",
-            objectFit: "cover",
-          }}
-        />
-      </VideoBackground>
       <HeroContent maxWidth="lg">
         <motion.header
           initial={{ opacity: 0, y: 30 }}
