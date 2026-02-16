@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 import { Box, IconButton } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -20,60 +21,112 @@ export default function ImageCarousel({
   showDots = false,
   showCaption = false,
 }: ImageCarouselProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "start",
+    containScroll: "trimSnaps",
+  });
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const count = images.length;
   const hasMultiple = count > 1;
 
-  /** Next: advance by 1, wrap from last to first when keeping same arrow direction */
-  const getNextIndex = (i: number) => (i + 1) % count;
+  const scrollPrev = useCallback(
+    (e: React.PointerEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      emblaApi?.scrollPrev();
+    },
+    [emblaApi]
+  );
 
-  /** Prev: go back by 1, wrap from first to last when keeping same arrow direction */
-  const getPrevIndex = (i: number) => (i - 1 + count) % count;
+  const scrollNext = useCallback(
+    (e: React.PointerEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      emblaApi?.scrollNext();
+    },
+    [emblaApi]
+  );
 
-  const handlePrev = (e: React.PointerEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setCurrentIndex((i) => getPrevIndex(i));
-  };
-  const handleNext = (e: React.PointerEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setCurrentIndex((i) => getNextIndex(i));
-  };
+  const scrollTo = useCallback(
+    (index: number) => (e: React.PointerEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      emblaApi?.scrollTo(index);
+    },
+    [emblaApi]
+  );
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi, onSelect]);
 
   if (count === 0) return null;
+
+  const heightSx =
+    height === undefined
+      ? {}
+      : typeof height === "object" && height !== null && !("length" in height)
+        ? { height }
+        : { height: height as number | string };
 
   return (
     <Box
       sx={{
         position: "relative",
         width: "100%",
-        height: height ?? "auto",
         overflow: "hidden",
         borderRadius: 1,
+        ...heightSx,
       }}
       aria-roledescription="carousel"
       aria-label={alt}
     >
-      <Box
-        component="img"
-        key={`${currentIndex}-${images[currentIndex]}`}
-        src={images[currentIndex]}
-        alt={alt}
-        loading="lazy"
-        sx={{
-          width: "100%",
-          height: height ?? "auto",
-          objectFit: "cover",
-          display: "block",
-        }}
-      />
+      <Box ref={emblaRef} sx={{ overflow: "hidden", height: "100%" }}>
+        <Box sx={{ display: "flex", touchAction: "pan-y pinch-zoom", height: "100%", ml: "-0.25rem" }}>
+          {images.map((src, i) => (
+            <Box
+              key={`${i}-${src}`}
+              sx={{
+                flex: "0 0 100%",
+                minWidth: 0,
+                pl: "0.25rem",
+                height: "100%",
+              }}
+            >
+              <Box
+                component="img"
+                src={src}
+                alt={alt}
+                loading="lazy"
+                sx={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                  borderRadius: 1,
+                }}
+              />
+            </Box>
+          ))}
+        </Box>
+      </Box>
 
       {hasMultiple && (
         <>
           <IconButton
             type="button"
-            onPointerDown={handlePrev}
+            onPointerDown={scrollPrev}
             aria-label="Previous image"
             sx={{
               position: "absolute",
@@ -91,7 +144,7 @@ export default function ImageCarousel({
           </IconButton>
           <IconButton
             type="button"
-            onPointerDown={handleNext}
+            onPointerDown={scrollNext}
             aria-label="Next image"
             sx={{
               position: "absolute",
@@ -125,25 +178,21 @@ export default function ImageCarousel({
           {images.map((_, i) => (
             <Box
               key={i}
-              onPointerDown={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setCurrentIndex(i);
-              }}
+              onPointerDown={scrollTo(i)}
               role="button"
               tabIndex={0}
               aria-label={`Go to image ${i + 1}`}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
-                  setCurrentIndex(i);
+                  emblaApi?.scrollTo(i);
                 }
               }}
               sx={{
                 width: 8,
                 height: 8,
                 borderRadius: "50%",
-                bgcolor: i === currentIndex ? "primary.main" : "rgba(255,255,255,0.7)",
+                bgcolor: i === selectedIndex ? "primary.main" : "rgba(255,255,255,0.7)",
                 cursor: "pointer",
                 transition: "background-color 0.2s",
                 touchAction: "manipulation",
@@ -168,7 +217,7 @@ export default function ImageCarousel({
             zIndex: 1,
           }}
         >
-          {currentIndex + 1} / {count}
+          {selectedIndex + 1} / {count}
         </Box>
       )}
     </Box>
