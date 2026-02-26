@@ -3,6 +3,11 @@ export default {
     text: "Serve aiuto per scegliere una proprietà?",
     ariaLabel: "Contattaci su WhatsApp",
   },
+  consultationFloat: {
+    cta: "Prenota un incontro",
+    ariaLabel: "Prenota una consulenza di 2 ore",
+    terms: "250 € · Incontro di 2 ore + 2 settimane di WhatsApp per domande",
+  },
   cookieConsent: {
     text: "Utilizziamo i cookie per migliorare la tua esperienza. Continuando, accetti la nostra",
     privacyPolicy: "Informativa sulla privacy",

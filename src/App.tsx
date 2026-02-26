@@ -7,6 +7,7 @@ import theme from "./theme";
 import i18n from "./i18n";
 import { PropertiesProvider } from "./context/PropertiesContext";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import ConsultationFloat from "./components/ConsultationFloat";
 import CookieConsent from "./components/CookieConsent";
 
 // Lazy load pages for better performance
@@ -64,6 +65,7 @@ const App: React.FC = () => {
         <Box
           sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
         >
+          <ConsultationFloat />
           <WhatsAppFloat />
           <CookieConsent />
           <Suspense fallback={<LoadingFallback />}>

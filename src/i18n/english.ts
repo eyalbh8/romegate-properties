@@ -3,6 +3,11 @@ export default {
     text: "Need help choosing a property?",
     ariaLabel: "Contact us on WhatsApp",
   },
+  consultationFloat: {
+    cta: "Book a consultation",
+    ariaLabel: "Book a 2-hour consultation",
+    terms: "€250 · 2-hour meeting + 2 weeks WhatsApp for questions",
+  },
   cookieConsent: {
     text: "We use cookies to improve your experience. By continuing, you agree to our",
     privacyPolicy: "Privacy Policy",
