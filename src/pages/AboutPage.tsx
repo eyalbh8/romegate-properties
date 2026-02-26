@@ -5,8 +5,12 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
+import AboutHero from "../components/AboutHero";
+import AboutVideo from "../components/AboutVideo";
 import UniqueSection from "../components/UniqueSection";
+import AboutGallery from "../components/AboutGallery";
 import ErasmusSection from "../components/ErasmusSection";
+import StatsSection from "../components/StatsSection";
 
 const AboutPage: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -28,13 +32,15 @@ const AboutPage: React.FC = () => {
       </Helmet>
 
       <Navbar />
-      <Breadcrumb
-        items={[{ label: t("navbar.about") }]}
-      />
+      <Breadcrumb items={[{ label: t("navbar.about") }]} />
 
       <Box sx={{ minHeight: "60vh" }}>
+        <AboutHero />
+        <AboutVideo />
         <UniqueSection />
+        <AboutGallery />
         <ErasmusSection />
+        <StatsSection animated />
       </Box>
 
       <Footer />

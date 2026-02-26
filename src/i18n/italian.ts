@@ -29,6 +29,17 @@ export default {
     browseProperties: "Sfoglia Proprietà",
     getStarted: "Inizia",
   },
+  home: {
+    video: {
+      title: "Guarda come lavoriamo",
+      caption: "Uno sguardo al nostro team e al nostro approccio",
+      comingSoon: "Video in arrivo",
+    },
+    gallery: {
+      title: "Il nostro mondo",
+      altPrefix: "Vero Properties - immagine",
+    },
+  },
   services: {
     title: "I Nostri Servizi",
     intro:
@@ -456,6 +467,23 @@ export default {
     studentAccommodation: "Alloggi per Studenti",
     aboutUs: "Chi Siamo",
     copyright: "Vero Properties. Tutti i diritti riservati.",
+  },
+  about: {
+    metaDescription:
+      "Scopri Vero Properties - Il tuo partner immobiliare di fiducia in Italia per acquisto, vendita, gestione e alloggi per studenti.",
+    hero: {
+      tagline: "Il tuo partner di fiducia nel mercato immobiliare italiano",
+      alt: "Immobiliare Italia - Vero Properties",
+    },
+    video: {
+      title: "Guarda come lavoriamo",
+      caption: "Uno sguardo al nostro team e al nostro approccio",
+      comingSoon: "Video in arrivo",
+    },
+    gallery: {
+      title: "Il nostro mondo",
+      altPrefix: "Su Vero Properties - immagine",
+    },
   },
   common: {
     home: "Home",

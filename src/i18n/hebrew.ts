@@ -29,6 +29,17 @@ export default {
     browseProperties: "עיין בנכסים",
     getStarted: "התחל",
   },
+  home: {
+    video: {
+      title: "ראו איך אנחנו עובדים",
+      caption: "מבט על הצוות והגישה שלנו",
+      comingSoon: "וידאו בקרוב",
+    },
+    gallery: {
+      title: "העולם שלנו",
+      altPrefix: "Vero Properties - תמונה",
+    },
+  },
   services: {
     title: "השירותים שלנו",
     intro:
@@ -450,6 +461,23 @@ export default {
     studentAccommodation: "דיור לסטודנטים",
     aboutUs: "אודותינו",
     copyright: "Vero Properties. כל הזכויות שמורות.",
+  },
+  about: {
+    metaDescription:
+      "למד על Vero Properties - שותף הנדל\"ן המהימן שלך באיטליה בתחום מכירה, השכרה, ניהול ודירות לסטודנטים.",
+    hero: {
+      tagline: "השותף המהימן שלך בנדל\"ן האיטלקי",
+      alt: "נדל\"ן איטליה - Vero Properties",
+    },
+    video: {
+      title: "ראו איך אנחנו עובדים",
+      caption: "מבט על הצוות והגישה שלנו",
+      comingSoon: "וידאו בקרוב",
+    },
+    gallery: {
+      title: "העולם שלנו",
+      altPrefix: "אודות Vero Properties - תמונה",
+    },
   },
   common: {
     home: "בית",

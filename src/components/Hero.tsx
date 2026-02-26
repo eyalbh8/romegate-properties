@@ -1,8 +1,9 @@
-import React from "react";
-import { Container, Typography, Button, Stack } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Container, Typography, Button, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { aboutMedia } from "../data/aboutMedia";
 
 const HeroSection = styled("section")(({ theme }) => ({
   position: "relative",
@@ -24,6 +25,7 @@ const HeroContent = styled(Container)(({ theme }) => ({
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
+  const [videoFailed, setVideoFailed] = useState(false);
   const handleBrowseClick = (): void => {
     const element = document.querySelector("#properties");
     if (element) {
@@ -38,9 +40,93 @@ const Hero: React.FC = () => {
     }
   };
 
+  const homeHero = aboutMedia.home?.hero;
+  const hasBackground =
+    homeHero && (homeHero.videoSrc || homeHero.backgroundImage);
+  const useVideo =
+    hasBackground &&
+    homeHero.videoSrc &&
+    !videoFailed;
+
   return (
     <HeroSection id="home" aria-label="Hero section">
-      <HeroContent maxWidth="lg">
+      {useVideo ? (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+          }}
+        >
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={homeHero.posterImage}
+            onError={() => setVideoFailed(true)}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          >
+            <source src={homeHero.videoSrc} type="video/mp4" />
+          </video>
+        </motion.div>
+      ) : hasBackground && homeHero.backgroundImage ? (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 0,
+          }}
+        >
+          <Box
+            component="img"
+            src={homeHero.backgroundImage}
+            alt=""
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+        </motion.div>
+      ) : null}
+      {/* Gradient overlay for contrast when background media is present */}
+      {hasBackground && (
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: `linear-gradient(135deg, rgba(102, 2, 60, 0.75) 0%, rgba(71, 1, 42, 0.85) 100%)`,
+            zIndex: 1,
+          }}
+        />
+      )}
+      <HeroContent maxWidth="lg" sx={hasBackground ? { position: "relative", zIndex: 2 } : undefined}>
         <motion.header
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

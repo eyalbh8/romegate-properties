@@ -29,6 +29,17 @@ export default {
     browseProperties: "Browse Properties",
     getStarted: "Get Started",
   },
+  home: {
+    video: {
+      title: "See how we work",
+      caption: "A glimpse of our team and approach",
+      comingSoon: "Video coming soon",
+    },
+    gallery: {
+      title: "Our world",
+      altPrefix: "Vero Properties - image",
+    },
+  },
   services: {
     title: "Our Services",
     intro:
@@ -297,6 +308,23 @@ export default {
     studentAccommodation: "Student Accommodation",
     aboutUs: "About Us",
     copyright: "Vero Properties. All rights reserved.",
+  },
+  about: {
+    metaDescription:
+      "Learn about Vero Properties - Your trusted real estate partner in Italy specializing in property sales, rentals, management, and student accommodation.",
+    hero: {
+      tagline: "Your trusted partner in Italian real estate",
+      alt: "Italian real estate - Vero Properties",
+    },
+    video: {
+      title: "See how we work",
+      caption: "A glimpse of our team and approach",
+      comingSoon: "Video coming soon",
+    },
+    gallery: {
+      title: "Our world",
+      altPrefix: "About Vero Properties - image",
+    },
   },
   common: {
     home: "Home",
