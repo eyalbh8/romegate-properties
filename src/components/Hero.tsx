@@ -70,7 +70,14 @@ const Hero: React.FC = () => {
             loop
             playsInline
             poster={homeHero.posterImage}
-            onError={() => setVideoFailed(true)}
+            onError={(e) => {
+              const v = e.currentTarget;
+              console.warn("[Hero] Video failed to load, falling back to image.", {
+                src: homeHero.videoSrc,
+                error: v.error?.message ?? v.error?.code,
+              });
+              setVideoFailed(true);
+            }}
             style={{
               position: "absolute",
               top: 0,
@@ -112,20 +119,6 @@ const Hero: React.FC = () => {
           />
         </motion.div>
       ) : null}
-      {/* Gradient overlay for contrast when background media is present */}
-      {hasBackground && (
-        <Box
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: `linear-gradient(135deg, rgba(102, 2, 60, 0.75) 0%, rgba(71, 1, 42, 0.85) 100%)`,
-            zIndex: 1,
-          }}
-        />
-      )}
       <HeroContent maxWidth="lg" sx={hasBackground ? { position: "relative", zIndex: 2 } : undefined}>
         <motion.header
           initial={{ opacity: 0, y: 30 }}

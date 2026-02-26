@@ -8,7 +8,10 @@ export const aboutMedia = {
   hero: {
     backgroundImage:
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1920",
-    videoSrc: undefined as string | undefined,
+    videoSrc:
+      "https://vero-assets-public.s3.us-east-1.amazonaws.com/villas-videos/video1" as
+        | string
+        | undefined,
     /** Optional: poster when using video (e.g. /about-hero-poster.jpg) */
     posterImage: undefined as string | undefined,
   },
@@ -19,7 +22,9 @@ export const aboutMedia = {
         "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1920",
       /** Use your own for reliable playback: add hero-video.mp4 to public/ and set to "/hero-video.mp4". */
       videoSrc:
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" as string | undefined,
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villas-videos/video1" as
+          | string
+          | undefined,
       posterImage: undefined as string | undefined,
     },
     /** Optional: different gallery images for home. If undefined, home reuses aboutMedia.gallery. */
@@ -30,7 +35,10 @@ export const aboutMedia = {
     /** e.g. "https://www.youtube.com/embed/..." or "https://player.vimeo.com/video/..." */
     embedUrl: undefined as string | undefined,
     /** For HTML5 video: /about-intro.mp4 */
-    videoSrc: undefined as string | undefined,
+    videoSrc:
+      "https://vero-assets-public.s3.us-east-1.amazonaws.com/villas-videos/video1" as
+        | string
+        | undefined,
     posterImage:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1280",
   },
