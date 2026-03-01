@@ -63,211 +63,31 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://vero.it/en/properties/1/modern-apartment-trastevere</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/1/modern-apartment-trastevere" />
+    <loc>https://vero.it/en/properties/1/villa-la-fornaca</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/1/villa-la-fornaca" />
     <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vero.it/it/properties/1/modern-apartment-trastevere</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/1/modern-apartment-trastevere" />
+    <loc>https://vero.it/it/properties/1/villa-la-fornaca</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/1/villa-la-fornaca" />
     <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vero.it/he/properties/1/modern-apartment-trastevere</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/1/modern-apartment-trastevere" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/1/modern-apartment-trastevere" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/2/luxury-villa-near-colosseum</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/2/luxury-villa-near-colosseum" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/it/properties/2/luxury-villa-near-colosseum</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/2/luxury-villa-near-colosseum" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/he/properties/2/luxury-villa-near-colosseum</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/2/luxury-villa-near-colosseum" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/2/luxury-villa-near-colosseum" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/3/student-studio-near-sapienza</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/3/student-studio-near-sapienza" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/it/properties/3/student-studio-near-sapienza</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/3/student-studio-near-sapienza" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/he/properties/3/student-studio-near-sapienza</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/3/student-studio-near-sapienza" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/3/student-studio-near-sapienza" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/4/cozy-apartment-centro-storico</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/4/cozy-apartment-centro-storico" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/it/properties/4/cozy-apartment-centro-storico</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/4/cozy-apartment-centro-storico" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/he/properties/4/cozy-apartment-centro-storico</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/4/cozy-apartment-centro-storico" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/4/cozy-apartment-centro-storico" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/5/elegant-penthouse-with-terrace</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/5/elegant-penthouse-with-terrace" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/it/properties/5/elegant-penthouse-with-terrace</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/5/elegant-penthouse-with-terrace" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/he/properties/5/elegant-penthouse-with-terrace</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/5/elegant-penthouse-with-terrace" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/5/elegant-penthouse-with-terrace" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/6/shared-student-room-testaccio</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/6/shared-student-room-testaccio" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/it/properties/6/shared-student-room-testaccio</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/6/shared-student-room-testaccio" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/he/properties/6/shared-student-room-testaccio</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/6/shared-student-room-testaccio" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/6/shared-student-room-testaccio" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/7/villa-la-fornaca</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/7/villa-la-fornaca" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/it/properties/7/villa-la-fornaca</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/7/villa-la-fornaca" />
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vero.it/he/properties/7/villa-la-fornaca</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/7/villa-la-fornaca" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/7/villa-la-fornaca" />
+    <loc>https://vero.it/he/properties/1/villa-la-fornaca</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/1/villa-la-fornaca" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/1/villa-la-fornaca" />
     <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

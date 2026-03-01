@@ -2,57 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://vero.it/en/properties/1/modern-apartment-trastevere</loc>
+    <loc>https://vero.it/en/properties/1/villa-la-fornaca</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800</image:loc>
-      <image:caption>modern apartment trastevere</image:caption>
-      <image:title>modern apartment trastevere</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/2/luxury-villa-near-colosseum</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800</image:loc>
-      <image:caption>luxury villa near colosseum</image:caption>
-      <image:title>luxury villa near colosseum</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/3/student-studio-near-sapienza</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800</image:loc>
-      <image:caption>student studio near sapienza</image:caption>
-      <image:title>student studio near sapienza</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/4/cozy-apartment-centro-storico</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800</image:loc>
-      <image:caption>cozy apartment centro storico</image:caption>
-      <image:title>cozy apartment centro storico</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/5/elegant-penthouse-with-terrace</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800</image:loc>
-      <image:caption>elegant penthouse with terrace</image:caption>
-      <image:title>elegant penthouse with terrace</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/6/shared-student-room-testaccio</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800</image:loc>
-      <image:caption>shared student room testaccio</image:caption>
-      <image:title>shared student room testaccio</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vero.it/en/properties/7/villa-la-fornaca</loc>
-    <image:image>
-      <image:loc>https://vero-assets-public.s3.amazonaws.com/villa-la-fornaca/1.jpg</image:loc>
+      <image:loc>https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca1.webp</image:loc>
       <image:caption>Villa La Fornaca</image:caption>
       <image:title>Villa La Fornaca</image:title>
     </image:image>
