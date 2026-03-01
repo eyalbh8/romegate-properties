@@ -98,6 +98,7 @@ const PropertyDetailPage: React.FC = () => {
   const title = resolvePropertyTitle(property, currentLang, t);
   const defaultDesc = `${title} in ${property.location}. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area}m². ${property.type === "rent" ? "For rent" : "For sale"}.`;
   const description = resolvePropertyDescription(property, currentLang, t, defaultDesc);
+  const transportLinksToShow = property.transportLinksLocalized?.[currentLang] ?? property.transportLinks ?? [];
   /** Plain description for meta/SEO (strip ## section headers) */
   const descriptionPlain = description.replace(/\n## [^\n]+/g, "\n").replace(/\n{2,}/g, "\n\n").trim();
 
@@ -348,13 +349,22 @@ const PropertyDetailPage: React.FC = () => {
                     <Typography variant="h5" component="h2" gutterBottom>
                       {t("properties.amenities")}
                     </Typography>
-                    <List>
+                    <List disablePadding>
                       {property.amenities.map((amenity, index) => {
                         const AmenityIcon = AMENITY_ICON_MAP[amenity] ?? CheckCircleIcon;
                         const isRemix = AmenityIcon !== CheckCircleIcon;
                         return (
-                          <ListItem key={index}>
-                            <ListItemIcon sx={isRemix ? { color: "success.main" } : undefined}>
+                          <ListItem
+                            key={index}
+                            disableGutters
+                            sx={{ alignItems: "center", gap: 1 }}
+                          >
+                            <ListItemIcon
+                              sx={{
+                                minWidth: 32,
+                                color: isRemix ? "success.main" : undefined,
+                              }}
+                            >
                               {isRemix ? (
                                 <AmenityIcon size={24} color="currentColor" />
                               ) : (
@@ -374,13 +384,13 @@ const PropertyDetailPage: React.FC = () => {
                 )}
 
                 {/* Transport Links */}
-                {property.transportLinks && property.transportLinks.length > 0 && (
+                {transportLinksToShow.length > 0 && (
                   <Box sx={{ mb: 3 }}>
                     <Typography variant="h5" component="h2" gutterBottom>
                       {t("properties.transport")}
                     </Typography>
                     <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-                      {property.transportLinks.map((link, index) => (
+                      {transportLinksToShow.map((link, index) => (
                         <Chip key={index} label={link} variant="outlined" />
                       ))}
                     </Box>

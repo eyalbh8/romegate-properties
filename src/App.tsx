@@ -1,10 +1,11 @@
-import React, { useEffect, Suspense, lazy } from "react";
+import React, { useEffect, Suspense, lazy, useState, useMemo } from "react";
 import { Routes, Route, Navigate, useParams, Outlet } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Box, CircularProgress } from "@mui/material";
-import theme from "./theme";
+import { createAppTheme } from "./theme";
 import i18n from "./i18n";
+import { getDirForLang } from "./utils/seo";
 import { PropertiesProvider } from "./context/PropertiesContext";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import ConsultationFloat from "./components/ConsultationFloat";
@@ -58,6 +59,18 @@ const LanguageRoute: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  const [direction, setDirection] = useState<"ltr" | "rtl">(() =>
+    getDirForLang(i18n.language || "en")
+  );
+
+  useEffect(() => {
+    const handleLangChange = (lng: string) => setDirection(getDirForLang(lng));
+    i18n.on("languageChanged", handleLangChange);
+    return () => i18n.off("languageChanged", handleLangChange);
+  }, []);
+
+  const theme = useMemo(() => createAppTheme(direction), [direction]);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

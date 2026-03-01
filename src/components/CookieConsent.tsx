@@ -51,7 +51,7 @@ const CookieConsent: React.FC = () => {
         boxShadow: "0 -2px 10px rgba(0,0,0,0.2)",
       }}
     >
-      <Typography variant="body2" sx={{ flex: { xs: "1 1 100%", sm: "1 1 auto" }, textAlign: { xs: "center", sm: "left" } }}>
+      <Typography variant="body2" sx={{ flex: { xs: "1 1 100%", sm: "1 1 auto" }, textAlign: { xs: "center", sm: "start" } }}>
         {t("cookieConsent.text", {
           defaultValue: "We use cookies to improve your experience. By continuing, you agree to our",
         })}{" "}

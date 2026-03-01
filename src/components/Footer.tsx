@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleNavTo("")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleNavTo("/properties")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleNavTo("/services")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleNavTo("/about")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -165,7 +165,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleNavTo("/blog")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -184,7 +184,7 @@ const Footer: React.FC = () => {
                 variant="body2"
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -196,7 +196,7 @@ const Footer: React.FC = () => {
                 variant="body2"
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -208,7 +208,7 @@ const Footer: React.FC = () => {
                 variant="body2"
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}
@@ -221,7 +221,7 @@ const Footer: React.FC = () => {
                 onClick={() => handleNavTo("/erasmus")}
                 sx={{
                   color: "rgba(255, 255, 255, 0.8)",
-                  textAlign: "left",
+                  textAlign: "start",
                   "&:hover": { color: "white" },
                   cursor: "pointer",
                 }}

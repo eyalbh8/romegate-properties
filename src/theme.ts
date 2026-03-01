@@ -1,7 +1,7 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, type Direction } from "@mui/material/styles";
 
 // Tyrian Purple (Roman emperor purple) – base #66023c
-const theme = createTheme({
+const themeOptions = {
   palette: {
     primary: {
       main: "#66023c", // Tyrian Purple
@@ -164,6 +164,11 @@ const theme = createTheme({
       },
     },
   },
-});
+};
 
+/** Create theme with optional RTL/LTR direction (default ltr). */
+export const createAppTheme = (direction: Direction = "ltr") =>
+  createTheme(themeOptions, { direction });
+
+const theme = createTheme(themeOptions);
 export default theme;
