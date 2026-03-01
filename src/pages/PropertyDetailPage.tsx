@@ -21,6 +21,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BedIcon from "@mui/icons-material/Bed";
 import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
+import LandscapeIcon from "@mui/icons-material/Landscape";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import EuroIcon from "@mui/icons-material/Euro";
 import {
@@ -265,11 +266,24 @@ const PropertyDetailPage: React.FC = () => {
                       <Box sx={{ textAlign: "center" }}>
                         <SquareFootIcon sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />
                         <Typography variant="body2" color="text.secondary">
-                          {t("properties.area")}
+                          {t("properties.builtUpArea")}
                         </Typography>
                         <Typography variant="h6">{property.area} m²</Typography>
                       </Box>
                     </Grid>
+                    {property.landArea != null && (
+                      <Grid item xs={6} sm={3}>
+                        <Box sx={{ textAlign: "center" }}>
+                          <LandscapeIcon sx={{ fontSize: 40, color: "primary.main", mb: 1 }} />
+                          <Typography variant="body2" color="text.secondary">
+                            {t("properties.land")}
+                          </Typography>
+                          <Typography variant="h6">
+                            {property.landArea.toLocaleString()} m²
+                          </Typography>
+                        </Box>
+                      </Grid>
+                    )}
                     {property.floor && (
                       <Grid item xs={6} sm={3}>
                         <Box sx={{ textAlign: "center" }}>

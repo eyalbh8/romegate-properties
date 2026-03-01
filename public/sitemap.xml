@@ -93,6 +93,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vero.it/en/properties/2/villa-pieve-vecchia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/2/villa-pieve-vecchia" />
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vero.it/it/properties/2/villa-pieve-vecchia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/2/villa-pieve-vecchia" />
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vero.it/he/properties/2/villa-pieve-vecchia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://vero.it/he/properties/2/villa-pieve-vecchia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vero.it/en/properties/2/villa-pieve-vecchia" />
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vero.it/en/services</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vero.it/en/services" />
     <xhtml:link rel="alternate" hreflang="it" href="https://vero.it/it/services" />

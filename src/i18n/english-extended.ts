@@ -32,6 +32,8 @@ export default {
       garden: "Private Garden",
       patio: "Patio",
       bbq_grill: "BBQ Grill",
+      bathtub: "Bathtub",
+      shower: "Shower",
     },
     metaDescription:
       "Browse available properties for rent and sale across Italy. Find apartments, studios, and luxury properties in Rome, Milan, Florence, and more.",
@@ -48,6 +50,8 @@ export default {
     bedrooms: "Bedrooms",
     bathrooms: "Bathrooms",
     area: "Area",
+    builtUpArea: "Built up area",
+    land: "Land",
     floor: "Floor",
   },
 

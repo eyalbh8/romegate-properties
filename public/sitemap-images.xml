@@ -10,6 +10,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://vero.it/en/properties/2/villa-pieve-vecchia</loc>
+    <image:image>
+      <image:loc>https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-pieve-vecchia/pieve-vecchia1.webp</image:loc>
+      <image:caption>Villa Pieve Vecchia</image:caption>
+      <image:title>Villa Pieve Vecchia</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://vero.it/en/blog/top-5-neighborhoods-erasmus-students-rome</loc>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800</image:loc>
