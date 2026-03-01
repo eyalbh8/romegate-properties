@@ -30,7 +30,6 @@ const HomePage: React.FC = () => {
         <Hero />
         <LeadCaptureSection />
         <Services />
-        <AboutGallery sectionKey="home" />
         <UniqueSection />
         <ErasmusSection />
         <Properties />

@@ -48,7 +48,7 @@ export const FALLBACK_PROPERTIES: Property[] = [
   {
     id: 1,
     slug: "villa-la-fornaca",
-    title: { en: "Villa La Fornaca", it: "Villa La Fornaca", he: "וילה לה פורנקה" },
+    title: { en: "Villa La Fornaca", it: "Villa La Fornaca", he: "וילה לה פורנצ׳ה" },
     description: {
       en: [
         "Nestled in the rolling hills of the Tuscan countryside, just 5 minutes from the charming medieval village of Campagnatico, this exquisite 5-bedroom, 4-bathroom villa offers the perfect blend of rustic heritage and modern luxury. Once a traditional fornace where the region's iconic terracotta tiles were crafted, the property has been thoughtfully restored to the highest standards, seamlessly combining historical charm with contemporary comfort.",
