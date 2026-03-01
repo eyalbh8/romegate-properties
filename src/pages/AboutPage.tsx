@@ -6,7 +6,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import AboutHero from "../components/AboutHero";
-import AboutVideo from "../components/AboutVideo";
 import UniqueSection from "../components/UniqueSection";
 import AboutGallery from "../components/AboutGallery";
 import ErasmusSection from "../components/ErasmusSection";
@@ -36,7 +35,6 @@ const AboutPage: React.FC = () => {
 
       <Box sx={{ minHeight: "60vh" }}>
         <AboutHero />
-        <AboutVideo />
         <UniqueSection />
         <AboutGallery />
         <ErasmusSection />
