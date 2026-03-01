@@ -11,8 +11,6 @@ import {
   CardContent,
   List,
   ListItem,
-  ListItemIcon,
-  ListItemText,
   Paper,
   CircularProgress,
 } from "@mui/material";
@@ -357,25 +355,33 @@ const PropertyDetailPage: React.FC = () => {
                           <ListItem
                             key={index}
                             disableGutters
-                            sx={{ alignItems: "center", gap: 1 }}
+                            sx={{
+                              alignItems: "center",
+                              gap: 0.75,
+                              py: 0.25,
+                            }}
                           >
-                            <ListItemIcon
+                            <Box
                               sx={{
-                                minWidth: 32,
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                width: 28,
+                                flexShrink: 0,
                                 color: isRemix ? "success.main" : undefined,
                               }}
                             >
                               {isRemix ? (
-                                <AmenityIcon size={24} color="currentColor" />
+                                <AmenityIcon size={22} color="currentColor" />
                               ) : (
-                                <CheckCircleIcon color="success" />
+                                <CheckCircleIcon color="success" fontSize="small" />
                               )}
-                            </ListItemIcon>
-                            <ListItemText
-                              primary={t(`properties.amenityTypes.${amenity}`, {
+                            </Box>
+                            <Typography variant="body2" component="span">
+                              {t(`properties.amenityTypes.${amenity}`, {
                                 defaultValue: amenity.replace(/_/g, " "),
                               })}
-                            />
+                            </Typography>
                           </ListItem>
                         );
                       })}
