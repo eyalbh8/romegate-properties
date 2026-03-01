@@ -25,7 +25,7 @@ const PROPERTIES_URL =
 
 const IMAGES_PER_PROPERTY = 10;
 
-/** Ensure a property has an `images` array of exactly IMAGES_PER_PROPERTY entries (pad with property.image). */
+/** Ensure a property has an `images` array with at least IMAGES_PER_PROPERTY entries (pad with property.image). Does not truncate, so properties with more images (e.g. 60) keep all. */
 function normalizePropertyImages(property: Property): Property {
   const base = property.images?.length
     ? property.images
@@ -35,7 +35,7 @@ function normalizePropertyImages(property: Property): Property {
   while (images.length < IMAGES_PER_PROPERTY) {
     images.push(pad);
   }
-  return { ...property, images: images.slice(0, IMAGES_PER_PROPERTY) };
+  return { ...property, images };
 }
 
 interface PropertiesContextValue {

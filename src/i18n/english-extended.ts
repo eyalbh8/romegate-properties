@@ -28,6 +28,10 @@ export default {
       elevator: "Elevator",
       desk: "Study Desk",
       shared_kitchen: "Shared Kitchen",
+      swimming_pool: "Swimming Pool",
+      garden: "Private Garden",
+      patio: "Patio",
+      bbq_grill: "BBQ Grill",
     },
     metaDescription:
       "Browse available properties for rent and sale across Italy. Find apartments, studios, and luxury properties in Rome, Milan, Florence, and more.",

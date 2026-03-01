@@ -19,18 +19,33 @@
         "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800"
       ],
-      "amenities": ["wifi", "heating", "washing_machine", "dishwasher", "balcony"],
+      "amenities": [
+        "wifi",
+        "heating",
+        "washing_machine",
+        "dishwasher",
+        "balcony"
+      ],
       "available": true,
       "availableFrom": "2026-03-01",
       "energyRating": "C",
       "floor": 3,
       "furnished": true,
       "balcony": true,
-      "nearbyUniversities": ["John Cabot University", "American University of Rome"],
-      "transportLinks": ["Tram 8", "Bus H"],
+      "nearbyUniversities": [
+        "John Cabot University",
+        "American University of Rome"
+      ],
+      "transportLinks": [
+        "Tram 8",
+        "Bus H"
+      ],
       "minimumStay": "6 months",
       "deposit": 2400,
-      "coordinates": { "lat": 41.8897, "lng": 12.4686 }
+      "coordinates": {
+        "lat": 41.8897,
+        "lng": 12.4686
+      }
     },
     {
       "id": 2,
@@ -49,15 +64,30 @@
         "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
       ],
-      "amenities": ["wifi", "heating", "air_conditioning", "washing_machine", "dishwasher", "terrace", "parking"],
+      "amenities": [
+        "wifi",
+        "heating",
+        "air_conditioning",
+        "washing_machine",
+        "dishwasher",
+        "terrace",
+        "parking"
+      ],
       "available": true,
       "energyRating": "B",
       "floor": 2,
       "furnished": false,
       "parking": true,
       "balcony": false,
-      "transportLinks": ["Metro B - Colosseo", "Bus 75", "Bus 87"],
-      "coordinates": { "lat": 41.8947, "lng": 12.4916 }
+      "transportLinks": [
+        "Metro B - Colosseo",
+        "Bus 75",
+        "Bus 87"
+      ],
+      "coordinates": {
+        "lat": 41.8947,
+        "lng": 12.4916
+      }
     },
     {
       "id": 3,
@@ -72,19 +102,35 @@
       "area": 35,
       "type": "rent",
       "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800",
-      "images": ["https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800"],
-      "amenities": ["wifi", "heating", "washing_machine", "desk"],
+      "images": [
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800"
+      ],
+      "amenities": [
+        "wifi",
+        "heating",
+        "washing_machine",
+        "desk"
+      ],
       "available": true,
       "availableFrom": "2026-09-01",
       "energyRating": "D",
       "floor": 1,
       "furnished": true,
       "balcony": false,
-      "nearbyUniversities": ["Sapienza University of Rome"],
-      "transportLinks": ["Tram 3", "Tram 19", "Bus 492"],
+      "nearbyUniversities": [
+        "Sapienza University of Rome"
+      ],
+      "transportLinks": [
+        "Tram 3",
+        "Tram 19",
+        "Bus 492"
+      ],
       "minimumStay": "5 months",
       "deposit": 1300,
-      "coordinates": { "lat": 41.9008, "lng": 12.5155 }
+      "coordinates": {
+        "lat": 41.9008,
+        "lng": 12.5155
+      }
     },
     {
       "id": 4,
@@ -99,17 +145,32 @@
       "area": 100,
       "type": "rent",
       "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-      "images": ["https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"],
-      "amenities": ["wifi", "heating", "air_conditioning", "washing_machine", "dishwasher"],
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"
+      ],
+      "amenities": [
+        "wifi",
+        "heating",
+        "air_conditioning",
+        "washing_machine",
+        "dishwasher"
+      ],
       "available": true,
       "energyRating": "C",
       "floor": 2,
       "furnished": true,
       "balcony": false,
-      "transportLinks": ["Bus 64", "Bus 40", "Bus 46"],
+      "transportLinks": [
+        "Bus 64",
+        "Bus 40",
+        "Bus 46"
+      ],
       "minimumStay": "12 months",
       "deposit": 3600,
-      "coordinates": { "lat": 41.9028, "lng": 12.4830 }
+      "coordinates": {
+        "lat": 41.9028,
+        "lng": 12.483
+      }
     },
     {
       "id": 5,
@@ -124,16 +185,33 @@
       "area": 150,
       "type": "sale",
       "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-      "images": ["https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"],
-      "amenities": ["wifi", "heating", "air_conditioning", "washing_machine", "dishwasher", "terrace", "elevator"],
+      "images": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+      ],
+      "amenities": [
+        "wifi",
+        "heating",
+        "air_conditioning",
+        "washing_machine",
+        "dishwasher",
+        "terrace",
+        "elevator"
+      ],
       "available": true,
       "energyRating": "A",
       "floor": 5,
       "furnished": false,
       "balcony": false,
       "parking": false,
-      "transportLinks": ["Metro A - Ottaviano", "Bus 32", "Bus 81"],
-      "coordinates": { "lat": 41.9073, "lng": 12.4575 }
+      "transportLinks": [
+        "Metro A - Ottaviano",
+        "Bus 32",
+        "Bus 81"
+      ],
+      "coordinates": {
+        "lat": 41.9073,
+        "lng": 12.4575
+      }
     },
     {
       "id": 6,
@@ -148,19 +226,138 @@
       "area": 20,
       "type": "rent",
       "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      "images": ["https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800"],
-      "amenities": ["wifi", "heating", "washing_machine", "shared_kitchen"],
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800"
+      ],
+      "amenities": [
+        "wifi",
+        "heating",
+        "washing_machine",
+        "shared_kitchen"
+      ],
       "available": true,
       "availableFrom": "2026-03-15",
       "energyRating": "C",
       "floor": 2,
       "furnished": true,
       "balcony": false,
-      "nearbyUniversities": ["Roma Tre University"],
-      "transportLinks": ["Metro B - Piramide", "Bus 23", "Tram 3"],
+      "nearbyUniversities": [
+        "Roma Tre University"
+      ],
+      "transportLinks": [
+        "Metro B - Piramide",
+        "Bus 23",
+        "Tram 3"
+      ],
       "minimumStay": "4 months",
       "deposit": 900,
-      "coordinates": { "lat": 41.8776, "lng": 12.4774 }
+      "coordinates": {
+        "lat": 41.8776,
+        "lng": 12.4774
+      }
+    },
+    {
+      "id": 7,
+      "slug": "villa-la-fornaca",
+      "title": {
+        "en": "Villa La Fornaca"
+      },
+      "description": {
+        "en": "Nestled in the rolling hills of the Tuscan countryside, just 5 minutes from the charming medieval village of Campagnatico, this exquisite 5-bedroom, 4-bathroom villa offers the perfect blend of rustic heritage and modern luxury. Once a traditional fornace where the region's iconic terracotta tiles were crafted, the property has been thoughtfully restored to the highest standards, seamlessly combining historical charm with contemporary comfort.\n\n\n\n## Living Spaces\n\nWith a generous 300 sqm of living space, the villa is designed for both relaxation and entertainment. The ground floor features spacious open-plan living and dining areas, ideal for gathering with family and friends, while four bright and airy bedrooms occupy the upper level.\n\n\n\n## The Estate\n\nSet on 3 hectares of private land, the estate includes: a beautiful swimming pool with panoramic views; a serene private lake; over 100 mature olive trees, producing your own Tuscan olive oil; expansive gardens and shaded terraces for outdoor living.\n\n\n\n## Private Spa\n\nA standout feature of this property is the exclusive, fully-equipped private spa, complete with: a large Jacuzzi, sauna, hammam, changing room and shower.\n\n\n\n\n\n## Why This Property\n\nWhether you're seeking a luxurious holiday home, a permanent residence in the heart of Tuscany, or a prime investment opportunity, this property offers a rare chance to own a piece of authentic Tuscan history with all the amenities of modern living."
+      },
+      "location": "Campagnatico, Grosseto",
+      "neighborhood": "Campagnatico",
+      "price": 1690000,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "area": 300,
+      "type": "sale",
+      "image": "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca1.webp",
+      "images": [
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca1.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca2.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca3.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca4.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca5.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca6.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca7.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca8.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca9.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca10.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca11.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca12.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca13.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca14.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca15.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca16.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca17.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca18.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca19.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca20.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca21.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca22.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca23.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca24.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca25.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca26.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca27.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca28.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca29.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca30.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca31.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca32.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca33.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca34.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca35.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca36.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca37.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca38.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca39.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca40.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca41.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca42.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca43.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca44.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca45.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca46.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca47.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca48.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca49.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca50.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca51.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca52.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca53.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca54.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca55.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca56.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca57.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca58.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca59.webp",
+        "https://vero-assets-public.s3.us-east-1.amazonaws.com/villa-la-fornaca/La-Fornaca60.webp"
+      ],
+      "amenities": [
+        "swimming_pool",
+        "garden",
+        "parking",
+        "air_conditioning",
+        "heating",
+        "patio",
+        "bbq_grill"
+      ],
+      "available": true,
+      "parking": true,
+      "balcony": false,
+      "transportLinks": [
+        "Highway A12 (Rome–Florence), 5 min",
+        "Beach, 25 min",
+        "Siena, 40 min",
+        "Montalcino, 40 min",
+        "Florence Airport, 1h 30min"
+      ],
+      "coordinates": {
+        "lat": 42.8833,
+        "lng": 11.2667
+      }
     }
   ]
 }

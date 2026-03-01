@@ -23,6 +23,22 @@ import BathtubIcon from "@mui/icons-material/Bathtub";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import EuroIcon from "@mui/icons-material/Euro";
+import {
+  RiDropFill,
+  RiPlantFill,
+  RiParkingBoxFill,
+  RiCelsiusFill,
+  RiFireFill,
+  RiSunFill,
+  RiWifiFill,
+  RiHomeSmileFill,
+  RiBuilding2Fill,
+  RiArrowUpDownFill,
+  RiBookReadFill,
+  RiRestaurant2Fill,
+  RiRefreshFill,
+  RiCupFill,
+} from "@remixicon/react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
@@ -32,6 +48,26 @@ import Breadcrumb from "../components/Breadcrumb";
 import Contact from "../components/Contact";
 import { useProperties, resolvePropertyTitle, resolvePropertyDescription } from "../context/PropertiesContext";
 import ImageCarousel, { type ImageCarouselProps } from "../components/ImageCarousel";
+
+/** Map amenity key to Remix Icon component; fallback to CheckCircleIcon if unknown */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const AMENITY_ICON_MAP: Record<string, React.ComponentType<any>> = {
+  swimming_pool: RiDropFill,
+  garden: RiPlantFill,
+  parking: RiParkingBoxFill,
+  air_conditioning: RiCelsiusFill,
+  heating: RiFireFill,
+  patio: RiSunFill,
+  bbq_grill: RiFireFill,
+  wifi: RiWifiFill,
+  balcony: RiHomeSmileFill,
+  terrace: RiBuilding2Fill,
+  elevator: RiArrowUpDownFill,
+  desk: RiBookReadFill,
+  shared_kitchen: RiRestaurant2Fill,
+  washing_machine: RiRefreshFill,
+  dishwasher: RiCupFill,
+};
 
 const PropertyDetailPage: React.FC = () => {
   const { slug, id } = useParams<{ slug: string; id: string }>();
@@ -61,6 +97,8 @@ const PropertyDetailPage: React.FC = () => {
   const title = resolvePropertyTitle(property, currentLang, t);
   const defaultDesc = `${title} in ${property.location}. ${property.bedrooms} bedrooms, ${property.bathrooms} bathrooms, ${property.area}m². ${property.type === "rent" ? "For rent" : "For sale"}.`;
   const description = resolvePropertyDescription(property, currentLang, t, defaultDesc);
+  /** Plain description for meta/SEO (strip ## section headers) */
+  const descriptionPlain = description.replace(/\n## [^\n]+/g, "\n").replace(/\n{2,}/g, "\n\n").trim();
 
   const formatPrice = (price: number, type: string): string => {
     if (type === "sale") {
@@ -82,7 +120,7 @@ const PropertyDetailPage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Product",
     name: title,
-    description: description,
+    description: descriptionPlain,
     image: property.images || [property.image],
     offers: {
       "@type": "Offer",
@@ -119,13 +157,13 @@ const PropertyDetailPage: React.FC = () => {
     <>
       <Helmet>
         <title>{title} | Vero Properties</title>
-        <meta name="description" content={description} />
+        <meta name="description" content={descriptionPlain} />
         <link
           rel="canonical"
           href={`${baseUrl}/${currentLang}/properties/${property.id}/${property.slug}`}
         />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
+        <meta property="og:description" content={descriptionPlain} />
         <meta property="og:image" content={property.image} />
         <meta property="og:type" content="product" />
         <script type="application/ld+json">
@@ -250,9 +288,44 @@ const PropertyDetailPage: React.FC = () => {
                   <Typography variant="h5" component="h2" gutterBottom>
                     {t("properties.description")}
                   </Typography>
-                  <Typography variant="body1" color="text.secondary" paragraph>
-                    {description}
-                  </Typography>
+                  {(() => {
+                    const parts = description.split(/\n## /);
+                    const intro = parts[0]?.trim();
+                    return (
+                      <>
+                        {intro ? (
+                          <Typography variant="body1" color="text.secondary" paragraph>
+                            {intro.split(/\n\n/).map((p, i) => (
+                              <React.Fragment key={i}>
+                                {i > 0 && <><br /><br /></>}
+                                {p}
+                              </React.Fragment>
+                            ))}
+                          </Typography>
+                        ) : null}
+                        {parts.slice(1).map((block, i) => {
+                          const newline = block.indexOf("\n");
+                          const sectionTitle = newline >= 0 ? block.slice(0, newline).trim() : block.trim();
+                          const body = newline >= 0 ? block.slice(newline + 1).trim() : "";
+                          return (
+                            <Box key={i} sx={{ mb: 2 }}>
+                              <Typography variant="subtitle1" component="h3" fontWeight={600} sx={{ mt: 2, mb: 1 }} color="text.primary">
+                                {sectionTitle}
+                              </Typography>
+                              <Typography variant="body1" color="text.secondary" paragraph>
+                                {body.split(/\n\n/).map((p, j) => (
+                                  <React.Fragment key={j}>
+                                    {j > 0 && <><br /><br /></>}
+                                    {p}
+                                  </React.Fragment>
+                                ))}
+                              </Typography>
+                            </Box>
+                          );
+                        })}
+                      </>
+                    );
+                  })()}
                 </Box>
 
                 {/* Amenities */}
@@ -262,18 +335,26 @@ const PropertyDetailPage: React.FC = () => {
                       {t("properties.amenities")}
                     </Typography>
                     <List>
-                      {property.amenities.map((amenity, index) => (
-                        <ListItem key={index}>
-                          <ListItemIcon>
-                            <CheckCircleIcon color="success" />
-                          </ListItemIcon>
-                          <ListItemText
-                            primary={t(`properties.amenityTypes.${amenity}`, {
-                              defaultValue: amenity.replace(/_/g, " "),
-                            })}
-                          />
-                        </ListItem>
-                      ))}
+                      {property.amenities.map((amenity, index) => {
+                        const AmenityIcon = AMENITY_ICON_MAP[amenity] ?? CheckCircleIcon;
+                        const isRemix = AmenityIcon !== CheckCircleIcon;
+                        return (
+                          <ListItem key={index}>
+                            <ListItemIcon sx={isRemix ? { color: "success.main" } : undefined}>
+                              {isRemix ? (
+                                <AmenityIcon size={24} color="currentColor" />
+                              ) : (
+                                <CheckCircleIcon color="success" />
+                              )}
+                            </ListItemIcon>
+                            <ListItemText
+                              primary={t(`properties.amenityTypes.${amenity}`, {
+                                defaultValue: amenity.replace(/_/g, " "),
+                              })}
+                            />
+                          </ListItem>
+                        );
+                      })}
                     </List>
                   </Box>
                 )}
