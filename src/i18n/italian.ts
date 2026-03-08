@@ -590,34 +590,87 @@ export default {
     relatedGuides: "Guide correlate",
     list: {
       howToBuyHouseItaly: {
-        title: "Come comprare casa in Italia: guida completa",
+        title: "Come comprare casa in Italia: la guida completa",
         excerpt:
-          "Guida passo passo all'acquisto di un immobile in Italia: dalla verifica della proprietà e consulenza legale al contratto preliminare e registrazione. Tutto ciò che serve per un acquisto sicuro.",
-        content: `<h2>È davvero possibile comprare casa in Italia?</h2>
-<p>Sì. Con il supporto di professionisti, una pianificazione adeguata e una chiara comprensione del processo, l'acquisto di un immobile in Italia è un obiettivo raggiungibile. Il sistema italiano è diverso da molti altri, quindi è essenziale avere al proprio fianco professionisti locali.</p>
+          "La guida definitiva per acquirenti stranieri: requisiti, Codice Fiscale, proposta, compromesso, due diligence, notaio vs avvocato, tasse, finanziamenti e trappole. Dalla prima offerta alla consegna delle chiavi.",
+        content: `<h2>Introduzione</h2>
+<p>Comprare casa in Italia è il sogno di molti stranieri attratti da bellezza, clima e stile di vita. L'Italia offre opportunità diversificate: seconda casa, investimento o trasferimento. Secondo l'ISTAT, oltre il 70% dei residenti possiede la propria abitazione e gli acquirenti stranieri rappresentano una quota crescente delle transazioni—in alcune zone si stima fino al 60%. Questa guida illustra l'intero processo: requisiti, documenti, contratti, due diligence, tasse e trappole comuni.</p>
 
-<h2>Perché molti stranieri comprano in Italia</h2>
-<p>L'Italia attira acquirenti da tutto il mondo per bellezza, clima, prezzi accessibili e opportunità diversificate. Secondo l'ISTAT, oltre il 70% dei residenti possiede la propria abitazione. Negli ultimi anni il numero di transazioni da parte di acquirenti stranieri è cresciuto costantemente.</p>
+<h2>Chi può comprare? Requisiti per gli stranieri</h2>
+<p><strong>Cittadini UE e SEE</strong> possono acquistare immobili in Italia senza restrizioni; sono equiparati ai cittadini italiani.</p>
+<p><strong>Cittadini extra-UE</strong> (USA, Regno Unito, Israele, Canada, Australia, ecc.) possono in genere acquistare se il loro paese ha un accordo di reciprocità con l'Italia—cioè i cittadini italiani possono acquistare immobili lì in condizioni analoghe. La maggior parte dei paesi principali soddisfa questo requisito. In assenza di reciprocità possono essere necessari autorizzazioni speciali o rappresentanza legale.</p>
+<p>I cittadini svizzeri e altri possono incontrare limiti per norme locali nel paese d'origine. Gli apolidi possono acquistare se residenti legali in Italia da almeno tre anni. Verificate sempre la reciprocità aggiornata presso un consolato italiano o un avvocato prima di impegnarvi.</p>
 
-<h2>Come comprare casa in Italia: passo dopo passo</h2>
+<h2>Passo 1 — Ottenere il Codice Fiscale</h2>
+<p>Il Codice Fiscale è un codice alfanumerico di 16 caratteri. È obbligatorio per qualsiasi transazione immobiliare: firmare la proposta, il contratto preliminare e l'atto finale; aprire un conto bancario italiano; pagare le imposte connesse all'immobile. Ottenerlo non crea di per sé obblighi fiscali in Italia.</p>
+<p>Potete richiederlo in ambasciata o consolato italiano all'estero, oppure presso un ufficio dell'Agenzia delle Entrate in Italia con passaporto o documento valido. La procedura è gratuita e spesso completata in giornata o in pochi giorni.</p>
 
-<h3>Passo 1 – Verifica della proprietà legale</h3>
-<p>Prima di procedere, accertatevi che l'immobile sia regolarmente registrato a nome del venditore e libero da ipoteche e debiti. La verifica avviene tramite il Catasto.</p>
+<h2>Passo 2 — Definire il profilo di ricerca e trovare l'immobile</h2>
+<p>Chiarite budget (ricordate: l'imposta di acquisto si calcola sul valore catastale o sul prezzo dichiarato, non sempre sul prezzo di mercato), zona preferita, tipo di immobile (appartamento, villa, rudere da ristrutturare) e stato. Utilizzate un agente immobiliare abilitato (iscritto alla Camera di Commercio); la commissione è in genere il 3–5% e spesso rappresentano sia acquirente che venditore.</p>
+<p>Fino al 40% delle compravendite in Italia avviene off-market. Un professionista locale bilingue può aiutarvi ad accedere agli annunci e a negoziare. Pianificate almeno un viaggio per visitare gli immobili selezionati e verificate distanze, spese condominiali e prestazioni energetiche (APE) prima di fare un'offerta.</p>
 
-<h3>Passo 2 – Consulenza legale</h3>
-<p>Un avvocato locale è fortemente consigliato e spesso necessario. Verificherà che tutti gli aspetti contrattuali e legali siano in ordine.</p>
+<h2>Passo 3 — Proposta d'acquisto</h2>
+<p>La proposta è un'offerta scritta <strong>vincolante solo per l'acquirente</strong>. Vi impegnate ad acquistare al prezzo e alle condizioni indicati e versate di solito un acconto (€1.000–€5.000, o circa il 5% per immobili di valore più alto) come segno di serietà (caparra). Se il venditore non accetta per iscritto entro il termine concordato, l'acconto viene restituito. Se accetta, si procede al contratto preliminare. Leggete attentamente la proposta e fate revisionare da un avvocato prima di firmare—ha conseguenze legali reali.</p>
 
-<h3>Passo 3 – Verifiche tecniche e strutturali</h3>
-<p>Un ingegnere qualificato deve effettuare un controllo fisico e urbanistico dell'immobile per individuare eventuali vizi nascosti o difformità.</p>
+<h2>Passo 4 — Contratto preliminare (Compromesso / Contratto Preliminare)</h2>
+<p>È il documento più importante del processo. Fissa prezzo esatto, descrizione dell'immobile, scadenze e acconto (di solito 10–30% del prezzo). Due tipi principali di caparra:</p>
+<ul>
+<li><strong>Caparra Confirmatoria</strong> (la più comune): se l'acquirente si ritira, perde l'acconto. Se si ritira il venditore, deve restituire il doppio dell'acconto all'acquirente.</li>
+<li><strong>Caparra Penitenziale</strong>: entrambe le parti possono recedere previa penale concordata.</li>
+</ul>
+<p>Il compromesso deve essere registrato presso l'Agenzia delle Entrate entro 20 giorni per la piena tutela legale. È vivamente consigliabile coinvolgere un notaio o il vostro avvocato nella redazione o revisione prima di firmare e versare somme.</p>
 
-<h3>Passo 4 – Contratto preliminare e registrazione</h3>
-<p>Si firma un contratto preliminare (compromesso) davanti al notaio. La transazione viene poi registrata presso l'Agenzia delle Entrate, fino al rogito finale.</p>
+<h2>Passo 5 — Due diligence: cosa verificare prima di pagare</h2>
+<p>Prima di impegnare somme rilevanti, verificate quanto segue. In Italia non esiste la title insurance; una volta firmato e pagato, sanare difetti è difficile.</p>
+<ul>
+<li><strong>Titolo e proprietà:</strong> confermate che il venditore sia il proprietario registrato tramite visura catastale e che la descrizione corrisponda ai dati catastali.</li>
+<li><strong>Gravami e ipoteche:</strong> controllate ipoteche, provvedimenti giudiziari o altri vincoli. Il notaio effettuerà le verifiche, ma il vostro avvocato può ricontrollare e consigliarvi su eventuali problemi.</li>
+<li><strong>Conformità urbanistica e "stato legittimo":</strong> l'immobile deve essere conforme a permessi e modifiche autorizzate. La non conformità può portare a nullità, sanzioni o anche demolizione. Circa un immobile su cinque in Italia presenta qualche irregolarità.</li>
+<li><strong>Abusi edilizi:</strong> classificati in totali, sostanziali o parziali. Il decreto "Salva Casa" 2024 (legge 105/2024) consente la regolarizzazione di alcune difformità minori, ma le violazioni gravi restano un rischio importante.</li>
+<li><strong>Vincoli storico-artistici e paesaggistici:</strong> limitano modifiche e talvolta l'uso. In zone costiere può servire l'autorizzazione paesaggistica.</li>
+<li><strong>Zona sismica:</strong> parte dell'Italia è in zona sismica; verificate la classificazione dell'immobile e la conformità alle norme di sicurezza.</li>
+<li><strong>APE (Attestato di Prestazione Energetica):</strong> obbligatorio in vendita; valido 10 anni. Dal 2030 le norme UE richiederanno almeno classe E per i residenziali e D entro il 2033—considerate eventuali costi di adeguamento.</li>
+<li><strong>Condominio:</strong> se acquistate un appartamento, esaminate regolamento, verbali recenti e spese ordinarie.</li>
+</ul>
 
-<h2>Fiscalità in fase di acquisto</h2>
-<p>L'imposta di registro in Italia si calcola sul valore catastale dell'immobile (non necessariamente sul prezzo di mercato), il che può ridurre il costo complessivo. Ad esempio, su un immobile dal valore di mercato di circa 140.000 €, si potrebbero pagare solo circa 4.000 € tra imposte e costi di registrazione.</p>
+<h2>Passo 6 — Notaio vs avvocato: la differenza</h2>
+<p>Il <strong>notaio</strong> è un pubblico ufficiale neutrale. Verifica la validità legale dell'atto, calcola imposte e spese e registra la transazione. Non rappresenta né voi né il venditore.</p>
+<p>Il <strong>vostro avvocato</strong> è il vostro difensore dalla prima offerta. Protegge i vostri interessi, revisiona i contratti, consiglia su acconti e due diligence e può negoziare. Per operazioni complesse, immobili vecchi o contratti redatti da agenti, un avvocato bilingue indipendente è vivamente consigliato.</p>
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse;">
+<tr><th>Ruolo</th><th>Notaio</th><th>Il vostro avvocato</th></tr>
+<tr><td>Funzione</td><td>Pubblico ufficiale neutrale</td><td>Vostro difensore privato</td></tr>
+<tr><td>Focus</td><td>Validità legale dell'atto</td><td>Vostra sicurezza legale e finanziaria</td></tr>
+<tr><td>Quando</td><td>Chiusura finale (Rogito)</td><td>Dalla prima offerta</td></tr>
+</table>
 
-<h2>Prossimi passi</h2>
-<p>Che si acquisti per investimento, come casa per le vacanze o per vivere in Italia, un approccio strutturato e una guida esperta rendono il processo più sicuro e chiaro. Contattate Vero Properties per un supporto in ogni fase dell'acquisto.</p>`,
+<h2>Passo 7 — Opzioni di finanziamento</h2>
+<p>L'<strong>acquisto in contanti</strong> è il più rapido e spesso rafforza la posizione negoziale. Se serve un mutuo, le banche italiane concedono mutui ai non residenti: in genere <strong>50–60% LTV</strong>, durata fino a 20–25 anni, tassi intorno al 3% (2025). Servono Codice Fiscale, prova del reddito, dichiarazioni dei redditi e spesso un report creditizio dal paese d'origine; i documenti possono richiedere traduzione certificata e apostille. Un conto bancario italiano è di solito necessario. Tra i principali istituti: UniCredit, Intesa Sanpaolo, BNL, Monte dei Paschi; la predelibera è spesso valida circa sei mesi.</p>
+<p>Se non potete essere presenti alla firma, potete conferire una <strong>procura speciale</strong> a una persona di fiducia per firmare l'atto per voi. Deve essere specifica per la transazione e redatta correttamente (spesso davanti a notaio o in consolato italiano).</p>
+
+<h2>Passo 8 — Atto finale (Rogito notarile)</h2>
+<p>Presso il notaio l'atto viene letto ad alta voce (con traduzione se concordata). Firmate davanti al notaio e ai testimoni. Il saldo del prezzo si paga con assegno bancario o bonifico sul conto di garanzia del notaio; il notaio paga il venditore, trattiene imposte e spese e registra l'atto in Conservatoria e Agenzia delle Entrate. Dopo la registrazione siete i proprietari legali e ricevete le chiavi.</p>
+
+<h2>Riepilogo tasse e costi</h2>
+<p><strong>Imposte di acquisto:</strong> Per la <strong>prima casa</strong> (nei limiti di legge, es. residenza o impegno a stabilirla nel comune): imposta di registro 2% del valore catastale, più €50 fissi catastali e ipotecari. Per la <strong>seconda casa</strong>: 9% del valore catastale. Per immobili nuovi da costruttore: IVA 4% (prima casa) o 10% (seconda casa), più imposte fisse. Gli stranieri possono usufruire delle agevolazioni prima casa solo con residenza anagrafica.</p>
+<p><strong>Spese notarili:</strong> in genere 1–2,5% del valore (minimo circa €1.500). <strong>Commissione agenzia:</strong> 3–4% più IVA 22%, spesso a carico di entrambe le parti. <strong>Onorari legali:</strong> €1.000–€2.000 o più in base alla complessità. A titolo indicativo, su un immobile da €200.000 acquistato come seconda casa, i costi totali (imposte, notaio, agenzia) si collocano spesso tra €18.000 e €22.000.</p>
+<p><strong>Costi annuali:</strong> IMU—circa 0,86% del valore catastale per le seconde case; prima casa con residenza anagrafica è esente. TARI: circa €200–€500/anno. Spese condominiali: in genere €40–€250/mese.</p>
+
+<h2>Trappole comuni da evitare</h2>
+<ul>
+<li>Firmare la proposta senza revisione legale.</li>
+<li>Non registrare il compromesso entro 20 giorni.</li>
+<li>Versare acconti consistenti prima di completare la due diligence.</li>
+<li>Acquistare immobili con abusi edilizi senza un piano di regolarizzazione.</li>
+<li>Ignorare vincoli sismici o paesaggistici che limitano uso o modifiche.</li>
+<li>Considerare il notaio "il vostro" avvocato—è neutrale.</li>
+<li>Trascurare la successione: in Italia vige la legittima; valutate testamento o consulenza per i beni in Italia.</li>
+</ul>
+
+<h2>Tempistiche indicative</h2>
+<p>Dalla prima offerta alla consegna delle chiavi, calcolate <strong>2–4 mesi</strong>. Codice Fiscale: 1–7 giorni. Proposta: pochi giorni. Compromesso: in genere 2–6 settimane dall'offerta. Due diligence: 2–4 settimane, spesso in parallelo. Predelibera mutuo: 4–6 settimane se applicabile. Rogito: di solito 4–8 settimane dopo il compromesso, in base alla disponibilità del notaio e a eventuali condizioni (es. erogazione mutuo).</p>
+
+<h2>Conclusione e prossimi passi</h2>
+<p>Comprare casa in Italia è possibile con la giusta preparazione e il supporto professionale. Che sia per investimento, seconda casa o trasferimento, un approccio strutturato—dal Codice Fiscale e la due diligence alla scelta di notaio e avvocato—rende il processo più sicuro e chiaro. Contattate Vero Properties per una guida esperta in ogni fase dell'acquisto.</p>`,
       },
       bureaucracyDocumentsItaly: {
         title: "Burocrazia e documenti per comprare casa in Italia",

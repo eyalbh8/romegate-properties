@@ -364,9 +364,9 @@ export default {
     relatedGuides: "Related Guides",
     list: {
       howToBuyHouseItaly: {
-        title: "How to Buy a House in Italy: Complete Guide",
+        title: "How to Buy a House in Italy: The Complete Guide",
         excerpt:
-          "A step-by-step guide to buying property in Italy: from legal ownership checks and legal advice to the preliminary contract and registration. Everything you need for a safe purchase.",
+          "The definitive guide for foreign buyers: eligibility, Codice Fiscale, proposta, compromesso, due diligence, notary vs. lawyer, taxes, financing, and pitfalls. From first offer to keys in one place.",
       },
       bureaucracyDocumentsItaly: {
         title: "Bureaucracy and Documents When Buying in Italy",

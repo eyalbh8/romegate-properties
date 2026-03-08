@@ -124,31 +124,84 @@ export default {
   guides: {
     list: {
       howToBuyHouseItaly: {
-        content: `<h2>Is Buying a House in Italy Really Possible?</h2>
-<p>Yes. With professional support, proper planning, and a clear understanding of the process, buying property in Italy is an achievable goal. The Italian system differs from many others, so having local professionals on your side is essential.</p>
+        content: `<h2>Introduction</h2>
+<p>Buying a house in Italy is a dream for many foreigners drawn by the country's beauty, climate, and lifestyle. Italy offers diverse opportunities for second homes, investments, and relocation. According to ISTAT, over 70% of residents own their home, and foreign buyers account for a growing share of transactions—with some estimates suggesting up to 60% of buyers in certain areas are from abroad. This guide walks you through the full process: eligibility, documents, contracts, due diligence, taxes, and common pitfalls, so you can approach your purchase with confidence.</p>
 
-<h2>Why So Many Foreigners Buy Property in Italy</h2>
-<p>Italy attracts buyers from around the world for its beauty, climate, accessible prices, and diverse opportunities. According to ISTAT, over 70% of residents own their home. In recent years, the number of transactions by foreign buyers has grown steadily, and this trend is expected to continue.</p>
+<h2>Who Can Buy? Eligibility for Foreigners</h2>
+<p><strong>EU and EEA citizens</strong> can buy property in Italy without restrictions; they are treated like Italian citizens.</p>
+<p><strong>Non-EU citizens</strong> (including USA, UK, Israel, Canada, Australia) can usually purchase if their country has a reciprocity agreement with Italy—meaning Italian citizens can buy property there under similar conditions. Most major countries satisfy this. If your country does not, you may need special authorization or legal representation.</p>
+<p>Swiss citizens and some others can face limitations due to local rules in their home country affecting reciprocity. Stateless persons may purchase if they have been legally resident in Italy for at least three years. Always verify current reciprocity with an Italian consulate or a lawyer before committing.</p>
 
-<h2>How to Buy a House in Italy: Step by Step</h2>
+<h2>Step 1 — Get Your Codice Fiscale (Italian Tax ID)</h2>
+<p>The Codice Fiscale is a 16-character alphanumeric tax identification number. It is mandatory for any real estate transaction: signing the purchase offer, the preliminary contract, and the final deed; opening an Italian bank account; and paying property-related taxes. Obtaining it does not by itself create Italian tax liability.</p>
+<p>You can apply at an Italian embassy or consulate abroad, or at an Agenzia delle Entrate (tax office) in Italy with a valid passport or ID. The process is free and often completed the same day or within a few days.</p>
 
-<h3>Step 1 – Verify Legal Ownership</h3>
-<p>Before proceeding, ensure the property is legally registered in the seller's name and free of liens and debts. This is done through the Italian land registry (Catasto).</p>
+<h2>Step 2 — Define Your Search Profile and Find a Property</h2>
+<p>Clarify your budget (remember: purchase tax in Italy is calculated on cadastral value or declared price, not always the full market price), preferred area, type of property (apartment, villa, ruin to restore), and condition. Use a licensed real estate agent (agente immobiliare) registered with the Camera di Commercio; they typically charge 3–5% and often work for both buyer and seller.</p>
+<p>Up to 40% of Italian property deals occur off-market. A local, bilingual professional can help you access listings and negotiate. Plan at least one trip to view shortlisted properties and confirm distances, condominium costs, and energy performance (APE) before making an offer.</p>
 
-<h3>Step 2 – Legal Advice</h3>
-<p>A local lawyer is strongly recommended and often required. Your lawyer will verify that all contractual and legal aspects are in order.</p>
+<h2>Step 3 — Purchase Offer (Proposta d'Acquisto)</h2>
+<p>The proposta is a written offer that is <strong>binding only on the buyer</strong>. You commit to buy at the stated price and terms and usually pay a small deposit (€1,000–€5,000, or around 5% for higher-value properties) as a sign of good faith (caparra). If the seller does not accept in writing within the agreed period, the deposit is returned. If they accept, you proceed to the preliminary contract. Read the proposta carefully and have a lawyer review it before signing—it has real legal consequences.</p>
 
-<h3>Step 3 – Technical and Engineering Checks</h3>
-<p>Have a qualified engineer carry out a physical and planning check of the property to identify any hidden defects or compliance issues.</p>
+<h2>Step 4 — Preliminary Contract (Compromesso / Contratto Preliminare)</h2>
+<p>This is the most critical document in the process. It sets the exact price, property description, deadlines, and deposit (usually 10–30% of the purchase price). Two main deposit types apply:</p>
+<ul>
+<li><strong>Caparra Confirmatoria</strong> (most common): If the buyer withdraws, they lose the deposit. If the seller withdraws, they must pay the buyer double the deposit.</li>
+<li><strong>Caparra Penitenziale</strong>: Both parties may withdraw subject to a pre-agreed penalty.</li>
+</ul>
+<p>The compromesso must be registered with the Italian Revenue Agency (Agenzia delle Entrate) within 20 days to secure full legal protection. It is strongly advisable to have a notary or your lawyer involved in drafting or reviewing it before you sign and transfer funds.</p>
 
-<h3>Step 4 – Preliminary Contract and Registration</h3>
-<p>You sign a preliminary contract (compromesso) before a notary. The transaction is then registered with the Italian tax authority, leading to the final deed of sale (rogito).</p>
+<h2>Step 5 — Due Diligence: What to Check Before Paying</h2>
+<p>Before committing large sums, verify the following. Italy does not offer title insurance; once you have signed and paid, curing defects is difficult.</p>
+<ul>
+<li><strong>Title and ownership:</strong> Confirm the seller is the registered owner via a visura catastale and that the property description matches cadastral records.</li>
+<li><strong>Encumbrances and liens:</strong> Check for mortgages, court orders, or other charges. The notary will run checks, but your lawyer can double-check and advise on any issues.</li>
+<li><strong>Urban compliance and "Stato Legittimo":</strong> The property must conform to building permits and authorized modifications. Non-compliance can lead to contract issues, fines, or even demolition. Approximately one in five Italian properties has some form of irregularity.</li>
+<li><strong>Abusi edilizi (unauthorized construction):</strong> Classified as total, substantial, or partial. The 2024 "Salva Casa" decree (Law 105/2024) allows regularization of certain minor discrepancies, but serious violations remain a major risk.</li>
+<li><strong>Heritage and landscape restrictions:</strong> Historic (Vincolo storico-artistico) and landscape (Vincolo paesaggistico) constraints limit what you can alter and sometimes use. Coastal zones may require landscape authorization.</li>
+<li><strong>Seismic zone:</strong> Parts of Italy are in seismic zones; confirm the property's classification and that it meets current safety standards.</li>
+<li><strong>APE (Energy Performance Certificate):</strong> Mandatory for sale; valid 10 years. From 2030, EU rules will require minimum energy class E for residential property, and D by 2033—factor potential upgrade costs into your decision.</li>
+<li><strong>Condominium:</strong> If buying an apartment, review the regolamento, recent verbali (meeting minutes), and ongoing spese (fees).</li>
+</ul>
 
-<h2>Taxation When Buying</h2>
-<p>Purchase tax in Italy is calculated on the registered value of the property (not necessarily the market price), which can reduce the overall cost. For example, on a property with a market value of around €140,000, you might pay only about €4,000 in taxes and registration costs—relatively favourable compared to many other countries.</p>
+<h2>Step 6 — Notary vs. Lawyer: Know the Difference</h2>
+<p>The <strong>notary (Notaio)</strong> is a neutral public official. They verify the legal validity of the deed, calculate taxes and fees, and register the transaction. They do not represent you or the seller.</p>
+<p>Your <strong>lawyer</strong> is your personal advocate from the first offer onward. They protect your interests, review contracts, advise on deposits and due diligence, and can negotiate terms. For complex deals, older properties, or when contracts are drafted by agents, an independent bilingual lawyer is highly recommended.</p>
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse;">
+<tr><th>Role</th><th>Notary (Notaio)</th><th>Your Lawyer</th></tr>
+<tr><td>Duty</td><td>Neutral public official</td><td>Your private advocate</td></tr>
+<tr><td>Focus</td><td>Legal validity of the deed</td><td>Your financial and legal safety</td></tr>
+<tr><td>When</td><td>Final closing (Rogito)</td><td>From the first offer</td></tr>
+</table>
 
-<h2>Next Steps</h2>
-<p>Whether you are buying for investment, a holiday home, or to live in Italy, a structured approach and expert guidance make the process safer and clearer. Contact Vero Properties for support through every step of your purchase.</p>`,
+<h2>Step 7 — Financing Options</h2>
+<p><strong>Cash purchase</strong> is the fastest and often strengthens your negotiating position. If you need financing, Italian banks do offer mortgages to non-residents: typically <strong>50–60% loan-to-value (LTV)</strong>, terms up to 20–25 years, and interest rates around 3% (as of 2025). You will need a Codice Fiscale, proof of income, tax returns, and often a credit report from your home country; documents may require certified translation and apostille. An Italian bank account is usually required. Major lenders include UniCredit, Intesa Sanpaolo, BNL, and Monte dei Paschi; mortgage pre-approval (predelibera) is often valid for about six months.</p>
+<p>If you cannot attend the signing in person, you can grant a <strong>Power of Attorney (Procura Speciale)</strong> to a trusted person to sign the deed on your behalf. It must be specific to the transaction and properly executed (often before a notary or at an Italian consulate).</p>
+
+<h2>Step 8 — Final Deed (Rogito Notarile)</h2>
+<p>At the notary's office, the deed is read aloud (with translation if arranged). You sign before the notary and witnesses. The balance of the purchase price is paid by banker's cheque or wire to the notary's escrow account; the notary then pays the seller, deducts taxes and fees, and registers the deed with the land registry and tax authority. Once registered, you are the legal owner and receive the keys.</p>
+
+<h2>Full Tax and Cost Breakdown</h2>
+<p><strong>Purchase taxes:</strong> For a <strong>first home (prima casa)</strong> meeting conditions (e.g. residency or commitment to establish it in the municipality): registration tax 2% of cadastral value, plus fixed €50 cadastral and €50 mortgage tax. For a <strong>second home (seconda casa)</strong>: 9% of cadastral value. For new builds from a developer: 4% VAT (prima casa) or 10% VAT (seconda casa), plus fixed registration/cadastral/mortgage fees. Foreigners can claim prima casa benefits only if they establish residenza anagrafica (official residence registration).</p>
+<p><strong>Notary fees:</strong> Typically 1–2.5% of property value (minimum around €1,500). <strong>Agent commission:</strong> 3–4% plus 22% VAT, often paid by both sides. <strong>Legal fees:</strong> €1,000–€2,000 or more depending on complexity. As a rough example, on a €200,000 property bought as seconda casa, total acquisition costs (taxes, notary, agent) often fall in the €18,000–€22,000 range.</p>
+<p><strong>Annual costs:</strong> IMU (municipal property tax)—about 0.86% of cadastral value for second homes; primary residence with residenza anagrafica is exempt. TARI (waste tax): roughly €200–€500 per year. Condominium fees: typically €40–€250 per month depending on building and services.</p>
+
+<h2>Common Pitfalls to Avoid</h2>
+<ul>
+<li>Signing the proposta without legal review.</li>
+<li>Failing to register the compromesso within 20 days.</li>
+<li>Paying large deposits before completing due diligence.</li>
+<li>Buying a property with abusi edilizi without a clear regularization plan.</li>
+<li>Ignoring seismic or heritage restrictions that limit use or alterations.</li>
+<li>Assuming the notary is "your" lawyer—they are neutral.</li>
+<li>Overlooking inheritance: Italy has forced-heirship rules; consider a will or legal advice for Italian assets.</li>
+</ul>
+
+<h2>Timeline Overview</h2>
+<p>From first offer to keys, plan for <strong>2–4 months</strong>. Codice Fiscale: 1–7 days. Proposta: a few days. Compromesso: typically 2–6 weeks after the offer. Due diligence: 2–4 weeks, often in parallel. Mortgage pre-approval: 4–6 weeks if applicable. Rogito: usually 4–8 weeks after the compromesso, depending on notary availability and any conditions (e.g. mortgage drawdown).</p>
+
+<h2>Conclusion and Next Steps</h2>
+<p>Buying a house in Italy is achievable with the right preparation and professional support. Whether you are investing, buying a holiday home, or relocating, a structured approach—from Codice Fiscale and due diligence to the right notary and lawyer—makes the process safer and clearer. Contact Vero Properties for expert guidance through every step of your purchase.</p>`,
       },
       bureaucracyDocumentsItaly: {
         content: `<h2>Codice Fiscale (Tax Code)</h2>
