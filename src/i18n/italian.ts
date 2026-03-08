@@ -675,31 +675,125 @@ export default {
       bureaucracyDocumentsItaly: {
         title: "Burocrazia e documenti per comprare casa in Italia",
         excerpt:
-          "Cosa serve: Codice Fiscale, documento d'identità, prova di reddito e come interfacciarsi con notaio e Catasto. Una panoramica chiara delle pratiche necessarie.",
-        content: `<h2>Codice Fiscale</h2>
-<p>Il Codice Fiscale è necessario per acquistare un immobile e firmare i contratti. Si ottiene in ambasciata o consolato italiano nel proprio paese, oppure presso un ufficio dell'Agenzia delle Entrate con un documento valido. È un codice alfanumerico di 16 caratteri, richiesto dal notaio e per la registrazione dell'atto.</p>
+          "Codice Fiscale, passaporto, prova dei fondi, norme AML, i tre contratti (proposta, compromesso, rogito) e cosa richiede il notaio. Una checklist chiara per un acquisto senza intoppi.",
+        content: `<h2>Introduzione</h2>
+<p>In Italia burocrazia e documenti sono al centro dell'acquisto immobiliare. Non esiste una title insurance per sanare errori dopo il fatto e il processo è guidato dal notaio: verifica la legittimità dell'atto e ne cura la registrazione. Norme rigorose antiriciclaggio richiedono che tutti i pagamenti siano tracciabili e adeguatamente documentati. Mettere in ordine i documenti per tempo evita di perdere l'immobile a favore di acquirenti più rapidi e previene ritardi in rogito. Questa guida illustra ogni documento che vi serve—e cosa devono fornire venditore e notaio.</p>
 
-<h2>Documenti di solito richiesti</h2>
-<p>Oltre al Codice Fiscale: passaporto o documento valido; prova di residenza; in caso di mutuo, prova di reddito, estratti conto e documentazione richiesta dalla banca. Il notaio li userà per redigere l'atto e registrare la transazione.</p>
+<h2>Il primo passo indispensabile: il Codice Fiscale</h2>
+<p>Il Codice Fiscale è obbligatorio per la proposta d'acquisto, il contratto preliminare (compromesso), il rogito, l'apertura di un conto bancario italiano e il pagamento delle imposte connesse all'immobile. Si ottiene in consolato o ambasciata italiana all'estero, oppure presso un ufficio dell'Agenzia delle Entrate in Italia, con un documento valido. È gratuito e spesso rilasciato in giornata se si richiede in Italia.</p>
+<p>Per molti acquirenti stranieri la richiesta tramite consolato richiede <strong>tre settimane o più</strong>. Ritardare può farvi perdere l'immobile a favore di chi ha già il Codice Fiscale. Presentate la richiesta non appena decidete di comprare.</p>
 
-<h2>Notaio e Catasto</h2>
-<p>In Italia il notaio redige l'atto di compravendita e cura la registrazione presso l'Agenzia delle Entrate e il Catasto. Le spese notarili sono in genere circa l'1–2,5% del valore dell'immobile. Il notaio verifica la titolarità del venditore e eventuali gravami e garantisce la validità legale dell'atto.</p>
+<h2>Documenti di identità e personali (acquirente)</h2>
+<p>Tenete pronti:</p>
+<ul>
+<li><strong>Passaporto:</strong> Valido per almeno sei mesi; portate l'originale, non solo la copia.</li>
+<li><strong>Codice Fiscale:</strong> Certificato o tessera.</li>
+<li><strong>Prova di residenza:</strong> Bolletta o lettera della banca con nome e indirizzo completo.</li>
+<li><strong>Recapiti:</strong> Numero di telefono e email raggiungibili dall'Italia.</li>
+<li><strong>Stato civile:</strong> Estratto atto di matrimonio, certificato di unione civile o certificato di stato libero. Se sposati, copia di eventuali convenzioni patrimoniali o accordi di convivenza.</li>
+<li><strong>Cittadini extra-UE:</strong> Copia del permesso di soggiorno o del visto, se applicabile.</li>
+<li><strong>Se non potete essere presenti:</strong> Procura firmata in consolato italiano o davanti a un notaio.</li>
+</ul>
 
-<h2>Tempistiche</h2>
-<p>Dal contratto preliminare (compromesso) al rogito di solito passano alcune settimane o alcuni mesi, a seconda del finanziamento e di eventuali condizioni. Calcolate almeno 2–3 mesi dall'offerta alla consegna delle chiavi.</p>`,
+<h2>Prova dei fondi e antiriciclaggio (AML)</h2>
+<p>I notai italiani devono rispettare le norme antiriciclaggio (D.Lgs 231/2007). Tutti i pagamenti rilevanti devono essere tracciabili attraverso il sistema bancario; il contante oltre certe soglie non è consentito.</p>
+<p><strong>Prova dei fondi:</strong> Estratti conto a vostro nome con saldo disponibile. Se i fondi provengono da vendita immobiliare, successione o distribuzione societaria, fornite documenti a supporto (es. atto di vendita, atti successori).</p>
+<p>Il notaio richiederà l'identità del beneficiario effettivo, la finalità dell'operazione e la disclosure completa delle modalità di pagamento e della provenienza dei fondi. Potrete dover compilare moduli di autocertificazione. Dichiarazioni false o incomplete possono comportare sanzioni gravi, inclusi multe e reclusione.</p>
+<p>I pagamenti sono tipicamente un acconto (es. 10–20%) al compromesso e il saldo al rogito, con bonifici tracciabili (es. SWIFT). Un conto corrente italiano in euro è lo standard per la conformità.</p>
+
+<h2>I tre contratti e i relativi documenti</h2>
+<p><strong>Proposta d'acquisto:</strong> Vincolante per l'acquirente una volta firmata. Include in genere i vostri dati (incluso Codice Fiscale), descrizione dell'immobile, prezzo, modalità di pagamento e termine di validità (es. 15 giorni). La caparra iniziale è spesso 1.000–2.000 € (o circa il 5% per valori più alti). Se il venditore non accetta, la caparra viene restituita.</p>
+<p><strong>Compromesso (contratto preliminare):</strong> Il documento centrale. Contiene descrizione completa dell'immobile, parti, prezzo, obblighi e caparra (di solito 10–30%). Con caparra confirmatoria: se l'acquirente recede perde la caparra; se il venditore recede deve restituire il doppio. Il compromesso <strong>deve essere registrato presso l'Agenzia delle Entrate entro 20 giorni</strong> per la piena tutela. Si consiglia di coinvolgere un notaio per la redazione o revisione (es. 200–300 €). Come acquirente fornite: copia del preliminare, prova dei pagamenti già effettuati e dati del mediatore e provvigione se applicabile.</p>
+<p><strong>Rogito (atto finale):</strong> Firmato davanti al notaio. Il notaio redige l'atto, riscuote imposte e spese e registra il passaggio. Servono: documento, Codice Fiscale, copia del preliminare, prova dei pagamenti effettuati e—in caso di mutuo—i recapiti della banca.</p>
+
+<h2>Documenti che il venditore deve fornire</h2>
+<p>Come acquirente potete aspettarvi che il notaio richieda al venditore: identità e Codice Fiscale; documentazione matrimoniale o stato civile; <strong>APE</strong> (Attestato di prestazione energetica); <strong>certificato di agibilità</strong> o equivalente; permessi di costruire e documentazione edilizia (permesso di costruire, condono se applicabile); <strong>regolamento</strong> condominiale e dichiarazione dell'amministratore (spese pagate, eventuali spese straordinarie, liti in corso); in presenza di ipoteche, prova di estinzione o assenso della banca alla cancellazione; copia del preliminare e prova dei pagamenti ricevuti; planimetria catastale e documenti catastali; copia dell'atto di acquisto del venditore (e atti successori se l'immobile è stato ereditato). Assicurarsi che tutto sia in ordine evita intoppi dell'ultimo minuto.</p>
+
+<h2>Ruolo e spese del notaio</h2>
+<p>Il notaio è un pubblico ufficiale neutrale. Non rappresenta acquirente o venditore ma la legittimità dell'atto. Verifica titolarità, gravami e validità formale; calcola imposte e tasse di registrazione; registra l'atto presso Agenzia delle Entrate e Conservatoria. Le spese sono in genere <strong>1.500–2.500 €</strong> o circa <strong>1–2,5%</strong> del valore dell'immobile (il maggiore in pratica). Richiedete un preventivo scritto prima del rogito.</p>
+
+<h2>Conto bancario italiano e pagamenti</h2>
+<p>I pagamenti si effettuano normalmente in euro tramite conto corrente italiano per soddisfare i requisiti AML e del notaio. Usando il conto di garanzia del notaio (mandato fiduciario), il notaio riceve il bonifico e paga il venditore solo dopo la trascrizione dell'atto. Pianificate l'apertura del conto non appena avete il Codice Fiscale.</p>
+
+<h2>Se stipulate un mutuo</h2>
+<p>Comunicate al notaio la banca erogante e i recapiti. La banca avrà bisogno del contratto preliminare e spesso della prova del reddito e del Codice Fiscale; il notaio coordina con la banca per l'erogazione al rogito.</p>
+
+<h2>Documenti prima casa (Prima casa)</h2>
+<p>Se richiedete le agevolazioni prima casa, potrebbero servire copie di eventuali atti di vendita precedenti e ricevute fiscali o notarili (per il credito d'imposta). Confermate con il notaio quali documenti servono nel vostro caso.</p>
+
+<h2>Traduzioni e documenti certificati</h2>
+<p>Documenti in lingua straniera potrebbero dover essere tradotti da un traduttore giurato o con traduzione certificata. Alcuni consolati o notai richiedono apostille o legalizzazione. Chiedete in anticipo al notaio e all'avvocato quali documenti vanno tradotti e certificati.</p>
+
+<h2>Tempistiche e scadenze di registrazione</h2>
+<p>Dalla prima offerta alla consegna delle chiavi, calcolate <strong>2–3 mesi</strong>. Ottenete il Codice Fiscale il prima possibile (il consolato può impiegare oltre 3 settimane). Il compromesso va <strong>registrato entro 20 giorni</strong> dalla firma. Il rogito è di solito 4–8 settimane dopo il compromesso, in base alla disponibilità del notaio e a mutuo o altre condizioni.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Codice Fiscale</li>
+<li>Passaporto valido (almeno sei mesi)</li>
+<li>Prova di residenza</li>
+<li>Documentazione stato civile o unione civile</li>
+<li>Prova dei fondi e provenienza</li>
+<li>Conto corrente italiano (euro)</li>
+<li>Copia del preliminare e prova dei pagamenti effettuati</li>
+<li>Procura se non potete essere presenti</li>
+</ul>
+<p>Avere tutto in ordine semplifica il processo e riduce il rischio di ritardi o affari persi. Contattate Vero Properties per supporto su documenti e coordinamento con il notaio.</p>`,
       },
       taxesCostsBuyingItaly: {
         title: "Tasse e costi per l'acquisto di un immobile in Italia",
         excerpt:
-          "Imposta di registro, imposta catastale, spese notarili e costi annuali come IMU. Capire quanto si paga e come si calcola.",
-        content: `<h2>Imposte sull'acquisto</h2>
-<p>Le imposte si calcolano sul valore catastale o sul prezzo dichiarato, se superiore. Per la prima casa (con i requisiti): circa 2% di imposta di registro più tasse fisse. Per seconda casa o immobile di lusso: circa 9% nella maggior parte delle regioni. Le agevolazioni prima casa si applicano a un solo immobile e possono richiedere residenza o impegno a stabilirla.</p>
+          "Valore catastale vs prezzo di mercato, prima casa vs seconda casa, spese notarili e agenzia, IMU e TARI. Esempi di calcolo e cosa pagano gli stranieri.",
+        content: `<h2>Introduzione</h2>
+<p>Capire tasse e costi prima di comprare evita sorprese e aiuta a budgettare correttamente. Per gli acquirenti stranieri i costi di chiusura totali sono in genere il <strong>10–16%</strong> del prezzo di acquisto. Con agevolazioni prima casa e senza agenzia i costi possono scendere al <strong>4–6%</strong>; con IVA da costruzione e servizi professionali completi possono arrivare al <strong>15–22%</strong>. È saggio prevedere un margine—ad esempio un 20% in più sul prezzo—per coprire tutte le imposte, il notaio, l'agenzia e le spese accessorie.</p>
 
-<h2>Notaio e registrazione</h2>
-<p>Le spese notarili sono in genere l'1–2,5% del valore; registrazione e tasse catastali aggiungono circa 200–500 €. Il notaio fornirà un preventivo dettagliato prima del rogito.</p>
+<h2>Come si calcola l'imposta di acquisto: valore catastale vs prezzo di mercato</h2>
+<p>L'imposta sull'acquisto in Italia si calcola sul <strong>valore catastale (valor catastale)</strong> o sul <strong>prezzo di vendita dichiarato</strong>, il maggiore tra i due. Il valore catastale è un valore fiscale ricavato dalla <em>rendita catastale</em>: si rivaluta del 5% e si moltiplica per un coefficiente (160 per le categorie residenziali standard). Questo valore è di solito <strong>dal 30 al 60% più basso</strong> del prezzo di mercato, quindi la base imponibile è spesso inferiore a quanto pagate—riducendo il carico fiscale rispetto a un sistema basato solo sul valore di mercato.</p>
 
-<h2>Costi annuali</h2>
-<p>Dopo l'acquisto potrete essere soggetti all'IMU (imposta municipale propria), in genere 0,4–1,06% del valore catastale (con esenzioni per la prima casa in molti casi). Considerate anche utenze, spese condominiali se dovute e manutenzione ordinaria: spesso 1.500–3.000 € l'anno per un immobile medio.</p>`,
+<h2>Prima casa — Imposte sull'acquisto</h2>
+<p><strong>Acquisto da privato:</strong> Imposta di registro <strong>2%</strong> del valore catastale (minimo 1.000 €); imposta catastale <strong>50 €</strong>; imposta ipotecaria <strong>50 €</strong>.</p>
+<p><strong>Acquisto da costruttore (nuova costruzione):</strong> IVA <strong>4%</strong> sul prezzo; imposta di registro, catastale e ipotecaria <strong>200 €</strong> ciascuna.</p>
+<p><strong>Requisiti per le agevolazioni:</strong> L'immobile non deve essere di lusso—sono escluse le categorie A/1 (abitazioni signorili), A/8 (ville) e A/9 (castelli, palazzi di pregio). Dovete stabilire la <strong>residenza nel comune entro 18 mesi</strong> dall'acquisto (o risiedere/lavorare già lì). Non dovete possedere un altro immobile nello stesso comune acquistato con agevolazioni prima casa (o venderlo entro i termini). Gli <strong>stranieri</strong> possono usufruirne ottenendo la <em>residenza anagrafica</em> e soddisfacendo gli stessi requisiti.</p>
+
+<h2>Seconda casa — Imposte sull'acquisto</h2>
+<p><strong>Da privato:</strong> Imposta di registro <strong>9%</strong>; imposta catastale <strong>50 €</strong>; imposta ipotecaria <strong>50 €</strong>.</p>
+<p><strong>Da costruttore:</strong> IVA <strong>10%</strong>; imposta di registro, catastale e ipotecaria <strong>200 €</strong> ciascuna.</p>
+<p>È il regime standard per i <strong>non residenti</strong> che non stabiliscono la residenza. Esempio: su un immobile con valore catastale di 250.000 € acquistato come seconda casa da privato, le imposte sull'acquisto sono circa 22.500 € più 100 € di tasse fisse.</p>
+
+<h2>Spese notarili e di registrazione</h2>
+<p>Le spese notarili per il rogito sono in genere <strong>1–2,5%</strong> del valore dell'immobile, con <strong>minimo circa 1.500 €</strong>. Le imposte fisse di registrazione, catastali e ipotecarie (50 € o 200 € come sopra) sono a parte. Richiedete sempre un <strong>preventivo scritto</strong> al notaio prima del rogito.</p>
+
+<h2>Commissione agenzia immobiliare</h2>
+<p>La commissione è di solito il <strong>3–5%</strong> del prezzo pattuito e spesso si divide tra acquirente e venditore. Sulla commissione può applicarsi <strong>IVA al 22%</strong>. Consideratela nel costo totale se acquistate tramite agenzia.</p>
+
+<h2>Altri costi una tantum</h2>
+<p>Un avvocato è consigliato e può costare fino al <strong>1–2%</strong> del prezzo. Un geometra può servire per verifiche; traduzione e certificazione dei documenti possono aggiungere diverse centinaia di euro. Se stipulate un <strong>mutuo</strong> per un acquisto prima casa, si applica l'imposta sostitutiva dello <strong>0,25%</strong> sull'importo del finanziamento.</p>
+
+<h2>Esempi di calcolo</h2>
+<p><strong>Immobile 200.000 €, seconda casa, da privato:</strong> Imposte sull'acquisto circa 18.000 € + 100 €; notaio circa 2.000–5.000 €; agenzia al 3% circa 6.000 €. Costi una tantum totali circa <strong>26.000–29.000 €</strong>.</p>
+<p><strong>Immobile 200.000 €, prima casa (con requisiti):</strong> Imposte sull'acquisto circa 4.000 € + 100 €; spese notarili simili; costi una tantum totali sensibilmente più bassi.</p>
+<p><strong>Immobile 300.000 €:</strong> Gli acquirenti stranieri budgettano spesso <strong>30.000–48.000 €</strong> di costi di chiusura totali (10–16%).</p>
+
+<h2>Costi annuali dopo l'acquisto</h2>
+<p><strong>IMU (Imposta Municipale Unica):</strong> Per le <strong>seconde case</strong> l'aliquota è fissata dal comune, in genere <strong>0,76%–1,06%</strong> (8,6–10,6 per mille) del valore catastale (rendita × 1,05 × 160). La <strong>prima casa</strong> con <em>residenza anagrafica</em> è <strong>esente</strong>—anche per gli stranieri che stabiliscono la residenza. I <strong>non residenti</strong> pagano l'IMU su tutti gli immobili in Italia. Pagamento: <strong>prima rata entro il 16 giugno</strong>, <strong>seconda entro il 16 dicembre</strong> (F24, PagoPA o bollettino).</p>
+<p><strong>TARI (tassa sui rifiuti):</strong> Dovuta da tutti i proprietari; in genere <strong>1,50–4 €/m²</strong> l'anno a seconda della zona (province più basse, città maggiori più alte).</p>
+<p><strong>Spese condominiali:</strong> Se dovute, <strong>40–250 €/mese</strong> o più a seconda dell'edificio e dei servizi.</p>
+<p><strong>Utenze e manutenzione:</strong> Budget <strong>1.500–3.000 €/anno</strong> per un immobile medio.</p>
+<p>I pensionati residenti all'estero possono avere diritto a una <strong>riduzione IMU del 50%</strong> e circa <strong>67% TARI</strong> in determinate condizioni (es. un solo immobile in Italia, non locato)—verificate con un consulente fiscale.</p>
+
+<h2>Stranieri: cosa sapere</h2>
+<p>I non residenti pagano di solito l'aliquota <strong>9%</strong> seconda casa e <strong>non</strong> possono usufruire della prima casa a meno di stabilire la <em>residenza anagrafica</em> e soddisfare i 18 mesi e gli altri requisiti. <strong>Pagano sempre l'IMU</strong> sugli immobili in Italia a meno che non diventino residenti e usino l'immobile come prima casa. In pratica: prevedete le imposte piene da seconda casa e l'IMU annuale a meno che non vi trasferiate in Italia.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Chiarite se per il calcolo si userà il valore catastale o quello dichiarato.</li>
+<li>Stabilite se avete i requisiti per la prima casa o pagherete le aliquote seconda casa.</li>
+<li>Ottenete un preventivo scritto dal notaio prima del rogito.</li>
+<li>Includete la commissione d'agenzia nel budget se ne usate una.</li>
+<li>Budgettate IMU, TARI e spese condominiali dal primo anno.</li>
+<li>Mantenete un margine del 20% sul prezzo di acquisto per i costi totali.</li>
+</ul>
+<p>Contattate Vero Properties per un quadro chiaro e su misura di tasse e costi per il vostro acquisto.</p>`,
       },
       mortgagesFinancingForeigners: {
         title: "Mutui e finanziamenti per acquirenti stranieri",

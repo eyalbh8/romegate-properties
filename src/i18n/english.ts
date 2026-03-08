@@ -369,14 +369,14 @@ export default {
           "The definitive guide for foreign buyers: eligibility, Codice Fiscale, proposta, compromesso, due diligence, notary vs. lawyer, taxes, financing, and pitfalls. From first offer to keys in one place.",
       },
       bureaucracyDocumentsItaly: {
-        title: "Bureaucracy and Documents When Buying in Italy",
+        title: "Bureaucracy and Documents When Buying Property in Italy",
         excerpt:
-          "What you need: Codice Fiscale, ID, proof of income, and how to deal with the notary and land registry. A clear overview of the paperwork required.",
+          "Codice Fiscale, passport, proof of funds, AML rules, the three contracts (proposta, compromesso, rogito), and what the notary needs. A clear checklist for a smooth purchase.",
       },
       taxesCostsBuyingItaly: {
         title: "Taxes and Costs When Buying Property in Italy",
         excerpt:
-          "Stamp duty, registration tax, notary fees, and annual costs like IMU. Understand how much you will pay and how it is calculated.",
+          "Cadastral value vs market price, prima casa vs seconda casa, notary and agent fees, IMU and TARI. Worked examples and what foreigners pay.",
       },
       mortgagesFinancingForeigners: {
         title: "Mortgages and Financing for Foreign Buyers",

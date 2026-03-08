@@ -204,27 +204,121 @@ export default {
 <p>Buying a house in Italy is achievable with the right preparation and professional support. Whether you are investing, buying a holiday home, or relocating, a structured approach—from Codice Fiscale and due diligence to the right notary and lawyer—makes the process safer and clearer. Contact Vero Properties for expert guidance through every step of your purchase.</p>`,
       },
       bureaucracyDocumentsItaly: {
-        content: `<h2>Codice Fiscale (Tax Code)</h2>
-<p>You need an Italian tax code (Codice Fiscale) to buy property and sign contracts. You can obtain it from the Italian embassy or consulate in your country, or from an Italian tax office (Agenzia delle Entrate) with a valid ID. It is a 16-character code and is required for the notary and for registering the deed.</p>
+        content: `<h2>Introduction</h2>
+<p>In Italy, bureaucracy and documents are central to buying property. There is no title insurance to fix mistakes after the fact, and the process is notary-led: the notary verifies legality and registers the deed. Strict anti-money-laundering rules mean all payments must be traceable and properly documented. Getting your papers in order early avoids losing the property to faster buyers and prevents delays at the final signing (rogito). This guide walks you through every document you need—and what the seller and notary must provide.</p>
 
-<h2>Documents Usually Required</h2>
-<p>Besides the Codice Fiscale, have ready: a valid passport or ID; proof of address; and, if you are financing, proof of income, bank statements and any documents required by the bank. The notary will need these to prepare the deed and register the transaction.</p>
+<h2>The Essential First Step: Codice Fiscale</h2>
+<p>The Codice Fiscale (Italian tax identification code) is mandatory for the purchase proposal, the preliminary contract (compromesso), the final deed (rogito), opening an Italian bank account, and paying property-related taxes. You can obtain it from an Italian consulate or embassy abroad, or from an Agenzia delle Entrate office in Italy, with a valid ID. It is free and often issued the same day when you apply in Italy.</p>
+<p>For many foreign buyers, applying through a consulate takes <strong>three weeks or more</strong>. If you delay, you may lose the property to someone who already has their Codice Fiscale. Apply as soon as you decide to buy.</p>
 
-<h2>Notary and Land Registry</h2>
-<p>In Italy the notary (notaio) performs the formal deed of sale and handles registration with the tax authority and land registry. Notary fees are typically around 1–2.5% of the property value. The notary checks the seller's title and any encumbrances and ensures the deed is legally valid.</p>
+<h2>Identity and Personal Documents (Buyer)</h2>
+<p>Have the following ready:</p>
+<ul>
+<li><strong>Passport:</strong> Valid for at least six months; bring the original, not only a copy.</li>
+<li><strong>Codice Fiscale:</strong> Certificate or card.</li>
+<li><strong>Proof of address:</strong> Utility bill or bank letter showing your name and full street address.</li>
+<li><strong>Contact details:</strong> Phone number and email reachable from Italy.</li>
+<li><strong>Marital status:</strong> Marriage certificate, certificate of civil union, or certificato di stato libero (single status). If married, provide a copy of any matrimonial property agreement (convenzioni patrimoniali) or cohabitation agreement.</li>
+<li><strong>Non-EU citizens:</strong> Copy of permesso di soggiorno or visa, if applicable.</li>
+<li><strong>If you cannot attend in person:</strong> Power of attorney (procura) signed at an Italian consulate or before a notary.</li>
+</ul>
 
-<h2>Timeline</h2>
-<p>From the preliminary contract (compromesso) to the final deed (rogito) usually takes a few weeks to a few months, depending on financing and any conditions. Plan for at least 2–3 months from offer to keys.</p>`,
+<h2>Proof of Funds and Anti-Money-Laundering (AML)</h2>
+<p>Italian notaries must comply with anti-money-laundering rules (Legislative Decree 231/2007). All significant payments must be traceable through the banking system; cash above certain thresholds is not permitted.</p>
+<p><strong>Proof of funds:</strong> Bank statements in your name showing the available balance. If funds come from a property sale, inheritance, or company distribution, provide supporting documents (e.g. sale deed, inheritance papers).</p>
+<p>The notary will request the identity of the beneficial owner, the purpose of the transaction, and full disclosure of payment methods and source of funds. You may need to complete declaration forms. False or incomplete declarations can lead to serious penalties, including fines and imprisonment.</p>
+<p>Payments are typically an initial deposit (e.g. 10–20%) at the compromesso and the balance at the rogito, using traceable transfers (e.g. SWIFT). An Italian bank account in euros is the standard for compliance.</p>
+
+<h2>The Three Contracts and Their Documents</h2>
+<p><strong>Proposta d'acquisto (purchase offer):</strong> Binding on the buyer once signed. It usually includes your details (including Codice Fiscale), property description, price, payment terms, and a validity period (e.g. 15 days). The initial caparra is often €1,000–€2,000 (or around 5% on higher values). If the seller does not accept, the deposit is returned.</p>
+<p><strong>Compromesso (contratto preliminare):</strong> The core document. It contains the full description of the property, parties, price, obligations, and deposit (usually 10–30%). Under caparra confirmatoria: if the buyer withdraws, they lose the deposit; if the seller withdraws, they must pay the buyer double. The compromesso <strong>must be registered with the Agenzia delle Entrate within 20 days</strong> for full legal protection. Involving a notary to draft or review it (e.g. €200–€300) is recommended. As buyer you provide: a copy of the preliminare, proof of payments already made, and mediator details and commission if applicable.</p>
+<p><strong>Rogito (final deed):</strong> Signed before the notary. The notary prepares the deed, collects taxes and fees, and registers the transfer. You need: ID, Codice Fiscale, copy of the preliminare, proof of payments made, and—if you have a mortgage—the bank's contact details.</p>
+
+<h2>Documents the Seller Must Provide</h2>
+<p>As a buyer, you can expect the notary to require the following from the seller: identity and Codice Fiscale; marriage or civil-status documentation; <strong>APE</strong> (Attestato di prestazione energetica—energy performance certificate); <strong>certificato di agibilità</strong> (habitability certificate) or equivalent; building permits and construction documentation (permesso di costruire, condono if applicable); condominium <strong>regolamento</strong> and the administrator's declaration (confirming spese pagate, any extraordinary expenses, and ongoing disputes); if there are mortgages, proof of discharge or the bank's assent to cancellation; copy of the preliminare and proof of payments received; cadastral plan and relevant catasto documents; and a copy of the seller's acquisition deed (and succession documents if the property was inherited). Ensuring these are in order helps avoid last-minute hold-ups.</p>
+
+<h2>Notary's Role and Fees</h2>
+<p>The notary (notaio) is a neutral public official. They do not represent the buyer or the seller but the legality of the deed. They verify title, encumbrances, and formal validity; calculate taxes and registration fees; and register the deed with the tax authority and land registry. Fees are typically <strong>€1,500–€2,500</strong> or about <strong>1–2.5%</strong> of the property value (whichever is higher in practice). Request a written quote before the rogito.</p>
+
+<h2>Italian Bank Account and Payments</h2>
+<p>Payments are normally made in euros through an Italian bank account to satisfy AML and notary requirements. If you use the notary's escrow (mandato fiduciario), the notary receives the transfer and pays the seller only after the deed has been transcribed. Plan to open an account as soon as you have your Codice Fiscale.</p>
+
+<h2>If You Are Taking a Mortgage</h2>
+<p>Inform the notary of the lending bank and its contact details. The bank will need the preliminary contract and often proof of income and Codice Fiscale; the notary coordinates with the bank for the release of funds at the rogito.</p>
+
+<h2>First-Home (Prima Casa) Documents</h2>
+<p>If you are applying for first-home tax benefits, you may need copies of any prior property sale deeds and related tax or notary receipts (for credito d'imposta). Confirm with the notary exactly which documents are required for your case.</p>
+
+<h2>Translations and Certified Documents</h2>
+<p>Documents in a foreign language may need to be translated by a sworn translator (traduttore giurato) or as a certified translation. Some consulates or notaries require apostille or legalization. Ask your notary and lawyer early which documents must be translated and certified.</p>
+
+<h2>Timeline and Registration Deadlines</h2>
+<p>From first offer to keys, plan for <strong>2–3 months</strong>. Get your Codice Fiscale as soon as possible (consulate processing can take 3+ weeks). The compromesso must be <strong>registered within 20 days</strong> of signing. The rogito is usually 4–8 weeks after the compromesso, depending on notary availability and any mortgage or other conditions.</p>
+
+<h2>Checklist Summary and Next Steps</h2>
+<ul>
+<li>Codice Fiscale</li>
+<li>Valid passport (at least six months)</li>
+<li>Proof of address</li>
+<li>Marital-status or civil-union documentation</li>
+<li>Proof of funds and source of funds</li>
+<li>Italian bank account (euros)</li>
+<li>Copy of preliminare and proof of payments made</li>
+<li>Power of attorney if you cannot attend in person</li>
+</ul>
+<p>Having these in order streamlines the process and reduces the risk of delays or lost deals. Contact Vero Properties for support with documents and notary coordination.</p>`,
       },
       taxesCostsBuyingItaly: {
-        content: `<h2>Purchase Taxes</h2>
-<p>Tax on purchase is calculated on the cadastral value (valor catastale) or the declared sale price, whichever is higher. For a first home (prima casa) meeting certain conditions: about 2% stamp duty and fixed registration fees. For a second or luxury property: about 9% in most regions. First-home benefits apply to one property only and may require residency or a commitment to establish it.</p>
+        content: `<h2>Introduction</h2>
+<p>Understanding taxes and costs before you buy avoids surprises and helps you budget correctly. For foreign buyers, total closing costs are typically <strong>10–16%</strong> of the purchase price. With prima casa (first-home) relief and no estate agent, costs can fall to <strong>4–6%</strong>; with new-build VAT and full professional services, they can reach <strong>15–22%</strong>. It is wise to budget a buffer—for example, an extra 20% on top of the purchase price—to cover all taxes, notary, agent, and incidentals.</p>
 
-<h2>Notary and Registration</h2>
-<p>Notary fees are usually 1–2.5% of the value; registration and cadastral fees add roughly €200–500. The notary will give you a detailed quote before the deed.</p>
+<h2>How Purchase Tax Is Calculated: Cadastral Value vs Market Price</h2>
+<p>Purchase tax in Italy is calculated on the <strong>cadastral value (valor catastale)</strong> or the <strong>declared sale price</strong>, whichever is higher. The cadastral value is a fiscal value derived from the <em>rendita catastale</em> (cadastral income): it is revalued by 5% and multiplied by a coefficient (160 for standard residential categories). This value is usually <strong>30–60% lower</strong> than market price, so the tax base is often lower than what you actually pay—reducing your tax bill compared with a system based purely on market value.</p>
 
-<h2>Annual Costs</h2>
-<p>After purchase you may be liable for IMU (municipal property tax), typically 0.4–1.06% of the cadastral value (with exemptions for prima casa in many cases). Budget also for utilities, condominium fees if applicable, and routine maintenance—often €1,500–3,000 per year for an average property.</p>`,
+<h2>Prima Casa (First Home) — Purchase Taxes</h2>
+<p><strong>Buying from a private seller:</strong> Imposta di registro (registration tax) <strong>2%</strong> of the cadastral value (minimum €1,000); imposta catastale <strong>€50</strong>; imposta ipotecaria (mortgage tax) <strong>€50</strong>.</p>
+<p><strong>Buying from a developer (new build):</strong> IVA (VAT) <strong>4%</strong> on the price; imposta di registro, catastale and ipotecaria <strong>€200</strong> each.</p>
+<p><strong>Requirements for agevolazioni:</strong> The property must not be classified as luxury—categories A/1 (abitazioni signorili), A/8 (ville), and A/9 (castelli, palazzi di pregio) are excluded. You must establish <strong>residency in the municipality within 18 months</strong> of purchase (or already reside or work there). You must not own another property in the same comune that was bought with prima casa benefits (or sell it within the allowed period). <strong>Foreigners</strong> can qualify if they obtain <em>residenza anagrafica</em> and meet these same conditions.</p>
+
+<h2>Seconda Casa (Second Home) — Purchase Taxes</h2>
+<p><strong>From a private seller:</strong> Imposta di registro <strong>9%</strong>; imposta catastale <strong>€50</strong>; imposta ipotecaria <strong>€50</strong>.</p>
+<p><strong>From a developer:</strong> IVA <strong>10%</strong>; imposta di registro, catastale and ipotecaria <strong>€200</strong> each.</p>
+<p>This is the default regime for <strong>non-residents</strong> who do not establish residency. Example: on a property with a cadastral value of €250,000 bought as seconda casa from a private seller, purchase taxes are approximately €22,500 plus €100 in fixed fees.</p>
+
+<h2>Notary and Registration Fees</h2>
+<p>Notary fees for the rogito (final deed) are typically <strong>1–2.5%</strong> of the property value, with a <strong>minimum of around €1,500</strong>. The fixed registration, cadastral, and mortgage taxes (€50 or €200 as above) are separate. Always request a <strong>written quote</strong> from the notary before the deed.</p>
+
+<h2>Estate Agent Commission</h2>
+<p>Agent commission is usually <strong>3–5%</strong> of the agreed price and is often split between buyer and seller. <strong>22% VAT</strong> may apply on the commission. Factor this into your total cost if you buy through an agent.</p>
+
+<h2>Other One-Off Costs</h2>
+<p>A lawyer is recommended and often costs up to <strong>1–2%</strong> of the purchase price. A geometra (surveyor) may be needed for checks; translation and certification of documents can add several hundred euros. If you take out a <strong>mutuo</strong> (mortgage) for a prima casa purchase, an imposta sostitutiva of <strong>0.25%</strong> applies on the loan amount.</p>
+
+<h2>Worked Examples</h2>
+<p><strong>€200,000 property, seconda casa, from private seller:</strong> Purchase tax about €18,000 + €100; notary about €2,000–€5,000; agent at 3% about €6,000. Total one-off costs roughly <strong>€26,000–€29,000</strong>.</p>
+<p><strong>€200,000 property, prima casa (qualifying):</strong> Purchase tax about €4,000 + €100; notary fees similar; total one-off costs are significantly lower.</p>
+<p><strong>€300,000 property:</strong> Foreign buyers often budget <strong>€30,000–€48,000</strong> in total closing costs (10–16%).</p>
+
+<h2>Annual Costs After Purchase</h2>
+<p><strong>IMU (Imposta Municipale Unica):</strong> For <strong>second homes</strong> the rate is set by the municipality, typically <strong>0.76%–1.06%</strong> (8.6–10.6 per thousand) of the cadastral value (calculated from rendita × 1.05 × 160). <strong>Primary residence</strong> with <em>residenza anagrafica</em> is <strong>exempt</strong>—including for foreigners who establish residency. <strong>Non-residents</strong> pay IMU on all Italian properties. Payment: <strong>first installment by 16 June</strong>, <strong>second by 16 December</strong> (via F24, PagoPA, or postal payment).</p>
+<p><strong>TARI (waste tax):</strong> Payable by all owners; typically <strong>€1.50–€4/m²</strong> per year depending on area (provinces lower, major cities higher).</p>
+<p><strong>Condominium fees (spese condominiali):</strong> If applicable, <strong>€40–€250/month</strong> or more depending on the building and services.</p>
+<p><strong>Utilities and maintenance:</strong> Budget <strong>€1,500–€3,000/year</strong> for an average property.</p>
+<p>Pensioners living abroad may qualify for a <strong>50% IMU</strong> reduction and about <strong>67% TARI</strong> reduction under certain conditions (e.g. only Italian property, not rented)—check with a fiscal advisor.</p>
+
+<h2>Foreigners: What You Need to Know</h2>
+<p>Non-residents usually pay the <strong>9%</strong> seconda casa rate and <strong>cannot</strong> benefit from prima casa unless they establish <em>residenza anagrafica</em> and meet the 18-month and other requirements. They <strong>always pay IMU</strong> on Italian property unless they become residents and use the property as their primary residence. In practice: plan for full second-home purchase taxes and annual IMU unless you relocate to Italy.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Clarify whether cadastral or declared value will be used for tax.</li>
+<li>Determine if you qualify for prima casa or will pay seconda casa rates.</li>
+<li>Get a written notary quote before the deed.</li>
+<li>Include agent commission in your budget if using one.</li>
+<li>Budget for IMU, TARI, and condominium fees from year one.</li>
+<li>Keep a 20% buffer on top of the purchase price for total costs.</li>
+</ul>
+<p>Contact Vero Properties for a clear, tailored breakdown of taxes and costs for your purchase.</p>`,
       },
       mortgagesFinancingForeigners: {
         content: `<h2>Can Foreigners Get a Mortgage in Italy?</h2>
