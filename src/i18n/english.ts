@@ -396,17 +396,17 @@ export default {
       bestAreasBuyItaly: {
         title: "Best Regions and Areas to Buy in Italy",
         excerpt:
-          "Tuscany, Rome, Amalfi Coast, Lake Como, Florence: where to invest, live or buy a holiday home. Pros and cons of the most sought-after areas.",
+          "Milan, Rome, Tuscany, Lake Como, Puglia, Sicily: price ranges, demand and use cases. Where to invest, live or buy a holiday home.",
       },
       risksBuyingPropertyItaly: {
         title: "Risks and Pitfalls When Buying Property in Italy",
         excerpt:
-          "Historic zone restrictions, local market dynamics, bureaucracy, taxation and seismic risk. What to watch out for before you buy.",
+          "No title insurance; urban compliance and abuso edilizio; contractual traps; title and fraud risks; notary role. What to verify before you sign.",
       },
       residencyVisaPropertyItaly: {
         title: "Residency and Visas: Does Buying Property Help?",
         excerpt:
-          "Owning a property alone does not grant residency. Elective residence, investor visa and citizenship paths: what is possible and what is not.",
+          "Property alone does not grant residency. Elective residence (passive income, accommodation), Golden Visa (investment, no property), and how property can support your application.",
       },
     },
   },

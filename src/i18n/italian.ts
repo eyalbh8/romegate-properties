@@ -929,47 +929,107 @@ export default {
       bestAreasBuyItaly: {
         title: "Migliori regioni e zone per comprare in Italia",
         excerpt:
-          "Toscana, Roma, Costiera Amalfitana, Lago di Como, Firenze: dove investire, vivere o comprare una casa per le vacanze. Pro e contro delle zone più richieste.",
-        content: `<h2>Toscana</h2>
-<p>Colline, zone vinicole e borghi storici. Ideale per case vacanza e soggiorni medio-lunghi. I prezzi variano dalle zone interne più accessibili alle località premium come Chianti e Val d'Orcia.</p>
+          "Milano, Roma, Toscana, Lago di Como, Puglia, Sicilia: fasce di prezzo, domanda e casi d'uso. Dove investire, vivere o comprare una casa per le vacanze.",
+        content: `<h2>Introduzione</h2>
+<p>La scelta di dove comprare in Italia dipende dal budget, dall'uso previsto dell'immobile (casa vacanze, investimento locativo, prima casa) e dal bisogno di liquidità. L'Italia offre mercati urbani solidi, zone lifestyle iconiche e regioni meridionali in crescita; prezzi e domanda variano molto per area. Questa guida riassume le principali regioni e cosa considerare in ciascuna.</p>
 
-<h2>Roma e Firenze</h2>
-<p>Città con forte domanda di affitti da turisti e professionisti. Buone per investimento e vita cittadina; i prezzi sono più alti in centro. Verificate regolamenti condominiali e norme sulla locazione turistica se prevedete di affittare a turisti.</p>
+<h2>Milano e Lombardia</h2>
+<p>La Lombardia, con Milano al centro, è il mercato immobiliare più forte d'Italia. I prezzi medi sono intorno a <strong>8.500 €/m²</strong>, con le zone premium oltre <strong>15.000 €/m²</strong>. La città attira professionisti, studenti e nomadi digitali, con forte domanda e rendite da locazione. Le regioni settentrionali hanno registrato una solida crescita dei prezzi (es. 5–7% negli ultimi anni). Se prevedete affitti brevi, verificate le norme comunali e condominiali sulla locazione turistica.</p>
 
-<h2>Costiera Amalfitana e Lago di Como</h2>
-<p>Paesaggi iconici e alta domanda. Prezzi premium e forte appeal per il lusso e le case vacanza. Valutate accessibilità, manutenzione e vincoli locali prima dell'acquisto.</p>
+<h2>Roma e Lazio</h2>
+<p>Roma e il Lazio offrono domanda costante da turisti e residenti. I prezzi medi sono intorno a <strong>3.395 €/m²</strong>; il centro storico ha un premium (es. oltre 10.000 €/m² in zone prime come Piazza di Spagna). La domanda di affitto breve (stile Airbnb) è forte. I regolamenti condominiali e comunali sugli affitti turistici variano: confermate prima dell'acquisto.</p>
 
-<h2>Altre regioni</h2>
-<p>Puglia, Sicilia, Umbria e Marche offrono prezzi di ingresso più bassi e crescente interesse. Studiate i mercati locali e le infrastrutture per trovare il giusto equilibrio tra prezzo e domanda.</p>`,
+<h2>Toscana</h2>
+<p>La Toscana resta una scelta classica per lifestyle e case vacanze. Firenze è spesso satura e costosa; <strong>città di secondo piano</strong> come Lucca e le campagne del Chianti e della Val d'Orcia possono offrire miglior rapporto qualità-prezzo e margini. I prezzi medi sono intorno a <strong>4.279 €/m²</strong>, con potenziale di affitto di ville. Le zone interne sono in genere più accessibili delle zone premium come il Chianti.</p>
+
+<h2>Lago di Como e i laghi</h2>
+<p>Il Lago di Como e gli altri grandi laghi (Garda, Maggiore) sono iconici ma premium. Sul Lago di Como i prezzi medi sono intorno a <strong>3.800 €/m²</strong> (casa media circa 420.000 €); fronte lago e ville di lusso arrivano a <strong>4.000–15.000 €/m²</strong>. Tra i comuni più cari Cernobbio e Menaggio; miglior rapporto qualità-prezzo in alcune periferie comasche (es. circa 1.940 €/m² in certe zone). Garda e Maggiore sono per acquirenti ultra-lusso. Considerate accessibilità, manutenzione e liquidità in vendita prima di impegnarvi.</p>
+
+<h2>Costiera Amalfitana e costa premium</h2>
+<p>La Costiera Amalfitana e altre fasce costiere premium hanno alta domanda e prezzi di fascia alta. Valutate infrastrutture, vincoli locali e costi di gestione; la liquidità può essere inferiore rispetto alle grandi città.</p>
+
+<h2>Puglia, Sicilia e Sud</h2>
+<p>Le regioni meridionali offrono <strong>prezzi di ingresso più bassi</strong>—intorno a <strong>1.100 €/m²</strong> in molte zone. <strong>Puglia</strong> (es. Ostuni, Polignano a Mare) e <strong>Sicilia</strong> attirano crescente interesse da pensionati, remote workers e famiglie di expat; la Sicilia ha fascino del patrimonio e programmi come case a 1 € in alcuni comuni. La Puglia può offrire agevolazioni fiscali per pensionati stranieri qualificati (es. imposta sostitutiva 7% in certe condizioni). Studiate infrastrutture locali e domanda per l'uso previsto.</p>
+
+<h2>Altre regioni (Umbria, Marche, ecc.)</h2>
+<p>Umbria, Marche e altre regioni centrali o settentrionali offrono spesso prezzi più bassi e crescente interesse da acquirenti in cerca di valore e lifestyle. Studiate infrastrutture locali, domanda locativa e liquidità in vendita per i vostri obiettivi.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Definite budget, caso d'uso (casa vacanze, locazione, prima casa) e necessità di liquidità.</li>
+<li>Confrontate fasce di prezzo e domanda nelle regioni in short list.</li>
+<li>Verificate le norme sull'affitto breve (comunali e condominiali) se prevedete di affittare a turisti.</li>
+<li>Considerate accessibilità, manutenzione e rivendita nel confrontare zone iconiche e zone in crescita.</li>
+</ul>
+<p>Contattate Vero Properties per una ricerca su misura per area e consigli su dove investire, vivere o comprare una casa per le vacanze.</p>`,
       },
       risksBuyingPropertyItaly: {
         title: "Rischi e insidie nell'acquisto di immobili in Italia",
         excerpt:
-          "Vincoli nelle zone storiche, dinamiche di mercato, burocrazia, fiscalità e rischio sismico. Cosa considerare prima di comprare.",
-        content: `<h2>Edifici storici e vincolati</h2>
-<p>Gli immobili nei centri storici o vincolati sono soggetti a norme severe su modifiche e talvolta sull'uso. Verificate cosa si può e non si può modificare e se la locazione turistica è consentita.</p>
+          "Nessuna assicurazione sul titolo; conformità urbanistica e abuso edilizio; trappole contrattuali; rischi sul titolo e frode; ruolo del notaio. Cosa verificare prima di firmare.",
+        content: `<h2>Introduzione</h2>
+<p>In Italia non esiste un'assicurazione sul titolo; il notaio verifica la legittimità dell'atto ma non protegge l'acquirente. La due diligence legale e tecnica indipendente è essenziale per evitare trappole contrattuali, vizi del titolo e violazioni edilizie. Questa guida illustra i principali rischi e cosa verificare prima di firmare.</p>
 
-<h2>Mercato e ubicazione</h2>
-<p>Prezzi e domanda variano per regione, città e quartiere. Studiate le tendenze locali e considerate la liquidità: alcune zone sono più difficili da vendere o affittare. Fate valutazioni indipendenti prima di fare un'offerta.</p>
+<h2>Conformità urbanistica ed edilizia</h2>
+<p>Gli immobili devono avere <strong>conformità urbanistica</strong>: l'edificio deve corrispondere ai permessi rilasciati in fase di costruzione e a eventuali modifiche autorizzate. L'<strong>abuso edilizio</strong>—dalla violazione totale (nessun permesso o edificio completamente diverso dai progetti approvati) a scostamenti rilevanti o parziali—può comportare ordinanze di demolizione, sanzioni, risoluzione del contratto e rifiuto del mutuo. La registrazione catastale non garantisce la legittimità urbanistica. Il <em>condono</em> è chiuso dal 2003; la <em>sanatoria</em> è possibile solo in casi rigorosi. Secondo la legge italiana (es. L. 122/2010) il venditore è responsabile verso l'acquirente per le discordanze, anche se non le ha causate; notai e agenti immobiliari non rispondono professionalmente delle dichiarazioni false del venditore.</p>
+
+<h2>Insidie contrattuali</h2>
+<p>Il <strong>compromesso</strong> (contratto preliminare) spesso prevede una caparra non restituibile o penali elevate (es. fino al 20% del prezzo) in caso di recesso. Una volta <strong>registrato</strong> il compromesso presso l'Agenzia delle Entrate diventa pienamente vincolante. Evitate pagamenti consistenti prima del completamento di tutte le verifiche legali e tecniche. Fate revisionare il contratto da un avvocato indipendente prima di firmare.</p>
+
+<h2>Rischi sul titolo e frode</h2>
+<p>Non esiste un'assicurazione sul titolo per sanare vizi dopo la chiusura. Eventuali problemi di titolo o gravami devono essere individuati e risolti <strong>prima</strong> del rogito. Si verificano frodi sul titolo a danno di acquirenti stranieri. Una <strong>verifica del titolo</strong> approfondita (di norma almeno 20 anni di storia della proprietà) e la visura ipotecaria sono prassi. Per gli acquirenti <strong>extra-UE</strong> verificate per iscritto con il notaio che il vostro paese abbia un accordo di reciprocità che consenta l'acquisto di immobili in Italia.</p>
+
+<h2>Ruolo del notaio e consulenza indipendente</h2>
+<p>Il notaio è un pubblico ufficiale <strong>neutro</strong>: verifica la conformità formale e legale dell'atto e lo registra, ma <strong>non</strong> rappresenta né protegge l'acquirente (né il venditore). Non fate affidamento sul notaio per consulenza legale. Assumete un <strong>avvocato indipendente</strong> con competenza in diritto immobiliare italiano prima di versare caparre o firmare documenti vincolanti.</p>
+
+<h2>Edifici storici e vincolati</h2>
+<p>Gli immobili nei centri storici o soggetti a <strong><em>vincoli</em></strong> sono regolati da norme severe su modifiche e talvolta sull'uso. La locazione turistica o breve può essere limitata. Confermate quali interventi sono consentiti e se potete usare l'immobile come previsto prima di impegnarvi.</p>
+
+<h2>Mercato, ubicazione e liquidità</h2>
+<p>Prezzi e domanda variano per regione, città e quartiere. Alcune zone sono più difficili da vendere o affittare; la liquidità può essere inferiore per località di nicchia o remote. Ottenete una <strong>valutazione indipendente</strong> prima di fare un'offerta per non pagare troppo.</p>
 
 <h2>Burocrazia e ritardi</h2>
-<p>La burocrazia italiana può essere lenta. Considerate possibili ritardi nell'ottenere documenti, approvazioni bancarie e appuntamenti dal notaio. Un avvocato locale e un agente affidabile aiutano a tenere il processo sotto controllo.</p>
+<p>L'ottenimento di documenti, approvazioni bancarie e appuntamenti dal notaio può richiedere tempo. Considerate possibili ritardi; un avvocato locale e un agente affidabile aiutano a tenere il processo sotto controllo ed evitare sorprese dell'ultimo minuto.</p>
 
 <h2>Rischio sismico e altri</h2>
-<p>Parti d'Italia sono in zona sismica. Verificate la classificazione dell'immobile e la conformità alle norme di sicurezza. Assicurazione ed eventuali interventi di adeguamento vanno considerati nella decisione.</p>`,
+<p>Gran parte dell'Italia è classificata in <strong>zone sismiche 1–4</strong> (1 = pericolosità massima). Verificate la classificazione sismica dell'immobile e se l'edificio è conforme alle norme antisismiche vigenti. Considerate i costi di <strong>assicurazione</strong> ed eventuali <strong>interventi di adeguamento</strong> quando confrontate le opzioni.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Assumete un avvocato indipendente prima di versare caparra o firmare il compromesso.</li>
+<li>Completate la due diligence: visura catastale, visura ipotecaria, conformità edilizia e urbanistica, certificato di agibilità, APE.</li>
+<li>Non firmate il compromesso finché le verifiche non sono complete e non siete soddisfatti.</li>
+<li>Se extra-UE, ottenete conferma scritta della reciprocità dal notaio.</li>
+</ul>
+<p>Contattate Vero Properties per supporto nella due diligence e nel coordinamento con notai e avvocati.</p>`,
       },
       residencyVisaPropertyItaly: {
         title: "Residenza e visti: comprare casa aiuta?",
         excerpt:
-          "La proprietà da sola non dà diritto alla residenza. Residenza elettiva, visto investitori e percorsi di cittadinanza: cosa è possibile e cosa no.",
-        content: `<h2>Comprare casa dà la residenza?</h2>
-<p>No. La proprietà di un immobile in Italia non dà di per sé diritto alla residenza o al permesso di soggiorno. Dovete rientrare in uno dei canali standard di visto e residenza.</p>
+          "La proprietà da sola non dà la residenza. Residenza elettiva (reddito passivo, alloggio), visto investitori (investimento, non immobiliare), e come l'immobile può sostenere la domanda.",
+        content: `<h2>Introduzione</h2>
+<p>La proprietà di un immobile in Italia non dà di per sé diritto alla residenza o al <em>permesso di soggiorno</em>. Dovete rientrare in uno dei canali standard di visto e residenza. L'immobile può però sostenere determinate domande—ad esempio il visto per residenza elettiva—come prova di alloggio. Questa guida riassume come l'immobile si inserisce nelle principali opzioni.</p>
 
-<h2>Residenza elettiva e opzioni per investitori</h2>
-<p>La residenza elettiva può essere un'opzione se dimostrate reddito passivo sufficiente e un alloggio (il vostro immobile può aiutare). I visti per investitori sono previsti per investimenti significativi in base a programmi specifici. Requisiti e soglie cambiano: verificate con il consolato italiano o un avvocato immigrazione.</p>
+<h2>Comprare casa dà la residenza?</h2>
+<p>No. Servono un visto e un permesso basati su reddito, investimento o altri criteri previsti dalla legge italiana. La proprietà immobiliare non è un titolo autonomo per la residenza; può aiutare a soddisfare il requisito dell'alloggio per i canali che lo richiedono.</p>
+
+<h2>Visto per residenza elettiva</h2>
+<p>Il <strong>visto per residenza elettiva</strong> è per chi non lavora in Italia e può dimostrare un <strong>reddito passivo</strong> sufficiente—in genere circa <strong>31.000–32.000 €/anno</strong> per un singolo richiedente (le cifre possono essere aggiornate; verificate con il consolato). Il reddito deve provenire da fonti come pensioni, redditi da locazione, dividendi o investimenti, non da lavoro dipendente o autonomo (incluso il lavoro da remoto per un datore estero). Dovete avere un <strong>alloggio</strong> in Italia: il vostro immobile italiano o un contratto di locazione registrato a lungo termine (es. un anno) soddisfa il requisito. I consolati considerano spesso <strong>la proprietà immobiliare in modo favorevole</strong> come prova di stabilità e impegno. Se trascorrete 183 o più giorni l'anno in Italia diventerete in genere residenti fiscali. Serve un'assicurazione sanitaria privata. Il permesso iniziale è di solito valido un anno e rinnovabile; dopo cinque anni potete avere diritto alla residenza permanente, e dopo dieci alla cittadinanza. Requisiti e importi possono cambiare—confermate sempre con il consolato italiano o un avvocato immigrazione.</p>
+
+<h2>Visto investitori (Golden Visa)</h2>
+<p>Il <strong>visto investitori</strong> (a volte detto Golden Visa) si basa su un <strong>investimento</strong> qualificato. È importante: <strong>l'acquisto di immobili in Italia non è</strong> un investimento qualificato nel programma attuale. Le opzioni qualificanti includono in genere: un investimento significativo in titoli di Stato italiani (es. 2 milioni €); 500.000 € in una società italiana; 250.000 € in una startup innovativa; o 1 milione € in un progetto filantropico. Il visto investitori consente di lavorare e svolgere attività in Italia. Il permesso iniziale è di solito valido due anni e rinnovabile; il percorso verso la residenza permanente (dopo cinque anni) e la cittadinanza (dopo dieci) è analogo ad altri permessi. Verificate regole e soglie attuali con il consolato o uno specialista.</p>
 
 <h2>Cittadinanza e soggiorno a lungo termine</h2>
-<p>La cittadinanza si può ottenere dopo 10 anni di residenza legale (o meno in alcuni casi, es. matrimonio con cittadino italiano). Comprare un immobile non abbrevia questo periodo ma può sostenere la domanda dimostrando una dimora stabile. Richiedete sempre consulenza legale aggiornata per la vostra situazione.</p>`,
+<p>La cittadinanza italiana si ottiene in genere dopo <strong>10 anni</strong> di residenza legale (o meno in casi particolari, es. matrimonio con cittadino italiano o discendenza). Comprare un immobile non abbrevia questo periodo. Può però sostenere la domanda di residenza o cittadinanza dimostrando che avete una dimora stabile in Italia.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Chiarite l'obiettivo: solo casa vacanze, o residenza/cittadinanza.</li>
+<li>Se cercate la residenza, verificate i requisiti di reddito o investimento per residenza elettiva vs visto investitori.</li>
+<li>L'immobile può aiutare a soddisfare il requisito dell'alloggio per la residenza elettiva ed è visto positivamente da molti consolati.</li>
+<li>Ottenete consulenza aggiornata dal consolato italiano o da un avvocato immigrazione; regole e cifre cambiano.</li>
+</ul>
+<p>Contattate Vero Properties per la ricerca immobiliare e il coordinamento con consulenti legali su residenza e visti.</p>`,
       },
     },
   },

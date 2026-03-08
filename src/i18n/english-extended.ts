@@ -443,40 +443,100 @@ export default {
 <p>Contact Vero Properties for tailored advice on rent vs buy and property search in Italy.</p>`,
       },
       bestAreasBuyItaly: {
-        content: `<h2>Tuscany</h2>
-<p>Rolling hills, wine country and historic towns. Ideal for holiday homes and medium to long-term stays. Prices vary from more affordable inland areas to premium spots like Chianti and Val d'Orcia.</p>
+        content: `<h2>Introduction</h2>
+<p>Choosing where to buy in Italy depends on your budget, how you plan to use the property (holiday home, rental investment, primary residence) and your need for liquidity. Italy offers strong city markets, iconic lifestyle zones and emerging southern regions; prices and demand vary sharply by area. This guide summarises the main regions and what to consider in each.</p>
 
-<h2>Rome and Florence</h2>
-<p>Major cities with strong rental demand from tourists and professionals. Good for investment and city living; prices are higher in the centre. Check condominium rules and short-rental regulations if you plan to let to tourists.</p>
+<h2>Milan and Lombardy</h2>
+<p>Lombardy, with Milan at its core, is Italy's strongest property market. Average prices are around <strong>€8,500/m²</strong>, with premium areas exceeding <strong>€15,000/m²</strong>. The city attracts professionals, students and digital nomads, supporting strong rental demand and yields. Northern regions have seen solid price growth (e.g. 5–7% in recent years). If you plan short-term lets, check municipal and condominium rules on holiday rental.</p>
 
-<h2>Amalfi Coast and Lake Como</h2>
-<p>Iconic landscapes and high demand. Premium prices and strong appeal for luxury and holiday lets. Consider access, maintenance and local restrictions before buying.</p>
+<h2>Rome and Lazio</h2>
+<p>Rome and Lazio offer steady demand from tourists and residents. Average prices are around <strong>€3,395/m²</strong>; the historic centre commands a premium (e.g. over €10,000/m² in prime spots such as Piazza di Spagna). Short-term rental (Airbnb-style) demand is strong. Condominium rules and local regulations on holiday lets vary—confirm before buying.</p>
 
-<h2>Other Regions</h2>
-<p>Puglia, Sicily, Umbria and Le Marche offer lower entry prices and growing interest from buyers and renters. Research local markets and infrastructure to find the right balance of price and demand.</p>`,
+<h2>Tuscany</h2>
+<p>Tuscany remains a classic choice for lifestyle and holiday homes. Florence is often saturated and expensive; <strong>second-tier towns</strong> such as Lucca and the Chianti and Val d'Orcia countryside can offer better value and margins. Average prices are around <strong>€4,279/m²</strong>, with villa rental potential. Inland areas are generally more affordable than premium zones like Chianti.</p>
+
+<h2>Lake Como and the Lakes</h2>
+<p>Lake Como and the other great lakes (Garda, Maggiore) are iconic but premium. On Lake Como, average prices are around <strong>€3,800/m²</strong> (average home about €420,000); waterfront and luxury villas reach <strong>€4,000–€15,000/m²</strong>. The priciest towns include Cernobbio and Menaggio; better value can be found in some Como suburbs (e.g. around €1,940/m² in certain areas). Lake Garda and Maggiore cater to ultra-luxury buyers. Consider access, maintenance and resale liquidity before committing.</p>
+
+<h2>Amalfi Coast and Premium Coastal</h2>
+<p>The Amalfi Coast and similar premium coastal strips have high demand and top-tier prices. Weigh infrastructure, local restrictions and running costs; liquidity can be lower than in major cities.</p>
+
+<h2>Puglia, Sicily and the South</h2>
+<p>Southern regions offer <strong>lower entry prices</strong>—around <strong>€1,100/m²</strong> in many areas. <strong>Puglia</strong> (e.g. Ostuni, Polignano a Mare) and <strong>Sicily</strong> attract growing interest from retirees, remote workers and expat families; Sicily has heritage charm and schemes such as €1 homes in some towns. Puglia can offer tax incentives for qualifying foreign retirees (e.g. 7% flat tax in certain conditions). Research local infrastructure and demand for your intended use.</p>
+
+<h2>Other Regions (Umbria, Le Marche, etc.)</h2>
+<p>Umbria, Le Marche and other central or northern regions often offer lower prices and growing interest from buyers seeking value and lifestyle. Research local infrastructure, rental demand and resale liquidity for your goals.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Define your budget, use case (holiday home, rental, primary) and liquidity needs.</li>
+<li>Compare price ranges and demand in your shortlisted regions.</li>
+<li>Check short-term rental rules (municipal and condominium) if you plan to let to tourists.</li>
+<li>Consider access, maintenance and resale when comparing iconic vs emerging areas.</li>
+</ul>
+<p>Contact Vero Properties for area-specific search and advice on where to invest, live or buy a holiday home.</p>`,
       },
       risksBuyingPropertyItaly: {
-        content: `<h2>Historic and Listed Buildings</h2>
-<p>Properties in historic centres or listed buildings are subject to strict rules on alterations and sometimes on use. Check what you can and cannot change and whether short-term rental is allowed.</p>
+        content: `<h2>Introduction</h2>
+<p>Italy has no title insurance; the notary verifies the legality of the deed but does not protect the buyer. Independent legal and technical due diligence is essential to avoid contractual traps, title defects and building violations. This guide outlines the main risks and what to verify before you sign.</p>
 
-<h2>Market and Location</h2>
-<p>Prices and demand vary by region, city and neighbourhood. Study local trends and consider liquidity: some areas are harder to sell or let. Get independent valuations before offering.</p>
+<h2>Urban and Building Compliance</h2>
+<p>Properties must have <strong>conformità urbanistica</strong> (urban conformity): the building must match the permits issued at construction and any authorised modifications. <strong>Abuso edilizio</strong> (unauthorized building)—from total violations (no permit or completely different from approved plans) to substantial or partial deviations—can lead to demolition orders, fines, contract rescission and mortgage refusal. Cadastral registration does not guarantee urban legality. The <em>condono</em> (building amnesty) closed in 2003; <em>sanatoria</em> (regularization) is possible only in strict cases. Under Italian law (e.g. Law 122/2010) the seller is liable to the buyer for discrepancies, even if the seller did not cause them; notaries and estate agents are not professionally liable for false declarations by the seller.</p>
+
+<h2>Contractual Pitfalls</h2>
+<p>The <strong>compromesso</strong> (preliminary contract) often includes a non-refundable deposit (<em>caparra</em>) or high penalties (e.g. up to 20% of the purchase price) if you withdraw. Once the compromesso is <strong>registered</strong> with the tax authority, it becomes fully binding. Avoid making large payments before all legal and technical checks are complete. Have an independent lawyer review the contract before you sign.</p>
+
+<h2>Title and Fraud Risks</h2>
+<p>There is no title insurance to cure defects after closing. Any title or encumbrance issues must be identified and resolved <strong>before</strong> the deed. Title fraud targeting foreign buyers does occur. A thorough <strong>title review</strong> (typically covering at least 20 years of ownership history) and the <em>visura ipotecaria</em> are standard. For <strong>non-EU</strong> buyers, verify in writing with the notary that your country has a reciprocity agreement allowing you to own property in Italy.</p>
+
+<h2>Notary Role and Independent Advice</h2>
+<p>The notary is a <strong>neutral</strong> public official: they verify formal and legal compliance of the deed and register it, but they do <strong>not</strong> represent or protect the buyer (or the seller). Do not rely on the notary for legal advice. Hire <strong>independent legal counsel</strong> fluent in Italian property law before paying any deposit or signing any binding document.</p>
+
+<h2>Historic and Listed Buildings</h2>
+<p>Properties in historic centres or subject to <strong><em>vincoli</em></strong> (listing or landscape constraints) are governed by strict rules on alterations and sometimes on use. Short-term or tourist rental may be restricted. Confirm what changes are allowed and whether you can use the property as you intend before committing.</p>
+
+<h2>Market, Location and Liquidity</h2>
+<p>Prices and demand vary by region, city and neighbourhood. Some areas are harder to sell or let; liquidity can be lower for niche or remote locations. Get an <strong>independent valuation</strong> before making an offer so you do not overpay.</p>
 
 <h2>Bureaucracy and Delays</h2>
-<p>Italian bureaucracy can be slow. Plan for possible delays in obtaining documents, bank approvals and notary appointments. A local lawyer and a reliable agent help keep the process on track.</p>
+<p>Obtaining documents, bank approvals and notary appointments can take time. Plan for possible delays; a local lawyer and a reliable estate agent help keep the process on track and avoid last-minute surprises.</p>
 
 <h2>Seismic and Other Risks</h2>
-<p>Parts of Italy are in seismic zones. Check the property's classification and that it meets current safety standards. Insurance and any necessary strengthening work should be factored into your decision.</p>`,
+<p>Much of Italy is classified in <strong>seismic zones 1–4</strong> (1 = highest hazard). Check the property's seismic classification and whether the building complies with current anti-seismic norms. Factor in <strong>insurance</strong> costs and any necessary <strong>strengthening work</strong> when comparing options.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Engage an independent lawyer before paying a deposit or signing a compromesso.</li>
+<li>Complete full due diligence: visura catastale, visura ipotecaria, building and planning conformity, certificato di agibilità, APE.</li>
+<li>Do not sign the compromesso until checks are done and you are satisfied.</li>
+<li>If non-EU, obtain written confirmation of reciprocity from the notary.</li>
+</ul>
+<p>Contact Vero Properties for support with due diligence and coordination with notaries and lawyers.</p>`,
       },
       residencyVisaPropertyItaly: {
-        content: `<h2>Does Buying Property Give Residency?</h2>
-<p>No. Owning a property in Italy does not by itself entitle you to residency or a permit to stay (permesso di soggiorno). You must qualify under one of the standard visa and residence routes.</p>
+        content: `<h2>Introduction</h2>
+<p>Owning a property in Italy does not by itself give you residency or a <em>permesso di soggiorno</em> (permit to stay). You must qualify under one of the standard visa and residence routes. Property can, however, support certain applications—for example the elective residence visa—as proof of accommodation. This guide summarises how property fits into the main options.</p>
 
-<h2>Elective Residence and Investor Options</h2>
-<p>Elective residence (residenza elettiva) may be an option if you can show sufficient passive income and a place to live (your purchased property can help). Investor visas are available for significant investments under specific programmes. Requirements and thresholds change; check with the Italian consulate or an immigration lawyer.</p>
+<h2>Does Buying Property Give Residency?</h2>
+<p>No. You need a visa and permit based on income, investment or other criteria set by Italian law. Property ownership is not a standalone basis for residency; it can help satisfy the accommodation requirement for routes that require it.</p>
+
+<h2>Elective Residence Visa</h2>
+<p>The <strong>elective residence visa</strong> is for people who do not work in Italy and can show sufficient <strong>passive income</strong>—typically around <strong>€31,000–€32,000 per year</strong> for a single applicant (figures may be updated; check with the consulate). Income must come from sources such as pensions, rental income, dividends or investments, not from employment or freelance work (including remote work for a foreign employer). You must have <strong>accommodation</strong> in Italy: your own Italian property or a registered long-term lease (e.g. one year) satisfies this. Consulates often view <strong>property ownership favourably</strong> as evidence of stability and commitment. If you spend 183 or more days per year in Italy you will generally become tax resident. You need private health insurance. The initial permit is usually valid for one year and renewable; after five years you may be eligible for permanent residence, and after ten years for citizenship. Requirements and amounts can change—always confirm with the Italian consulate or an immigration lawyer.</p>
+
+<h2>Investor (Golden) Visa</h2>
+<p>The <strong>investor visa</strong> (sometimes called Golden Visa) is based on a qualifying <strong>investment</strong>. Importantly, <strong>buying real estate in Italy is not</strong> a qualifying investment under the current programme. Qualifying options typically include: a significant investment in Italian government bonds (e.g. €2 million); €500,000 in an Italian limited company; €250,000 in an innovative startup; or €1 million in a philanthropic project. The investor visa allows you to work and run a business in Italy. The initial permit is usually valid for two years and renewable; the path to permanent residence (after five years) and citizenship (after ten) is similar to other residence permits. Check current rules and thresholds with the consulate or a specialist.</p>
 
 <h2>Citizenship and Long-Term Stay</h2>
-<p>Citizenship can be obtained after 10 years of legal residence (or less in some cases, e.g. marriage to an Italian). Buying a property does not shorten this period but can support your application by proving stable housing. Always get up-to-date legal advice for your situation.</p>`,
+<p>Italian citizenship is generally available after <strong>10 years</strong> of legal residence (or less in special cases, e.g. marriage to an Italian citizen or descent). Buying a property does not shorten this period. It can, however, support your residence or citizenship application by proving that you have stable housing in Italy.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Clarify your goal: holiday home only, or residency/citizenship.</li>
+<li>If you seek residency, check the income or investment requirements for elective residence vs investor visa.</li>
+<li>Property can help meet the accommodation requirement for elective residence and is viewed positively by many consulates.</li>
+<li>Get up-to-date advice from the Italian consulate or an immigration lawyer; rules and figures change.</li>
+</ul>
+<p>Contact Vero Properties for property search and coordination with legal advisors on residency and visas.</p>`,
       },
     },
   },
