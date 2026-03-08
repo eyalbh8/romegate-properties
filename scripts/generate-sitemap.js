@@ -35,15 +35,51 @@ const servicesData = [
 ];
 
 const guidesData = [
-  { slug: "how-to-buy-house-italy" },
-  { slug: "bureaucracy-documents-italy" },
-  { slug: "taxes-costs-buying-italy" },
-  { slug: "mortgages-financing-foreigners" },
-  { slug: "legal-checks-before-buying" },
-  { slug: "rent-vs-buy-italy" },
-  { slug: "best-areas-buy-italy" },
-  { slug: "risks-buying-property-italy" },
-  { slug: "residency-visa-property-italy" },
+  {
+    slug: "how-to-buy-house-italy",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+    title: "How to Buy a House in Italy",
+  },
+  {
+    slug: "bureaucracy-documents-italy",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800",
+    title: "Bureaucracy and Documents When Buying Property in Italy",
+  },
+  {
+    slug: "taxes-costs-buying-italy",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800",
+    title: "Taxes and Costs When Buying Property in Italy",
+  },
+  {
+    slug: "mortgages-financing-foreigners",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
+    title: "Mortgages and Financing for Foreign Buyers",
+  },
+  {
+    slug: "legal-checks-before-buying",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+    title: "Legal and Technical Checks Before Buying",
+  },
+  {
+    slug: "rent-vs-buy-italy",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800",
+    title: "Rent vs Buy in Italy: When to Choose What",
+  },
+  {
+    slug: "best-areas-buy-italy",
+    image: "https://images.unsplash.com/photo-1529260830199-42c24126f198?w=800",
+    title: "Best Regions and Areas to Buy in Italy",
+  },
+  {
+    slug: "risks-buying-property-italy",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
+    title: "Risks and Pitfalls When Buying Property in Italy",
+  },
+  {
+    slug: "residency-visa-property-italy",
+    image: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800",
+    title: "Residency and Visas: Does Buying Property Help?",
+  },
 ];
 
 const neighborhoodsData = [
@@ -57,6 +93,15 @@ const neighborhoodsData = [
 
 const currentDate = new Date().toISOString().split("T")[0];
 
+function escapeXml(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 function generateXmlHeader() {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -64,10 +109,22 @@ function generateXmlHeader() {
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">`;
 }
 
-function generateUrlEntry(loc, priority, changefreq, lastmod, alternates = true) {
+function generateUrlEntry(loc, priority, changefreq, lastmod, alternates = true, imageInfo = null) {
   let entry = `
   <url>
     <loc>${loc}</loc>`;
+
+  if (imageInfo && imageInfo.url) {
+    entry += `
+    <image:image>
+      <image:loc>${imageInfo.url}</image:loc>`;
+    if (imageInfo.title) {
+      entry += `
+      <image:title>${escapeXml(imageInfo.title)}</image:title>`;
+    }
+    entry += `
+    </image:image>`;
+  }
 
   if (alternates) {
     languages.forEach((lang) => {
@@ -162,7 +219,9 @@ function generateSitemap() {
         `${baseUrl}/${lang}/guides/${guide.slug}`,
         "0.7",
         "weekly",
-        currentDate
+        currentDate,
+        true,
+        { url: guide.image, title: guide.title }
       );
     });
   });

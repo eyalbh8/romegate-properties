@@ -45,6 +45,21 @@ const GuidesPage: React.FC = () => {
           (g) => g.categoryKey === `guides.categories.${selectedCategory}`
         );
 
+  const guidesListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: t("guides.title"),
+    url: `${baseUrl}/${currentLang}/guides`,
+    inLanguage:
+      currentLang === "he" ? "he-IL" : currentLang === "it" ? "it-IT" : "en-GB",
+    itemListElement: guides.map((g, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${baseUrl}/${currentLang}/guides/${g.slug}`,
+      name: t(g.titleKey),
+    })),
+  };
+
   return (
     <>
       <Helmet>
@@ -57,6 +72,9 @@ const GuidesPage: React.FC = () => {
           })}
         />
         <link rel="canonical" href={`${baseUrl}/${currentLang}/guides`} />
+        <script type="application/ld+json">
+          {JSON.stringify(guidesListSchema)}
+        </script>
       </Helmet>
 
       <Navbar />

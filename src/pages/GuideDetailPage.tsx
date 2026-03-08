@@ -48,6 +48,14 @@ import {
     headline: title,
     description: excerpt,
     image: guide.image,
+    url: `${baseUrl}/${currentLang}/guides/${guide.slug}`,
+    inLanguage:
+      currentLang === "he" ? "he-IL" : currentLang === "it" ? "it-IT" : "en-GB",
+    author: {
+      "@type": "Organization",
+      name: "Vero Properties",
+      url: baseUrl,
+    },
     publisher: {
       "@type": "Organization",
       name: "Vero Properties",
@@ -60,6 +68,26 @@ import {
       "@type": "WebPage",
       "@id": `${baseUrl}/${currentLang}/guides/${guide.slug}`,
     },
+    articleSection: t(guide.categoryKey),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: t("guides.title"),
+        item: `${baseUrl}/${currentLang}/guides`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: title,
+        item: `${baseUrl}/${currentLang}/guides/${guide.slug}`,
+      },
+    ],
   };
 
   return (
@@ -77,6 +105,9 @@ import {
         <meta property="og:type" content="article" />
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       </Helmet>
 
