@@ -321,34 +321,126 @@ export default {
 <p>Contact Vero Properties for a clear, tailored breakdown of taxes and costs for your purchase.</p>`,
       },
       mortgagesFinancingForeigners: {
-        content: `<h2>Can Foreigners Get a Mortgage in Italy?</h2>
-<p>Yes. Many Italian banks offer mortgages to non-residents. Loan-to-value (LTV) is often 50–70%, with terms from 5 to 25 years. Interest can be fixed or variable. You will need to provide proof of income, tax returns, and identification; some banks also require an Italian tax code and a preliminary contract.</p>
+        content: `<h2>Introduction</h2>
+<p>If you are a non-resident buying property in Italy, you can obtain a mortgage from Italian banks—but terms are stricter than for residents. Loan-to-value (LTV) is typically lower, and you will need to provide proof of income and identity from your country of origin, often with certified translations. Getting your documents in order early and obtaining a pre-approval (<em>predelibera</em>) before you commit to a property saves time and gives you certainty on how much you can borrow. This guide explains eligibility, typical terms, required documents, and alternatives.</p>
 
-<h2>Documents Banks Typically Request</h2>
-<p>Passport; proof of address; proof of income (payslips, tax returns, bank statements); preliminary contract or agreed offer; and Codice Fiscale. Non-EU citizens may face slightly stricter checks. Compare several banks (e.g. UniCredit, Intesa Sanpaolo, Banco BPM) for rates and conditions.</p>
+<h2>Eligibility: Can Foreigners Get a Mortgage?</h2>
+<p>Yes. There is no legal bar to non-residents taking out an Italian mortgage. EU and non-EU citizens are eligible; for <strong>non-EU</strong> buyers, Italy applies a <strong>reciprocity rule</strong>: your home country must allow Italians to purchase property there. Banks set their own internal policies: there is no statutory maximum age, but the loan usually must be repaid by a certain age at maturity—typically <strong>75–80 years</strong>, and in some cases up to <strong>85</strong> with life insurance and a strong risk profile. Minimum loan amounts are often around <strong>€50,000</strong>. Approval is case-dependent and subject to income and credit checks.</p>
 
-<h2>Alternatives</h2>
-<p>Cash purchase speeds up the process and can strengthen your negotiating position. If a bank loan is not suitable, consider private financing or staged payments agreed with the seller, though these require clear legal documentation.</p>`,
+<h2>Loan-to-Value (LTV) and Deposit</h2>
+<p>Banks lend a smaller share of the property value to non-residents. If your income is <strong>abroad</strong>, expect an LTV of <strong>50–60%</strong>—meaning you need a <strong>40–50%</strong> down payment. If you have <strong>Italian income</strong> (e.g. employment or business in Italy), some banks may offer <strong>60–70%</strong> LTV. By comparison, residents often qualify for <strong>70–80%</strong> LTV. Budget for a deposit of <strong>30–40%</strong> or more as a foreign buyer; this reduces the bank’s risk and is standard practice.</p>
+
+<h2>Loan Terms and Interest Rates</h2>
+<p>Mortgage terms for non-residents are typically <strong>15–25 years</strong> (sources also mention 5–30 years depending on the bank and your profile). Interest can be <strong>fixed</strong> (<em>mutuo a tasso fisso</em>), <strong>variable</strong> (linked to Euribor), or <strong>mixed</strong>. As of 2025, rates are typically in the <strong>3–5%</strong> range—always confirm current offers with the bank. Banks also apply a <strong>debt-to-income (DSR)</strong> limit: your total monthly debt payments (including the new mortgage) should not exceed <strong>30–35%</strong> of your net monthly income; for <strong>pensioners</strong>, the cap is often <strong>25–30%</strong>.</p>
+
+<h2>Documents Banks Request</h2>
+<p>Banks typically ask for the following. Non-EU citizens may face slightly stricter checks; documents from abroad often need <strong>certified translation</strong> and <strong>apostille</strong> where applicable.</p>
+<ul>
+<li><strong>Identity:</strong> Valid passport; some banks also ask for proof of address.</li>
+<li><strong>Italian tax code:</strong> <em>Codice Fiscale</em>—essential for any financial transaction in Italy.</li>
+<li><strong>Proof of income:</strong> Employment contracts, payslips, tax returns from your country of origin (usually last 1–2 years); for the self-employed, financial statements and tax declarations.</li>
+<li><strong>Bank statements:</strong> From your home country (and from Italy if you already have an account) to show savings and conduct.</li>
+<li><strong>Preliminary contract or offer:</strong> Once you have identified a property, a signed <em>compromesso</em> or agreed offer is often required for the formal mortgage application.</li>
+</ul>
+<p>An <strong>Italian bank account</strong> is usually required for the loan disbursement and repayments. Start the account-opening process early, as it can take a few weeks for non-residents.</p>
+
+<h2>Pre-Approval (Predelibera)</h2>
+<p>The <em>predelibera</em> is a bank’s pre-feasibility assessment: it evaluates your income and creditworthiness and, if positive, gives you a <strong>non-binding commitment</strong> to grant a loan up to a stated maximum amount. You can obtain it <strong>before</strong> you have chosen a specific property. Benefits include: knowing your budget before house-hunting; speeding up the purchase once you find a property; and the possibility to <strong>compare offers</strong> from other banks even after receiving one predelibera. It is typically valid for <strong>3–6 months</strong>. With a complete file, pre-approval often takes <strong>1–2 weeks</strong>.</p>
+
+<h2>Banks That Lend to Foreigners</h2>
+<p>Several major Italian banks offer mortgages to non-residents, including <strong>UniCredit</strong>, <strong>Intesa Sanpaolo</strong> (e.g. products such as “Mutuo in Tasca”), <strong>BNL</strong> (BNP Paribas Group), <strong>Monte dei Paschi di Siena (MPS)</strong>, and <strong>Banco BPM</strong>. Conditions and LTV vary; it is wise to <strong>compare</strong> at least two or three banks for rates, fees, and terms. Brokers can help but add cost; <strong>direct application</strong> to banks is often sufficient. If you use a broker, ensure they are certified and licensed.</p>
+
+<h2>Process and Timeline</h2>
+<p>From first application to signing the deed, the mortgage process typically takes <strong>8–10 weeks</strong>. After pre-approval (1–2 weeks), you submit the formal application with the chosen property; underwriting and property valuation usually take another <strong>4–8 weeks</strong>. There is a mandatory <strong>reflection period</strong> of about <strong>7 days</strong> before you sign the loan contract—use it to review the offer. Align the mortgage approval timeline with your preliminary contract (<em>compromesso</em>) and notary date to avoid gaps or rushed deadlines.</p>
+
+<h2>Alternatives to a Bank Mortgage</h2>
+<p><strong>Cash purchase:</strong> Paying in full speeds up the process and can strengthen your negotiating position with the seller; no bank approval or interest costs.</p>
+<p><strong>Seller financing:</strong> Rare in Italy, but in some cases the seller agrees to staged payments or a private loan. Any such arrangement must be set out in clear legal documentation and, where relevant, registered.</p>
+<p><strong>International private banking:</strong> High-net-worth buyers may access tailored financing through private banks with an international footprint.</p>
+<p><strong>Refinancing in your home country:</strong> Releasing equity from property abroad to fund the Italian purchase is an option for some buyers, subject to tax and legal advice in both countries.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Obtain a <em>Codice Fiscale</em> if you do not have one.</li>
+<li>Gather proof of income, tax returns, and bank statements; arrange certified translations and apostille if required.</li>
+<li>Consider applying for a predelibera before or while you search for a property.</li>
+<li>Compare offers from at least two or three banks (UniCredit, Intesa Sanpaolo, BNL, MPS, Banco BPM).</li>
+<li>Open an Italian bank account in good time for disbursement and repayments.</li>
+<li>Plan for a total timeline of about 8–10 weeks from application to deed.</li>
+</ul>
+<p>Contact Vero Properties for a clear, tailored view of financing options for your purchase.</p>`,
       },
       legalChecksBeforeBuying: {
-        content: `<h2>Ownership and Cadastre (Catasto)</h2>
-<p>Before buying, verify that the seller is the registered owner and that the property description matches the cadastral records. Your lawyer or notary can obtain a visura catastale and check for inconsistencies or claims.</p>
+        content: `<h2>Introduction</h2>
+<p>In Italy there is no title insurance to fix mistakes after the deed. The notary verifies legality and registers the transfer, but the buyer should understand what is being checked and, where appropriate, commission independent technical checks by a <em>geometra</em>, architect or engineer. Skipping due diligence can lead to hidden defects, fines, demolition orders and difficulties when selling or mortgaging. This guide walks you through the main legal and technical checks before you buy.</p>
 
-<h2>Encumbrances and Liens</h2>
-<p>Check for mortgages, court orders, or other encumbrances on the property. The notary will usually run these checks; if anything appears, it must be cleared or agreed before the deed.</p>
+<h2>Ownership and Cadastre (Visura Catastale)</h2>
+<p>The <em>visura catastale</em> is the cadastral survey for the property. It shows: <strong>cadastral income</strong> (<em>rendita catastale</em>), used for tax calculations such as IMU; <strong>ownership</strong> and shares; <strong>surface area</strong> and <strong>category</strong> (e.g. residential); and cadastral identifiers (<em>foglio</em>, <em>particella</em>, <em>subalterno</em>). Your lawyer or notary can obtain it; it can also be requested through a <em>geometra</em>, online via the Agenzia delle Entrate portal, or at Revenue Agency offices. Before buying, verify that the <strong>seller is the registered owner</strong> and that the property description in the contract <strong>matches the cadastral records</strong>. Inconsistencies or competing claims must be clarified before you sign.</p>
+
+<h2>Encumbrances and Liens (Visura Ipotecaria)</h2>
+<p>The <em>visura ipotecaria</em> (mortgage certificate) reveals any <strong>mortgages</strong>, <strong>court orders</strong> (e.g. seizures, liens) or other encumbrances on the property by consulting the land and real-estate registers held by the Revenue Agency. The notary will normally run this check as part of the deed preparation. If anything appears, it must be <strong>cleared or agreed</strong> before the rogito: for example, an existing mortgage may be discharged from the sale proceeds, or the bank may consent to cancellation. Do not assume the property is free of encumbrances until the notary confirms it.</p>
 
 <h2>Building and Planning Compliance</h2>
-<p>Have an engineer or architect verify that the building and any modifications comply with planning and building regulations. Unauthorised works can lead to fines and difficulties when selling. For historic or listed buildings, confirm what changes are allowed.</p>`,
+<p>You need to confirm that the building and any modifications comply with <strong>planning and building regulations</strong> (<em>conformità urbanistica</em>). Permits should exist for the original construction and for any later changes (extensions, enclosed terraces, structural alterations). An independent <strong>“verifica”</strong> by an architect, engineer or <em>geometra</em> can compare the current state with approved plans and flag unauthorised works. Substantial irregularities can result in <strong>demolition orders</strong>, <strong>fines</strong> and difficulties when selling or obtaining a mortgage. <strong>Cadastral conformity</strong>—whether the official plan matches the actual layout—also matters: mismatches can delay mortgage approval, complicate resale and trigger tax reassessments. For older or bargain properties, thorough due diligence is especially important.</p>
+
+<h2>Certificato di Agibilità and APE</h2>
+<p>The <strong>Certificato di Agibilità</strong> (certificate of habitability) certifies that the property meets required hygienic, sanitary and safety standards. It is issued by the municipality and may be required at the time of the notarial deed; in some cases the notary can proceed without it, but it is better to have it. The <strong>APE</strong> (<em>Attestato di Prestazione Energetica</em>) is the <strong>mandatory energy performance certificate</strong>. It classifies the property’s energy efficiency and affects both running costs (utilities) and market value. A poor energy class may signal the need for costly renovations. Ask for both documents before committing; they help you budget and avoid surprises.</p>
+
+<h2>Historic and Listed Buildings</h2>
+<p>Properties in historic centres or subject to <strong><em>vincoli</em></strong> (listing or landscape constraints) are governed by strict rules on alterations and sometimes on use. You may not be allowed to change façades, windows, or internal layout without authorisation. Short-term or tourist rental may also be restricted. Before buying, confirm <strong>what alterations are allowed</strong> and whether you can use the property as you intend (e.g. holiday let). A specialist architect or the local <em>Soprintendenza</em> can advise.</p>
+
+<h2>Seismic Zone and Safety</h2>
+<p>Italy classifies its territory into <strong>four seismic zones</strong> (1 = highest hazard to 4 = lowest) based on earthquake probability and intensity. Anti-seismic legislation requires that buildings in classified zones comply with technical norms to limit damage and protect occupants. Before purchase, check the <strong>seismic zone</strong> of the property (e.g. via the INGV seismic zone portal or the National Seismic Classifications Portal, PNCS) and whether the building meets current standards. Factor in <strong>insurance</strong> and any necessary <strong>strengthening work</strong> when comparing options.</p>
+
+<h2>Condominium and Other Checks</h2>
+<p>If the property is in a <strong>condominium</strong>, review the <em>regolamento</em> (condo rules) and obtain a declaration from the administrator covering: <strong>fees paid</strong> (<em>spese pagate</em>), any <strong>extraordinary works</strong> planned or in progress, and <strong>disputes</strong> (<em>liti</em>) that might affect the unit or common parts. This helps you avoid inheriting unpaid dues or unexpected assessments. Where relevant, also request zoning certificates (<em>conformità urbanistica</em> from the municipality) to confirm the building’s legal status.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Obtain a <em>visura catastale</em> and confirm the seller is the registered owner; description matches records.</li>
+<li>Obtain a <em>visura ipotecaria</em> (or rely on notary); ensure encumbrances are cleared or agreed before the deed.</li>
+<li>Commission building and planning verification (architect/engineer/<em>geometra</em>).</li>
+<li>Request Certificato di Agibilità and APE; check energy class and habitability.</li>
+<li>For historic or listed buildings: confirm permitted alterations and use (including short-term rental).</li>
+<li>Check seismic zone and building compliance with anti-seismic norms.</li>
+<li>If condominium: review regolamento and administrator’s declaration (fees, works, disputes).</li>
+</ul>
+<p>Contact Vero Properties for support with due diligence and notary coordination.</p>`,
       },
       rentVsBuyItaly: {
-        content: `<h2>When Renting Makes Sense</h2>
-<p>Rent if you are still deciding where to live, have a limited initial budget, or want flexibility to move. Renting avoids purchase taxes, notary costs and long-term commitment, and is often better for short stays or testing an area.</p>
+        content: `<h2>Introduction</h2>
+<p>Whether to rent or buy in Italy depends on your capital, time horizon and need for flexibility. As of 2025, buying is often financially advantageous: in many cities renting consumes a larger share of household income than mortgage payments; interest rates have fallen and fixed-rate terms commonly extend to 25–30 years. This guide summarises when renting or buying makes sense, the main costs and tax implications, and how to compare your situation.</p>
+
+<h2>When Renting Makes Sense</h2>
+<p>Renting is a better fit if you have <strong>limited initial capital</strong>—for example you cannot put together a 20% or larger down payment—or if you <strong>need flexibility</strong> (job moves, temporary relocation, testing an area). Renting avoids purchase taxes, notary fees and long-term commitment; it is often ideal for short stays or when you are still deciding where to live. In some high-cost cities (e.g. Naples, Rome, Venice) rent alone can absorb a large share of income (around 39–42% in certain reports), but buying can be even costlier there, so renting may still be the pragmatic choice until you are ready to commit.</p>
 
 <h2>When Buying Makes Sense</h2>
-<p>Buy if you plan to stay long term, want to generate rental income, or aim to benefit from capital growth. Ownership also gives stability and, in some cases, tax advantages. Weigh mortgage costs and purchase taxes against rent and your time horizon.</p>
+<p>Buying is worth considering if you have <strong>capital for a down payment</strong>, <strong>plan to stay at least 5 years</strong>, want to build equity or customise your home, and can access mortgage finance. In many Italian cities, mortgage payments now match or are below equivalent rent: for one-bedroom flats, buying is typically advantageous in Bologna, Bari, Turin, Verona, Palermo and Genoa; in Milan, Rome and Florence the gap is small (e.g. €65–146 more per month for the mortgage than for rent). For two-bedroom flats the picture is similar. If you are in for the long term, buying can lock in housing cost and offer stability plus potential tax benefits.</p>
+
+<h2>The Numbers: Rent vs Mortgage in Italy</h2>
+<p>Recent data (e.g. idealista and similar sources) indicate that <strong>rent often absorbs 28–31%</strong> of household income, while <strong>mortgage payments are around 17–18%</strong>. European Central Bank rate cuts have brought mortgage rates down (e.g. into a 2–3% range in 2025); the vast majority of new borrowers choose fixed-rate loans, and terms of 25–30 years are common. These conditions make buying relatively attractive in many areas. Always check <strong>current rates</strong> and <strong>local rent vs mortgage comparisons</strong> for the city and type of property you have in mind.</p>
+
+<h2>Costs of Buying</h2>
+<p>One-off <strong>closing costs</strong> typically amount to <strong>10–16%</strong> of the purchase price for foreign buyers (taxes, notary, registration). With prima casa (first-home) relief and no estate agent they can fall to <strong>4–6%</strong>. Ongoing costs include: <strong>IMU</strong> (municipal property tax) on second homes; <strong>TARI</strong> (waste tax); <strong>condominium fees</strong> if applicable; <strong>maintenance</strong>; and <strong>mortgage</strong> repayments. Budget for all of these when comparing with rent.</p>
+
+<h2>Costs of Renting</h2>
+<p>There are no purchase or notary costs. You pay <strong>monthly rent</strong> and possibly a one-off <strong>agent fee</strong> when you find a property. You do not build equity, and rent can rise at renewal; in return you have flexibility and no responsibility for maintenance, taxes or major repairs.</p>
+
+<h2>Tax and Ongoing Considerations</h2>
+<p>If you <strong>buy</strong>: non-residents generally pay IMU on all Italian property; residents pay IMU on second homes (primary residence is exempt under conditions). If you later <strong>let</strong> the property, rental income is taxable (e.g. <em>cedolare secca</em> at 21%, or 10% for controlled rent in certain cases). Capital gains on future sale may be subject to tax. If you <strong>rent</strong>: you have no IMU or ownership costs; your only housing cost is the rent (and any fees). A financial or tax advisor can run a break-even comparison tailored to your income, savings and plans.</p>
 
 <h2>Compare Your Situation</h2>
-<p>Consider your income, savings, job stability and plans for the next 5–10 years. In Italy, buying can be attractive in areas with strong demand and where annual costs (IMU, maintenance) are manageable. A financial or tax advisor can help you compare rent vs buy in your case.</p>`,
+<p>Consider your <strong>income</strong>, <strong>savings</strong>, <strong>job stability</strong> and <strong>plans for the next 5–10 years</strong>. In Italy, buying tends to be attractive where you have enough capital, a long enough horizon and strong local demand; annual costs (IMU, TARI, condominium, maintenance) should be manageable. Use current local data on rent vs mortgage and closing costs to see how many years it takes for buying to “break even” versus renting in your case.</p>
+
+<h2>Checklist and Next Steps</h2>
+<ul>
+<li>Assess your capital (e.g. can you afford a 20%+ down payment and closing costs?).</li>
+<li>Clarify your time horizon and need for flexibility (5+ years favours buying).</li>
+<li>Compare local rent vs mortgage for the same type of property in your target city.</li>
+<li>Factor in closing costs (10–16%, or 4–6% with prima casa and no agent) and ongoing IMU, TARI, condo and maintenance.</li>
+<li>If unsure, get a tailored break-even comparison from a financial or tax advisor.</li>
+</ul>
+<p>Contact Vero Properties for tailored advice on rent vs buy and property search in Italy.</p>`,
       },
       bestAreasBuyItaly: {
         content: `<h2>Tuscany</h2>

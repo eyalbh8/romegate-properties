@@ -798,41 +798,133 @@ export default {
       mortgagesFinancingForeigners: {
         title: "Mutui e finanziamenti per acquirenti stranieri",
         excerpt:
-          "Le banche italiane possono concedere mutui ai non residenti. LTV tipico 50–70%, durata 5–25 anni. Documenti necessari e quali banche offrono mutui agli stranieri.",
-        content: `<h2>Gli stranieri possono ottenere un mutuo in Italia?</h2>
-<p>Sì. Molte banche italiane concedono mutui ai non residenti. Il rapporto prestito/valore (LTV) è spesso 50–70%, con durata da 5 a 25 anni. Tasso fisso o variabile. Serviranno prova di reddito, dichiarazioni fiscali e documento; alcune banche richiedono anche il Codice Fiscale e il contratto preliminare.</p>
+          "Requisiti, LTV 50–70%, predelibera, documenti e tempistiche. Banche che concedono mutui ai non residenti, alternative e checklist pratica.",
+        content: `<h2>Introduzione</h2>
+<p>Se siete non residenti e acquistate un immobile in Italia, potete ottenere un mutuo da banche italiane — ma le condizioni sono più restrittive che per i residenti. Il rapporto prestito/valore (LTV) è in genere più basso e dovrete fornire prova di reddito e identità dal paese di origine, spesso con traduzioni asseverate. Mettere in ordine i documenti in anticipo e ottenere una pre-delibera (<em>predelibera</em>) prima di impegnarvi su un immobile fa risparmiare tempo e vi dà certezza su quanto potete finanziare. Questa guida spiega i requisiti, le condizioni tipiche, i documenti richiesti e le alternative.</p>
 
-<h2>Documenti tipicamente richiesti</h2>
-<p>Passaporto; prova di residenza; prova di reddito (buste paga, dichiarazioni, estratto conto); contratto preliminare o proposta; Codice Fiscale. I cittadini extra-UE possono subire controlli leggermente più stringenti. Confrontate più istituti (es. UniCredit, Intesa Sanpaolo, Banco BPM) per tassi e condizioni.</p>
+<h2>Requisiti: gli stranieri possono ottenere un mutuo?</h2>
+<p>Sì. Non esiste alcun divieto di legge per i non residenti che stipulano un mutuo in Italia. Cittadini UE ed extra-UE sono ammissibili; per gli acquirenti <strong>extra-UE</strong> l'Italia applica la <strong>regola di reciprocità</strong>: il vostro paese deve consentire agli italiani di acquistare immobili sul suo territorio. Le banche applicano politiche interne: non c'è un'età massima di legge, ma il mutuo deve in genere essere estinto entro una certa età alla scadenza — di solito <strong>75–80 anni</strong>, in alcuni casi fino a <strong>85</strong> con polizza vita e profilo di rischio solido. L'importo minimo del mutuo è spesso intorno ai <strong>50.000 €</strong>. L'approvazione dipende dal singolo caso ed è soggetta a verifiche su reddito e credito.</p>
 
-<h2>Alternative</h2>
-<p>L'acquisto in contanti accelera i tempi e può rafforzare il potere negoziale. Se il mutuo non è adatto, valutate finanziamenti privati o pagamenti rateizzati concordati con il venditore, con documentazione legale chiara.</p>`,
+<h2>Rapporto prestito/valore (LTV) e acconto</h2>
+<p>Le banche finanziano una quota minore del valore dell'immobile per i non residenti. Se il vostro reddito è <strong>all'estero</strong>, aspettatevi un LTV del <strong>50–60%</strong> — quindi serve un <strong>acconto del 40–50%</strong>. Se avete <strong>reddito in Italia</strong> (es. lavoro dipendente o autonomo), alcune banche possono offrire un LTV del <strong>60–70%</strong>. I residenti spesso ottengono un LTV del <strong>70–80%</strong>. Budgettate un acconto del <strong>30–40%</strong> o più come acquirente straniero; riduce il rischio per la banca ed è prassi consolidata.</p>
+
+<h2>Durata del mutuo e tassi di interesse</h2>
+<p>La durata per i non residenti è tipicamente di <strong>15–25 anni</strong> (le fonti indicano anche 5–30 anni a seconda della banca e del profilo). Il tasso può essere <strong>fisso</strong> (mutuo a tasso fisso), <strong>variabile</strong> (legato all'Euribor) o <strong>misto</strong>. Nel 2025 i tassi sono in genere nell'ordine del <strong>3–5%</strong> — confermate sempre le offerte attuali con la banca. Le banche applicano anche un limite sul <strong>rapporto rata/reddito (DSR)</strong>: le rate totali del debito (incluso il nuovo mutuo) non devono superare il <strong>30–35%</strong> del reddito netto mensile; per i <strong>pensionati</strong> il tetto è spesso <strong>25–30%</strong>.</p>
+
+<h2>Documenti richiesti dalle banche</h2>
+<p>Le banche chiedono in genere quanto segue. I cittadini extra-UE possono subire controlli leggermente più stringenti; i documenti dall'estero spesso richiedono <strong>traduzione asseverata</strong> e <strong>apostille</strong> ove applicabile.</p>
+<ul>
+<li><strong>Identità:</strong> passaporto valido; alcune banche chiedono anche prova di residenza.</li>
+<li><strong>Codice Fiscale:</strong> indispensabile per qualsiasi operazione finanziaria in Italia.</li>
+<li><strong>Prova di reddito:</strong> contratti di lavoro, buste paga, dichiarazioni fiscali dal paese di origine (di solito ultimi 1–2 anni); per autonomi, bilanci e dichiarazioni fiscali.</li>
+<li><strong>Estratti conto:</strong> dal paese di origine (e dall'Italia se avete già un conto) per dimostrare risparmi e condotta.</li>
+<li><strong>Contratto preliminare o proposta:</strong> una volta individuato l'immobile, il compromesso firmato o la proposta concordata sono spesso richiesti per la domanda di mutuo formale.</li>
+</ul>
+<p>Un <strong>conto bancario italiano</strong> è di solito richiesto per l'erogazione del mutuo e le rate. Avviate l'apertura del conto in anticipo: per i non residenti può richiedere alcune settimane.</p>
+
+<h2>Pre-delibera (Predelibera)</h2>
+<p>La <em>predelibera</em> è la valutazione di fattibilità preliminare della banca: valuta reddito e affidabilità creditizia e, se positiva, vi dà un <strong>impegno non vincolante</strong> a concedere un mutuo fino a un importo massimo indicato. Potete ottenerla <strong>prima</strong> di aver scelto un immobile specifico. I vantaggi: conoscere il budget prima della ricerca; accelerare l'acquisto una volta trovato l'immobile; possibilità di <strong>confrontare</strong> le offerte di altre banche anche dopo aver ricevuto una predelibera. La validità è tipicamente di <strong>3–6 mesi</strong>. Con il fascicolo completo, la pre-delibera richiede spesso <strong>1–2 settimane</strong>.</p>
+
+<h2>Banche che concedono mutui agli stranieri</h2>
+<p>Diverse grandi banche italiane offrono mutui ai non residenti, tra cui <strong>UniCredit</strong>, <strong>Intesa Sanpaolo</strong> (es. prodotti come "Mutuo in Tasca"), <strong>BNL</strong> (gruppo BNP Paribas), <strong>Monte dei Paschi di Siena (MPS)</strong> e <strong>Banco BPM</strong>. Condizioni e LTV variano; è utile <strong>confrontare</strong> almeno due o tre istituti per tassi, spese e condizioni. I broker possono aiutare ma aggiungono costo; la <strong>domanda diretta</strong> alle banche è spesso sufficiente. Se usate un broker, accertatevi che sia certificato e abilitato.</p>
+
+<h2>Iter e tempistiche</h2>
+<p>Dalla prima domanda alla firma del rogito, l'iter del mutuo richiede in genere <strong>8–10 settimane</strong>. Dopo la pre-delibera (1–2 settimane) si presenta la domanda formale con l'immobile scelto; istruttoria e perizia richiedono altre <strong>4–8 settimane</strong>. È previsto un <strong>periodo di ripensamento</strong> obbligatorio di circa <strong>7 giorni</strong> prima della firma del contratto di mutuo — usatelo per rivedere l'offerta. Allineate i tempi di approvazione del mutuo al compromesso e alla data dal notaio per evitare vuoti o scadenze troppo ravvicinate.</p>
+
+<h2>Alternative al mutuo bancario</h2>
+<p><strong>Acquisto in contanti:</strong> il pagamento integrale accelera i tempi e può rafforzare il potere negoziale con il venditore; niente approvazione della banca né costi per interessi.</p>
+<p><strong>Finanziamento da parte del venditore:</strong> raro in Italia, ma in alcuni casi il venditore accetta pagamenti rateizzati o un prestito privato. Qualsiasi accordo del genere deve essere disciplinato da documentazione legale chiara e, ove opportuno, registrato.</p>
+<p><strong>Private banking internazionale:</strong> gli acquirenti con patrimonio elevato possono accedere a finanziamenti su misura tramite banche private con presenza internazionale.</p>
+<p><strong>Rifinanziamento nel paese di origine:</strong> liberare liquidità da un immobile all'estero per finanziare l'acquisto in Italia è un'opzione per alcuni acquirenti, previo parere fiscale e legale in entrambi i paesi.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Ottenete il Codice Fiscale se non ne avete uno.</li>
+<li>Raccogliete prova di reddito, dichiarazioni fiscali ed estratti conto; predisponete traduzioni asseverate e apostille se richiesto.</li>
+<li>Valutate di richiedere una predelibera prima o durante la ricerca dell'immobile.</li>
+<li>Confrontate le offerte di almeno due o tre banche (UniCredit, Intesa Sanpaolo, BNL, MPS, Banco BPM).</li>
+<li>Aprite un conto bancario italiano in tempo per l'erogazione e le rate.</li>
+<li>Pianificate una tempistica totale di circa 8–10 settimane dalla domanda al rogito.</li>
+</ul>
+<p>Contattate Vero Properties per un quadro chiaro e su misura delle opzioni di finanziamento per il vostro acquisto.</p>`,
       },
       legalChecksBeforeBuying: {
         title: "Verifiche legali e tecniche prima dell'acquisto",
         excerpt:
-          "Verifica della proprietà in Catasto, gravami, conformità edilizia e catastale. Come evitare di comprare un immobile con problemi nascosti.",
-        content: `<h2>Proprietà e Catasto</h2>
-<p>Prima dell'acquisto verificate che il venditore sia il titolare registrato e che la descrizione dell'immobile coincida con i dati catastali. Il vostro avvocato o il notaio può ottenere una visura catastale e controllare eventuali incongruenze o pretese.</p>
+          "Visura catastale e ipotecaria, conformità edilizia e urbanistica, certificato di agibilità, APE, zona sismica e verifiche condominiali. Una checklist chiara per evitare problemi nascosti.",
+        content: `<h2>Introduzione</h2>
+<p>In Italia non esiste un'assicurazione sul titolo che corregga errori dopo il rogito. Il notaio verifica la legittimità e registra il passaggio, ma l'acquirente dovrebbe capire cosa viene controllato e, se del caso, commissionare verifiche tecniche indipendenti a un geometra, architetto o ingegnere. Saltare la due diligence può portare a vizi nascosti, sanzioni, ordinanze di demolizione e difficoltà in vendita o mutuo. Questa guida illustra le principali verifiche legali e tecniche prima dell'acquisto.</p>
 
-<h2>Gravami e ipoteche</h2>
-<p>Controllate ipoteche, pignoramenti o altri gravami. Il notaio eseguirà normalmente questi controlli; in caso di gravami, dovranno essere estinti o regolarizzati prima del rogito.</p>
+<h2>Proprietà e Catasto (Visura Catastale)</h2>
+<p>La <em>visura catastale</em> è la documentazione catastale dell'immobile. Mostra: la <strong>rendita catastale</strong>, usata per il calcolo delle imposte come l'IMU; la <strong>proprietà</strong> e le quote; la <strong>superficie</strong> e la <strong>categoria</strong> (es. residenziale); e gli identificativi catastali (<em>foglio</em>, <em>particella</em>, <em>subalterno</em>). Il vostro avvocato o il notaio può ottenerla; può essere richiesta anche tramite un geometra, online sul portale dell'Agenzia delle Entrate o presso gli uffici. Prima dell'acquisto verificate che il <strong>venditore sia il titolare registrato</strong> e che la descrizione dell'immobile nel contratto <strong>coincida con i dati catastali</strong>. Eventuali incongruenze o pretese concorrenti vanno chiarite prima della firma.</p>
+
+<h2>Gravami e ipoteche (Visura Ipotecaria)</h2>
+<p>La <em>visura ipotecaria</em> (certificato ipotecario) rivela eventuali <strong>ipoteche</strong>, <strong>pignoramenti</strong> o altri gravami sull'immobile consultando i registri immobiliari tenuti dall'Agenzia delle Entrate. Il notaio esegue normalmente questo controllo in fase di rogito. Se emerge qualcosa, deve essere <strong>estinto o regolarizzato</strong> prima del rogito: ad esempio un'ipoteca esistente può essere estinta con il ricavato della vendita, o la banca può consentire la cancellazione. Non date per scontato che l'immobile sia libero da gravami finché il notaio non lo conferma.</p>
 
 <h2>Conformità edilizia e urbanistica</h2>
-<p>Un ingegnere o architetto deve verificare che l'immobile e eventuali modifiche siano conformi a norme urbanistiche e edilizie. Opere abusive possono comportare sanzioni e difficoltà in vendita. Per edifici storici o vincolati, confermate quali interventi sono consentiti.</p>`,
+<p>Occorre accertare che l'immobile e eventuali modifiche siano conformi alle <strong>norme urbanistiche ed edilizie</strong> (<em>conformità urbanistica</em>). Devono esistere permessi per la costruzione originaria e per eventuali interventi successivi (ampliamenti, terrazze chiuse, modifiche strutturali). Una <strong>\"verifica\"</strong> indipendente da parte di un architetto, ingegnere o geometra può confrontare lo stato attuale con i progetti approvati e segnalare opere abusive. Irregolarità rilevanti possono comportare <strong>ordinanze di demolizione</strong>, <strong>sanzioni</strong> e difficoltà in vendita o mutuo. Anche la <strong>conformità catastale</strong>—se la planimetria ufficiale corrisponde allo stato reale—conta: gli scostamenti possono ritardare l'approvazione del mutuo, complicare la rivendita e innescare rivalutazioni fiscali. Per immobili vecchi o a prezzo contenuto la due diligence è particolarmente importante.</p>
+
+<h2>Certificato di Agibilità e APE</h2>
+<p>Il <strong>Certificato di Agibilità</strong> attesta che l'immobile rispetta i requisiti igienico-sanitari e di sicurezza. È rilasciato dal Comune e può essere richiesto in fase di rogito; in alcuni casi il notaio può procedere senza, ma è preferibile averlo. L'<strong>APE</strong> (<em>Attestato di Prestazione Energetica</em>) è <strong>obbligatorio</strong> e classifica l'efficienza energetica dell'immobile, incidendo sui costi di gestione e sul valore di mercato. Una classe energetica bassa può segnalare la necessità di costosi interventi. Richiedete entrambi i documenti prima di impegnarvi; aiutano a budgettare ed evitare sorprese.</p>
+
+<h2>Edifici storici e vincolati</h2>
+<p>Gli immobili nei centri storici o soggetti a <strong><em>vincoli</em></strong> (paesaggistici o culturali) sono regolati da norme severe su modifiche e talvolta sull'uso. Potrebbe non essere consentito modificare facciate, finestre o distribuzione interna senza autorizzazione. Anche la locazione turistica o breve può essere limitata. Prima dell'acquisto confermate <strong>quali interventi sono consentiti</strong> e se potete usare l'immobile come previsto (es. affitto turistico). Un architetto specializzato o la Soprintendenza locale possono consigliarvi.</p>
+
+<h2>Zona sismica e sicurezza</h2>
+<p>L'Italia classifica il territorio in <strong>quattro zone sismiche</strong> (1 = pericolosità massima, 4 = minima) in base a probabilità e intensità dei terremoti. La normativa antisismica richiede che gli edifici nelle zone classificate rispettino le norme tecniche per limitare danni e proteggere gli occupanti. Prima dell'acquisto verificate la <strong>zona sismica</strong> dell'immobile (es. tramite il portale delle zone sismiche INGV o il Portale Nazionale delle Classificazioni Sismiche, PNCS) e se l'edificio è conforme agli standard attuali. Considerate <strong>assicurazione</strong> ed eventuali <strong>interventi di adeguamento</strong> quando confrontate le opzioni.</p>
+
+<h2>Condominio e altre verifiche</h2>
+<p>Se l'immobile è in <strong>condominio</strong>, esaminate il <em>regolamento</em> e ottenete una dichiarazione dell'amministratore su: <strong>spese pagate</strong>, eventuali <strong>lavori straordinari</strong> previsti o in corso e <strong>liti</strong> che possano riguardare l'unità o le parti comuni. Così evitate di ereditare morosità o riparti imprevisti. Ove rilevante, richiedete anche certificati di conformità urbanistica al Comune per confermare lo stato legale dell'edificio.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Ottenete una visura catastale e confermate che il venditore sia il titolare registrato; descrizione conforme ai dati.</li>
+<li>Ottenete una visura ipotecaria (o affidatevi al notaio); accertatevi che i gravami siano estinti o regolarizzati prima del rogito.</li>
+<li>Commissionate la verifica di conformità edilizia e urbanistica (architetto/ingegnere/geometra).</li>
+<li>Richiedete Certificato di Agibilità e APE; verificate classe energetica e agibilità.</li>
+<li>Per edifici storici o vincolati: confermate interventi e uso consentiti (incluso affitto breve/turistico).</li>
+<li>Verificate zona sismica e conformità dell'edificio alle norme antisismiche.</li>
+<li>Se in condominio: esaminate regolamento e dichiarazione dell'amministratore (spese, lavori, liti).</li>
+</ul>
+<p>Contattate Vero Properties per supporto nella due diligence e nel coordinamento con il notaio.</p>`,
       },
       rentVsBuyItaly: {
         title: "Affitto o acquisto in Italia: quando scegliere cosa",
         excerpt:
-          "Quando conviene l'affitto e quando l'acquisto. Flessibilità, budget, progetti a lungo termine e implicazioni fiscali a confronto.",
-        content: `<h2>Quando conviene affittare</h2>
-<p>Affittate se state ancora decidendo dove vivere, avete un budget iniziale limitato o volete flessibilità. L'affitto evita imposte di acquisto, spese notarili e impegno a lungo termine ed è spesso ideale per soggiorni brevi o per provare una zona.</p>
+          "Quando conviene affittare e quando comprare. Dati 2025: affitto vs mutuo come quota del reddito, confronto tra città, costi e tasse. Una checklist pratica.",
+        content: `<h2>Introduzione</h2>
+<p>La scelta tra affitto e acquisto in Italia dipende dal capitale a disposizione, dall'orizzonte temporale e dalla necessità di flessibilità. Nel 2025 l'acquisto è spesso vantaggioso sul piano finanziario: in molte città l'affitto assorbe una quota maggiore del reddito familiare rispetto alle rate del mutuo; i tassi sono scesi e la durata a tasso fisso si estende spesso a 25–30 anni. Questa guida riassume quando conviene affittare o comprare, i costi e le implicazioni fiscali principali, e come confrontare la vostra situazione.</p>
+
+<h2>Quando conviene affittare</h2>
+<p>L'affitto è più adatto se avete <strong>capitale iniziale limitato</strong>—ad esempio non potete mettere insieme un acconto del 20% o superiore—o se <strong>avete bisogno di flessibilità</strong> (cambio lavoro, trasferimento temporaneo, provare una zona). L'affitto evita imposte di acquisto, spese notarili e impegno a lungo termine; è spesso ideale per soggiorni brevi o quando state ancora decidendo dove vivere. In alcune città ad alto costo (es. Napoli, Roma, Venezia) il solo canone può assorbire una quota rilevante del reddito (circa 39–42% in alcune rilevazioni), ma comprare lì può costare ancora di più, quindi l'affitto può restare la scelta pragmatica finché non siete pronti a impegnarvi.</p>
 
 <h2>Quando conviene comprare</h2>
-<p>Comprate se programmate di restare a lungo, volete generare reddito da locazione o puntate al plusvalore. La proprietà dà anche stabilità e in alcuni casi vantaggi fiscali. Valutate il costo del mutuo e delle imposte rispetto all'affitto e al vostro orizzonte temporale.</p>
+<p>L'acquisto vale la pena se avete <strong>capitale per l'acconto</strong>, <strong>programmate di restare almeno 5 anni</strong>, volete costruire patrimonio o personalizzare la casa e potete accedere al mutuo. In molte città italiane le rate del mutuo ora equivalgono o sono inferiori al canone: per monolocali, l'acquisto è in genere vantaggioso a Bologna, Bari, Torino, Verona, Palermo e Genova; a Milano, Roma e Firenze il differenziale è contenuto (es. 65–146 € in più al mese per il mutuo rispetto all'affitto). Per bilocali la situazione è simile. Se restate a lungo, l'acquisto può bloccare il costo dell'abitazione e offrire stabilità più eventuali vantaggi fiscali.</p>
+
+<h2>I numeri: affitto vs mutuo in Italia</h2>
+<p>Dati recenti (es. idealista e fonti simili) indicano che <strong>l'affitto assorbe spesso il 28–31%</strong> del reddito familiare, mentre <strong>le rate del mutuo sono circa il 17–18%</strong>. I tagli dei tassi della Banca centrale europea hanno ridotto i tassi sui mutui (es. nell'ordine del 2–3% nel 2025); la grande maggioranza dei nuovi mutuatari sceglie tasso fisso e durate di 25–30 anni sono comuni. Queste condizioni rendono l'acquisto relativamente attraente in molte zone. Verificate sempre <strong>i tassi attuali</strong> e <strong>i confronti locali affitto/mutuo</strong> per la città e il tipo di immobile che vi interessa.</p>
+
+<h2>Costi dell'acquisto</h2>
+<p>I <strong>costi di chiusura</strong> una tantum sono in genere <strong>10–16%</strong> del prezzo di acquisto per acquirenti stranieri (tasse, notaio, registrazione). Con agevolazioni prima casa e senza agenzia possono scendere al <strong>4–6%</strong>. I costi ricorrenti includono: <strong>IMU</strong> sulle seconde case; <strong>TARI</strong>; <strong>spese condominiali</strong> se applicabili; <strong>manutenzione</strong>; e <strong>rate del mutuo</strong>. Budgettate tutto quando confrontate con l'affitto.</p>
+
+<h2>Costi dell'affitto</h2>
+<p>Non ci sono costi di acquisto o notarili. Pagate il <strong>canone mensile</strong> ed eventualmente un'<strong>unica commissione d'agenzia</strong> alla ricerca dell'immobile. Non accumulate patrimonio immobiliare e il canone può aumentare al rinnovo; in cambio avete flessibilità e nessuna responsabilità per manutenzione, tasse o grandi riparazioni.</p>
+
+<h2>Aspetti fiscali e considerazioni ricorrenti</h2>
+<p>Se <strong>comprate</strong>: i non residenti pagano in genere l'IMU su tutti gli immobili in Italia; i residenti pagano l'IMU sulle seconde case (la prima casa è esente in determinate condizioni). Se in seguito <strong>affittate</strong>, il reddito da locazione è tassabile (es. cedolare secca al 21%, o 10% per canone concordato in certi casi). Le plusvalenze sulla vendita futura possono essere assoggettate a imposta. Se <strong>affittate</strong>: non avete IMU né costi di proprietà; il vostro unico costo abitativo è il canone (e eventuali commissioni). Un consulente fiscale o finanziario può fare un confronto di break-even su misura per reddito, risparmi e piani.</p>
 
 <h2>Confrontate la vostra situazione</h2>
-<p>Considerate reddito, risparmi, stabilità lavorativa e piani per i prossimi 5–10 anni. In Italia l'acquisto può essere attraente in zone con forte domanda e dove i costi annuali (IMU, manutenzione) sono gestibili. Un consulente fiscale o finanziario può aiutarvi a confrontare affitto e acquisto nel vostro caso.</p>`,
+<p>Considerate <strong>reddito</strong>, <strong>risparmi</strong>, <strong>stabilità lavorativa</strong> e <strong>piani per i prossimi 5–10 anni</strong>. In Italia l'acquisto tende a essere attraente dove avete capitale sufficiente, orizzonte abbastanza lungo e forte domanda locale; i costi annuali (IMU, TARI, condominio, manutenzione) devono essere gestibili. Usate dati locali aggiornati su affitto vs mutuo e costi di chiusura per vedere in quanti anni l'acquisto \"si ripaga\" rispetto all'affitto nel vostro caso.</p>
+
+<h2>Checklist e prossimi passi</h2>
+<ul>
+<li>Valutate il vostro capitale (es. potete permettervi un acconto del 20%+ e i costi di chiusura?).</li>
+<li>Chiarite l'orizzonte temporale e il bisogno di flessibilità (5+ anni favoriscono l'acquisto).</li>
+<li>Confrontate affitto e mutuo locali per lo stesso tipo di immobile nella città di interesse.</li>
+<li>Includete i costi di chiusura (10–16%, o 4–6% con prima casa e senza agenzia) e IMU, TARI, condominio e manutenzione ricorrenti.</li>
+<li>In caso di dubbi, fate fare un confronto di break-even su misura da un consulente fiscale o finanziario.</li>
+</ul>
+<p>Contattate Vero Properties per un consiglio su misura su affitto vs acquisto e ricerca immobiliare in Italia.</p>`,
       },
       bestAreasBuyItaly: {
         title: "Migliori regioni e zone per comprare in Italia",

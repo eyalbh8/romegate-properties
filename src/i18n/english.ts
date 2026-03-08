@@ -381,17 +381,17 @@ export default {
       mortgagesFinancingForeigners: {
         title: "Mortgages and Financing for Foreign Buyers",
         excerpt:
-          "Banks in Italy can lend to non-residents. Typical LTV 50–70%, terms 5–25 years. What documents you need and which banks offer mortgages to foreigners.",
+          "Eligibility, LTV 50–70%, predelibera, documents, and timeline. Banks that lend to non-residents, alternatives, and a practical checklist.",
       },
       legalChecksBeforeBuying: {
         title: "Legal and Technical Checks Before Buying",
         excerpt:
-          "Ownership verification at the Catasto, encumbrances, building compliance and cadastral checks. How to avoid buying a property with hidden problems.",
+          "Visura catastale and ipotecaria, building and planning compliance, certificato di agibilità, APE, seismic zone and condo checks. A clear checklist to avoid hidden problems.",
       },
       rentVsBuyItaly: {
         title: "Rent vs Buy in Italy: When to Choose What",
         excerpt:
-          "When renting makes sense and when buying is better. Flexibility, budget, long-term plans and tax implications compared.",
+          "When to rent and when to buy. 2025 data: rent vs mortgage share of income, city comparisons, costs and tax. A practical checklist.",
       },
       bestAreasBuyItaly: {
         title: "Best Regions and Areas to Buy in Italy",
