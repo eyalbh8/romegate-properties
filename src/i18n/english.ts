@@ -17,6 +17,7 @@ export default {
     home: "Home",
     properties: "Properties",
     services: "Services",
+    guides: "Guides",
     about: "About",
     erasmus: "Erasmus",
     blog: "Blog",
@@ -216,6 +217,21 @@ export default {
         excerpt:
           "Learn about the best times of year to search for properties in Italy, including seasonal price fluctuations and market availability.",
       },
+      propertyMarketTrendsItaly: {
+        title: "Property Market Trends in Italy 2025–2026",
+        excerpt:
+          "An overview of expected trends in Italian real estate: transaction volumes, prices by region, and what to watch for buyers and investors.",
+      },
+      whereToBuyPropertyItaly: {
+        title: "Where to Buy Property in Italy: Tuscany, Rome, Amalfi, Lake Como",
+        excerpt:
+          "A guide to the most sought-after regions for buying in Italy, from Tuscany and Rome to the Amalfi Coast and Lake Como.",
+      },
+      annualCostsOwningPropertyItaly: {
+        title: "Annual Costs of Owning Property in Italy: IMU, Utilities, Maintenance",
+        excerpt:
+          "What you need to budget after purchase: IMU, condominium fees, utilities and routine maintenance for a property in Italy.",
+      },
     },
   },
   faq: {
@@ -329,6 +345,70 @@ export default {
   common: {
     home: "Home",
     minRead: "min read",
+  },
+  guides: {
+    title: "Guides to Buying Property in Italy",
+    subtitle:
+      "Expert guides on the buying process, bureaucracy, taxes, financing, and everything you need to know.",
+    categories: {
+      all: "All",
+      buying: "Buying",
+      bureaucracy: "Bureaucracy & Documents",
+      taxCosts: "Tax & Costs",
+      financing: "Financing",
+      legal: "Legal",
+      market: "Market",
+    },
+    metaDescription:
+      "Expert guides on buying property in Italy: process, bureaucracy, taxes, financing, and legal checks. Everything you need for a safe purchase.",
+    relatedGuides: "Related Guides",
+    list: {
+      howToBuyHouseItaly: {
+        title: "How to Buy a House in Italy: Complete Guide",
+        excerpt:
+          "A step-by-step guide to buying property in Italy: from legal ownership checks and legal advice to the preliminary contract and registration. Everything you need for a safe purchase.",
+      },
+      bureaucracyDocumentsItaly: {
+        title: "Bureaucracy and Documents When Buying in Italy",
+        excerpt:
+          "What you need: Codice Fiscale, ID, proof of income, and how to deal with the notary and land registry. A clear overview of the paperwork required.",
+      },
+      taxesCostsBuyingItaly: {
+        title: "Taxes and Costs When Buying Property in Italy",
+        excerpt:
+          "Stamp duty, registration tax, notary fees, and annual costs like IMU. Understand how much you will pay and how it is calculated.",
+      },
+      mortgagesFinancingForeigners: {
+        title: "Mortgages and Financing for Foreign Buyers",
+        excerpt:
+          "Banks in Italy can lend to non-residents. Typical LTV 50–70%, terms 5–25 years. What documents you need and which banks offer mortgages to foreigners.",
+      },
+      legalChecksBeforeBuying: {
+        title: "Legal and Technical Checks Before Buying",
+        excerpt:
+          "Ownership verification at the Catasto, encumbrances, building compliance and cadastral checks. How to avoid buying a property with hidden problems.",
+      },
+      rentVsBuyItaly: {
+        title: "Rent vs Buy in Italy: When to Choose What",
+        excerpt:
+          "When renting makes sense and when buying is better. Flexibility, budget, long-term plans and tax implications compared.",
+      },
+      bestAreasBuyItaly: {
+        title: "Best Regions and Areas to Buy in Italy",
+        excerpt:
+          "Tuscany, Rome, Amalfi Coast, Lake Como, Florence: where to invest, live or buy a holiday home. Pros and cons of the most sought-after areas.",
+      },
+      risksBuyingPropertyItaly: {
+        title: "Risks and Pitfalls When Buying Property in Italy",
+        excerpt:
+          "Historic zone restrictions, local market dynamics, bureaucracy, taxation and seismic risk. What to watch out for before you buy.",
+      },
+      residencyVisaPropertyItaly: {
+        title: "Residency and Visas: Does Buying Property Help?",
+        excerpt:
+          "Owning a property alone does not grant residency. Elective residence, investor visa and citizenship paths: what is possible and what is not.",
+      },
+    },
   },
   seo: {
     title: "Vero - Authentic Italian Properties | Real Estate in Italy",

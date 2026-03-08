@@ -7,6 +7,7 @@ import {
   Grid,
   Card,
   CardContent,
+  CardMedia,
   Button,
   List,
   ListItem,
@@ -26,6 +27,13 @@ import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import Contact from "../components/Contact";
 import { getServiceBySlug } from "../data/services";
+import { getGuideBySlug } from "../data/guides";
+
+const BUYING_SERVICE_RELATED_GUIDE_SLUGS = [
+  "how-to-buy-house-italy",
+  "bureaucracy-documents-italy",
+  "taxes-costs-buying-italy",
+];
 
 const ServiceDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -136,6 +144,64 @@ const ServiceDetailPage: React.FC = () => {
                         </ListItem>
                       ))}
                     </List>
+                  </Paper>
+                )}
+
+                {service.slug === "buying-properties" && (
+                  <Paper sx={{ p: 4, mt: 4 }}>
+                    <Typography variant="h4" gutterBottom sx={{ mb: 3 }}>
+                      {t("guides.relatedGuides")}
+                    </Typography>
+                    <Grid container spacing={3}>
+                      {BUYING_SERVICE_RELATED_GUIDE_SLUGS.map((guideSlug) => {
+                        const guide = getGuideBySlug(guideSlug);
+                        if (!guide) return null;
+                        return (
+                          <Grid item xs={12} sm={6} md={4} key={guide.id}>
+                            <Card
+                              component={Link}
+                              to={`/${currentLang}/guides/${guide.slug}`}
+                              sx={{
+                                textDecoration: "none",
+                                color: "inherit",
+                                height: "100%",
+                                display: "flex",
+                                flexDirection: "column",
+                                transition: "transform 0.2s, box-shadow 0.2s",
+                                "&:hover": {
+                                  transform: "translateY(-4px)",
+                                  boxShadow: 3,
+                                },
+                              }}
+                            >
+                              {guide.image && (
+                                <CardMedia
+                                  component="img"
+                                  height="140"
+                                  image={guide.image}
+                                  alt={t(guide.titleKey)}
+                                />
+                              )}
+                              <CardContent sx={{ flexGrow: 1 }}>
+                                <Typography variant="h6" gutterBottom>
+                                  {t(guide.titleKey)}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                  {t(guide.excerptKey)}
+                                </Typography>
+                                <Button
+                                  size="small"
+                                  sx={{ mt: 2 }}
+                                  component="span"
+                                >
+                                  {t("blog.readMore")}
+                                </Button>
+                              </CardContent>
+                            </Card>
+                          </Grid>
+                        );
+                      })}
+                    </Grid>
                   </Paper>
                 )}
               </Grid>

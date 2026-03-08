@@ -22,6 +22,9 @@ const blogPostsData = [
   { slug: "erasmus-success-stories-rome" },
   { slug: "navigating-property-laws-italy-foreigners" },
   { slug: "best-time-buy-rent-rome" },
+  { slug: "property-market-trends-italy-2025-2026" },
+  { slug: "where-to-buy-property-italy-tuscany-rome-amalfi" },
+  { slug: "annual-costs-owning-property-italy" },
 ];
 
 const servicesData = [
@@ -29,6 +32,18 @@ const servicesData = [
   { slug: "selling-properties" },
   { slug: "property-management" },
   { slug: "student-accommodation" },
+];
+
+const guidesData = [
+  { slug: "how-to-buy-house-italy" },
+  { slug: "bureaucracy-documents-italy" },
+  { slug: "taxes-costs-buying-italy" },
+  { slug: "mortgages-financing-foreigners" },
+  { slug: "legal-checks-before-buying" },
+  { slug: "rent-vs-buy-italy" },
+  { slug: "best-areas-buy-italy" },
+  { slug: "risks-buying-property-italy" },
+  { slug: "residency-visa-property-italy" },
 ];
 
 const neighborhoodsData = [
@@ -125,6 +140,28 @@ function generateSitemap() {
         `${baseUrl}/${lang}/services/${service.slug}`,
         "0.7",
         "monthly",
+        currentDate
+      );
+    });
+  });
+
+  // Guides listing pages
+  languages.forEach((lang) => {
+    sitemap += generateUrlEntry(
+      `${baseUrl}/${lang}/guides`,
+      "0.8",
+      "weekly",
+      currentDate
+    );
+  });
+
+  // Individual guide pages
+  guidesData.forEach((guide) => {
+    languages.forEach((lang) => {
+      sitemap += generateUrlEntry(
+        `${baseUrl}/${lang}/guides/${guide.slug}`,
+        "0.7",
+        "weekly",
         currentDate
       );
     });

@@ -45,6 +45,14 @@ export const services: Service[] = [
         titleKey: "services.buyingProperties.process.step5.title",
         descriptionKey: "services.buyingProperties.process.step5.description",
       },
+      {
+        titleKey: "services.buyingProperties.process.step6.title",
+        descriptionKey: "services.buyingProperties.process.step6.description",
+      },
+      {
+        titleKey: "services.buyingProperties.process.step7.title",
+        descriptionKey: "services.buyingProperties.process.step7.description",
+      },
     ],
     benefitKeys: [
       "services.buyingProperties.benefits.0",
@@ -56,7 +64,7 @@ export const services: Service[] = [
     targetAudience: ["Property Buyers", "Investors", "Expats"],
     relatedPropertyTypes: ["sale", "luxury", "investment"],
     pricingKey: "services.buyingProperties.pricing",
-    faqKeys: ["buying.faq1", "buying.faq2", "buying.faq3"],
+    faqKeys: ["buying.faq1", "buying.faq2", "buying.faq3", "buying.faq4", "buying.faq5"],
   },
   {
     id: 2,

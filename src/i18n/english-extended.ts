@@ -80,11 +80,166 @@ export default {
 <h2>Conclusion</h2>
 <p>Each neighborhood has its unique character. Visit them in person before deciding, and don't hesitate to contact Vero Properties for expert guidance on finding your perfect Roman home.</p>`,
       },
+      propertyMarketTrendsItaly: {
+        content: `<h2>Outlook for 2025–2026</h2>
+<p>Italian real estate is expected to see steady demand, especially in major cities and popular coastal and countryside areas. Transaction volumes have been recovering, and foreign buyers remain a significant share of the market.</p>
+
+<h2>Prices by Region</h2>
+<p>Northern regions (Lombardy, Emilia-Romagna, Veneto) and cities like Milan and Bologna continue to attract strong interest. Tuscany, Rome and Florence remain favourites for lifestyle and holiday buyers. Southern regions and islands often offer lower entry prices with growing interest from investors and second-home buyers.</p>
+
+<h2>What to Watch</h2>
+<p>Interest rates, lending conditions and any changes to tax or incentives (e.g. first-home benefits) can affect affordability and timing. Working with a local agent and staying informed on market trends helps you make better decisions.</p>`,
+      },
+      whereToBuyPropertyItaly: {
+        content: `<h2>Tuscany</h2>
+<p>Tuscany offers iconic landscapes, wine country and historic towns. Prices range from more affordable inland areas to premium zones like Chianti and Val d'Orcia. Ideal for holiday homes and medium to long-term stays.</p>
+
+<h2>Rome and Florence</h2>
+<p>Both cities have strong rental demand from tourists and professionals. Central areas command higher prices; suburbs and nearby towns can offer better value. Check local rules on short-term rentals if you plan to let to tourists.</p>
+
+<h2>Amalfi Coast and Lake Como</h2>
+<p>These areas are among the most sought-after in Italy. Prices are premium and demand is high for luxury and holiday use. Consider access, maintenance and any local restrictions before buying.</p>
+
+<h2>Other Regions</h2>
+<p>Puglia, Sicily, Umbria and Le Marche offer lower entry prices and growing interest. Research local markets and infrastructure to find the right balance of price and demand for your goals.</p>`,
+      },
+      annualCostsOwningPropertyItaly: {
+        content: `<h2>IMU (Municipal Property Tax)</h2>
+<p>IMU is an annual tax on property ownership. Rates are typically 0.4–1.06% of the cadastral value, depending on the municipality and property type. First-home (prima casa) exemptions often apply to your main residence; second homes are usually subject to IMU.</p>
+
+<h2>Condominium and Utilities</h2>
+<p>If the property is in a condominium, you will pay condominium fees (spese condominiali) for common areas, lift, cleaning and repairs. Utilities (electricity, gas, water, internet) and any community charges depend on usage and contracts. Budget roughly €1,500–3,000 per year for an average apartment, excluding mortgage.</p>
+
+<h2>Maintenance and Insurance</h2>
+<p>Set aside funds for routine maintenance, repairs and, if applicable, building insurance. In older or historic buildings, maintenance can be higher. An emergency fund of a few thousand euros is advisable.</p>`,
+      },
     },
     aboutAuthor: "About the Author",
     relatedPosts: "Related Posts",
     metaDescription:
       "Read our blog for insights on Italian real estate, student accommodation guides, market trends, and property investment advice.",
+  },
+
+  // Guides (long-form content)
+  guides: {
+    list: {
+      howToBuyHouseItaly: {
+        content: `<h2>Is Buying a House in Italy Really Possible?</h2>
+<p>Yes. With professional support, proper planning, and a clear understanding of the process, buying property in Italy is an achievable goal. The Italian system differs from many others, so having local professionals on your side is essential.</p>
+
+<h2>Why So Many Foreigners Buy Property in Italy</h2>
+<p>Italy attracts buyers from around the world for its beauty, climate, accessible prices, and diverse opportunities. According to ISTAT, over 70% of residents own their home. In recent years, the number of transactions by foreign buyers has grown steadily, and this trend is expected to continue.</p>
+
+<h2>How to Buy a House in Italy: Step by Step</h2>
+
+<h3>Step 1 – Verify Legal Ownership</h3>
+<p>Before proceeding, ensure the property is legally registered in the seller's name and free of liens and debts. This is done through the Italian land registry (Catasto).</p>
+
+<h3>Step 2 – Legal Advice</h3>
+<p>A local lawyer is strongly recommended and often required. Your lawyer will verify that all contractual and legal aspects are in order.</p>
+
+<h3>Step 3 – Technical and Engineering Checks</h3>
+<p>Have a qualified engineer carry out a physical and planning check of the property to identify any hidden defects or compliance issues.</p>
+
+<h3>Step 4 – Preliminary Contract and Registration</h3>
+<p>You sign a preliminary contract (compromesso) before a notary. The transaction is then registered with the Italian tax authority, leading to the final deed of sale (rogito).</p>
+
+<h2>Taxation When Buying</h2>
+<p>Purchase tax in Italy is calculated on the registered value of the property (not necessarily the market price), which can reduce the overall cost. For example, on a property with a market value of around €140,000, you might pay only about €4,000 in taxes and registration costs—relatively favourable compared to many other countries.</p>
+
+<h2>Next Steps</h2>
+<p>Whether you are buying for investment, a holiday home, or to live in Italy, a structured approach and expert guidance make the process safer and clearer. Contact Vero Properties for support through every step of your purchase.</p>`,
+      },
+      bureaucracyDocumentsItaly: {
+        content: `<h2>Codice Fiscale (Tax Code)</h2>
+<p>You need an Italian tax code (Codice Fiscale) to buy property and sign contracts. You can obtain it from the Italian embassy or consulate in your country, or from an Italian tax office (Agenzia delle Entrate) with a valid ID. It is a 16-character code and is required for the notary and for registering the deed.</p>
+
+<h2>Documents Usually Required</h2>
+<p>Besides the Codice Fiscale, have ready: a valid passport or ID; proof of address; and, if you are financing, proof of income, bank statements and any documents required by the bank. The notary will need these to prepare the deed and register the transaction.</p>
+
+<h2>Notary and Land Registry</h2>
+<p>In Italy the notary (notaio) performs the formal deed of sale and handles registration with the tax authority and land registry. Notary fees are typically around 1–2.5% of the property value. The notary checks the seller's title and any encumbrances and ensures the deed is legally valid.</p>
+
+<h2>Timeline</h2>
+<p>From the preliminary contract (compromesso) to the final deed (rogito) usually takes a few weeks to a few months, depending on financing and any conditions. Plan for at least 2–3 months from offer to keys.</p>`,
+      },
+      taxesCostsBuyingItaly: {
+        content: `<h2>Purchase Taxes</h2>
+<p>Tax on purchase is calculated on the cadastral value (valor catastale) or the declared sale price, whichever is higher. For a first home (prima casa) meeting certain conditions: about 2% stamp duty and fixed registration fees. For a second or luxury property: about 9% in most regions. First-home benefits apply to one property only and may require residency or a commitment to establish it.</p>
+
+<h2>Notary and Registration</h2>
+<p>Notary fees are usually 1–2.5% of the value; registration and cadastral fees add roughly €200–500. The notary will give you a detailed quote before the deed.</p>
+
+<h2>Annual Costs</h2>
+<p>After purchase you may be liable for IMU (municipal property tax), typically 0.4–1.06% of the cadastral value (with exemptions for prima casa in many cases). Budget also for utilities, condominium fees if applicable, and routine maintenance—often €1,500–3,000 per year for an average property.</p>`,
+      },
+      mortgagesFinancingForeigners: {
+        content: `<h2>Can Foreigners Get a Mortgage in Italy?</h2>
+<p>Yes. Many Italian banks offer mortgages to non-residents. Loan-to-value (LTV) is often 50–70%, with terms from 5 to 25 years. Interest can be fixed or variable. You will need to provide proof of income, tax returns, and identification; some banks also require an Italian tax code and a preliminary contract.</p>
+
+<h2>Documents Banks Typically Request</h2>
+<p>Passport; proof of address; proof of income (payslips, tax returns, bank statements); preliminary contract or agreed offer; and Codice Fiscale. Non-EU citizens may face slightly stricter checks. Compare several banks (e.g. UniCredit, Intesa Sanpaolo, Banco BPM) for rates and conditions.</p>
+
+<h2>Alternatives</h2>
+<p>Cash purchase speeds up the process and can strengthen your negotiating position. If a bank loan is not suitable, consider private financing or staged payments agreed with the seller, though these require clear legal documentation.</p>`,
+      },
+      legalChecksBeforeBuying: {
+        content: `<h2>Ownership and Cadastre (Catasto)</h2>
+<p>Before buying, verify that the seller is the registered owner and that the property description matches the cadastral records. Your lawyer or notary can obtain a visura catastale and check for inconsistencies or claims.</p>
+
+<h2>Encumbrances and Liens</h2>
+<p>Check for mortgages, court orders, or other encumbrances on the property. The notary will usually run these checks; if anything appears, it must be cleared or agreed before the deed.</p>
+
+<h2>Building and Planning Compliance</h2>
+<p>Have an engineer or architect verify that the building and any modifications comply with planning and building regulations. Unauthorised works can lead to fines and difficulties when selling. For historic or listed buildings, confirm what changes are allowed.</p>`,
+      },
+      rentVsBuyItaly: {
+        content: `<h2>When Renting Makes Sense</h2>
+<p>Rent if you are still deciding where to live, have a limited initial budget, or want flexibility to move. Renting avoids purchase taxes, notary costs and long-term commitment, and is often better for short stays or testing an area.</p>
+
+<h2>When Buying Makes Sense</h2>
+<p>Buy if you plan to stay long term, want to generate rental income, or aim to benefit from capital growth. Ownership also gives stability and, in some cases, tax advantages. Weigh mortgage costs and purchase taxes against rent and your time horizon.</p>
+
+<h2>Compare Your Situation</h2>
+<p>Consider your income, savings, job stability and plans for the next 5–10 years. In Italy, buying can be attractive in areas with strong demand and where annual costs (IMU, maintenance) are manageable. A financial or tax advisor can help you compare rent vs buy in your case.</p>`,
+      },
+      bestAreasBuyItaly: {
+        content: `<h2>Tuscany</h2>
+<p>Rolling hills, wine country and historic towns. Ideal for holiday homes and medium to long-term stays. Prices vary from more affordable inland areas to premium spots like Chianti and Val d'Orcia.</p>
+
+<h2>Rome and Florence</h2>
+<p>Major cities with strong rental demand from tourists and professionals. Good for investment and city living; prices are higher in the centre. Check condominium rules and short-rental regulations if you plan to let to tourists.</p>
+
+<h2>Amalfi Coast and Lake Como</h2>
+<p>Iconic landscapes and high demand. Premium prices and strong appeal for luxury and holiday lets. Consider access, maintenance and local restrictions before buying.</p>
+
+<h2>Other Regions</h2>
+<p>Puglia, Sicily, Umbria and Le Marche offer lower entry prices and growing interest from buyers and renters. Research local markets and infrastructure to find the right balance of price and demand.</p>`,
+      },
+      risksBuyingPropertyItaly: {
+        content: `<h2>Historic and Listed Buildings</h2>
+<p>Properties in historic centres or listed buildings are subject to strict rules on alterations and sometimes on use. Check what you can and cannot change and whether short-term rental is allowed.</p>
+
+<h2>Market and Location</h2>
+<p>Prices and demand vary by region, city and neighbourhood. Study local trends and consider liquidity: some areas are harder to sell or let. Get independent valuations before offering.</p>
+
+<h2>Bureaucracy and Delays</h2>
+<p>Italian bureaucracy can be slow. Plan for possible delays in obtaining documents, bank approvals and notary appointments. A local lawyer and a reliable agent help keep the process on track.</p>
+
+<h2>Seismic and Other Risks</h2>
+<p>Parts of Italy are in seismic zones. Check the property's classification and that it meets current safety standards. Insurance and any necessary strengthening work should be factored into your decision.</p>`,
+      },
+      residencyVisaPropertyItaly: {
+        content: `<h2>Does Buying Property Give Residency?</h2>
+<p>No. Owning a property in Italy does not by itself entitle you to residency or a permit to stay (permesso di soggiorno). You must qualify under one of the standard visa and residence routes.</p>
+
+<h2>Elective Residence and Investor Options</h2>
+<p>Elective residence (residenza elettiva) may be an option if you can show sufficient passive income and a place to live (your purchased property can help). Investor visas are available for significant investments under specific programmes. Requirements and thresholds change; check with the Italian consulate or an immigration lawyer.</p>
+
+<h2>Citizenship and Long-Term Stay</h2>
+<p>Citizenship can be obtained after 10 years of legal residence (or less in some cases, e.g. marriage to an Italian). Buying a property does not shorten this period but can support your application by proving stable housing. Always get up-to-date legal advice for your situation.</p>`,
+      },
+    },
   },
 
   // Service details
@@ -117,6 +272,16 @@ export default {
           title: "Closing",
           description:
             "We attend the final signing and ensure a smooth handover of your new property.",
+        },
+        step6: {
+          title: "Ownership and Cadastre Check",
+          description:
+            "We verify that the property is legally registered in the seller's name and free of liens, using the Italian land registry (Catasto).",
+        },
+        step7: {
+          title: "Engineering and Compliance Checks",
+          description:
+            "We recommend a qualified engineer to check the building and planning compliance of the property, so you avoid hidden defects or unauthorised works.",
         },
       },
       pricing:
@@ -248,6 +413,34 @@ export default {
     browseProperties: "Browse Properties",
     metaDescription:
       "Comprehensive real estate services across Italy: property buying, selling, management, and student accommodation. Expert guidance for all your property needs.",
+  },
+
+  buying: {
+    faq1: {
+      question: "How long does the buying process take?",
+      answer:
+        "From first offer to keys typically takes 2–4 months, depending on financing and any conditions. The preliminary contract is usually signed within a few weeks of an accepted offer.",
+    },
+    faq2: {
+      question: "Do I need to be in Italy to buy?",
+      answer:
+        "You can start the process remotely. You will need to be in Italy for the preliminary contract (compromesso) and the final deed (rogito) before the notary, or grant power of attorney to a representative.",
+    },
+    faq3: {
+      question: "Can I get a mortgage as a non-resident?",
+      answer:
+        "Yes. Many Italian banks offer mortgages to non-residents. Typical LTV is 50–70%. You will need proof of income, ID, and often an Italian tax code (Codice Fiscale).",
+    },
+    faq4: {
+      question: "Do I need an Italian tax code (Codice Fiscale)?",
+      answer:
+        "Yes. A Codice Fiscale is required to sign the deed and register the purchase. You can obtain it from the Italian embassy or consulate in your country or from an Italian tax office with a valid ID.",
+    },
+    faq5: {
+      question: "What taxes do I pay when buying?",
+      answer:
+        "Purchase tax depends on whether it is your first home (prima casa) and the value. For first home, about 2% stamp duty plus fixed fees; for second or luxury property, about 9% in most regions. The notary will provide an exact quote.",
+    },
   },
 
   // Neighborhoods

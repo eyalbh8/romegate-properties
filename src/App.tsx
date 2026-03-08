@@ -19,6 +19,8 @@ const ServicesPage = lazy(() => import("./pages/ServicesPage"));
 const ServiceDetailPage = lazy(() => import("./pages/ServiceDetailPage"));
 const BlogPage = lazy(() => import("./pages/BlogPage"));
 const BlogPostPage = lazy(() => import("./pages/BlogPostPage"));
+const GuidesPage = lazy(() => import("./pages/GuidesPage"));
+const GuideDetailPage = lazy(() => import("./pages/GuideDetailPage"));
 const NeighborhoodPage = lazy(() => import("./pages/NeighborhoodPage"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -96,6 +98,8 @@ const App: React.FC = () => {
               <Route path="properties/:id/:slug" element={<PropertyDetailPage />} />
               <Route path="services" element={<ServicesPage />} />
               <Route path="services/:slug" element={<ServiceDetailPage />} />
+              <Route path="guides" element={<GuidesPage />} />
+              <Route path="guides/:slug" element={<GuideDetailPage />} />
               <Route path="blog" element={<BlogPage />} />
               <Route path="blog/:slug" element={<BlogPostPage />} />
               <Route path="neighborhoods/:slug" element={<NeighborhoodPage />} />
