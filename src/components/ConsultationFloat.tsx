@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useTranslation } from "react-i18next";
 
-const CAL_COM_BOOKING_URL = "https://cal.com/your-username/consultation";
+const CAL_COM_BOOKING_URL = "https://cal.com/vero-ee4y6u";
 
 const ConsultationFloat: React.FC = () => {
   const { t } = useTranslation();
