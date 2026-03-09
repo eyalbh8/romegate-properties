@@ -449,7 +449,7 @@ const Blog: React.FC = () => {
                         color="primary"
                         fullWidth
                         component="a"
-                        href={`/${i18n.language || "en"}/blog/${blogPostsData[index]?.slug || post.id}`}
+                        href={`/${i18n.language || "he"}/blog/${blogPostsData[index]?.slug || post.id}`}
                       >
                         {t("blog.readMore")}
                       </Button>

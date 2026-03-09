@@ -38,7 +38,7 @@ const BUYING_SERVICE_RELATED_GUIDE_SLUGS = [
 const ServiceDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const baseUrl = "https://vero.it";
 
   const service = getServiceBySlug(slug || "");

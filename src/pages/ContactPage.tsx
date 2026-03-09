@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 
 const ContactPage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const baseUrl = "https://vero.it";
 
   return (

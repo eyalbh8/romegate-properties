@@ -25,7 +25,7 @@ import { blogPosts } from "../data/blogPosts";
 
 const BlogPage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const baseUrl = "https://vero.it";
 
   const categories = [

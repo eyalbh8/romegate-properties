@@ -35,7 +35,7 @@ i18n.on("languageChanged", (lng) => {
 
 // Set initial HTML lang
 if (typeof document !== "undefined") {
-  updateHtmlLang(i18n.language || "en");
+  updateHtmlLang(i18n.language || "he");
 }
 
 const root = ReactDOM.createRoot(

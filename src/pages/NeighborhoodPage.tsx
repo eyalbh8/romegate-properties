@@ -29,7 +29,7 @@ const NeighborhoodPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const { getPropertiesByNeighborhood } = useProperties();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const baseUrl = "https://vero.it";
 
   const neighborhood = getNeighborhoodBySlug(slug || "");

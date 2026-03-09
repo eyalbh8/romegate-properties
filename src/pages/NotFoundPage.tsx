@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 const NotFoundPage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
 
   return (
     <>

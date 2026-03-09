@@ -43,7 +43,7 @@ const PropertiesPage: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>(initialSearch);
   const [filterType, setFilterType] = useState<string>("all");
 
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const filteredProperties = properties.filter((property) => {
     const title = resolvePropertyTitle(property, currentLang, t);
     const matchesSearch =

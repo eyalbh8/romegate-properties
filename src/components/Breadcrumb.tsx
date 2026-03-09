@@ -17,7 +17,7 @@ interface BreadcrumbProps {
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   const { t } = useTranslation();
   const { lang } = useParams<{ lang: string }>();
-  const currentLang = lang || "en";
+  const currentLang = lang || "he";
   const homePath = `/${currentLang}`;
 
   const breadcrumbList = {

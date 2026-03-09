@@ -53,7 +53,7 @@ const LanguageRoute: React.FC = () => {
 
   // Validate language - redirect if invalid
   if (!lang || !["en", "it", "he"].includes(lang)) {
-    return <Navigate to="/en" replace />;
+    return <Navigate to="/he" replace />;
   }
 
   // Render nested routes
@@ -62,7 +62,7 @@ const LanguageRoute: React.FC = () => {
 
 const App: React.FC = () => {
   const [direction, setDirection] = useState<"ltr" | "rtl">(() =>
-    getDirForLang(i18n.language || "en")
+    getDirForLang(i18n.language || "he")
   );
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const App: React.FC = () => {
             {/* Root redirect to default language */}
             <Route
               path="/"
-              element={<Navigate to={`/${i18n.language || "en"}`} replace />}
+              element={<Navigate to={`/${i18n.language || "he"}`} replace />}
             />
 
             {/* Language-based routes */}

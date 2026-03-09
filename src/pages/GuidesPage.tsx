@@ -23,7 +23,7 @@ import { guides } from "../data/guides";
 
 const GuidesPage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const baseUrl = "https://vero.it";
 
   const categoryKeys = [

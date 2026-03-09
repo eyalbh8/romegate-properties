@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { lang } = useParams<{ lang: string }>();
-  const currentLang = lang || "en";
+  const currentLang = lang || "he";
 
   const handleNavTo = (path: string): void => {
     navigate(`/${currentLang}${path}`);

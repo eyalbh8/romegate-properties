@@ -7,7 +7,7 @@ const SEOHead: React.FC = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const { lang } = useParams<{ lang?: string }>();
-  const currentLang = lang || i18n.language || "en";
+  const currentLang = lang || i18n.language || "he";
 
   // Base URL
   const baseUrl = "https://vero.it";
@@ -178,7 +178,7 @@ const SEOHead: React.FC = () => {
       <link rel="alternate" hrefLang="en" href={langUrls.en} />
       <link rel="alternate" hrefLang="it" href={langUrls.it} />
       <link rel="alternate" hrefLang="he" href={langUrls.he} />
-      <link rel="alternate" hrefLang="x-default" href={langUrls.en} />
+      <link rel="alternate" hrefLang="x-default" href={langUrls.he} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />

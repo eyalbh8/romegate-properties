@@ -237,7 +237,7 @@ const Services: React.FC = () => {
                         size="small"
                         color="primary"
                         component="a"
-                        href={`/${i18n.language || "en"}/services/${
+                        href={`/${i18n.language || "he"}/services/${
                           servicesData[index]?.slug || service.title.toLowerCase().replace(/\s+/g, "-")
                         }`}
                       >

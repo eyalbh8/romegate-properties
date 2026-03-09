@@ -72,7 +72,7 @@ const PropertyDetailPage: React.FC = () => {
   const { slug, id } = useParams<{ slug: string; id: string }>();
   const { t, i18n } = useTranslation();
   const { properties, loading, getPropertyBySlug } = useProperties();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language || "he";
   const baseUrl = "https://vero.it";
 
   const property = getPropertyBySlug(slug || "");

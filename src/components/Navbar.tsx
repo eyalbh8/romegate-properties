@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { lang } = useParams<{ lang: string }>();
-  const currentLang = lang || "en";
+  const currentLang = lang || "he";
   const pathname = location.pathname;
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
   const [langAnchorEl, setLangAnchorEl] = useState<null | HTMLElement>(null);

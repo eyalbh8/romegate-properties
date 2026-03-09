@@ -35,7 +35,7 @@ const Properties: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filterType, setFilterType] = useState<string>("all");
 
-  const lang = i18n.language || "en";
+  const lang = i18n.language || "he";
   const properties = propertiesData.map((prop) => ({
     ...prop,
     title: resolvePropertyTitle(prop, lang, t),
@@ -370,10 +370,10 @@ const Properties: React.FC = () => {
                         color="primary"
                         fullWidth
                         component="a"
-                        href={`/${i18n.language || "en"}/properties/${property.id}/${property.slug}`}
+                        href={`/${i18n.language || "he"}/properties/${property.id}/${property.slug}`}
                         onClick={(e) => {
                           e.preventDefault();
-                          window.location.href = `/${i18n.language || "en"}/properties/${property.id}/${property.slug}`;
+                          window.location.href = `/${i18n.language || "he"}/properties/${property.id}/${property.slug}`;
                         }}
                       >
                         {t("properties.viewDetails")}
