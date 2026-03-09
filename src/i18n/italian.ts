@@ -307,12 +307,18 @@ export default {
     whatOurStudentsSay: "Cosa Dicono i Nostri Studenti",
     testimonials: {
       maria: {
+        name: "Maria González",
+        country: "Spagna",
         text: "Vero ha reso la ricerca di alloggi in Italia così facile! Hanno capito esattamente di cosa avevo bisogno come studentessa Erasmus e mi hanno trovato il posto perfetto vicino alla mia università.",
       },
       thomas: {
+        name: "Thomas Müller",
+        country: "Germania",
         text: "Il team di Vero parla più lingue e mi ha aiutato con tutte le pratiche burocratiche. Mi sono sentito supportato durante tutto il mio soggiorno in Italia.",
       },
       sophie: {
+        name: "Sophie Dubois",
+        country: "Francia",
         text: "Come studentessa Erasmus, avevo bisogno di termini di affitto flessibili. Vero mi ha trovato un grande appartamento con un contratto semestrale. Lo consiglio vivamente!",
       },
     },

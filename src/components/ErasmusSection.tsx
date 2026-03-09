@@ -6,7 +6,6 @@ import {
   Grid,
   Card,
   CardContent,
-  Avatar,
   Stack,
   Chip,
 } from "@mui/material";
@@ -21,31 +20,17 @@ interface Testimonial {
   name: string;
   country: string;
   text: string;
-  avatar: string;
 }
+
+const TESTIMONIAL_KEYS = ["maria", "thomas", "sophie"] as const;
 
 const ErasmusSection: React.FC = () => {
   const { t } = useTranslation();
-  const testimonials: Testimonial[] = [
-    {
-      name: "Maria González",
-      country: "Spain",
-      text: t("erasmusSection.testimonials.maria.text"),
-      avatar: "https://i.pravatar.cc/150?img=1",
-    },
-    {
-      name: "Thomas Müller",
-      country: "Germany",
-      text: t("erasmusSection.testimonials.thomas.text"),
-      avatar: "https://i.pravatar.cc/150?img=2",
-    },
-    {
-      name: "Sophie Dubois",
-      country: "France",
-      text: t("erasmusSection.testimonials.sophie.text"),
-      avatar: "https://i.pravatar.cc/150?img=3",
-    },
-  ];
+  const testimonials: Testimonial[] = TESTIMONIAL_KEYS.map((key) => ({
+    name: t(`erasmusSection.testimonials.${key}.name`),
+    country: t(`erasmusSection.testimonials.${key}.country`),
+    text: t(`erasmusSection.testimonials.${key}.text`),
+  }));
 
   const services = [
     {
@@ -202,11 +187,6 @@ const ErasmusSection: React.FC = () => {
                       alignItems="center"
                       sx={{ mb: 2 }}
                     >
-                      <Avatar
-                        src={testimonial.avatar}
-                        alt={`${testimonial.name}, Erasmus student from ${testimonial.country} - Testimonial about Vero Properties student accommodation services`}
-                        sx={{ width: 56, height: 56 }}
-                      />
                       <Box>
                         <Typography variant="h6">{testimonial.name}</Typography>
                         <Chip

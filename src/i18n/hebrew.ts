@@ -304,12 +304,18 @@ export default {
     whatOurStudentsSay: "מה הסטודנטים שלנו אומרים",
     testimonials: {
       maria: {
+        name: "Maria González",
+        country: "Spain",
         text: "Vero הפכו את מציאת הדיור באיטליה לכל כך קלה! הם הבינו בדיוק מה הייתי צריכה כסטודנטית אראסמוס ומצאו לי את המקום המושלם ליד האוניברסיטה שלי.",
       },
       thomas: {
+        name: "Thomas Müller",
+        country: "Germany",
         text: "הצוות של Vero דובר מספר שפות ועזר לי עם כל הניירת. הרגשתי נתמך במהלך כל השהות שלי באיטליה.",
       },
       sophie: {
+        name: "Sophie Dubois",
+        country: "France",
         text: "כסטודנטית אראסמוס, הייתי צריכה תנאי שכירות גמישים. Vero מצאו לי דירה נהדרת עם חוזה שכירות סמסטריאלי. ממליצה בחום!",
       },
     },

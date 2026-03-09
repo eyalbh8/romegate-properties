@@ -142,12 +142,18 @@ export default {
     whatOurStudentsSay: "What Our Students Say",
     testimonials: {
       maria: {
+        name: "Maria González",
+        country: "Spain",
         text: "Vero made finding accommodation in Italy so easy! They understood exactly what I needed as an Erasmus student and found me the perfect place near my university.",
       },
       thomas: {
+        name: "Thomas Müller",
+        country: "Germany",
         text: "The team at Vero speaks multiple languages and helped me with all the paperwork. I felt supported throughout my entire stay in Italy.",
       },
       sophie: {
+        name: "Sophie Dubois",
+        country: "France",
         text: "As an Erasmus student, I needed flexible lease terms. Vero found me a great apartment with a semester-based lease. Highly recommend!",
       },
     },
