@@ -1,5 +1,13 @@
 import { createTheme, type Direction } from "@mui/material/styles";
 
+const LTR_FONT_STACK = '"Raleway", "Roboto", "Helvetica", "Arial", sans-serif';
+const RTL_FONT_STACK =
+  '"Heebo", "Raleway", "Roboto", "Helvetica", "Arial", sans-serif';
+
+function getFontStack(direction: Direction): string {
+  return direction === "rtl" ? RTL_FONT_STACK : LTR_FONT_STACK;
+}
+
 // Tyrian Purple (Roman emperor purple) – base #66023c
 const themeOptions = {
   palette: {
@@ -43,9 +51,9 @@ const themeOptions = {
     },
   },
   typography: {
-    fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Raleway", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Raleway", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 700,
       fontSize: "4rem",
       "@media (max-width:600px)": {
@@ -53,7 +61,7 @@ const themeOptions = {
       },
     },
     h2: {
-      fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Raleway", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2.5rem",
       "@media (max-width:600px)": {
@@ -61,7 +69,7 @@ const themeOptions = {
       },
     },
     h3: {
-      fontFamily: '"Montserrat", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontFamily: '"Raleway", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2rem",
     },
@@ -167,8 +175,22 @@ const themeOptions = {
 };
 
 /** Create theme with optional RTL/LTR direction (default ltr). */
-export const createAppTheme = (direction: Direction = "ltr") =>
-  createTheme(themeOptions, { direction });
+export const createAppTheme = (direction: Direction = "ltr") => {
+  const fontStack = getFontStack(direction);
+  return createTheme(
+    {
+      ...themeOptions,
+      typography: {
+        ...themeOptions.typography,
+        fontFamily: fontStack,
+        h1: { ...themeOptions.typography.h1, fontFamily: fontStack },
+        h2: { ...themeOptions.typography.h2, fontFamily: fontStack },
+        h3: { ...themeOptions.typography.h3, fontFamily: fontStack },
+      },
+    },
+    { direction }
+  );
+};
 
 const theme = createTheme(themeOptions);
 export default theme;

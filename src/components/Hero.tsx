@@ -130,7 +130,7 @@ const Hero: React.FC = () => {
             component="h1"
             gutterBottom
             sx={{
-              fontFamily: '"Great Vibes", cursive',
+              fontFamily: '"Cormorant Garamond", serif',
               fontWeight: 400,
               mb: 0,
               textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
