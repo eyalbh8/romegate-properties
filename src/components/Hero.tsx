@@ -43,10 +43,7 @@ const Hero: React.FC = () => {
   const homeHero = aboutMedia.home?.hero;
   const hasBackground =
     homeHero && (homeHero.videoSrc || homeHero.backgroundImage);
-  const useVideo =
-    hasBackground &&
-    homeHero.videoSrc &&
-    !videoFailed;
+  const useVideo = hasBackground && homeHero.videoSrc && !videoFailed;
 
   return (
     <HeroSection id="home" aria-label="Hero section">
@@ -72,10 +69,13 @@ const Hero: React.FC = () => {
             poster={homeHero.posterImage}
             onError={(e) => {
               const v = e.currentTarget;
-              console.warn("[Hero] Video failed to load, falling back to image.", {
-                src: homeHero.videoSrc,
-                error: v.error?.message ?? v.error?.code,
-              });
+              console.warn(
+                "[Hero] Video failed to load, falling back to image.",
+                {
+                  src: homeHero.videoSrc,
+                  error: v.error?.message ?? v.error?.code,
+                },
+              );
               setVideoFailed(true);
             }}
             style={{
@@ -119,7 +119,10 @@ const Hero: React.FC = () => {
           />
         </motion.div>
       ) : null}
-      <HeroContent maxWidth="lg" sx={hasBackground ? { position: "relative", zIndex: 2 } : undefined}>
+      <HeroContent
+        maxWidth="lg"
+        sx={hasBackground ? { position: "relative", zIndex: 2 } : undefined}
+      >
         <motion.header
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -184,9 +187,8 @@ const Hero: React.FC = () => {
         >
           <Stack
             direction={{ xs: "column", sm: "row" }}
-            spacing={2}
             justifyContent="center"
-            sx={{ mt: 4 }}
+            sx={{ mt: 4, gap: "24px" }}
           >
             <Button
               variant="contained"
@@ -197,6 +199,7 @@ const Hero: React.FC = () => {
                 py: 1.5,
                 fontSize: "1.1rem",
                 fontWeight: 600,
+                marginHorizontal: "12px",
               }}
             >
               {t("hero.browseProperties")}
