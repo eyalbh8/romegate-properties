@@ -130,6 +130,77 @@ export default {
             "Garbatella and Pigneto typically offer the lowest rents for students: shared rooms around €380–€530 in Garbatella and €400–€550 in Pigneto. Both are well connected by metro or tram and popular with students.",
         },
       },
+      understandingRentalMarket: {
+        content: `<h2>Introduction</h2>
+<p>Renting in Italy is governed by a clear legal framework—mainly Law 431/1998—and by strong regional differences in price. Whether you are planning a long-term move or a short stay for work or study, knowing the main contract types and what to expect in the main cities will help you navigate the market. This guide covers contract types, average rents by city, and what to check before signing.</p>
+
+<h2>Types of rental contracts</h2>
+<p>Italian residential leases fall into a few main categories. Long-term contracts (contratto a lungo termine) offer stability and strong tenant protection; short-term and transitory contracts suit temporary needs. Registration with the Revenue Agency (Agenzia delle Entrate) is mandatory for contracts over 30 days. Below is a quick reference.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Contract type</th><th>Duration</th><th>Rent</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td>Standard 4+4</td><td>4 yrs + auto-renewal 4 yrs</td><td>Free market</td><td>Long-term residents</td></tr>
+<tr><td>Agreed rent 3+2</td><td>3 yrs + renewal 2 yrs</td><td>Below market (regulated)</td><td>Budget-conscious tenants</td></tr>
+<tr><td>Transitorio</td><td>1–18 months</td><td>Regulated</td><td>Work/study assignments</td></tr>
+<tr><td>Student (universitari)</td><td>6–36 months</td><td>Regulated</td><td>University students</td></tr>
+<tr><td>Short-term</td><td>Up to 18 months</td><td>Free</td><td>Tourists, short stays</td></tr>
+</tbody>
+</table>
+
+<p>The <strong>standard 4+4</strong> (contratto ordinario 4+4) is the most common: four years with automatic renewal for another four. Rent is freely negotiated; landlords can apply regulated increases (e.g. inflation-based). Tenants can leave with six months' notice in certain circumstances. The <strong>3+2</strong> (convenzionato) follows agreed tariffs between landlord and tenant associations and is often cheaper; landlords get tax benefits. <strong>Transitorio</strong> and <strong>student</strong> contracts have regulated rents and fixed durations—ideal for Erasmus students or temporary work.</p>
+
+<h2>Rent levels by city</h2>
+<p>As of October 2025, the national average rent in Italy is about €14.6 per m² per month. Major cities sit well above that. Milan and Florence are the most expensive; Rome and Bologna sit in the middle; Naples is more affordable for a large city. The table below uses typical 50 m² flats for comparison.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>City</th><th>Avg rent/m²/mo</th><th>Approx 50m² flat/mo</th></tr></thead>
+<tbody>
+<tr><td>Milan</td><td>€23.3</td><td>~€1,165</td></tr>
+<tr><td>Florence</td><td>€22.9</td><td>~€1,145</td></tr>
+<tr><td>Venice</td><td>€21.9</td><td>~€1,095</td></tr>
+<tr><td>Rome</td><td>€18.6</td><td>~€930</td></tr>
+<tr><td>Bologna</td><td>€17.7</td><td>~€885</td></tr>
+<tr><td>Naples</td><td>€15.6</td><td>~€780</td></tr>
+<tr><td>National average</td><td>€14.6</td><td>~€730</td></tr>
+</tbody>
+</table>
+<p><small>Source: Idealista Italy Rent Index, October 2025.</small></p>
+
+<h2>What to look for in a rental contract</h2>
+<p>Check the contract type (4+4, 3+2, transitorio, student), the exact duration, and how and when rent can be increased. Confirm whether utilities are included ("spese incluse") or paid separately. The deposit (cauzione) is usually two to three months' rent and must be returned at the end of the tenancy minus any agreed deductions. Termination notice periods vary by contract type and must comply with Italian law. Ensure the contract is registered with the tax authority—without registration it has limited legal effect and can lead to fines.</p>
+
+<h2>Practical checklist</h2>
+<p>Before signing: obtain a Codice Fiscale (Italian tax code) if you do not have one; confirm the landlord's identity and ownership; read the contract for deposit, utilities, and notice rules; and ensure registration will be done. If you are a foreigner, have a valid ID or passport and, if applicable, proof of income or a guarantor as required by the landlord or agency.</p>
+
+<h2>Conclusion</h2>
+<p>Italy's rental market offers both free-market and regulated options, with clear rules on duration, registration, and deposits. Choosing the right contract type and city will align cost with your plans. For help finding a long-term or student rental in Rome, Milan, Florence, or elsewhere in Italy, contact Vero Properties.</p>`,
+        faq1: {
+          question: "What is the most common rental contract in Italy?",
+          answer:
+            "The standard 4+4 contract (contratto ordinario 4+4) is the most common. It runs for four years and renews automatically for another four. Rent is freely negotiated and both parties have strong legal protection under Law 431/1998.",
+        },
+        faq2: {
+          question: "Is a deposit required when renting in Italy and how much?",
+          answer:
+            "Yes. A deposit (cauzione) is standard and is usually two to three months' rent. It must be returned at the end of the tenancy, minus any agreed deductions for damage or unpaid charges.",
+        },
+        faq3: {
+          question: "Do I need to register a rental contract in Italy?",
+          answer:
+            "Yes. Contracts lasting more than 30 days must be registered with the Revenue Agency (Agenzia delle Entrate). Without registration the contract has limited legal effect and can result in fines for both landlord and tenant.",
+        },
+        faq4: {
+          question: "What is cedolare secca and how does it affect tenants?",
+          answer:
+            "Cedolare secca is a 21% flat tax on rental income that landlords can choose instead of progressive income tax. It does not change the rent you pay; it only affects how the landlord is taxed. Tenants are not directly subject to it.",
+        },
+        faq5: {
+          question: "What documents do I need to rent an apartment in Italy as a foreigner?",
+          answer:
+            "You typically need a valid ID or passport, a Codice Fiscale (Italian tax code), and often proof of income or a guarantor. Landlords or agencies may also ask for proof of address. You can obtain a Codice Fiscale at an Italian consulate or at an Agenzia delle Entrate office in Italy.",
+        },
+      },
       propertyMarketTrendsItaly: {
         content: `<h2>Outlook for 2025–2026</h2>
 <p>Italian real estate is expected to see steady demand, especially in major cities and popular coastal and countryside areas. Transaction volumes have been recovering, and foreign buyers remain a significant share of the market.</p>

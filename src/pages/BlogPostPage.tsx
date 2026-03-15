@@ -26,8 +26,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import { getBlogPostBySlug, getRelatedBlogPosts } from "../data/blogPosts";
-import { generateFAQSchema } from "../utils/schemaGenerator";
-
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
@@ -53,35 +51,93 @@ const BlogPostPage: React.FC = () => {
       question: t(`${key}.question`),
       answer: t(`${key}.answer`),
     })) ?? [];
-  const faqSchema =
-    postFaqs.length > 0 ? generateFAQSchema(postFaqs) : null;
 
-  const postSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: title,
-    description: excerpt,
-    image: post.image,
-    datePublished: new Date(post.date).toISOString(),
-    dateModified: new Date(post.date).toISOString(),
-    author: {
-      "@type": "Person",
-      name: post.author,
-      description: post.authorBio,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Vero Properties",
-      logo: {
-        "@type": "ImageObject",
-        url: `${baseUrl}/logo.png`,
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${baseUrl}/${currentLang}/blog/${post.slug}`,
-    },
+  const pageUrl = `${baseUrl}/${currentLang}/blog/${post.slug}`;
+  const dateIso = new Date(post.date).toISOString();
+  const langMap: Record<string, string> = {
+    he: "Hebrew",
+    it: "Italian",
+    en: "English",
   };
+  const inLanguage = langMap[currentLang] ?? "English";
+  const readTimeMinutes = parseInt(post.readTime, 10) || 5;
+
+  const graphNodes: object[] = [
+    {
+      "@type": "Blog",
+      "@id": `${baseUrl}/#blog`,
+      name: "Vero Properties",
+      url: baseUrl,
+      logo: `${baseUrl}/logo.png`,
+      description: t("seo.description"),
+    },
+    {
+      "@type": "Person",
+      "@id": `${baseUrl}/#author`,
+      name: post.author,
+      jobTitle: "Real Estate Expert",
+      ...(post.authorBio && { description: post.authorBio }),
+      worksFor: { "@id": `${baseUrl}/#blog` },
+    },
+    {
+      "@type": "Article",
+      "@id": `${pageUrl}#article`,
+      headline: title,
+      description: excerpt,
+      image: post.image,
+      inLanguage,
+      url: pageUrl,
+      datePublished: dateIso,
+      dateModified: dateIso,
+      wordCount: readTimeMinutes * 200,
+      timeRequired: `PT${readTimeMinutes}M`,
+      author: { "@id": `${baseUrl}/#author` },
+      publisher: { "@id": `${baseUrl}/#blog` },
+      mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+      keywords: post.tags.join(", "),
+      about: post.tags.map((tag) => ({ "@type": "Thing", name: tag })),
+    },
+    {
+      "@type": "WebPage",
+      "@id": pageUrl,
+      url: pageUrl,
+      name: title,
+      description: excerpt,
+      inLanguage,
+      datePublished: dateIso,
+      dateModified: dateIso,
+      isPartOf: { "@id": `${baseUrl}/#blog` },
+      breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: baseUrl },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: `${baseUrl}/${currentLang}/blog`,
+        },
+        { "@type": "ListItem", position: 3, name: title, item: pageUrl },
+      ],
+    },
+  ];
+
+  if (postFaqs.length > 0) {
+    graphNodes.push({
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faqpage`,
+      mainEntity: postFaqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      })),
+    });
+  }
+
+  const graphSchema = { "@context": "https://schema.org", "@graph": graphNodes };
 
   return (
     <>
@@ -99,13 +155,8 @@ const BlogPostPage: React.FC = () => {
         <meta property="article:published_time" content={post.date} />
         <meta property="article:author" content={post.author} />
         <script type="application/ld+json">
-          {JSON.stringify(postSchema)}
+          {JSON.stringify(graphSchema)}
         </script>
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
       </Helmet>
 
       <Navbar />

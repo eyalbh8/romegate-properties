@@ -61,6 +61,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.understandingRentalMarket.content",
     tags: ["Rental Market", "Italy", "Market Analysis", "Trends"],
     relatedPosts: [3, 6],
+    faqKeys: [
+      "blog.posts.understandingRentalMarket.faq1",
+      "blog.posts.understandingRentalMarket.faq2",
+      "blog.posts.understandingRentalMarket.faq3",
+      "blog.posts.understandingRentalMarket.faq4",
+      "blog.posts.understandingRentalMarket.faq5",
+    ],
   },
   {
     id: 3,

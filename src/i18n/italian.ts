@@ -468,6 +468,75 @@ export default {
         title: "Capire il Mercato degli Affitti in Italia: Una Guida Completa",
         excerpt:
           "Tutto quello che devi sapere sugli affitti in Italia, dai prezzi medi ai requisiti legali e cosa cercare in un contratto di affitto.",
+        content: `<h2>Introduzione</h2>
+<p>L'affitto in Italia è regolato da un quadro normativo chiaro—in particolare dalla legge 431/1998—e da forti differenze di prezzo tra le regioni. Che tu stia pianificando un trasferimento a lungo termine o un soggiorno breve per lavoro o studio, conoscere i principali tipi di contratto e cosa aspettarsi nelle principali città ti aiuta a orientarti. Questa guida illustra i tipi di contratto, i canoni medi per città e cosa verificare prima della firma.</p>
+
+<h2>Tipi di contratti di affitto</h2>
+<p>I contratti di locazione residenziale in Italia si dividono in alcune categorie principali. I contratti a lungo termine (contratto a lungo termine) offrono stabilità e forte protezione del conduttore; i contratti a breve termine e transitori si adattano a esigenze temporanee. La registrazione presso l'Agenzia delle Entrate è obbligatoria per i contratti superiori a 30 giorni. Di seguito una sintesi.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Tipo di contratto</th><th>Durata</th><th>Canone</th><th>Ideale per</th></tr></thead>
+<tbody>
+<tr><td>Ordinario 4+4</td><td>4 anni + rinnovo automatico 4 anni</td><td>Libero mercato</td><td>Residenti a lungo termine</td></tr>
+<tr><td>Convenzionato 3+2</td><td>3 anni + rinnovo 2 anni</td><td>Sotto mercato (regolato)</td><td>Chi cerca convenienza</td></tr>
+<tr><td>Transitorio</td><td>1–18 mesi</td><td>Regolato</td><td>Trasferimenti lavoro/studio</td></tr>
+<tr><td>Studenti (universitari)</td><td>6–36 mesi</td><td>Regolato</td><td>Studenti universitari</td></tr>
+<tr><td>Breve termine</td><td>Fino a 18 mesi</td><td>Libero</td><td>Turisti, soggiorni brevi</td></tr>
+</tbody>
+</table>
+
+<p>Il <strong>contratto ordinario 4+4</strong> è il più comune: quattro anni con rinnovo automatico per altri quattro. Il canone è liberamente negoziato; il proprietario può applicare aumenti regolati (es. indicizzati all'inflazione). Il conduttore può recedere con un preavviso di sei mesi in determinate circostanze. Il <strong>3+2</strong> (convenzionato) segue le tariffe concordate tra associazioni di proprietari e inquilini ed è spesso più economico; il proprietario beneficia di agevolazioni fiscali. I contratti <strong>transitorio</strong> e <strong>studenti</strong> hanno canoni regolati e durata definita—ideali per studenti Erasmus o trasferimenti temporanei.</p>
+
+<h2>Canoni per città</h2>
+<p>A ottobre 2025 la media nazionale del canone in Italia è circa €14,6 per m² al mese. Le grandi città sono ben al di sopra. Milano e Firenze sono le più care; Roma e Bologna nella fascia media; Napoli più accessibile per una grande città. La tabella seguente considera appartamenti tipo da 50 m².</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Città</th><th>Canone medio/m²/mese</th><th>Appartamento 50m² circa/mese</th></tr></thead>
+<tbody>
+<tr><td>Milano</td><td>€23,3</td><td>~€1.165</td></tr>
+<tr><td>Firenze</td><td>€22,9</td><td>~€1.145</td></tr>
+<tr><td>Venezia</td><td>€21,9</td><td>~€1.095</td></tr>
+<tr><td>Roma</td><td>€18,6</td><td>~€930</td></tr>
+<tr><td>Bologna</td><td>€17,7</td><td>~€885</td></tr>
+<tr><td>Napoli</td><td>€15,6</td><td>~€780</td></tr>
+<tr><td>Media nazionale</td><td>€14,6</td><td>~€730</td></tr>
+</tbody>
+</table>
+<p><small>Fonte: Indice affitti Italia Idealista, ottobre 2025.</small></p>
+
+<h2>Cosa controllare nel contratto</h2>
+<p>Verifica il tipo di contratto (4+4, 3+2, transitorio, studenti), la durata esatta e come e quando il canone può essere adeguato. Controlla se le utenze sono incluse ("spese incluse") o a parte. La cauzione è di solito due o tre mensilità e deve essere restituita a fine locazione salvo detrazioni concordate. I tempi di preavviso per la disdetta variano in base al tipo di contratto e devono rispettare la legge. Assicurati che il contratto sia registrato presso l'Agenzia delle Entrate—senza registrazione ha efficacia limitata e può comportare sanzioni.</p>
+
+<h2>Checklist pratica</h2>
+<p>Prima della firma: ottieni il Codice Fiscale se non ce l'hai; verifica l'identità e la titolarità del proprietario; leggi il contratto per cauzione, utenze e preavvisi; accertati che la registrazione venga effettuata. Se sei straniero, prepara un documento valido o passaporto e, se richiesto, prova dei redditi o un garante.</p>
+
+<h2>Conclusione</h2>
+<p>Il mercato degli affitti in Italia offre sia formule a libero mercato sia regolamentate, con norme chiare su durata, registrazione e cauzione. Scegliere il tipo di contratto e la città giusti allinea i costi ai tuoi piani. Per trovare un affitto a lungo termine o per studenti a Roma, Milano, Firenze o altrove in Italia, contatta Vero Properties.</p>`,
+        faq1: {
+          question: "Qual è il contratto di affitto più comune in Italia?",
+          answer:
+            "Il contratto ordinario 4+4 è il più comune. Dura quattro anni e si rinnova automaticamente per altri quattro. Il canone è liberamente negoziato e entrambe le parti hanno forte protezione legale ai sensi della legge 431/1998.",
+        },
+        faq2: {
+          question: "È obbligatoria la cauzione per affittare in Italia e quanto?",
+          answer:
+            "Sì. La cauzione è standard e di solito corrisponde a due o tre mensilità. Deve essere restituita a fine locazione, meno eventuali detrazioni concordate per danni o spese non pagate.",
+        },
+        faq3: {
+          question: "Devo registrare il contratto di affitto in Italia?",
+          answer:
+            "Sì. I contratti di durata superiore a 30 giorni devono essere registrati presso l'Agenzia delle Entrate. Senza registrazione il contratto ha efficacia limitata e può comportare sanzioni per proprietario e inquilino.",
+        },
+        faq4: {
+          question: "Cos'è la cedolare secca e come riguarda l'inquilino?",
+          answer:
+            "La cedolare secca è un'imposta sostitutiva del 21% sui redditi da locazione che il proprietario può scegliere al posto dell'IRPEF. Non modifica il canone che paghi; riguarda solo la tassazione del proprietario. L'inquilino non ne è direttamente soggetto.",
+        },
+        faq5: {
+          question: "Quali documenti servono per affittare un appartamento in Italia come straniero?",
+          answer:
+            "In genere servono un documento valido o passaporto, il Codice Fiscale e spesso prova dei redditi o un garante. Proprietari o agenzie possono chiedere anche prova di residenza. Il Codice Fiscale si ottiene in consolato italiano o presso un ufficio dell'Agenzia delle Entrate in Italia.",
+        },
       },
       propertyInvestmentTrends: {
         title: "Investimenti Immobiliari in Italia: Tendenze per il 2025",
