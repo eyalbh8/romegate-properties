@@ -60,25 +60,75 @@ export default {
     posts: {
       top5Neighborhoods: {
         content: `<h2>Introduction</h2>
-<p>Finding the perfect neighborhood as an Erasmus student in Rome can make or break your experience. Here are the top 5 neighborhoods that offer the best combination of affordability, proximity to universities, and vibrant student life.</p>
+<p>Finding the right neighborhood as an Erasmus student in Rome can make or break your experience. Rome's rental market is tight—vacancy sits around 3–5%—and peak demand hits between late August and October when students and young professionals arrive. The five areas below offer the best mix of affordability, proximity to universities, and vibrant student life. Here's a quick overview before we go into detail.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Neighborhood</th><th>Best for</th><th>Shared room/mo</th><th>Nearest university</th><th>Transport</th></tr></thead>
+<tbody>
+<tr><td>San Lorenzo</td><td>Sapienza students</td><td>€450–€600</td><td>Sapienza (5 min walk)</td><td>Bus / Tram</td></tr>
+<tr><td>Trastevere</td><td>International students</td><td>€600–€800</td><td>John Cabot / AUR</td><td>Tram 8</td></tr>
+<tr><td>Testaccio & Ostiense</td><td>Roma Tre students</td><td>€500–€700</td><td>Roma Tre</td><td>Metro B</td></tr>
+<tr><td>Pigneto</td><td>Budget & creative</td><td>€400–€550</td><td>Multiple</td><td>Tram 5/14, Metro C</td></tr>
+<tr><td>Garbatella</td><td>Quiet & community</td><td>€380–€530</td><td>Roma Tre</td><td>Metro B</td></tr>
+</tbody>
+</table>
 
 <h2>1. San Lorenzo</h2>
-<p>San Lorenzo is the undisputed king of student neighborhoods. Located next to Sapienza University, it's packed with affordable restaurants, lively bars, and a diverse international community. Average rent for a studio: €550-700/month.</p>
+<p>San Lorenzo is the classic student hub, located right next to Sapienza University—practically an extension of campus. It's bustling and youthful, with a strong sense of community, affordable restaurants, bars, and trattorias. It can be noisy at night and isn't the most picturesque part of Rome, but it has real character. Shared rooms typically run €450–€600/month. Properties here rent fast—often within 40–60 days—so start looking early.</p>
 
 <h2>2. Trastevere</h2>
-<p>For those seeking authentic Roman charm with a bohemian twist, Trastevere is perfect. While slightly pricier, the unique atmosphere and central location make it worth it. Great for students at John Cabot or American University. Average rent: €700-900/month.</p>
+<p>Trastevere offers old-school Roman charm with cobbled streets, ivy-clad buildings, and lively piazzas. It's popular with tourists but also hosts a large student population, especially from John Cabot University and American University of Rome. Expect a more international, social vibe and higher rents: shared rooms around €600–€800/month. Central location means you can walk to many sights; Tram 8 connects you to the rest of the city.</p>
 
-<h2>3. Testaccio</h2>
-<p>Testaccio offers excellent value for money with a strong local character. Close to Roma Tre University, it features authentic trattorias, a fantastic food market, and great nightlife. Average rent: €600-800/month.</p>
+<h2>3. Testaccio & Ostiense</h2>
+<p>Testaccio and Ostiense give you authentic Roman life with a modern twist—startups, co-working spaces, and a strong food scene. Testaccio Market and traditional trattorias are highlights; Ostiense adds the Centrale Montemartini museum and the Gazometro for events. Metro B (Piramide, Garbatella) and train links make Roma Tre and the centre easy to reach. Shared rooms: roughly €500–€700/month.</p>
 
 <h2>4. Pigneto</h2>
-<p>An up-and-coming neighborhood east of the center, Pigneto is quickly becoming a student favorite. Trendy cafes, street art, and lower rents make it attractive for budget-conscious students. Average rent: €500-650/month.</p>
+<p>East of San Lorenzo, Pigneto has become one of Rome's hippest districts—bohemian, artistic, and a bit edgy. You'll find vintage shops, indie cinemas, street art, trendy bars, and live music. Well connected by tram (5, 14) and Metro C, it attracts budget-conscious and creative students. Shared rooms usually run €400–€550/month, making it one of the more affordable options on this list.</p>
 
-<h2>5. Monti</h2>
-<p>If you're willing to spend a bit more for a central location, Monti offers boutique charm, excellent cafes, and easy access to everything Rome has to offer. Average rent: €800-1000/month.</p>
+<h2>5. Garbatella</h2>
+<p>Garbatella is a unique "garden city" neighborhood from the early 20th century, with charming <em>lotti</em> (small housing blocks with shared courtyards) and plenty of greenery. It's quieter and more residential than San Lorenzo or Trastevere but still well connected via Metro B (Garbatella stop). Ideal if you want a calmer base while staying close to Roma Tre and Testaccio's nightlife. Shared rooms: about €380–€530/month.</p>
+
+<h2>Rome rental market at a glance</h2>
+<p>As of 2025–2026, Rome's average rent per square metre is around €18.80, with year-on-year growth of about 8–10%. Studios average roughly €950/month (typical range €750–€1,200); most students share flats rather than renting a studio. Use the table below to budget.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Property type</th><th>Average monthly rent</th><th>Typical range</th></tr></thead>
+<tbody>
+<tr><td>Shared room (semi-central)</td><td>~€500</td><td>€400–€600</td></tr>
+<tr><td>Shared room (peripheral)</td><td>~€380</td><td>€300–€450</td></tr>
+<tr><td>Studio apartment</td><td>~€950</td><td>€750–€1,200</td></tr>
+<tr><td>1-bedroom apartment</td><td>~€1,350</td><td>€1,050–€1,700</td></tr>
+</tbody>
+</table>
+<p><small>Sources: Idealista Rome Rent Index Dec 2025, Investropa 2026.</small></p>
 
 <h2>Conclusion</h2>
-<p>Each neighborhood has its unique character. Visit them in person before deciding, and don't hesitate to contact Vero Properties for expert guidance on finding your perfect Roman home.</p>`,
+<p>Each of these neighborhoods has its own character—visit in person if you can and prioritise proximity to your university and transport. Start your search by late summer; many listings require utilities to be paid separately, so check whether "spese incluse" applies. For expert help finding a room or flat in San Lorenzo, Trastevere, Testaccio, Pigneto, or Garbatella, contact Vero Properties.</p>`,
+        faq1: {
+          question: "What is the average rent for a student room in Rome in 2025–2026?",
+          answer:
+            "In semi-central areas, a shared room typically costs €400–€600 per month; in more peripheral areas, €300–€450. Studios average around €950/month (€750–€1,200). Most Erasmus students share flats to keep costs down.",
+        },
+        faq2: {
+          question: "Which neighborhood is closest to Sapienza University?",
+          answer:
+            "San Lorenzo is right next to Sapienza—often a 5-minute walk from campus. It's the classic student hub with the strongest concentration of Sapienza students, affordable bars and restaurants, and good bus and tram links.",
+        },
+        faq3: {
+          question: "When should Erasmus students start looking for housing in Rome?",
+          answer:
+            "Peak demand runs from late August through October when the academic year starts. Start searching by June or July to have the best choice. Properties near universities often rent within 40–60 days, so earlier is better.",
+        },
+        faq4: {
+          question: "Do I need a Codice Fiscale to rent in Rome?",
+          answer:
+            "Yes. Landlords and agencies usually require a Codice Fiscale (Italian tax code) for the contract. You can get one at an Italian consulate or at an Agenzia delle Entrate office in Italy with a valid ID or passport.",
+        },
+        faq5: {
+          question: "What is the cheapest neighborhood for Erasmus students in Rome?",
+          answer:
+            "Garbatella and Pigneto typically offer the lowest rents for students: shared rooms around €380–€530 in Garbatella and €400–€550 in Pigneto. Both are well connected by metro or tram and popular with students.",
+        },
       },
       propertyMarketTrendsItaly: {
         content: `<h2>Outlook for 2025–2026</h2>
@@ -112,6 +162,75 @@ export default {
 
 <h2>Maintenance and Insurance</h2>
 <p>Set aside funds for routine maintenance, repairs and, if applicable, building insurance. In older or historic buildings, maintenance can be higher. An emergency fund of a few thousand euros is advisable.</p>`,
+      },
+      italyFlatTaxRegime2026: {
+        content: `<h2>What Is Italy's Flat Tax Regime?</h2>
+<p>Italy's flat tax regime for new residents allows high-net-worth individuals who transfer their tax residency to Italy to pay a fixed annual amount on all foreign-source income, regardless of how much they earn abroad. As of January 2026, that amount is <strong>€300,000 per year</strong>—up from €200,000—with an additional €50,000 per family member. The regime can be maintained for up to 15 years, providing long-term tax certainty. Italian-sourced income (including rental income from Italian property) remains subject to normal progressive taxation.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Year</th><th>Main applicant (annual)</th><th>Per family member (annual)</th></tr></thead>
+<tbody>
+<tr><td>2017</td><td>€100,000</td><td>—</td></tr>
+<tr><td>2023</td><td>€200,000</td><td>€25,000</td></tr>
+<tr><td>2026</td><td>€300,000</td><td>€50,000</td></tr>
+</tbody>
+</table>
+
+<h2>Who Qualifies?</h2>
+<p>To be eligible, you must not have been an Italian tax resident for at least 9 of the previous 10 years. There is no nationality requirement: citizens of any country, including non-EU nationals such as Israelis, Americans, and Brits, can apply. You must establish your primary residence and "center of life" in Italy—typically by spending 183 or more days per year in the country—and comply with Italian tax residency rules.</p>
+
+<h2>Key Benefits</h2>
+<p>Foreign-source income is exempt from Italy's progressive tax rates, which can reach 43% on high earnings. Beneficiaries also enjoy significant simplifications: exemption from Italian reporting obligations on foreign assets and no wealth tax on those assets. For anyone with substantial foreign income—investments, business, pensions—the flat amount can represent a major saving compared to standard Italian taxation.</p>
+
+<h2>The Real Estate Connection</h2>
+<p>Relocating under the flat tax regime means you need a genuine place to live in Italy. Most applicants buy or rent a property to establish residency and demonstrate commitment to the country. Buying your primary residence in Italy also brings benefits: the transfer tax (imposta di registro) on a first home is reduced to 2% (up to certain value limits). Italy's luxury real estate remains competitively priced compared to Paris or London, making it an attractive base for high-net-worth individuals.</p>
+
+<h2>Grandfathering Rules</h2>
+<p>If you already established Italian tax residency and joined the flat tax regime before 2026, you are protected by grandfathering: you continue to pay the previous €200,000 rate (and €25,000 per family member). Only new applicants from 2026 onward pay the increased €300,000 and €50,000 amounts.</p>
+
+<h2>Practical Steps</h2>
+<p>Apply through the Italian tax authority (Agenzia delle Entrate). You will need a Codice Fiscale (Italian tax ID), which you can obtain at an embassy or in Italy. Work with a qualified Italian tax adviser and a real estate professional to choose the right location, complete your residency setup, and ensure your property purchase or rental supports your tax position. Timing and documentation are important—get advice before you move.</p>
+
+<h2>Is It Still Worth It?</h2>
+<p>Despite the increase, Italy's regime remains competitive. Countries like Portugal, Spain, and Greece have similar or higher effective costs for high earners. For anyone earning well over €1 million in foreign income, the €300,000 flat tax can still be very attractive compared to progressive rates elsewhere. Evaluate your income level, family size, and long-term plans with a professional to see if the numbers work for you.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Country</th><th>Flat tax / regime (approx.)</th></tr></thead>
+<tbody>
+<tr><td>Italy (2026)</td><td>€300,000 + €50,000 per family member</td></tr>
+<tr><td>Portugal</td><td>NHR ended; other regimes may apply</td></tr>
+<tr><td>Spain</td><td>Similar flat tax for new residents</td></tr>
+<tr><td>Greece</td><td>Flat tax options for qualifying income</td></tr>
+</tbody>
+</table>
+
+<h2>How We Can Help</h2>
+<p>At Vero Properties, we work with international clients who are relocating to Italy under the flat tax regime. We can help you find the right property in Rome, Tuscany, or other regions to establish your residency and enjoy la dolce vita—while you benefit from one of Europe's most favourable tax setups for new residents.</p>`,
+        faq1: {
+          question: "How much is Italy's flat tax in 2026?",
+          answer:
+            "As of January 2026, the annual flat tax for new residents is €300,000 for the main applicant and €50,000 per family member. The regime can last up to 15 years.",
+        },
+        faq2: {
+          question: "Who can apply for Italy's flat tax regime?",
+          answer:
+            "You must not have been an Italian tax resident for at least 9 of the previous 10 years. There is no nationality requirement—citizens of any country can apply. You must establish your primary residence and center of life in Italy (typically 183+ days per year).",
+        },
+        faq3: {
+          question: "Does buying property in Italy qualify me for the flat tax?",
+          answer:
+            "Buying property does not by itself grant the flat tax; you must apply and meet the residency rules. However, most applicants buy or rent a home in Italy to establish genuine residency, and owning your primary residence can reduce transfer tax to 2%.",
+        },
+        faq4: {
+          question: "If I joined before 2026, do I pay the new €300,000 rate?",
+          answer:
+            "No. Grandfathering rules protect existing beneficiaries: you continue to pay €200,000 (and €25,000 per family member). Only new applicants from 2026 onward pay €300,000 and €50,000.",
+        },
+        faq5: {
+          question: "Is Italy's flat tax still worth it after the increase?",
+          answer:
+            "For high earners with substantial foreign income (e.g. over €1 million), the €300,000 flat tax can still be very attractive compared to progressive rates in Italy (up to 43%) or elsewhere. Compare your situation with a qualified tax adviser.",
+        },
       },
     },
     aboutAuthor: "About the Author",

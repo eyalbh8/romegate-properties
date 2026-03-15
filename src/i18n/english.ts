@@ -238,6 +238,11 @@ export default {
         excerpt:
           "What you need to budget after purchase: IMU, condominium fees, utilities and routine maintenance for a property in Italy.",
       },
+      italyFlatTaxRegime2026: {
+        title: "Italy's Flat Tax Regime 2026: A Complete Guide for Foreign Buyers",
+        excerpt:
+          "Italy raised its flat tax for new residents to €300,000 in 2026. Discover how this regime works, who qualifies, and why buying property in Italy could unlock major tax advantages.",
+      },
     },
   },
   faq: {

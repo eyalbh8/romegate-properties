@@ -12,6 +12,8 @@ export interface BlogPost {
   contentKey: string;
   tags: string[];
   relatedPosts?: number[];
+  /** Optional i18n key prefixes for FAQ (e.g. "blog.posts.italyFlatTaxRegime2026.faq1") with .question and .answer */
+  faqKeys?: string[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -36,6 +38,13 @@ export const blogPosts: BlogPost[] = [
       "San Lorenzo",
     ],
     relatedPosts: [4, 3],
+    faqKeys: [
+      "blog.posts.top5Neighborhoods.faq1",
+      "blog.posts.top5Neighborhoods.faq2",
+      "blog.posts.top5Neighborhoods.faq3",
+      "blog.posts.top5Neighborhoods.faq4",
+      "blog.posts.top5Neighborhoods.faq5",
+    ],
   },
   {
     id: 2,
@@ -164,6 +173,29 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.annualCostsOwningPropertyItaly.content",
     tags: ["IMU", "Costs", "Ownership", "Italy", "Tax"],
     relatedPosts: [5, 2],
+  },
+  {
+    id: 10,
+    slug: "italy-flat-tax-regime-2026-foreign-buyers",
+    titleKey: "blog.posts.italyFlatTaxRegime2026.title",
+    excerptKey: "blog.posts.italyFlatTaxRegime2026.excerpt",
+    author: "Marco De Luca",
+    authorBio:
+      "Marco is a real estate attorney with expertise in Italian property law. He helps international clients understand the legal aspects of buying and renting in Italy.",
+    date: "2026-03-15",
+    category: "Legal",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800",
+    readTime: "8",
+    contentKey: "blog.posts.italyFlatTaxRegime2026.content",
+    tags: ["Flat Tax", "Tax Residency", "Investment", "Italy", "Legal"],
+    relatedPosts: [5, 9],
+    faqKeys: [
+      "blog.posts.italyFlatTaxRegime2026.faq1",
+      "blog.posts.italyFlatTaxRegime2026.faq2",
+      "blog.posts.italyFlatTaxRegime2026.faq3",
+      "blog.posts.italyFlatTaxRegime2026.faq4",
+      "blog.posts.italyFlatTaxRegime2026.faq5",
+    ],
   },
 ];
 

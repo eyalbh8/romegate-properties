@@ -12,9 +12,13 @@ import {
   CardContent,
   Button,
   Divider,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
 } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
@@ -22,6 +26,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
 import { getBlogPostBySlug, getRelatedBlogPosts } from "../data/blogPosts";
+import { generateFAQSchema } from "../utils/schemaGenerator";
 
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -42,6 +47,14 @@ const BlogPostPage: React.FC = () => {
   });
 
   const relatedPosts = getRelatedBlogPosts(post.id);
+
+  const postFaqs =
+    post.faqKeys?.map((key) => ({
+      question: t(`${key}.question`),
+      answer: t(`${key}.answer`),
+    })) ?? [];
+  const faqSchema =
+    postFaqs.length > 0 ? generateFAQSchema(postFaqs) : null;
 
   const postSchema = {
     "@context": "https://schema.org",
@@ -88,6 +101,11 @@ const BlogPostPage: React.FC = () => {
         <script type="application/ld+json">
           {JSON.stringify(postSchema)}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       <Navbar />
@@ -166,10 +184,41 @@ const BlogPostPage: React.FC = () => {
                 lineHeight: 1.8,
                 color: "text.primary",
                 "& p": { mb: 2 },
+                "& table": { marginBottom: 2 },
               }}
               component="div"
               dangerouslySetInnerHTML={{ __html: content }}
             />
+
+            {postFaqs.length > 0 && (
+              <Box sx={{ mt: 6 }} id="faq" component="section" aria-label={t("faq.title")}>
+                <Divider sx={{ mb: 3 }} />
+                <Typography variant="h4" component="h2" gutterBottom>
+                  {t("faq.title")}
+                </Typography>
+                {postFaqs.map((faq, index) => (
+                  <Accordion
+                    key={index}
+                    sx={{
+                      mb: 1,
+                      "&:before": { display: "none" },
+                      boxShadow: 1,
+                    }}
+                  >
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                      <Typography variant="subtitle1" fontWeight={600}>
+                        {faq.question}
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography variant="body2" color="text.secondary">
+                        {faq.answer}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                ))}
+              </Box>
+            )}
 
             {post.authorBio && (
               <Box sx={{ mt: 6, p: 3, backgroundColor: "background.default", borderRadius: 2 }}>

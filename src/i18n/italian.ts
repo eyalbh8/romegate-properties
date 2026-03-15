@@ -393,6 +393,76 @@ export default {
         title: "Top 5 Quartieri per Studenti Erasmus a Roma",
         excerpt:
           "Scopri le migliori zone di Roma per studenti internazionali, da alloggi convenienti a vita notturna vivace e facile accesso alle università.",
+        content: `<h2>Introduzione</h2>
+<p>Trovare il quartiere giusto come studente Erasmus a Roma può fare la differenza. Il mercato degli affitti è stretto—il tasso di vacanza si aggira sul 3–5%—e il picco di domanda è tra fine agosto e ottobre, quando arrivano studenti e giovani professionisti. I cinque quartieri qui sotto offrono il miglior mix di convenienza, vicinanza alle università e vita studentesca. Ecco una panoramica prima dei dettagli.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Quartiere</th><th>Ideale per</th><th>Camera condivisa/mese</th><th>Università più vicina</th><th>Trasporti</th></tr></thead>
+<tbody>
+<tr><td>San Lorenzo</td><td>Studenti Sapienza</td><td>€450–€600</td><td>Sapienza (5 min a piedi)</td><td>Bus / Tram</td></tr>
+<tr><td>Trastevere</td><td>Studenti internazionali</td><td>€600–€800</td><td>John Cabot / AUR</td><td>Tram 8</td></tr>
+<tr><td>Testaccio e Ostiense</td><td>Studenti Roma Tre</td><td>€500–€700</td><td>Roma Tre</td><td>Metro B</td></tr>
+<tr><td>Pigneto</td><td>Bilancio e creatività</td><td>€400–€550</td><td>Varie</td><td>Tram 5/14, Metro C</td></tr>
+<tr><td>Garbatella</td><td>Tranquillità e comunità</td><td>€380–€530</td><td>Roma Tre</td><td>Metro B</td></tr>
+</tbody>
+</table>
+
+<h2>1. San Lorenzo</h2>
+<p>San Lorenzo è il classico hub studentesco, a due passi dalla Sapienza—praticamente un prolungamento del campus. È vivace e giovane, con forte senso di comunità, ristoranti economici, bar e trattorie. La sera può essere rumoroso e non è la zona più pittoresca di Roma, ma ha carattere. Una camera in condivisione costa in genere €450–€600/mese. Gli immobili qui si affittano in fretta—spesso in 40–60 giorni—quindi conviene cercare con anticipo.</p>
+
+<h2>2. Trastevere</h2>
+<p>Trastevere offre il fascino della Roma tradizionale: stradine lastricate, palazzi con l'edera e piazze animate. È molto turistico ma ospita anche molti studenti, soprattutto della John Cabot University e dell'American University of Rome. Aspettati un'atmosfera internazionale e sociale e affitti più alti: camera condivisa circa €600–€800/mese. La posizione centrale permette di raggiungere a piedi molte attrazioni; il Tram 8 collega al resto della città.</p>
+
+<h2>3. Testaccio e Ostiense</h2>
+<p>Testaccio e Ostiense offrono la Roma autentica con un tocco moderno—startup, spazi di co-working e ottima cucina. Il Mercato di Testaccio e le trattorie tradizionali sono i punti di forza; Ostiense aggiunge il museo Centrale Montemartini e il Gazometro per eventi. La Metro B (Piramide, Garbatella) e i treni rendono Roma Tre e il centro facilmente raggiungibili. Camera condivisa: circa €500–€700/mese.</p>
+
+<h2>4. Pigneto</h2>
+<p>A est di San Lorenzo, il Pigneto è diventato uno dei quartieri più trendy di Roma—bohemien, artistico e un po' alternativo. Troverai negozi vintage, cinema indipendenti, street art, bar alla moda e musica dal vivo. Ben collegato da tram (5, 14) e Metro C, attira studenti con budget contenuto e creativi. Una camera in condivisione costa di solito €400–€550/mese, ed è una delle opzioni più economiche in lista.</p>
+
+<h2>5. Garbatella</h2>
+<p>Garbatella è un quartiere unico, una "città giardino" dei primi del Novecento, con i caratteristici <em>lotti</em> (piccoli complessi con cortili condivisi) e molto verde. È più tranquillo e residenziale di San Lorenzo o Trastevere ma ben collegato con la Metro B (fermata Garbatella). Ideale se cerchi una base più tranquilla restando vicino alla vita notturna di Roma Tre e Testaccio. Camera condivisa: circa €380–€530/mese.</p>
+
+<h2>Mercato degli affitti a Roma in sintesi</h2>
+<p>Nel 2025–2026 il canone medio per m² a Roma è circa €18,80, con una crescita annua dell'8–10% circa. I monolocali hanno una media di circa €950/mese (intervallo tipico €750–€1.200); la maggior parte degli studenti condivide appartamenti invece di affittare un monolocale. Usa la tabella qui sotto per il budget.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Tipologia</th><th>Canone medio mensile</th><th>Intervallo tipico</th></tr></thead>
+<tbody>
+<tr><td>Camera condivisa (semi-centrale)</td><td>~€500</td><td>€400–€600</td></tr>
+<tr><td>Camera condivisa (periferica)</td><td>~€380</td><td>€300–€450</td></tr>
+<tr><td>Monolocale</td><td>~€950</td><td>€750–€1.200</td></tr>
+<tr><td>Bilocale</td><td>~€1.350</td><td>€1.050–€1.700</td></tr>
+</tbody>
+</table>
+<p><small>Fonti: Indice affitti Roma Idealista dic 2025, Investropa 2026.</small></p>
+
+<h2>Conclusione</h2>
+<p>Ogni quartiere ha il suo carattere—visitali di persona se puoi e dai priorità alla vicinanza alla tua università e ai trasporti. Inizia la ricerca entro fine estate; molti annunci prevedono spese (utenze) a parte, quindi verifica se sono "spese incluse". Per una mano esperta nella ricerca di una camera o appartamento a San Lorenzo, Trastevere, Testaccio, Pigneto o Garbatella, contatta Vero Properties.</p>`,
+        faq1: {
+          question: "Qual è il canone medio per una camera da studente a Roma nel 2025–2026?",
+          answer:
+            "In zone semi-centrali una camera in condivisione costa in genere €400–€600 al mese; in zone più periferiche, €300–€450. I monolocali hanno una media di circa €950/mese (€750–€1.200). La maggior parte degli studenti Erasmus condivide appartamenti per contenere i costi.",
+        },
+        faq2: {
+          question: "Quale quartiere è più vicino alla Sapienza?",
+          answer:
+            "San Lorenzo è proprio accanto alla Sapienza—spesso a 5 minuti a piedi dal campus. È il classico hub studentesco con la maggiore concentrazione di studenti Sapienza, bar e ristoranti economici e buoni collegamenti con bus e tram.",
+        },
+        faq3: {
+          question: "Quando conviene cercare casa a Roma per gli studenti Erasmus?",
+          answer:
+            "Il picco di domanda è tra fine agosto e ottobre, all'avvio dell'anno accademico. Inizia a cercare entro giugno o luglio per avere più scelta. Gli immobili vicini alle università spesso si affittano in 40–60 giorni, quindi prima si inizia, meglio è.",
+        },
+        faq4: {
+          question: "Serve il Codice Fiscale per affittare a Roma?",
+          answer:
+            "Sì. Proprietari e agenzie di solito richiedono il Codice Fiscale per il contratto. Puoi ottenerlo in consolato italiano o presso un ufficio dell'Agenzia delle Entrate in Italia con un documento valido o passaporto.",
+        },
+        faq5: {
+          question: "Qual è il quartiere più economico per studenti Erasmus a Roma?",
+          answer:
+            "Garbatella e Pigneto sono in genere i più economici per gli studenti: camera condivisa circa €380–€530 a Garbatella e €400–€550 al Pigneto. Entrambi sono ben collegati con metro o tram e popolari tra gli studenti.",
+        },
       },
       understandingRentalMarket: {
         title: "Capire il Mercato degli Affitti in Italia: Una Guida Completa",
@@ -462,6 +532,78 @@ export default {
 
 <h2>Manutenzione e assicurazione</h2>
 <p>Accantonate fondi per manutenzione ordinaria, riparazioni e, se prevista, assicurazione dello stabile. Negli edifici storici o antichi la manutenzione può essere più onerosa. È consigliabile un fondo per emergenze di qualche migliaio di euro.</p>`,
+      },
+      italyFlatTaxRegime2026: {
+        title: "Regime flat tax Italia 2026: guida completa per acquirenti stranieri",
+        excerpt:
+          "Dal 2026 l'Italia ha portato la flat tax per i nuovi residenti a 300.000 €. Scoprite come funziona il regime, chi può accedervi e perché comprare casa in Italia può aprire importanti vantaggi fiscali.",
+        content: `<h2>Cos'è il regime flat tax in Italia?</h2>
+<p>Il regime flat tax per i nuovi residenti consente alle persone ad alto reddito che trasferiscono la residenza fiscale in Italia di pagare un importo fisso annuo su tutti i redditi di fonte estera, indipendentemente dall'ammontare. Dal gennaio 2026 l'importo è <strong>300.000 € l'anno</strong>—in aumento da 200.000 €—con 50.000 € aggiuntivi per familiare. Il regime può essere mantenuto fino a 15 anni. I redditi di fonte italiana (inclusi i canoni da immobili in Italia) restano assoggettati alla tassazione progressiva ordinaria.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Anno</th><th>Richiedente principale (annuo)</th><th>Per familiare (annuo)</th></tr></thead>
+<tbody>
+<tr><td>2017</td><td>100.000 €</td><td>—</td></tr>
+<tr><td>2023</td><td>200.000 €</td><td>25.000 €</td></tr>
+<tr><td>2026</td><td>300.000 €</td><td>50.000 €</td></tr>
+</tbody>
+</table>
+
+<h2>Chi può accedere?</h2>
+<p>Per essere idonei non si deve essere stati residenti fiscali in Italia per almeno 9 degli ultimi 10 anni. Non c'è requisito di cittadinanza: possono fare domanda cittadini di qualsiasi Paese. Occorre stabilire la residenza principale e il "centro di vita" in Italia—in genere trascorrendo 183 o più giorni l'anno nel Paese—e rispettare le norme sulla residenza fiscale italiana.</p>
+
+<h2>Vantaggi principali</h2>
+<p>I redditi di fonte estera sono esenti dall'imposta progressiva italiana, che può arrivare al 43% sui redditi elevati. I beneficiari godono anche di esenzione dagli obblighi di monitoraggio fiscale sui patrimoni esteri e nessuna imposta patrimoniale su tali attività. Per chi ha redditi esteri consistenti—investimenti, attività, pensioni—l'importo forfettario può rappresentare un risparmio importante rispetto alla tassazione ordinaria italiana.</p>
+
+<h2>Il legame con l'immobiliare</h2>
+<p>Trasferirsi con il regime flat tax richiede una dimora reale in Italia. La maggior parte dei richiedenti acquista o affitta un immobile per stabilire la residenza. L'acquisto della prima casa in Italia comporta anche agevolazioni: l'imposta di registro sulla prima casa è ridotta al 2% (entro certi limiti di valore). Il mercato del lusso italiano resta competitivo rispetto a Parigi o Londra.</p>
+
+<h2>Regole di salvaguardia</h2>
+<p>Se avete già stabilito la residenza fiscale in Italia e aderito al regime flat tax prima del 2026, restate in regime di salvaguardia: continuate a pagare 200.000 € (e 25.000 € per familiare). Solo i nuovi richiedenti dal 2026 pagano 300.000 € e 50.000 €.</p>
+
+<h2>Passi pratici</h2>
+<p>Presentate domanda all'Agenzia delle Entrate. Servirà il Codice Fiscale, ottenibile in ambasciata o in Italia. Affidatevi a un commercialista italiano e a un consulente immobiliare per scegliere la località, completare la residenza e far sì che acquisto o affitto supportino la vostra posizione fiscale.</p>
+
+<h2>Conviene ancora?</h2>
+<p>Nonostante l'aumento, il regime italiano resta competitivo rispetto a Paesi come Portogallo, Spagna e Grecia. Per redditi esteri ben oltre 1 milione di euro, la flat tax di 300.000 € può essere ancora molto vantaggiosa. Valutate con un professionista se i numeri vi convengono.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Paese</th><th>Flat tax / regime (circa)</th></tr></thead>
+<tbody>
+<tr><td>Italia (2026)</td><td>300.000 € + 50.000 € per familiare</td></tr>
+<tr><td>Portogallo</td><td>NHR cessato; altri regimi possibili</td></tr>
+<tr><td>Spagna</td><td>Flat tax simile per nuovi residenti</td></tr>
+<tr><td>Grecia</td><td>Opzioni flat tax per redditi idonei</td></tr>
+</tbody>
+</table>
+
+<h2>Come possiamo aiutarvi</h2>
+<p>In Vero Properties lavoriamo con clienti internazionali che si trasferiscono in Italia con il regime flat tax. Possiamo aiutarvi a trovare l'immobile giusto a Roma, in Toscana o in altre regioni per stabilire la residenza e godervi la dolce vita—con uno dei regimi fiscali più favorevoli d'Europa per i nuovi residenti.</p>`,
+        faq1: {
+          question: "Quanto costa la flat tax in Italia nel 2026?",
+          answer:
+            "Dal gennaio 2026 l'importo annuo per i nuovi residenti è 300.000 € per il richiedente principale e 50.000 € per familiare. Il regime può durare fino a 15 anni.",
+        },
+        faq2: {
+          question: "Chi può fare domanda per il regime flat tax in Italia?",
+          answer:
+            "Non si deve essere stati residenti fiscali in Italia per almeno 9 degli ultimi 10 anni. Non c'è requisito di cittadinanza. Occorre stabilire la residenza principale e il centro di vita in Italia (in genere 183+ giorni l'anno).",
+        },
+        faq3: {
+          question: "Comprare casa in Italia dà diritto alla flat tax?",
+          answer:
+            "L'acquisto dell'immobile da solo non conferisce la flat tax; bisogna presentare domanda e rispettare le regole di residenza. La maggior parte dei richiedenti acquista o affitta comunque una casa in Italia per stabilire la residenza; la prima casa beneficia dell'imposta di registro al 2%.",
+        },
+        faq4: {
+          question: "Se ho aderito prima del 2026, pago i 300.000 €?",
+          answer:
+            "No. Le regole di salvaguardia proteggono chi è già nel regime: si continuano a pagare 200.000 € (e 25.000 € per familiare). Solo i nuovi richiedenti dal 2026 pagano 300.000 € e 50.000 €.",
+        },
+        faq5: {
+          question: "Conviene ancora la flat tax italiana dopo l'aumento?",
+          answer:
+            "Per chi ha redditi esteri elevati (es. oltre 1 milione di euro), la flat tax di 300.000 € può essere ancora molto vantaggiosa rispetto all'imposta progressiva italiana (fino al 43%) o ad altri Paesi. Confrontate la vostra situazione con un commercialista.",
+        },
       },
     },
   },
