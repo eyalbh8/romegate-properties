@@ -84,6 +84,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.propertyInvestmentTrends.content",
     tags: ["Investment", "Property", "Market Trends", "ROI"],
     relatedPosts: [2, 6],
+    faqKeys: [
+      "blog.posts.propertyInvestmentTrends.faq1",
+      "blog.posts.propertyInvestmentTrends.faq2",
+      "blog.posts.propertyInvestmentTrends.faq3",
+      "blog.posts.propertyInvestmentTrends.faq4",
+      "blog.posts.propertyInvestmentTrends.faq5",
+    ],
   },
   {
     id: 4,
@@ -100,6 +107,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.erasmusSuccessStories.content",
     tags: ["Erasmus", "Student Stories", "Testimonials", "Student Life"],
     relatedPosts: [1],
+    faqKeys: [
+      "blog.posts.erasmusSuccessStories.faq1",
+      "blog.posts.erasmusSuccessStories.faq2",
+      "blog.posts.erasmusSuccessStories.faq3",
+      "blog.posts.erasmusSuccessStories.faq4",
+      "blog.posts.erasmusSuccessStories.faq5",
+    ],
   },
   {
     id: 5,
@@ -116,6 +130,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.navigatingPropertyLaws.content",
     tags: ["Legal", "Property Law", "Foreigners", "Italy", "Regulations"],
     relatedPosts: [2],
+    faqKeys: [
+      "blog.posts.navigatingPropertyLaws.faq1",
+      "blog.posts.navigatingPropertyLaws.faq2",
+      "blog.posts.navigatingPropertyLaws.faq3",
+      "blog.posts.navigatingPropertyLaws.faq4",
+      "blog.posts.navigatingPropertyLaws.faq5",
+    ],
   },
   {
     id: 6,
@@ -132,6 +153,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.bestTimeToBuyOrRent.content",
     tags: ["Timing", "Market", "Buying", "Renting", "Strategy"],
     relatedPosts: [2, 3],
+    faqKeys: [
+      "blog.posts.bestTimeToBuyOrRent.faq1",
+      "blog.posts.bestTimeToBuyOrRent.faq2",
+      "blog.posts.bestTimeToBuyOrRent.faq3",
+      "blog.posts.bestTimeToBuyOrRent.faq4",
+      "blog.posts.bestTimeToBuyOrRent.faq5",
+    ],
   },
   {
     id: 7,
@@ -148,6 +176,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.propertyMarketTrendsItaly.content",
     tags: ["Market Trends", "Italy", "2025", "Investment"],
     relatedPosts: [3, 6],
+    faqKeys: [
+      "blog.posts.propertyMarketTrendsItaly.faq1",
+      "blog.posts.propertyMarketTrendsItaly.faq2",
+      "blog.posts.propertyMarketTrendsItaly.faq3",
+      "blog.posts.propertyMarketTrendsItaly.faq4",
+      "blog.posts.propertyMarketTrendsItaly.faq5",
+    ],
   },
   {
     id: 8,
@@ -164,6 +199,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.whereToBuyPropertyItaly.content",
     tags: ["Tuscany", "Rome", "Amalfi", "Lake Como", "Regions"],
     relatedPosts: [3, 7],
+    faqKeys: [
+      "blog.posts.whereToBuyPropertyItaly.faq1",
+      "blog.posts.whereToBuyPropertyItaly.faq2",
+      "blog.posts.whereToBuyPropertyItaly.faq3",
+      "blog.posts.whereToBuyPropertyItaly.faq4",
+      "blog.posts.whereToBuyPropertyItaly.faq5",
+    ],
   },
   {
     id: 9,
@@ -180,6 +222,13 @@ export const blogPosts: BlogPost[] = [
     contentKey: "blog.posts.annualCostsOwningPropertyItaly.content",
     tags: ["IMU", "Costs", "Ownership", "Italy", "Tax"],
     relatedPosts: [5, 2],
+    faqKeys: [
+      "blog.posts.annualCostsOwningPropertyItaly.faq1",
+      "blog.posts.annualCostsOwningPropertyItaly.faq2",
+      "blog.posts.annualCostsOwningPropertyItaly.faq3",
+      "blog.posts.annualCostsOwningPropertyItaly.faq4",
+      "blog.posts.annualCostsOwningPropertyItaly.faq5",
+    ],
   },
   {
     id: 10,

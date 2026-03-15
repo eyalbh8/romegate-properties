@@ -542,65 +542,710 @@ export default {
         title: "Investimenti Immobiliari in Italia: Tendenze per il 2025",
         excerpt:
           "Esplora le ultime tendenze nel mercato immobiliare italiano, inclusi i quartieri emergenti e le opportunità di investimento per l'anno a venire.",
+        content: `<h2>Introduzione</h2>
+<p>Il mercato immobiliare italiano attira una crescente attenzione da parte degli investitori internazionali. Con una crescita dei prezzi stabile e sostenibile, costi d'ingresso competitivi rispetto ad altre capitali europee e rendimenti lordi da locazione che superano di tre volte il rendimento dei titoli di Stato, l'Italia offre un caso convincente per gli investimenti a lungo termine. Questa guida copre le principali tendenze del mercato, i dati città per città, le strategie di investimento e i passi pratici per gli acquirenti stranieri.</p>
+
+<h2>Panoramica del mercato: ripresa solida nel 2025</h2>
+<p>Dopo un decennio stagnante, il mercato immobiliare italiano è entrato in una fase di ripresa sostenuta. I prezzi residenziali sono cresciuti del 4,5% in termini nominali nel 2024 (3,3% in termini reali) e nel primo trimestre 2025 i volumi di compravendita sono aumentati dell'11,2% rispetto allo stesso periodo del 2024. A Roma sono state registrate 8.525 transazioni nel solo primo trimestre 2025, con un incremento del 10,7% su base annua.</p>
+<p>I tagli dei tassi della BCE — 200 punti base dall'estate 2024, con il tasso di riferimento al 2% ad aprile 2025 — hanno migliorato significativamente le condizioni di finanziamento. I tassi medi sui mutui italiani sono scesi al 3,44%, rendendo più convenienti gli acquisti con leva finanziaria. Le nuove costruzioni hanno guidato la crescita dei prezzi con un +9,35% su base annua nel quarto trimestre 2024.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Città</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Prezzo vendita/m²</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Variazione annuale</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Rendimento lordo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Milano</td><td style="border:1px solid #ddd;padding:8px 12px">€5.143</td><td style="border:1px solid #ddd;padding:8px 12px">+3,1%</td><td style="border:1px solid #ddd;padding:8px 12px">~4–5%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Firenze</td><td style="border:1px solid #ddd;padding:8px 12px">~€4.200</td><td style="border:1px solid #ddd;padding:8px 12px">+2,8%</td><td style="border:1px solid #ddd;padding:8px 12px">~4,5%</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Roma</td><td style="border:1px solid #ddd;padding:8px 12px">€3.230</td><td style="border:1px solid #ddd;padding:8px 12px">+6,4%</td><td style="border:1px solid #ddd;padding:8px 12px">~5–6%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Bologna</td><td style="border:1px solid #ddd;padding:8px 12px">~€2.900</td><td style="border:1px solid #ddd;padding:8px 12px">+7,3%</td><td style="border:1px solid #ddd;padding:8px 12px">~5,5%</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Napoli</td><td style="border:1px solid #ddd;padding:8px 12px">~€2.100</td><td style="border:1px solid #ddd;padding:8px 12px">+3,2%</td><td style="border:1px solid #ddd;padding:8px 12px">~6–7%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Media nazionale</td><td style="border:1px solid #ddd;padding:8px 12px">~€2.100</td><td style="border:1px solid #ddd;padding:8px 12px">+2,7%</td><td style="border:1px solid #ddd;padding:8px 12px">9,7% (media residenziale)</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem;color:#666">Fonte: Idealista Italia ott. 2025, Global Property Guide 2025</p>
+
+<h2>Strategie di investimento</h2>
+<p>La strategia giusta dipende dal capitale disponibile, dalla propensione al rischio e dall'orizzonte temporale dell'investimento. L'Italia supporta diversi approcci distinti.</p>
+
+<h3>Acquisto a scopo locativo (contratto a lungo termine)</h3>
+<p>I contratti di locazione residenziale a lungo termine — in genere il contratto 4+4 — offrono un reddito stabile e prevedibile. I rendimenti lordi a livello nazionale hanno raggiunto il 9,7% nel terzo trimestre 2025, quasi tre volte il rendimento dei BTP decennali (3,5%). Roma e Bologna si distinguono per la forte domanda locativa, alimentata dalle università e da un ampio settore dei servizi.</p>
+
+<h3>Affitti brevi e turistici</h3>
+<p>Nelle città ad alta vocazione turistica — Firenze, Venezia, la Costiera Amalfitana — gli affitti brevi possono raggiungere rendimenti lordi del 12–18%. Tuttavia, comportano costi di gestione più elevati, volatilità stagionale della domanda e normative locali sugli affitti turistici in continua evoluzione. Un gestore immobiliare professionale è generalmente indispensabile.</p>
+
+<h3>Acquisto di nuove costruzioni</h3>
+<p>Le nuove costruzioni mostrano la crescita di valore più elevata: +9,35% su base annua nel quarto trimestre 2024. Gli immobili di nuova edificazione, efficienti dal punto di vista energetico, beneficiano anche di costi di gestione inferiori e di una maggiore attrattiva per i locatari. Lo sviluppo infrastrutturale di Milano, anche in vista delle Olimpiadi, ne ha fatto il punto di riferimento principale per questa strategia.</p>
+
+<h3>Ristrutturazione e rivendita</h3>
+<p>Il vasto patrimonio immobiliare italiano — masserie storiche, appartamenti nei centri storici — offre numerose opportunità di ristrutturazione. I rendimenti variano notevolmente (10–20%) in base alla posizione, al prezzo d'acquisto e alla qualità dei lavori. I centri provinciali offrono i prezzi d'ingresso più bassi, mentre Toscana e Umbria attraggono acquirenti di fascia alta al momento della rivendita.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Strategia</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Rendimento lordo tipico</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Capitale necessario</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Rischio</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Mercati migliori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Affitto a lungo termine</td><td style="border:1px solid #ddd;padding:8px 12px">~9,7%</td><td style="border:1px solid #ddd;padding:8px 12px">Medio</td><td style="border:1px solid #ddd;padding:8px 12px">Basso–medio</td><td style="border:1px solid #ddd;padding:8px 12px">Roma, Milano, Bologna</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Affitto breve / turistico</td><td style="border:1px solid #ddd;padding:8px 12px">12–18%</td><td style="border:1px solid #ddd;padding:8px 12px">Medio</td><td style="border:1px solid #ddd;padding:8px 12px">Medio</td><td style="border:1px solid #ddd;padding:8px 12px">Firenze, Amalfi, Venezia</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Acquisto di nuova costruzione</td><td style="border:1px solid #ddd;padding:8px 12px">~9,4% plusvalenza</td><td style="border:1px solid #ddd;padding:8px 12px">Alto</td><td style="border:1px solid #ddd;padding:8px 12px">Basso</td><td style="border:1px solid #ddd;padding:8px 12px">Milano, grandi città</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Ristrutturazione e rivendita</td><td style="border:1px solid #ddd;padding:8px 12px">10–20% (variabile)</td><td style="border:1px solid #ddd;padding:8px 12px">Medio–alto</td><td style="border:1px solid #ddd;padding:8px 12px">Alto</td><td style="border:1px solid #ddd;padding:8px 12px">Centri provinciali, Toscana</td></tr>
+  </tbody>
+</table>
+
+<h2>Rischi principali</h2>
+<ul>
+  <li><strong>Erosione da inflazione:</strong> i guadagni nominali possono essere compensati dall'inflazione — nel 2022 i rendimenti reali erano negativi nonostante la crescita nominale positiva.</li>
+  <li><strong>Divergenza regionale:</strong> nel quarto trimestre 2025 le aree provinciali sono cresciute (+1,3%) mentre i centri delle grandi città hanno registrato un calo (−1,7%). La scelta della localizzazione è determinante.</li>
+  <li><strong>Cambiamenti normativi:</strong> gli incentivi fiscali come il Superbonus vengono ridimensionati. Le normative sugli affitti brevi si stanno inasprendo nelle mete turistiche.</li>
+  <li><strong>Liquidità:</strong> l'immobiliare italiano non è un asset liquido. I costi di transazione (spese notarili, tasse, commissioni di agenzia) ammontano tipicamente al 7–10% del prezzo di acquisto.</li>
+</ul>
+
+<h2>Lista di controllo per gli investitori stranieri</h2>
+<ul>
+  <li>Ottenere il <strong>Codice Fiscale</strong> — obbligatorio per qualsiasi transazione immobiliare.</li>
+  <li>Aprire un <strong>conto corrente italiano</strong> per la riscossione degli affitti e i pagamenti delle spese.</li>
+  <li>Rivolgersi a un <strong>notaio</strong> locale — obbligatorio per tutti gli acquisti immobiliari in Italia.</li>
+  <li>Incaricare un <strong>geometra o perito indipendente</strong> per verificare i dati catastali e l'assenza di abusi edilizi.</li>
+  <li>Stabilire quale <strong>tipo di contratto di locazione</strong> si adatta ai propri obiettivi: 4+4 standard per la stabilità, transitorio per la flessibilità.</li>
+  <li>Pianificare i <strong>costi di transazione</strong>: imposta di registro (2% prima casa, 9% seconda casa/investimento), spese notarili, provvigione d'agenzia (tipicamente 3%) ed eventuali costi di ristrutturazione.</li>
+</ul>
+
+<h2>Conclusione</h2>
+<p>Il mercato immobiliare italiano nel 2025–2026 combina una crescita dei prezzi moderata ma sostenuta con rendimenti da locazione altamente competitivi rispetto alle classi di attività alternative. Per gli investitori che cercano un flusso di reddito stabile a lungo termine — in particolare a Roma, Bologna o nelle città del Sud con una domanda in crescita — le condizioni sono tra le più favorevoli degli ultimi dieci anni. Come per qualsiasi mercato, un'attenta due diligence, una consulenza legale locale e una strategia di investimento chiara rimangono elementi imprescindibili.</p>`,
+        faq1: {
+          question: "Qual è il rendimento lordo medio degli immobili residenziali in Italia nel 2025?",
+          answer:
+            "Gli immobili residenziali in affitto hanno registrato un rendimento lordo del 9,7% nel terzo trimestre 2025, secondo Idealista — quasi tre volte il rendimento del 3,5% dei BTP decennali italiani. Gli spazi commerciali hanno raggiunto il 12,4% e gli uffici il 10,3% nello stesso periodo.",
+        },
+        faq2: {
+          question: "Quali città italiane offrono il miglior ROI per gli investitori immobiliari?",
+          answer:
+            "Roma e Bologna offrono attualmente il miglior rapporto qualità-prezzo: Roma ha registrato una crescita annua dei prezzi del 6,4% con rendimenti lordi da locazione di circa il 5–6%, mentre Bologna ha visto un'apprezzamento dei prezzi del 7,3%. Napoli offre i rendimenti da locazione più elevati (~6–7%) grazie ai prezzi d'ingresso più bassi. Milano guida per prezzi assoluti e apprezzamento delle nuove costruzioni (+3,1% su base annua, raggiungendo €5.143/m²).",
+        },
+        faq3: {
+          question: "Gli stranieri necessitano di un permesso speciale per acquistare immobili in Italia?",
+          answer:
+            "Non è richiesto alcun permesso speciale per i cittadini dell'UE. I cittadini extra-UE possono generalmente acquistare immobili in Italia in base agli accordi di reciprocità tra l'Italia e il loro paese d'origine. In pratica, la maggior parte delle nazionalità non incontra restrizioni. È necessario un Codice Fiscale e l'acquisto deve essere completato tramite un notaio italiano.",
+        },
+        faq4: {
+          question: "Quali tasse si applicano all'acquisto di immobili in Italia da parte di uno straniero?",
+          answer:
+            "La principale imposta è l'imposta di registro: 2% del valore catastale se l'immobile è la residenza principale (prima casa) o 9% se è una seconda casa o un investimento. Le nuove costruzioni sono soggette invece all'IVA (4% prima casa, 10% ordinaria, 22% di lusso). Si aggiungono spese fisse per notaio, catasto e iscrizione ipotecaria. I costi totali di transazione si aggirano solitamente tra il 7% e il 10% del prezzo di acquisto.",
+        },
+        faq5: {
+          question: "Il 2025–2026 è un buon momento per investire nel mercato immobiliare italiano?",
+          answer:
+            "Le condizioni sono tra le più favorevoli degli ultimi dieci anni. La BCE ha tagliato i tassi al 2% entro aprile 2025, portando i tassi medi sui mutui italiani al 3,44%. I volumi di compravendita sono aumentati dell'11,2% nel primo trimestre 2025. I rendimenti lordi da locazione (9,7%) superano ampiamente quelli delle obbligazioni. Il rischio principale è la divergenza regionale: alcuni centri città si stanno indebolendo mentre i mercati provinciali accelerano. Una scelta attenta della localizzazione e una rigorosa due diligence rimangono essenziali.",
+        },
       },
       erasmusSuccessStories: {
         title: "Storie di Successo di Studenti Erasmus: Trovare Casa in Italia",
         excerpt:
           "Leggi storie ispiratrici di studenti Erasmus che hanno trovato il loro alloggio perfetto in Italia e hanno sfruttato al meglio la loro esperienza di studio all'estero.",
+        content: `<h2>Introduzione</h2>
+<p>Ogni anno, decine di migliaia di studenti partono alla volta dell'Italia con il programma Erasmus+. Secondo i dati Erasmus+ INDIRE, <strong>39.751 studenti italiani</strong> hanno partecipato alla mobilità in uscita nel 2024, mentre un flusso ancora più ampio di studenti in entrata è arrivato da tutta Europa — attirato dalle università di Roma, Bologna, Milano, Firenze e Torino. Per la maggior parte di loro, la sfida principale non è la lingua né lo studio: è trovare un alloggio.</p>
+<p>Il mercato degli affitti studenteschi in Italia è competitivo, costoso nelle grandi città e pieno di ostacoli burocratici che possono sorprendere chi affronta l'esperienza per la prima volta. Ma migliaia di studenti Erasmus lo affrontano con successo ogni semestre. Questo articolo combina i dati di mercato del quarto trimestre 2025 con esperienze reali di studenti, per offrirti un quadro onesto di cosa aspettarti — e come trovare un ottimo appartamento.</p>
+
+<h2>Il Mercato degli Alloggi Erasmus in Italia, 2024–25</h2>
+<p>Il mercato degli affitti studenteschi in Italia si è ulteriormente irrigidito dopo il 2022, con la ripresa dei flussi internazionali post-pandemia. Nel quarto trimestre 2025, l'Indice Internazionale degli Affitti di HousingAnywhere ha registrato un calo medio dell'3,1% in Europa — ma l'Italia ha fatto eccezione in alcune città. Roma è stata l'unica grande città italiana a registrare una crescita, con affitti medi mensili per una stanza saliti del <strong>4,8% a €650</strong>. Milano (€664) e Bologna (€655) sono rimaste tra i mercati studenteschi più cari d'Europa, anche se entrambe hanno visto lievi cali annuali grazie a nuova offerta.</p>
+<p>Per gli studenti con una borsa Erasmus+ — la borsa mensile standard è salita a <strong>€325 nel 2024</strong>, con un'integrazione di €250 per studenti con minori opportunità economiche — l'alloggio è la voce di spesa principale. Il budget mensile complessivo per uno studente Erasmus in Italia si attesta tra €750 e 1.100, di cui €400–600 destinati all'alloggio. Le città dove i costi sono più bassi — Torino (€525), Napoli (€470) e Pisa (€400) — offrono spesso il miglior rapporto qualità-prezzo per chi vive con una borsa di studio.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Città</th><th>Affitto medio/mese</th><th>Variazione annua</th><th>Piattaforme migliori</th><th>Contratto ideale</th></tr></thead>
+<tbody>
+<tr><td>Milano</td><td>€664</td><td>–lieve</td><td>Spotahome, Erasmusu</td><td>Contratto Transitorio</td></tr>
+<tr><td>Bologna</td><td>€655</td><td>–6,4%</td><td>HousingAnywhere, Uniplaces</td><td>Contratto Transitorio</td></tr>
+<tr><td>Roma</td><td>€650</td><td>+4,8%</td><td>HousingAnywhere, Spotahome</td><td>Contratto Transitorio</td></tr>
+<tr><td>Firenze</td><td>€600</td><td>stabile</td><td>Spotahome, Erasmusu</td><td>Contratto Transitorio</td></tr>
+<tr><td>Torino</td><td>€525</td><td>stabile</td><td>HousingAnywhere</td><td>Contratto Transitorio</td></tr>
+<tr><td>Napoli</td><td>€470</td><td>+4,4%</td><td>Erasmusu</td><td>Contratto Transitorio</td></tr>
+<tr><td>Pisa</td><td>€400</td><td>stabile</td><td>Erasmusu</td><td>Contratto Transitorio</td></tr>
+</tbody>
+</table>
+<p><em>Fonte: HousingAnywhere International Rent Index Q4 2025</em></p>
+
+<h2>Tre Storie di Successo</h2>
+
+<h3>Stella — Roma, Sapienza (10 mesi)</h3>
+<p>Stella è arrivata a Roma con una borsa Erasmus+ di circa €6.000 per dieci mesi e un elenco di quartieri già studiati online. La prima cosa che ha fatto è stata richiedere il <em>codice fiscale</em> al consolato italiano due mesi prima della partenza — una mossa che le ha risparmiato settimane di attesa una volta arrivata. Ha trovato una stanza in condivisione a San Lorenzo per €530 al mese tramite un gruppo Facebook universitario, ha firmato un <em>Contratto Transitorio</em> di nove mesi e ha fatto registrare il contratto dal proprietario all'Agenzia delle Entrate entro 30 giorni.</p>
+<p>"Ho inviato messaggi a circa 25 annunci prima di ricevere una risposta di cui mi fidassi," racconta. "La chiave è stata iniziare per tempo, avere pazienza e visitare di persona invece di pagare un deposito a distanza." Il suo budget mensile complessivo — affitto, utenze, cibo e trasporti — si è attestato intorno a €900, ampiamente coperto dalla borsa.</p>
+
+<h3>Louise — Bologna, Università di Bologna (1 anno)</h3>
+<p>Louise ha scelto Bologna anche perché i canoni erano calati del 6,4% su base annua nel quarto trimestre 2025, rendendo gli appartamenti in condivisione più accessibili rispetto all'anno precedente. Ha trovato tramite HousingAnywhere un trilocale con altri due studenti Erasmus, pagando €610 al mese utenze incluse, con un contratto transitorio di dodici mesi.</p>
+<p>Bologna l'ha sorpresa. La rete Erasmus — organizzata attraverso serate Tandem, eventi dell'ESN e associazioni universitarie — era tra le più vivaci di cui avesse mai sentito parlare. "In due settimane avevo già un calendario sociale pieno. In un mese mi sentivo quasi una del posto." Il suo consiglio: iscriversi all'orientamento Erasmus dell'università non appena viene annunciato, perché spesso i contatti per trovare casa arrivano proprio lì.</p>
+
+<h3>Andrei — Milano, Politecnico (4 mesi)</h3>
+<p>Milano ha rappresentato la sfida più difficile: un affitto medio mensile di €664 e uno dei mercati abitativi più competitivi d'Italia, con oltre 6.500 annunci su Erasmusu e 3.499 studenti in cerca di coinquilini in ogni momento. Andrei ha iniziato la ricerca otto mesi prima dell'arrivo, usando simultaneamente tre piattaforme — Spotahome, Erasmusu e un portale universitario. Ha trovato una stanza in condivisione nella zona Città Studi a €380 al mese — ben al di sotto della media cittadina — rispondendo a un annuncio nel giro di poche ore e proponendo una permanenza leggermente più lunga del minimo richiesto.</p>
+<p>"A Milano la velocità conta più che altrove," dice. "Avevo profilo, referenze e documenti già pronti, così potevo rispondere e impegnarmi in un'ora. Gli studenti che aspettavano di confrontare le opzioni perdevano la stanza." Il suo budget per quattro mesi è stato di circa €800 al mese tutto compreso, grazie alla borsa Erasmus+ e a qualche risparmio personale.</p>
+
+<h2>Guida Pratica: Come Trovare Alloggio da Studente in Italia</h2>
+
+<h3>1. Inizia la ricerca 6–8 mesi prima</h3>
+<p>I periodi di settembre e gennaio/febbraio sono i più competitivi. A Roma, Milano e Bologna gli annunci spariscono in pochi giorni. Configura le notifiche sulle piattaforme principali — HousingAnywhere, Spotahome, Uniplaces, Erasmusu — non appena ricevi la lettera di accettazione.</p>
+
+<h3>2. Richiedi subito il codice fiscale</h3>
+<p>Il <em>codice fiscale</em> è necessario per firmare un contratto d'affitto, aprire un conto corrente e iscriversi al servizio sanitario nazionale. Puoi richiederlo al consolato o all'ambasciata italiana nel tuo Paese (prevedi 3–6 settimane), oppure all'Agenzia delle Entrate in Italia. È gratuito. Richiedilo il prima possibile.</p>
+
+<h3>3. Conosci il tuo tipo di contratto</h3>
+<p>Il <strong>Contratto Transitorio</strong> è la scelta giusta per gli studenti: dura da 1 a 18 mesi ed è pensato apposta per soggiorni temporanei. Evita il <em>Contratto 4+4</em> (rinnovo quadriennale), del tutto impraticabile per i tempi Erasmus. Chiedi se il contratto prevede la <em>cedolare secca</em>: in tal caso non dovrai pagare le spese di registrazione, abbassando i costi iniziali.</p>
+
+<h3>4. Chiarisci tutti i costi prima di firmare</h3>
+<p>Verifica se le utenze (luce, gas, acqua) e le spese condominiali sono incluse o a parte. Prevedi €50–100 al mese per le utenze se non sono incluse. Aspettati un deposito cauzionale pari a 2–3 mensilità, per cui dovrai chiedere ricevuta scritta.</p>
+
+<h3>5. Verifica il proprietario e l'immobile</h3>
+<p>Incontra il proprietario di persona prima di effettuare qualsiasi pagamento. Verifica che l'immobile esista come descritto, che il proprietario sia il titolare registrato e che il contratto corrisponda agli accordi verbali. Le truffe ai danni di studenti internazionali — soprattutto depositi richiesti online — sono un problema ricorrente, particolarmente a Milano e Roma. Non pagare mai un deposito a un conto che non hai verificato di persona o tramite una piattaforma affidabile con protezione escrow.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Passo</th><th>Quando</th><th>Azione</th><th>Errore comune</th></tr></thead>
+<tbody>
+<tr><td>Inizia la ricerca</td><td>6–8 mesi prima</td><td>Imposta alert su HousingAnywhere, Spotahome, Erasmusu</td><td>Aspettare fino a un mese prima dell'arrivo</td></tr>
+<tr><td>Codice Fiscale</td><td>Appena accettato</td><td>Richiedi al consolato o all'Agenzia delle Entrate</td><td>Pensare di non averne bisogno da studente</td></tr>
+<tr><td>Revisione contratto</td><td>Prima di firmare</td><td>Conferma Contratto Transitorio; verifica utenze e spese</td><td>Firmare un contratto 4+4 per default</td></tr>
+<tr><td>Deposito</td><td>Alla firma</td><td>2–3 mensilità; richiedi ricevuta scritta</td><td>Pagare a distanza senza verifica personale</td></tr>
+<tr><td>Registrazione</td><td>Entro 30 giorni</td><td>Il proprietario registra il contratto all'Agenzia delle Entrate</td><td>Un contratto non registrato non ha tutele legali</td></tr>
+</tbody>
+</table>
+
+<h2>Conclusione</h2>
+<p>L'Italia premia chi si prepara. Gli studenti che arrivano con i documenti in ordine, la ricerca avviata con mesi di anticipo e una buona conoscenza dei contratti locali sono quelli che finiscono in ottimi appartamenti — spesso sotto la media dei prezzi. Quelli che temporeggiamo o si lasciano sedurre da annunci troppo convenienti sono quelli che finiscono col pagare troppo o perdere la caparra.</p>
+<p>Se stai pianificando un anno Erasmus in Italia, tratta la ricerca dell'alloggio come parte dei tuoi studi: studia il mercato, impara la terminologia e mettiti in contatto con studenti che ci sono già stati. Il team di Sparta ha aiutato centinaia di studenti internazionali a trovare alloggio a Roma e dintorni — contattaci per saperne di più sul nostro servizio di supporto abitativo per studenti.</p>`,
+        faq1: {
+          question: "Qual è l'affitto mensile medio per uno studente Erasmus in Italia nel 2025?",
+          answer:
+            "Secondo l'Indice Internazionale degli Affitti di HousingAnywhere nel quarto trimestre 2025, gli affitti medi mensili per una stanza vanno da €400 a Pisa e €470 a Napoli fino a €650–664 a Roma, Bologna e Milano. In generale, gli studenti Erasmus in Italia prevedono un budget di €400–600 al mese per l'alloggio e di €750–1.100 per le spese totali.",
+        },
+        faq2: {
+          question: "Quali città italiane sono più economiche per gli studenti Erasmus?",
+          answer:
+            "Pisa (€400/mese), Napoli (€470/mese) e Torino (€520–530/mese) sono le città universitarie più economiche d'Italia nel quarto trimestre 2025. Offrono ambienti universitari di qualità e comunità Erasmus attive a costi notevolmente inferiori rispetto a Milano, Bologna o Roma.",
+        },
+        faq3: {
+          question: "Qual è il tipo di contratto d'affitto più adatto agli studenti Erasmus in Italia?",
+          answer:
+            "Il Contratto Transitorio è pensato per soggiorni da 1 a 18 mesi ed è la scelta ideale per gli studenti Erasmus. È molto più pratico del contratto standard 4+4 (minimo quattro anni). Chiedi se il contratto prevede la cedolare secca, che elimina le spese di registrazione a carico del conduttore.",
+        },
+        faq4: {
+          question: "Gli studenti Erasmus hanno bisogno del codice fiscale per affittare in Italia?",
+          answer:
+            "La maggior parte dei proprietari e delle agenzie richiede il codice fiscale per firmare il contratto d'affitto. Puoi richiederlo al consolato italiano nel tuo Paese (prevedi 3–6 settimane) o all'Agenzia delle Entrate in Italia. È gratuito ed è indispensabile anche per aprire un conto corrente e iscriversi al servizio sanitario.",
+        },
+        faq5: {
+          question: "Quali sono le migliori piattaforme per trovare alloggio studentesco in Italia?",
+          answer:
+            "HousingAnywhere, Spotahome, Uniplaces ed Erasmusu sono le quattro piattaforme principali usate dagli studenti Erasmus in Italia. HousingAnywhere pubblica i dati sugli affitti più completi per le città italiane. I gruppi Facebook universitari e i capitoli locali dell'ESN (Erasmus Student Network) sono fonti preziose, spesso con annunci prima che compaiano sulle piattaforme commerciali.",
+        },
       },
       navigatingPropertyLaws: {
         title:
           "Navigare le Leggi Immobiliari Italiane: Cosa Devono Sapere gli Stranieri",
         excerpt:
           "Una guida completa alle leggi, regolamenti e requisiti immobiliari italiani per acquirenti e affittuari stranieri in Italia.",
+        content: `<h2>Introduzione</h2>
+<p>L'Italia è una delle destinazioni più ambite al mondo per gli acquirenti di immobili — dalle case vacanza in Toscana agli appartamenti a scopo investimento a Roma. Prima di firmare qualsiasi contratto, tuttavia, i compratori stranieri devono comprendere un insieme specifico di norme giuridiche che regolano chi può acquistare, come si svolge la transazione e quali tasse e costi prevedere. Questa guida illustra il quadro legale essenziale, il processo di acquisto passo per passo, i controlli di due diligence che possono tutelarti e i costi coinvolti.</p>
+
+<h2>Chi Può Acquistare Immobili in Italia?</h2>
+<p>L'Italia non impone un divieto generale alla proprietà straniera, ma l'idoneità dipende dalla nazionalità e dallo status di residenza. La norma fondamentale è il <strong>principio di reciprocità</strong> (condizione di reciprocità), sancito dall'art. 16 delle Disposizioni Preliminari del Codice Civile italiano. In base a tale principio, uno straniero può acquistare un immobile in Italia solo se i cittadini italiani godono di diritti equivalenti nel suo paese d'origine. I cittadini di UE, SEE e Svizzera sono completamente esenti — godono degli stessi diritti dei cittadini italiani. Per gli acquirenti extra-UE, il Ministero degli Affari Esteri e della Cooperazione Internazionale (MAECI) mantiene un elenco ufficiale dei paesi ammissibili. Un <strong>valido permesso di soggiorno italiano</strong> elude interamente il requisito di reciprocità: qualsiasi straniero residente legalmente in Italia può acquistare immobili indipendentemente dalla propria nazionalità.</p>
+<p>Un'eccezione pratica da evidenziare: dal 2023, i cittadini canadesi non residenti non possono acquistare immobili residenziali in Italia. La legislazione canadese che limita gli acquisti da parte di stranieri ha determinato l'accertamento della non reciprocità — i canadesi privi di permesso di soggiorno italiano risultano quindi non idonei.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Categoria di acquirente</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Può acquistare?</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Cittadini UE / SEE / svizzeri</td><td style="border:1px solid #ddd;padding:8px 12px">Sì — senza restrizioni</td><td style="border:1px solid #ddd;padding:8px 12px">Equiparati ai cittadini italiani</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Extra-UE da paesi con reciprocità (USA, UK, AU…)</td><td style="border:1px solid #ddd;padding:8px 12px">Sì</td><td style="border:1px solid #ddd;padding:8px 12px">Necessario il Codice Fiscale; nessun permesso richiesto</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Cittadino extra-UE con permesso di soggiorno italiano</td><td style="border:1px solid #ddd;padding:8px 12px">Sì</td><td style="border:1px solid #ddd;padding:8px 12px">La reciprocità è irrilevante</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Extra-UE da paese non reciproco, senza permesso</td><td style="border:1px solid #ddd;padding:8px 12px">No</td><td style="border:1px solid #ddd;padding:8px 12px">Deve prima ottenere un permesso di soggiorno</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Cittadini canadesi non residenti (dal 2023)</td><td style="border:1px solid #ddd;padding:8px 12px">No</td><td style="border:1px solid #ddd;padding:8px 12px">Il divieto canadese sugli acquirenti stranieri ha determinato la non reciprocità</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem;color:#666">Fonte: Codice Civile italiano art. 16, MAECI, LegallyItaly 2026</p>
+
+<h2>Processo di Acquisto Passo per Passo</h2>
+<p>L'acquisto immobiliare in Italia segue una sequenza giuridica strutturata. A differenza di molti paesi di common law, non esiste un unico momento di "scambio dei contratti" — il processo si sviluppa attraverso diverse fasi vincolanti, ciascuna con implicazioni legali e finanziarie proprie.</p>
+<p><strong>1. Ottenere il Codice Fiscale.</strong> Questo codice di identificazione fiscale italiano è obbligatorio prima di qualsiasi transazione. È possibile ottenerlo presso qualsiasi consolato italiano o presso l'Agenzia delle Entrate in Italia.</p>
+<p><strong>2. Formulare un'offerta scritta (proposta d'acquisto).</strong> Una volta individuato l'immobile, l'agente predisporrà un'offerta scritta, di solito accompagnata da un piccolo deposito di buona fede (tipicamente €1.000–€5.000). Si tratta di un impegno vincolante in caso di accettazione da parte del venditore.</p>
+<p><strong>3. Firmare il contratto preliminare (compromesso o contratto preliminare).</strong> È la fase più significativa prima dell'atto definitivo. Entrambe le parti concordano prezzo, condizioni e tempistiche. L'acquirente versa una caparra confirmatoria pari in genere al 10–20% del prezzo d'acquisto. Se l'acquirente recede senza giusta causa, la caparra è persa; se recede il venditore, è tenuto a restituire il doppio della caparra.</p>
+<p><strong>4. Condurre la due diligence completa.</strong> Tra il compromesso e l'atto definitivo, effettua tutti i controlli catastali e di conformità (vedi di seguito). È anche la fase per ottenere un mutuo, se necessario.</p>
+<p><strong>5. Firmare l'atto definitivo (rogito notarile).</strong> L'acquisto si perfeziona davanti a un notaio italiano abilitato, che legge l'intero atto ad alta voce, verifica le identità, riscuote le imposte e registra il trasferimento. In questa fase si paga il saldo residuo, le imposte e le spese applicabili. Il notaio è tecnicamente un pubblico ufficiale neutrale — è fortemente consigliabile avvalersi anche di un proprio avvocato italiano indipendente.</p>
+
+<h2>Due Diligence: Cosa Verificare Prima di Firmare</h2>
+<p>La legge italiana offre forti tutele — ma solo se si effettuano le verifiche necessarie prima di firmare. A differenza dei sistemi di common law, in Italia <strong>non esiste la title insurance</strong>: i vizi giuridici strutturali scoperti dopo il rogito non possono semplicemente essere "assicurati". I seguenti accertamenti sono essenziali:</p>
+<ul>
+  <li><strong>Visura catastale</strong> — estratto catastale che conferma la classificazione ufficiale dell'immobile, le dimensioni e la titolarità registrata presso l'Agenzia del Territorio.</li>
+  <li><strong>Visura ipotecaria</strong> — ricerca ipotecaria e pignoratizia per individuare eventuali debiti, oneri o gravami sull'immobile.</li>
+  <li><strong>Relazione notarile ventennale</strong> — relazione notarile ventennale che ricostruisce l'intera catena proprietaria e individua eventuali problemi storici.</li>
+  <li><strong>Conformità urbanistica (stato legittimo)</strong> — verifica che l'immobile corrisponda ai titoli edilizi originari e rispetti le norme urbanistiche comunali. Ampliamenti o chiusure non autorizzati possono rendere l'immobile giuridicamente non commerciabile.</li>
+  <li><strong>Attestato di prestazione energetica (APE)</strong> — documento obbligatorio per legge; classifica l'efficienza energetica dell'immobile da A4 (migliore) a G.</li>
+</ul>
+<p>Affidati sempre a un avvocato italiano qualificato o a un notaio per questi controlli. Un geometra indipendente può verificare le condizioni fisiche e la conformità catastale dell'edificio.</p>
+
+<h2>Imposte e Costi di Acquisto</h2>
+<p>Le imposte immobiliari italiane sono determinate da tre variabili: chi vende (privato o impresa/costruttore), se l'immobile si qualifica come prima casa e la categoria catastale dell'immobile. Le imposte principali sono l'<em>imposta di registro</em> (sulle vendite tra privati) oppure l'IVA (sulle vendite da costruttore), mai entrambe contemporaneamente.</p>
+<p>L'aliquota prima casa del 2% si applica solo se l'immobile non rientra in una categoria di lusso (A/1, A/8, A/9), se non si possiede già un'altra abitazione nel medesimo comune e se si stabilisce la residenza entro 18 mesi dall'atto. Non esiste un requisito di nazionalità per l'agevolazione prima casa — gli stranieri che soddisfano queste condizioni pagano lo stesso 2% degli acquirenti italiani.</p>
+<p>Oltre alle imposte di acquisto, prevedere: onorari notarili dell'1–2% del prezzo; provvigione dell'agenzia immobiliare del 3–4% più IVA al 22% (di norma divisa tra acquirente e venditore); eventuali costi di ristrutturazione, perizia o consulenza legale.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Tipo di transazione</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Imposta principale</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Aliquota</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Imposte fisse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Venditore privato – prima casa</td><td style="border:1px solid #ddd;padding:8px 12px">Imposta di registro</td><td style="border:1px solid #ddd;padding:8px 12px">2% del valore catastale</td><td style="border:1px solid #ddd;padding:8px 12px">€50 + €50</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Venditore privato – seconda casa / investimento</td><td style="border:1px solid #ddd;padding:8px 12px">Imposta di registro</td><td style="border:1px solid #ddd;padding:8px 12px">9% del valore catastale</td><td style="border:1px solid #ddd;padding:8px 12px">€50 + €50</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Costruttore – prima casa, nuova costruzione</td><td style="border:1px solid #ddd;padding:8px 12px">IVA</td><td style="border:1px solid #ddd;padding:8px 12px">4%</td><td style="border:1px solid #ddd;padding:8px 12px">€200 ciascuna</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Costruttore – residenziale standard, nuova costruzione</td><td style="border:1px solid #ddd;padding:8px 12px">IVA</td><td style="border:1px solid #ddd;padding:8px 12px">10%</td><td style="border:1px solid #ddd;padding:8px 12px">€200 ciascuna</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Costruttore – lusso (cat. A/1, A/8, A/9)</td><td style="border:1px solid #ddd;padding:8px 12px">IVA</td><td style="border:1px solid #ddd;padding:8px 12px">22%</td><td style="border:1px solid #ddd;padding:8px 12px">€200 ciascuna</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem;color:#666">Fonte: Agenzia delle Entrate 2025–2026</p>
+
+<h2>Mutuo per Acquirenti Stranieri</h2>
+<p>Gli stranieri possono legalmente ottenere un mutuo in Italia, ma i non residenti sono soggetti a condizioni più conservative rispetto ai residenti italiani. Le banche concedono in genere fino al 50–60% del valore dell'immobile (loan-to-value) ai non residenti, contro il 70–80% o più per i residenti. Ciò significa che un acquirente non residente di solito necessita di un anticipo del 40–50%. Le rate mensili del debito, mutuo incluso, non devono superare il 30–35% del reddito netto mensile, e generalmente è richiesto un conto corrente italiano. I tassi fissi nel 2025 si sono attestati tra il 3,5% e il 5% a seconda della banca e del profilo del mutuatario, grazie ai tagli dei tassi della BCE.</p>
+
+<h2>Lista di Controllo Pratica per Acquirenti Stranieri</h2>
+<ul>
+  <li>Verifica che il tuo paese abbia la reciprocità con l'Italia (o che tu disponga di un valido permesso di soggiorno italiano).</li>
+  <li>Ottieni il <strong>Codice Fiscale</strong> presso un consolato italiano prima di recarti a firmare qualsiasi offerta.</li>
+  <li>Apri un conto corrente italiano — obbligatorio per la compliance antiriciclaggio sui pagamenti immobiliari.</li>
+  <li>Ingaggia un avvocato italiano indipendente in aggiunta al notaio.</li>
+  <li>Commissiona tutte e cinque le verifiche di due diligence prima che il compromesso diventi vincolante.</li>
+  <li>Prevedi costi totali di transazione pari al <strong>7–10% del prezzo d'acquisto</strong> (imposte + notaio + agenzia).</li>
+  <li>Se acquisti una prima casa, verifica di poter stabilire la residenza entro 18 mesi dal rogito.</li>
+  <li>Se ricorri a un mutuo, avvia la pre-approvazione prima di firmare il compromesso.</li>
+</ul>
+
+<h2>Conclusione</h2>
+<p>Le leggi immobiliari italiane sono ben strutturate e offrono forti tutele — ma premiano chi si prepara con cura. Il principio di reciprocità, il processo contrattuale articolato e l'assenza della title insurance rendono il ricorso a professionisti locali qualificati non un'opzione, ma una necessità. Con il giusto team legale e finanziario, navigare il mercato immobiliare italiano da straniero è assolutamente fattibile — e i risultati, che si tratti di un appartamento romano, di un casolare toscano o di un rifugio costiero, valgono ampiamente l'impegno.</p>`,
+        faq1: {
+          question: "Uno straniero qualsiasi può acquistare un immobile in Italia?",
+          answer:
+            "Non automaticamente. I cittadini di UE, SEE e Svizzera godono degli stessi diritti dei cittadini italiani. I cittadini extra-UE possono acquistare se il loro paese ha un accordo di reciprocità con l'Italia. I cittadini extra-UE titolari di un valido permesso di soggiorno italiano possono acquistare indipendentemente dalla reciprocità. Eccezione degna di nota: i cittadini canadesi non residenti non sono idonei dal 2023, poiché le restrizioni canadesi sugli acquirenti stranieri hanno determinato la non reciprocità. Verifica sempre la situazione del tuo paese tramite il MAECI o un avvocato italiano qualificato prima di procedere.",
+        },
+        faq2: {
+          question:
+            "Qual è il processo passo per passo per acquistare un immobile in Italia come straniero?",
+          answer:
+            "Il processo si articola in cinque fasi principali: (1) Ottenere il Codice Fiscale presso un consolato o l'Agenzia delle Entrate. (2) Presentare un'offerta scritta (proposta d'acquisto) con un piccolo deposito di buona fede. (3) Firmare il contratto preliminare (compromesso) e versare una caparra del 10–20% del prezzo — vincolante per entrambe le parti. (4) Completare tutte le verifiche di due diligence e, se necessario, organizzare il finanziamento. (5) Firmare l'atto definitivo (rogito notarile) davanti a un notaio italiano, pagare il saldo residuo insieme a imposte e spese, e prendere possesso dell'immobile. L'intero processo richiede in genere 2–4 mesi.",
+        },
+        faq3: {
+          question: "Quali imposte si applicano all'acquisto di immobili in Italia?",
+          answer:
+            "Per acquisti da venditore privato: 2% del valore catastale se l'immobile è la prima casa (prima casa), oppure 9% per seconda casa o investimento, più imposte ipotecaria e catastale fisse di €50 ciascuna. Per nuove costruzioni acquistate da costruttore si applica l'IVA: 4% per la prima casa, 10% per il residenziale standard, 22% per le categorie di lusso (A/1, A/8, A/9), con imposte fisse di €200. Non vi è alcuna differenza di aliquota in base alla nazionalità — gli stranieri che soddisfano i requisiti prima casa pagano lo stesso 2% degli acquirenti italiani. I costi totali di transazione, comprensivi di notaio e agenzia, raggiungono in genere il 7–10% del prezzo di acquisto.",
+        },
+        faq4: {
+          question: "Gli stranieri possono ottenere un mutuo in Italia?",
+          answer:
+            "Sì, ma a condizioni più conservative rispetto ai residenti. Agli acquirenti non residenti viene in genere offerto il 50–60% del loan-to-value (LTV), richiedendo un anticipo del 40–50%. Le rate mensili del debito non devono superare il 30–35% del reddito netto, ed è solitamente richiesto un conto corrente italiano. I tassi fissi dei mutui nel 2025 si sono attestati tra il 3,5% e il 5%. È fortemente consigliabile avviare la pre-approvazione del mutuo prima di firmare il contratto preliminare (compromesso), poiché la caparra è a rischio in caso di mancata concessione del finanziamento.",
+        },
+        faq5: {
+          question:
+            "Quali verifiche di due diligence deve effettuare un acquirente straniero prima di firmare?",
+          answer:
+            "Cinque controlli sono essenziali: (1) Visura catastale — estratto catastale che conferma la titolarità e la classificazione dell'immobile. (2) Visura ipotecaria — ricerca ipotecaria per individuare eventuali debiti sull'immobile. (3) Relazione notarile ventennale — relazione che ricostruisce l'intera catena proprietaria degli ultimi vent'anni. (4) Conformità urbanistica (stato legittimo) — verifica che tutte le costruzioni e ristrutturazioni abbiano i dovuti permessi; opere abusive possono rendere l'immobile giuridicamente non commerciabile. (5) APE, attestato di prestazione energetica — obbligatorio per legge. In Italia non esiste la title insurance, quindi i vizi scoperti dopo il rogito non possono essere assicurati. Affidati sempre a un avvocato italiano indipendente in aggiunta al notaio.",
+        },
       },
       bestTimeToBuyOrRent: {
         title:
           "Miglior Periodo per Comprare o Affittare in Italia: Approfondimenti sul Mercato Stagionale",
         excerpt:
           "Scopri i migliori periodi dell'anno per cercare proprietà in Italia, inclusi le fluttuazioni dei prezzi stagionali e la disponibilità di mercato.",
+        content: `<h2>Introduzione</h2>
+<p>Il momento scelto per entrare nel mercato immobiliare italiano è una delle variabili più sottovalutate. Che tu stia acquistando un appartamento a Roma, cercando un affitto a lungo termine a Milano o valutando una casa vacanza sulla Costiera Amalfitana, la stagione in cui agisci può influire sul prezzo che paghi, sulla concorrenza che incontri e sul potere contrattuale che hai. Questa guida analizza il mercato immobiliare e degli affitti in Italia stagione per stagione, sulla base di dati aggiornati, per aiutarti a pianificare la tua mossa con sicurezza.</p>
+
+<h2>Panoramica stagionale del mercato immobiliare italiano</h2>
+<p>Il mercato immobiliare italiano segue un ritmo stagionale prevedibile, influenzato da calendari scolastici, scadenze fiscali, flussi turistici e cultura delle vacanze. Per il 2026 si prevedono circa 800.000 transazioni residenziali, proseguendo la ripresa iniziata nel 2024. I prezzi medi crescono di circa il 4% annuo a livello nazionale, con Milano e Roma in testa rispettivamente con +7,3% e +6,8%. Ma nell'arco di un anno l'attività e i prezzi variano significativamente in base alla stagione.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Stagione</th><th>Quota delle vendite annuali</th><th>Attività di mercato</th><th>Concorrenza acquirenti</th><th>Margine di trattativa</th></tr></thead>
+<tbody>
+<tr><td>Primavera (mar–giu)</td><td>~35%</td><td>Alta</td><td>Alta</td><td>Basso</td></tr>
+<tr><td>Estate (giu–ago)</td><td>~15–20%</td><td>Bassa</td><td>Bassa</td><td>Moderato</td></tr>
+<tr><td>Autunno (set–nov)</td><td>~25%</td><td>Moderata</td><td>Moderata</td><td>Alto</td></tr>
+<tr><td>Inverno (nov–feb)</td><td>~10–15%</td><td>Molto bassa</td><td>Molto bassa</td><td>Molto alto (fino a –20%)</td></tr>
+</tbody>
+</table>
+<p><em>Fonte: Housenix marzo 2025, Investropa 2026</em></p>
+
+<h2>Miglior momento per acquistare casa in Italia</h2>
+
+<h3>Primavera (marzo–giugno): più offerta, più concorrenza</h3>
+<p>La primavera è la stagione più attiva per gli acquisti immobiliari in Italia, con circa il 35% delle vendite annuali. Le richieste crescono del 15% rispetto agli altri trimestri, i venditori sono motivati a chiudere prima dell'estate e la selezione di immobili disponibili è la più ampia. Il lato negativo: c'è anche la concorrenza più alta tra acquirenti. Gli sconti in trattativa sono minimi e gli immobili desiderabili in città come Roma, Firenze e Milano possono ricevere più offerte nel giro di settimane.</p>
+<p><strong>Ideale per:</strong> chi vuole la massima scelta e desidera trasferirsi prima dell'inizio del nuovo anno scolastico.</p>
+
+<h3>Estate (giugno–agosto): tranquilla ma con poca offerta</h3>
+<p>Gli italiani prendono le vacanze sul serio. Da metà giugno a fine agosto, circa il 20% in meno di immobili appare sul mercato, gli agenti sono meno reperibili e molti venditori preferiscono aspettare. La stagione turistica rende difficile visitare realisticamente gli immobili nelle zone di villeggiatura. Tuttavia, chi è disposto a persistere troverà meno concorrenza e i venditori motivati potrebbero accettare offerte per non portare l'immobile in autunno.</p>
+<p><strong>Ideale per:</strong> acquirenti di immobili costieri o turistici, in grado di visitare di persona e trattare direttamente con i proprietari.</p>
+
+<h3>Autunno (settembre–novembre): il momento migliore per comprare</h3>
+<p>L'autunno è considerato il momento ottimale per acquistare. Circa il 25% delle transazioni annuali avviene in questo periodo. I venditori che hanno mancato l'estate sono motivati a chiudere entro fine anno; l'IMU (imposta municipale propria) è dovuta a dicembre, aggiungendo pressione fiscale per chiudere rapidamente. I turisti sono andati via, le visite sono indisturbate e si vive il quartiere nella sua quotidianità. Gli sconti medi in trattativa sono ai massimi, e la media nazionale del 7,8% sotto il prezzo richiesto è spesso superabile in autunno.</p>
+<p><strong>Ideale per:</strong> la maggior parte degli acquirenti. Massima trattativa, scelta moderata, visite realistiche.</p>
+
+<h3>Inverno (novembre–febbraio): sconto massimo, offerta minima</h3>
+<p>Le transazioni calano di circa il 40% rispetto alla primavera. Gli immobili possono essere valutati il 10–20% sotto i prezzi di alta stagione e chi vende in inverno è tipicamente molto motivato. I tassi fissi sui mutui sono previsti al 3,0–3,4% nel 2026 (in calo dal 4,8% del 2023), rendendo il finanziamento invernale più conveniente degli ultimi anni. Il compromesso: meno immobili disponibili, visite con poca luce e pratiche burocratiche più lente durante le festività.</p>
+<p><strong>Ideale per:</strong> acquirenti orientati al prezzo, con pazienza e flessibilità sui tempi.</p>
+
+<h2>Miglior momento per affittare in Italia</h2>
+
+<h3>Affitti a lungo termine: evitare i periodi di picco</h3>
+<p>Il mercato degli affitti a lungo termine in Italia raggiunge il picco tra fine agosto e ottobre in tutte le principali città, trainato dall'inizio dell'anno universitario e dai trasferimenti aziendali nel quarto trimestre. A Roma, l'affitto medio per metro quadro ha raggiunto €18,80/mese all'inizio del 2026 (+8% anno su anno), con vacancy rate del 3–5% e appartamenti affittati entro 80–90 giorni. A Milano il mercato è ancora più teso: la vacancy nelle zone prime come Brera scende al 2% e gli appartamenti con prezzi adeguati vengono affittati in soli 15–30 giorni. Cercare casa tra agosto e ottobre significa pagare gli affitti più alti con la massima concorrenza.</p>
+<p>Per ottenere il miglior prezzo e il maggior potere negoziale, punta al periodo <strong>novembre–febbraio</strong>. I proprietari che mettono in affitto in inverno sono più flessibili su prezzo e condizioni, la concorrenza tra inquilini è minima ed è più probabile ottenere extra come l'arredamento o il primo mese di affitto gratuito.</p>
+
+<h3>Affitti brevi e case vacanza: seguire i flussi turistici</h3>
+<p>Il mercato degli affitti brevi in Italia ha registrato nel 2025 un tasso di occupazione medio del 63,82% e un prezzo medio giornaliero di €130, con un fatturato annuo medio per immobile di €31.065 (+21,6% anno su anno). Le destinazioni costiere (Positano, Rimini, Cagliari) raggiungono i prezzi massimi a luglio–agosto. Roma, Milano e Firenze hanno una domanda forte tutto l'anno con picchi estivi. Per chi affitta o investe, luglio–agosto massimizza il prezzo giornaliero; per chi cerca come ospite, aprile–maggio e ottobre–novembre offrono migliore disponibilità e tariffe più basse.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Città</th><th>Miglior stagione per comprare</th><th>Picco affitti a lungo termine</th><th>Affitto medio/m²/mese</th><th>Picco affitti brevi</th></tr></thead>
+<tbody>
+<tr><td>Roma</td><td>Autunno / Inverno</td><td>Fine ago–ott</td><td>~€18,80</td><td>Lug–ago</td></tr>
+<tr><td>Milano</td><td>Autunno / Inverno</td><td>Fine ago–ott</td><td>~€23</td><td>Giu–set</td></tr>
+<tr><td>Firenze</td><td>Autunno</td><td>Set–ott</td><td>~€20</td><td>Giu–set</td></tr>
+<tr><td>Bologna</td><td>Autunno / Inverno</td><td>Fine ago–set</td><td>~€17</td><td>Tutto l'anno (studenti)</td></tr>
+<tr><td>Venezia</td><td>Inverno</td><td>Ott–mar</td><td>~€25</td><td>Giu–set / Carnevale</td></tr>
+<tr><td>Costiera (Amalfi ecc.)</td><td>Inverno / Inizio primavera</td><td>N/D</td><td>Alta stagionalità</td><td>Lug–ago</td></tr>
+</tbody>
+</table>
+<p><em>Fonte: Investropa 2026, Airbtics Italy 2025, Idealista nov 2025</em></p>
+
+<h2>Checklist strategica pratica</h2>
+<ul>
+<li><strong>Acquisto:</strong> inizia la ricerca a fine estate (agosto), punta a fare offerte tra settembre e ottobre quando i venditori sono più motivati, e punta a firmare il rogito prima di dicembre per sfruttare l'urgenza di fine anno.</li>
+<li><strong>Affitto a lungo termine:</strong> evita il picco agosto–ottobre. Inizia a cercare tra novembre e febbraio per la scelta più ampia al prezzo più basso; metti in budget una caparra di 2–3 mesi di affitto.</li>
+<li><strong>Affitto breve o investimento turistico:</strong> calcola il rendimento su una base del 60–65% di occupazione annua; il fatturato di punta arriva da luglio–agosto, quello di spalla da aprile–maggio e ottobre.</li>
+<li><strong>Pianificazione del mutuo:</strong> ottieni la pre-approvazione prima della primavera, quando anche le banche registrano una domanda più alta. Con i tassi al 3,0–3,4% nel 2026, agire ora è preferibile ad aspettare ulteriori riduzioni che potrebbero non arrivare.</li>
+<li><strong>Due diligence:</strong> i periodi di mercato lento (inverno) corrispondono anche a uffici notarili più lenti. Prevedi almeno 90 giorni tra il compromesso e il rogito se firmi tra novembre e gennaio.</li>
+</ul>
+
+<h2>Conclusione</h2>
+<p>Il mercato immobiliare italiano premia chi ne comprende il ritmo stagionale. L'autunno offre il miglior equilibrio tra scelta, potere negoziale e visite realistiche per chi acquista; l'inverno massimizza gli sconti ma riduce l'offerta. Per chi affitta, il periodo novembre–febbraio è il momento ideale per trovare un appartamento a lungo termine al miglior prezzo, prima che la domanda torni a salire a fine agosto. Qualunque sia il tuo obiettivo, muoversi contro la stagione — e con i dati aggiornati alla mano — porta costantemente risultati migliori.</p>`,
+        faq1: {
+          question:
+            "Qual è la stagione migliore per acquistare casa in Italia?",
+          answer:
+            "L'autunno (settembre–novembre) è il periodo ottimale per la maggior parte degli acquirenti. I venditori che hanno mancato l'estate affrontano la pressione fiscale della scadenza IMU di dicembre, la concorrenza tra acquirenti è moderata (circa il 25% delle vendite annuali avviene in autunno) e gli sconti in trattativa sono ai massimi. L'inverno (novembre–febbraio) offre ribassi anche più elevati — fino al 20% sotto i prezzi primaverili — ma con meno immobili disponibili e tempi di elaborazione più lenti.",
+        },
+        faq2: {
+          question:
+            "Quando dovrei cercare un affitto a lungo termine in Italia per ottenere il prezzo migliore?",
+          answer:
+            "Cerca tra novembre e febbraio. Il picco degli affitti a lungo termine in tutte le principali città italiane cade tra fine agosto e ottobre, trainato dall'anno universitario e dai trasferimenti aziendali. Nel periodo novembre–febbraio c'è meno concorrenza tra inquilini, i proprietari sono più flessibili su prezzo e condizioni e hai più possibilità di negoziare extra come l'arredamento o il primo mese gratuito.",
+        },
+        faq3: {
+          question:
+            "I prezzi degli immobili in Italia scendono significativamente in inverno?",
+          answer:
+            "Sì, in modo significativo. Le transazioni calano di circa il 40% rispetto alla primavera e gli immobili in vendita in inverno sono tipicamente valutati il 10–20% sotto i livelli di alta stagione. Lo sconto medio in trattativa a livello nazionale è del 7,8%, ma gli acquirenti in autunno e inverno superano spesso questa cifra. Il compromesso è una selezione più ridotta di immobili e tempi burocratici più lenti durante le festività natalizie e di fine anno.",
+        },
+        faq4: {
+          question:
+            "L'estate è un buon momento per cercare un affitto a lungo termine in Italia?",
+          answer:
+            "Non è il periodo ideale. Sebbene ci siano meno inquilini attivamente in cerca in luglio–agosto, la maggior parte dei proprietari trattiene gli annunci fino al picco di fine agosto. La stagione turistica gonfia la domanda di affitti brevi, che può temporaneamente togliere dal mercato degli affitti a lungo termine alcuni appartamenti arredati. Se sei costretto a cercare in estate, muoviti velocemente: il mercato passa in modalità di alta concorrenza a partire da metà agosto.",
+        },
+        faq5: {
+          question:
+            "In che modo il momento stagionale influisce sul potere negoziale quando si acquista in Italia?",
+          answer:
+            "Il momento stagionale è una delle leve più importanti a disposizione dell'acquirente. In primavera il vantaggio è del venditore: l'alta domanda e la presenza di più potenziali acquirenti limitano gli sconti. In autunno e inverno, i venditori affrontano la pressione fiscale (IMU dovuta a dicembre), la ridotta concorrenza tra acquirenti e spesso mesi di costi di mantenimento su un immobile in vendita. Questo sposta il vantaggio sull'acquirente: lo sconto medio nazionale del 7,8% sul prezzo richiesto viene regolarmente superato nel periodo ottobre–gennaio. Collaborare con un agente locale che sa quali immobili sono sul mercato da 3+ mesi dà il massimo margine di trattativa.",
+        },
       },
       propertyMarketTrendsItaly: {
         title: "Tendenze del mercato immobiliare in Italia 2025–2026",
         excerpt:
           "Panoramica delle tendenze attese nel mercato immobiliare italiano: volumi di transazioni, prezzi per regione e cosa osservare per acquirenti e investitori.",
-        content: `<h2>Prospettive 2025–2026</h2>
-<p>Il mercato immobiliare italiano dovrebbe registrare una domanda stabile, soprattutto nelle grandi città e nelle zone costiere e rurali più richieste. I volumi di transazione sono in ripresa e gli acquirenti stranieri restano una quota significativa del mercato.</p>
+        content: `<h2>Introduzione</h2>
+<p>Il mercato immobiliare italiano ha avviato uno dei cicli più vivaci degli ultimi dieci anni. I volumi di compravendita sono in crescita, i prezzi aumentano in modo sostenuto in termini reali e il miglioramento delle condizioni di finanziamento sta riportando acquirenti italiani e internazionali sul mercato. Questo articolo analizza i dati che stanno dietro ai titoli dei giornali: le tendenze dei prezzi per regione, le performance città per città, le condizioni dei mutui e le prospettive per il 2026.</p>
 
-<h2>Prezzi per regione</h2>
-<p>Le regioni del Nord (Lombardia, Emilia-Romagna, Veneto) e città come Milano e Bologna continuano ad attirare forte interesse. Toscana, Roma e Firenze restano favorite per chi cerca stile di vita e case vacanza. Le regioni del Sud e le isole offrono spesso prezzi di ingresso più bassi con interesse crescente da investitori e acquirenti di seconde case.</p>
+<h2>Panoramica del mercato: una ripresa solida</h2>
+<p>I prezzi delle abitazioni in Italia sono cresciuti del 3,9% su base annua nel secondo trimestre 2025 e del 3,8% nel terzo trimestre, secondo i dati ISTAT. Le abitazioni esistenti hanno sovraperformato le nuove costruzioni, con incrementi del 4,2–4,5% rispetto all'1,1–1,4% del nuovo. Le transazioni residenziali totali nel 2025 si sono attestate intorno alle 770.000 unità — un aumento dell'8,5% rispetto al 2024 — con una previsione di 782.000 per il 2026.</p>
+<p>Il sondaggio Bankitalia per il quarto trimestre 2025 ha confermato lo slancio: il 90% delle agenzie immobiliari ha dichiarato di aver concluso almeno una compravendita nel trimestre, con crescita registrata in tutte le regioni. Allo stesso tempo, l'offerta di immobili in vendita ha continuato a calare (saldo di −34 punti percentuali nel quarto trimestre), esercitando pressione al rialzo sui prezzi e riducendo il margine di trattativa per gli acquirenti. Lo sconto medio di negoziazione si è attestato all'8%, con margini più contenuti nel Nord-Est (circa 5%) e più ampi in alcune zone del Sud.</p>
 
-<h2>Cosa monitorare</h2>
-<p>I tassi di interesse, le condizioni di finanziamento e eventuali modifiche a tasse o agevolazioni (es. prima casa) possono influire su accessibilità e tempistiche. Lavorare con un agente locale e restare informati sulle tendenze di mercato aiuta a prendere decisioni più consapevoli.</p>`,
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Città</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Prezzo medio richiesto/m²</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Variazione annua</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Rendimento lordo da locazione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Milano</td><td style="border:1px solid #ddd;padding:8px 12px">~€5.000+</td><td style="border:1px solid #ddd;padding:8px 12px">+2,0%</td><td style="border:1px solid #ddd;padding:8px 12px">3–6%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Firenze</td><td style="border:1px solid #ddd;padding:8px 12px">~€4.200</td><td style="border:1px solid #ddd;padding:8px 12px">+2,8%</td><td style="border:1px solid #ddd;padding:8px 12px">~5,7%</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Roma</td><td style="border:1px solid #ddd;padding:8px 12px">~€3.700</td><td style="border:1px solid #ddd;padding:8px 12px">+6–8%</td><td style="border:1px solid #ddd;padding:8px 12px">~5,9%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Bologna</td><td style="border:1px solid #ddd;padding:8px 12px">~€2.900</td><td style="border:1px solid #ddd;padding:8px 12px">+7,3%</td><td style="border:1px solid #ddd;padding:8px 12px">~5,5–6%</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Torino</td><td style="border:1px solid #ddd;padding:8px 12px">~€2.200</td><td style="border:1px solid #ddd;padding:8px 12px">+1,9%</td><td style="border:1px solid #ddd;padding:8px 12px">6–9%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Napoli</td><td style="border:1px solid #ddd;padding:8px 12px">~€2.100</td><td style="border:1px solid #ddd;padding:8px 12px">+3,2%</td><td style="border:1px solid #ddd;padding:8px 12px">&gt;7%</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Media nazionale</td><td style="border:1px solid #ddd;padding:8px 12px">~€1.880</td><td style="border:1px solid #ddd;padding:8px 12px">+3,8–3,9%</td><td style="border:1px solid #ddd;padding:8px 12px">~7,2%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem;color:#666">Fonte: ISTAT T3 2025, Investropa 2026, Idealista 2026</p>
+
+<h2>Analisi per regione</h2>
+<p>La crescita dei prezzi nel 2025 è stata diffusa ma disomogenea. I dati ISTAT mostrano il Nord-Est in testa con +5,4% annuo, trainato dalla forte domanda in Veneto e Emilia-Romagna. Il Centro — incluse Toscana e Lazio — ha registrato +3,8%, mentre il Nord-Ovest (Lombardia, Piemonte) ha segnato +3,4%. Il Sud e le Isole sono cresciuti del 3,6%, sebbene le singole province divergano significativamente: alcune aree di Basilicata e Calabria hanno registrato lievi cali, mentre le zone costiere e turistiche hanno sovraperformato.</p>
+<p>Il Trentino-Alto Adige si distingue con una crescita del +7% annuo, spinto dal turismo alpino e dalla prossimità delle Olimpiadi Invernali 2026, che stanno generando investimenti infrastrutturali e domanda internazionale. I quartieri semicentrali di Roma — Marconi, Pigneto, Ostiense — stanno registrando la rivalutazione più rapida della città, con gli acquirenti che cercano valore appena fuori dal centro storico.</p>
+
+<h2>Condizioni di mutuo e finanziamento</h2>
+<p>Il contesto finanziario è migliorato considerevolmente. Il tasso di deposito della BCE si attesta al 2% (inizio 2026) e i mutui a tasso fisso italiani sono previsti al 3,00–3,40% nel 2026, in calo dal 4,8% del 2023. I tassi variabili legati all'Euribor dovrebbero normalizzarsi tra il 2,50% e il 2,90%. Le domande di mutuo sono aumentate del 18% nel terzo trimestre 2025 e la forte domanda continua nel 2026. La rata mensile di un mutuo residenziale tipico rimane gestibile rispetto ai canoni di locazione, supportando la convenienza dell'investimento buy-to-let.</p>
+<p>Per gli acquirenti stranieri, le banche italiane offrono generalmente mutui ai non residenti fino al 60–70% del valore dell'immobile, con termini che dipendono dall'istituto di credito e dal profilo reddituale del richiedente. Il Codice Fiscale italiano è obbligatorio prima di qualsiasi mutuo o atto di compravendita.</p>
+
+<h2>Prospettive per il 2026</h2>
+<p>Le previsioni di Investropa, Idealista e Cushman &amp; Wakefield convergono su una crescita moderata ma continua. Le grandi città — Roma e Milano — dovrebbero rivalutarsi del 2–4% annuo, mentre le città secondarie con fondamentali solidi (Bologna, Bari, Palermo) potrebbero superare il 3–5%. I volumi di transazione residenziale sono previsti intorno alle 782.000 unità per il 2026, che rappresenterebbero il sesto trimestre consecutivo di crescita. Il volume totale degli investimenti immobiliari in Italia ha raggiunto 12,5 miliardi di euro nel 2025, con un aumento del 23% su base annua.</p>
+<p>La domanda di affitti rimane strutturalmente elevata. I tassi di sfitto nei principali mercati locativi urbani sono dell'1–3%, con zone universitarie e per giovani professionisti ancora più tese. La crescita dei canoni, che nel 2025 ha raggiunto il 5–8% nelle città prime, dovrebbe moderarsi al 3–4% a livello nazionale nel 2026 — comunque ben al di sopra dell'inflazione.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Indicatore</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">2025 (consuntivo)</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">2026 (previsione)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Crescita prezzi residenziali</td><td style="border:1px solid #ddd;padding:8px 12px">+3,8–3,9%</td><td style="border:1px solid #ddd;padding:8px 12px">+3–5%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Transazioni residenziali</td><td style="border:1px solid #ddd;padding:8px 12px">~770.000</td><td style="border:1px solid #ddd;padding:8px 12px">~782.000</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Tasso mutuo fisso</td><td style="border:1px solid #ddd;padding:8px 12px">~3,44%</td><td style="border:1px solid #ddd;padding:8px 12px">3,00–3,40%</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Tasso deposito BCE</td><td style="border:1px solid #ddd;padding:8px 12px">2%</td><td style="border:1px solid #ddd;padding:8px 12px">~2% (stabile)</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Volume totale investimenti immobiliari</td><td style="border:1px solid #ddd;padding:8px 12px">€12,5 mld (+23%)</td><td style="border:1px solid #ddd;padding:8px 12px">Crescita continua</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Sconto medio di trattativa</td><td style="border:1px solid #ddd;padding:8px 12px">~8%</td><td style="border:1px solid #ddd;padding:8px 12px">~7%</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem;color:#666">Fonte: ISTAT, Idealista/news gen. 2026, Cushman &amp; Wakefield S2 2025, Investropa 2026</p>
+
+<h2>Rischi e opportunità</h2>
+<ul>
+  <li><strong>Carenza di offerta:</strong> Il calo delle abitazioni in vendita è la principale tensione strutturale del mercato. Per gli acquirenti significa agire con decisione; per gli investitori, sostiene i rendimenti da locazione e i valori di capitale.</li>
+  <li><strong>Divergenza regionale:</strong> L'Italia non è omogenea. Alcune province meridionali e il patrimonio edilizio più datato sono stagnanti o in calo, mentre le zone turistiche e le grandi città crescono rapidamente. La ricerca della location rimane fondamentale.</li>
+  <li><strong>Regolamentazione degli affitti brevi:</strong> Città come Firenze, Venezia e Milano stanno inasprendo le norme sulle locazioni turistiche. Verificare la normativa locale prima di acquistare un immobile per locazione di tipo Airbnb.</li>
+  <li><strong>Premio per l'efficienza energetica:</strong> Gli immobili con alta classe energetica (A o B) ottengono un premio crescente e sono più facili da finanziare. Gli edifici più datati senza ristrutturazione possono subire sconti.</li>
+  <li><strong>Rischio valutario per acquirenti extra-euro:</strong> Chi opera in USD, GBP o ILS deve considerare le fluttuazioni del cambio nel periodo di acquisto e detenzione.</li>
+</ul>
+
+<h2>Conclusione</h2>
+<p>Il mercato immobiliare italiano nel 2025–2026 è caratterizzato da una crescente attività di compravendita, aumenti di prezzo sostenuti ma non eccessivi e condizioni di finanziamento in miglioramento. Il contesto macroeconomico — tassi BCE stabili, mercato dei mutui in ripresa, offerta locativa scarsa — è generalmente favorevole sia alle strategie di acquisto che di detenzione. Per acquirenti e investitori con un orizzonte di medio-lungo periodo, la combinazione di prezzi di ingresso ancora al di sotto di altri mercati europei comparabili, rendimenti lordi da locazione competitivi e domanda in crescita rende l'Italia una proposta solida e supportata dai dati.</p>`,
+        faq1: {
+          question: "Di quanto sono cresciuti i prezzi degli immobili in Italia nel 2025 e quali sono le previsioni per il 2026?",
+          answer:
+            "I dati ISTAT mostrano una crescita dei prezzi residenziali del 3,9% su base annua nel secondo trimestre 2025 e del 3,8% nel terzo trimestre. Le abitazioni esistenti hanno sovraperformato con il 4,2–4,5%, mentre le nuove costruzioni hanno registrato incrementi dell'1,1–1,4%. Per il 2026, le previsioni di Investropa e Idealista indicano una crescita continuata del 3–5% a livello nazionale, con le grandi città Roma e Milano attese al 2–4% e le città secondarie potenzialmente oltre il 3–5%.",
+        },
+        faq2: {
+          question: "Quali regioni e città italiane hanno registrato la crescita dei prezzi più forte nel 2025?",
+          answer:
+            "Il Nord-Est ha guidato tutte le regioni con +5,4% annuo, trainato da Veneto e Emilia-Romagna. Il Trentino-Alto Adige ha sovraperformato con +7%, grazie al turismo alpino e ai preparativi per le Olimpiadi Invernali 2026. Tra le città, Bologna (+7,3%) e Roma (+6–8%) hanno registrato la crescita più elevata. Milano è cresciuta più moderatamente (+2,0%) ma rimane la città con il prezzo assoluto più alto, oltre i 5.000 €/m².",
+        },
+        faq3: {
+          question: "I tassi dei mutui italiani sono competitivi per gli acquirenti stranieri nel 2026?",
+          answer:
+            "Sì. I mutui a tasso fisso in Italia sono previsti al 3,00–3,40% nel 2026, in calo dal picco del 4,8% del 2023. I tassi variabili legati all'Euribor sono attesi tra il 2,50% e il 2,90%. Il tasso di deposito della BCE rimane al 2%. Le domande di mutuo sono aumentate del 18% nel terzo trimestre 2025, a dimostrazione del miglioramento della convenienza. Gli acquirenti stranieri non residenti possono generalmente ottenere mutui fino al 60–70% del valore dell'immobile dalle banche italiane.",
+        },
+        faq4: {
+          question: "Quante transazioni immobiliari sono state concluse in Italia nel 2025 e cosa indica questo dato?",
+          answer:
+            "Nel 2025 sono state concluse circa 770.000 transazioni residenziali, un aumento dell'8,5% rispetto al 2024 e il quinto trimestre consecutivo di crescita. Il solo secondo trimestre 2025 ha visto oltre 201.000 transazioni (+8,1% su base annua). Le previsioni per il 2026 si attestano intorno alle 782.000. Questa crescita sostenuta dei volumi, unita al calo delle scorte, segnala una domanda genuina — non speculativa — un indicatore positivo per i valori immobiliari.",
+        },
+        faq5: {
+          question: "Quali sono i principali rischi e opportunità nel mercato immobiliare italiano nel 2025–2026?",
+          answer:
+            "Le principali opportunità includono la scarsa offerta locativa (sfitto dell'1–3% nelle grandi città), rendimenti lordi nazionali medi del 7,2%, condizioni dei mutui in miglioramento e prezzi di ingresso ancora al di sotto di altri mercati europei comparabili. I principali rischi sono la divergenza regionale (alcuni mercati meridionali e provinciali sono piatti o in calo), l'inasprimento delle normative sugli affitti brevi nelle città turistiche, il crescente premio per l'efficienza energetica che penalizza gli immobili più datati, e il rischio valutario per gli acquirenti extra-euro.",
+        },
       },
       whereToBuyPropertyItaly: {
         title: "Dove comprare casa in Italia: Toscana, Roma, Amalfi, Lago di Como",
         excerpt:
           "Guida alle regioni più richieste per l'acquisto in Italia, dalla Toscana e Roma alla Costiera Amalfitana e al Lago di Como.",
-        content: `<h2>Toscana</h2>
-<p>La Toscana offre paesaggi iconici, zone vinicole e borghi storici. I prezzi variano dalle zone interne più accessibili alle aree premium come Chianti e Val d'Orcia. Ideale per case vacanza e soggiorni medio-lunghi.</p>
+        content: `<h2>Introduzione</h2>
+<p>L'Italia attira da sempre acquirenti internazionali grazie alla sua straordinaria varietà: coste soleggiate, città rinascimentali, campagne ondulate e laghi incorniciati dalle Alpi. Ma scegliere <em>dove</em> comprare è fondamentale: i prezzi, le norme sugli affitti, la domanda degli acquirenti e le caratteristiche di vita variano enormemente da regione a regione. Questa guida analizza quattro delle destinazioni più ambite — Toscana, Roma, Costiera Amalfitana e Lago di Como — utilizzando dati di mercato 2025–2026 per aiutarvi a prendere una decisione consapevole.</p>
 
-<h2>Roma e Firenze</h2>
-<p>Entrambe le città hanno forte domanda di affitti da turisti e professionisti. Le zone centrali hanno prezzi più alti; periferie e paesi limitrofi possono offrire miglior rapporto qualità-prezzo. Verificate le norme locali sulla locazione turistica se prevedete di affittare a turisti.</p>
+<h2>Toscana</h2>
+<p>La Toscana è la destinazione lifestyle per eccellenza in Italia: tenute vinicole, borghi medievali e paesaggi tra i più famosi al mondo. Il mercato immobiliare regionale è molto ampio: a gennaio 2026 il prezzo medio richiesto si attesta a <strong>€2.619/m²</strong>, ma questa cifra nasconde variazioni interne enormi.</p>
+<p>Il centro storico di Firenze raggiunge circa <strong>€5.600/m²</strong>, con quartieri come Gavinana-Galluzzo a €4.600/m². La località balneare di Forte dei Marmi — meta prediletta dell'élite italiana e internazionale — è tra le zone più care d'Italia, con prezzi di circa <strong>€10.500/m²</strong>. Al contrario, le campagne dell'Empolese, della Valdarno e di parte della provincia di Arezzo restano ampiamente sotto i €2.500/m², rendendo queste aree accessibili anche a chi cerca fascino senza spendere cifre da capogiro.</p>
+<p>Il mercato ha ritmi misurati: le proprietà restano in vendita in media circa 105 giorni e la maggior parte si chiude con uno sconto del 6–8% rispetto al prezzo richiesto, lasciando margine negoziale all'acquirente. La Toscana è ideale per chi cerca una casa vacanza, un investimento lifestyle o una conservazione del capitale in un'area riconosciuta a livello globale. Gli affitti brevi sono possibili ma sempre più regolamentati a Firenze e in diversi comuni turistici — verificate le norme locali prima dell'acquisto.</p>
 
-<h2>Costiera Amalfitana e Lago di Como</h2>
-<p>Queste aree sono tra le più richieste in Italia. I prezzi sono premium e la domanda è alta per lusso e uso vacanza. Considerate accessibilità, manutenzione ed eventuali vincoli locali prima dell'acquisto.</p>
+<h2>Roma</h2>
+<p>Roma è il mercato immobiliare più grande d'Italia e offre un'ampia gamma di opportunità, dagli appartamenti ultra-prime nel cuore storico alle abitazioni periferiche a prezzi competitivi. Il prezzo medio richiesto a livello cittadino è di circa <strong>€3.700/m²</strong> a inizio 2026, con prezzi di transazione effettivi generalmente tra €3.050 e €3.250/m² dopo la trattativa.</p>
+<p>Il Centro Storico raggiunge i massimi — circa <strong>€8.600/m²</strong> — mentre Aventino, Trastevere e Testaccio si attestano a €6.400–6.600/m². Per gli investitori orientati al rendimento, tuttavia, l'opportunità più interessante si trova nei quartieri semicentrali: Marconi, Pigneto, Ostiense e San Lorenzo registrano una crescita annua dei prezzi del 6–8%, nettamente superiore alle zone centrali. Le periferie offrono prezzi di ingresso a partire da circa <strong>€1.850/m²</strong>.</p>
+<p>Il mercato degli affitti a Roma è strutturalmente teso: i tassi di sfitto nei principali corridoi locativi si aggirano tra l'1% e il 3%, e la forte domanda di studenti, professionisti e turisti garantisce un'occupazione costante. L'espansione della Metro C, avviata concretamente a gennaio 2026, è attesa come catalizzatore dei valori lungo il suo tracciato nei prossimi cinque anni. Per chi cerca una combinazione di reddito da locazione e rivalutazione del capitale, i quartieri semicentrali di Roma offrono attualmente alcune delle migliori opportunità in Italia.</p>
 
-<h2>Altre regioni</h2>
-<p>Puglia, Sicilia, Umbria e Marche offrono prezzi di ingresso più bassi e interesse crescente. Studiate i mercati locali e le infrastrutture per trovare il giusto equilibrio tra prezzo e domanda per i vostri obiettivi.</p>`,
+<h2>Costiera Amalfitana</h2>
+<p>La Costiera Amalfitana opera in una dimensione di prezzi completamente diversa. Nel comune di Amalfi, il prezzo medio richiesto ha raggiunto <strong>€6.881/m²</strong> nell'aprile 2025, con immobili sul lungomare o nel centro storico che oscillano tra €6.000 e oltre €11.000/m². Il vicino Atrani registra una media ancora più elevata di <strong>€7.330/m²</strong>. Positano, Ravello e Praiano si collocano su livelli analoghi o superiori.</p>
+<p>Alla base di questi valori c'è una potente dinamica di scarsità: il riconoscimento UNESCO come Patrimonio dell'Umanità dal 1997 limita severamente le nuove costruzioni, rendendo l'offerta sostanzialmente fissa. Questo vincolo ha tenuto i prezzi fermi anche nei periodi di debolezza del mercato nazionale; le proprietà completamente ristrutturate nelle zone prime hanno registrato incrementi di prezzo di circa il 10% annuo negli ultimi anni.</p>
+<p>Sul fronte degli affitti, la costiera genera rendimenti eccezionali in alta stagione: proprietà di quattro camere da letto di pregio possono raggiungere fino a <strong>€2.500 a settimana</strong> ad agosto. La Costiera Amalfitana è però da considerare più come un asset di lusso che come un investimento a rendimento puro — gli immobili sono valutati a livelli internazionali ma spesso affittano a tariffe locali italiane fuori stagione. Considerate l'accessibilità (strade strette e dipendenza dai traghetti), i costi di manutenzione in ambiente costiero e le eventuali restrizioni sugli affitti stagionali prima di acquistare.</p>
+
+<h2>Lago di Como</h2>
+<p>Il Lago di Como si è affermato come l'indirizzo più prestigioso d'Italia per le seconde case: un luogo dove ricchezza globale, bellezza naturale e fascino culturale si incontrano. I prezzi delle proprietà standard vanno da <strong>€4.000 a €5.000/m²</strong>, mentre le ville sul lungolago e le tenute di pregio possono raggiungere <strong>€8.000–15.000/m²</strong>. Cernobbio (~€4.800/m²) e Menaggio (~€4.740/m²) sono i comuni lacustri più costosi; Como città offre zone di ingresso a €1.940–2.120/m² per chi privilegia la connettività rispetto alla vita fronte lago.</p>
+<p>La domanda è trainata soprattutto da acquirenti internazionali dal Regno Unito, Germania, Svizzera e in misura crescente da Medio Oriente e Americhe. La vicinanza agli aeroporti milanesi di Malpensa e Linate — e al confine svizzero — rende il lago facilmente raggiungibile per i viaggiatori frequenti. La conservazione del capitale piuttosto che il rendimento da affitto è tipicamente la motivazione principale: il mercato è relativamente illiquido e le proprietà possono richiedere tempo per essere vendute, ma i valori si sono dimostrati resilienti nel tempo.</p>
+<p>La domanda di affitti brevi è forte in stagione, ma la provincia di Como ha introdotto requisiti di registrazione e concessione di licenze per le locazioni turistiche. Accertatevi della conformità prima di commercializzare la proprietà per affitti vacanza.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Regione / Area</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Prezzo di ingresso/m²</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Prezzo prime/m²</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Carattere del mercato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Toscana (entroterra)</td><td style="border:1px solid #ddd;padding:8px 12px">~€1.515</td><td style="border:1px solid #ddd;padding:8px 12px">~€10.500 (Forte dei Marmi)</td><td style="border:1px solid #ddd;padding:8px 12px">Lifestyle / casa vacanza</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Roma (periferia)</td><td style="border:1px solid #ddd;padding:8px 12px">~€1.850</td><td style="border:1px solid #ddd;padding:8px 12px">~€8.600 (Centro Storico)</td><td style="border:1px solid #ddd;padding:8px 12px">Affitti urbani / plusvalenza</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Costiera Amalfitana</td><td style="border:1px solid #ddd;padding:8px 12px">~€4.000</td><td style="border:1px solid #ddd;padding:8px 12px">~€11.000 (fronte mare)</td><td style="border:1px solid #ddd;padding:8px 12px">Lusso / rendimento turistico</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Lago di Como</td><td style="border:1px solid #ddd;padding:8px 12px">~€1.940</td><td style="border:1px solid #ddd;padding:8px 12px">~€15.000 (villa sul lago)</td><td style="border:1px solid #ddd;padding:8px 12px">Prestigio / seconda casa</td></tr>
+  </tbody>
+</table>
+<p style="font-size:0.8rem;color:#666">Fonti: Investropa 2026, Immobiliare.it apr. 2025</p>
+
+<h2>Analisi dal punto di vista dell'investimento</h2>
+<p>Ciascuna delle quattro destinazioni risponde a un profilo di acquirente diverso. La Toscana offre ricchezza culturale e valore lifestyle a una varietà di prezzi — è la scelta ideale per chi vuole un rifugio da affittare occasionalmente. Roma offre i fondamentali più solidi per gli investitori orientati al rendimento: forte domanda di affitti, infrastrutture in miglioramento e quartieri semicentrali ancora a prezzi relativamente scontati. La Costiera Amalfitana è da considerare come un asset di trofeo — spettacolare, scarso e capace di rendimenti estivi eccezionali, ma illiquido e costoso da mantenere. Il Lago di Como è il mercato delle seconde case di pregio per eccellenza, guidato dalla domanda internazionale e dalla conservazione del capitale più che dal rendimento.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+  <thead>
+    <tr style="background:#f5f5f5">
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Profilo acquirente</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Regione consigliata</th>
+      <th style="border:1px solid #ddd;padding:8px 12px;text-align:left">Perché</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Casa vacanza lifestyle</td><td style="border:1px solid #ddd;padding:8px 12px">Toscana entroterra / confine umbro</td><td style="border:1px solid #ddd;padding:8px 12px">Accessibilità + paesaggio iconico</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Reddito da affitto urbano</td><td style="border:1px solid #ddd;padding:8px 12px">Roma semicentrale</td><td style="border:1px solid #ddd;padding:8px 12px">Crescita prezzi 6–8% annuo, alta occupazione</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Rendimento lusso breve termine</td><td style="border:1px solid #ddd;padding:8px 12px">Amalfi / Positano</td><td style="border:1px solid #ddd;padding:8px 12px">Fino a €2.500/settimana in alta stagione</td></tr>
+    <tr style="background:#fafafa"><td style="border:1px solid #ddd;padding:8px 12px">Seconda casa di prestigio</td><td style="border:1px solid #ddd;padding:8px 12px">Lago di Como fronte lago</td><td style="border:1px solid #ddd;padding:8px 12px">Conservazione del capitale, domanda internazionale</td></tr>
+    <tr><td style="border:1px solid #ddd;padding:8px 12px">Primo acquirente straniero</td><td style="border:1px solid #ddd;padding:8px 12px">Periferia di Roma / Toscana entroterra</td><td style="border:1px solid #ddd;padding:8px 12px">Prezzi di ingresso ragionevoli, quadro giuridico solido</td></tr>
+  </tbody>
+</table>
+
+<h2>Consigli pratici per l'acquirente</h2>
+<ul>
+  <li><strong>Ottenete il Codice Fiscale per tempo.</strong> È obbligatorio prima di qualsiasi contratto di acquisto o mutuo. Potete richiederlo presso un consolato italiano all'estero o a qualsiasi ufficio dell'Agenzia delle Entrate in Italia.</li>
+  <li><strong>Fate eseguire una perizia da un geometra.</strong> Gli immobili italiani — soprattutto quelli storici — raramente vengono venduti con una relazione tecnica completa. Un geometra abilitato può verificare la conformità urbanistica e segnalare problemi strutturali prima della firma del compromesso.</li>
+  <li><strong>Capite il sistema a doppio contratto.</strong> Gli acquisti italiani si articolano in un <em>compromesso</em> (contratto preliminare con deposito tipicamente del 10–30%) seguito settimane o mesi dopo dall'<em>atto notarile</em> definitivo. Pianificate questa tempistica nel vostro calendario.</li>
+  <li><strong>Verificate le norme sugli affitti brevi a livello locale.</strong> Firenze, la provincia di Como e parte della Costiera Amalfitana impongono requisiti di registrazione, limiti ai giorni di locazione o restrizioni in determinate zone. Accertatevi prima di acquistare se il reddito da affitto fa parte del vostro piano.</li>
+  <li><strong>Calcolate i costi ricorrenti.</strong> IMU annuale sulle seconde case, spese condominiali, contratti di fornitura e manutenzione — soprattutto per gli immobili costieri — possono aggiungere €3.000–8.000+ all'anno a seconda delle dimensioni e della posizione.</li>
+</ul>
+
+<h2>Conclusione</h2>
+<p>Le quattro destinazioni di punta dell'Italia offrono ciascuna una proposta convincente ma distinta. Se siete attratti dallo stile di vita e dalla bellezza rurale, la Toscana rimane insuperabile. Se il rendimento da locazione e la crescita del capitale sono la priorità, i quartieri semicentrali di Roma offrono attualmente alcuni dei migliori fondamentali in Italia. Per lusso ed esclusività, la Costiera Amalfitana e il Lago di Como offrono ciò che pochi luoghi al mondo possono eguagliare — ma entrambi richiedono un'attenta due diligence e una visione lucida dei costi di gestione. Qualunque regione scegliate, lavorate con un notaio italiano qualificato, un professionista immobiliare locale e un consulente fiscale per assicurarvi che l'acquisto sia strutturato correttamente fin dall'inizio.</p>`,
+        faq1: {
+          question: "Quale regione italiana offre il miglior rapporto qualità-prezzo nel 2026?",
+          answer: "Per il rapporto qualità-prezzo complessivo — bilanciando prezzo, appeal paesaggistico e potenziale locativo — spiccano la Toscana interna e i quartieri semicentrali di Roma. La Toscana interna offre prezzi di ingresso inferiori a €2.500/m² con forti valori lifestyle. I quartieri semicentrali di Roma (Marconi, Pigneto, Ostiense) combinano prezzi di ingresso di €2.500–3.500/m² con una crescita annua dei prezzi del 6–8% e forte domanda locativa. La Costiera Amalfitana e il Lago di Como offrono prestigio ma a prezzi significativamente più alti e con minore liquidità locativa.",
+        },
+        faq2: {
+          question: "Qual è il prezzo medio degli immobili in Toscana, Roma, Amalfi e Lago di Como?",
+          answer: "A partire dal 2025–2026: la Toscana media €2.619/m² a livello regionale, da ~€1.515/m² nell'entroterra a ~€10.500/m² a Forte dei Marmi. Roma media ~€3.700/m² di richiesta a livello cittadino, da ~€1.850/m² nelle periferie esterne a ~€8.600/m² nel centro storico. Il comune di Amalfi media ~€6.881/m², con punte di oltre €11.000/m² sul fronte mare. Le proprietà standard del Lago di Como vanno da €4.000 a €5.000/m², con ville sul lago che raggiungono €8.000–15.000/m².",
+        },
+        faq3: {
+          question: "Ci sono restrizioni sugli affitti turistici brevi ad Amalfi e al Lago di Como?",
+          answer: "Sì. Entrambe le aree hanno introdotto misure per regolare l'attività di locazione a breve termine. I comuni della Costiera Amalfitana richiedono la registrazione presso le autorità locali e in alcuni paesi limitano il numero di unità turistiche autorizzate. La provincia di Como richiede ai proprietari di appartamenti vacanza di registrarsi sul portale turistico regionale e di ottenere un CIN (codice identificativo nazionale) ai sensi della legge nazionale del 2024 sulle locazioni brevi. Le sanzioni per la mancata conformità possono essere significative. Verificate sempre le norme specifiche del comune in cui intendete acquistare prima di completare l'atto.",
+        },
+        faq4: {
+          question: "Gli stranieri possono acquistare liberamente immobili in queste regioni?",
+          answer: "Sì — l'Italia applica il principio di reciprocità, il che significa che i cittadini della maggior parte dei paesi (compresi Israele, USA, Regno Unito e tutti gli stati UE) possono acquistare immobili alle stesse condizioni dei cittadini italiani. Non esistono restrizioni regionali specifiche per Toscana, Roma, Amalfi o Lago di Como. Avrete bisogno di un Codice Fiscale (codice di identificazione fiscale italiano), di un notaio per l'atto e in alcuni casi di un conto bancario in Italia. Gli acquirenti extra-UE potrebbero dover dimostrare la reciprocità del proprio paese d'origine, anche se in pratica questo è raramente un ostacolo per le principali nazionalità.",
+        },
+        faq5: {
+          question: "Quale regione è migliore per il reddito da affitto rispetto alla rivalutazione del capitale?",
+          answer: "Per il reddito da affitto: guidano Roma semicentrale e la Costiera Amalfitana — Roma per la domanda costante tutto l'anno con rendimenti moderati (~5–6%), e Amalfi per rendimenti spettacolari in alta stagione (fino a €2.500/settimana) seppur concentrati in estate. Per la rivalutazione del capitale: Roma semicentrale è attualmente il mercato più forte con una crescita annua del 6–8%, seguita da alcune zone della Toscana nel medio termine. Il Lago di Como è la scelta migliore per la conservazione del capitale piuttosto che per il rendimento — i valori sono resilienti ma la liquidità locativa è più bassa. La Toscana combina un modesto apprezzamento con un reddito locativo occasionale tramite un modello di affitto vacanze.",
+        },
       },
       annualCostsOwningPropertyItaly: {
         title: "Costi annuali di proprietà in Italia: IMU, utenze, manutenzione",
         excerpt:
           "Cosa mettere in budget dopo l'acquisto: IMU, spese condominiali, utenze e manutenzione ordinaria per un immobile in Italia.",
-        content: `<h2>IMU (imposta municipale propria)</h2>
-<p>L'IMU è un'imposta annuale sulla proprietà degli immobili. Le aliquote sono in genere 0,4–1,06% del valore catastale, a seconda del comune e del tipo di immobile. Le esenzioni per la prima casa si applicano spesso all'abitazione principale; le seconde case sono di solito assoggettate all'IMU.</p>
+        content: `<h2>Introduzione</h2>
+<p>Acquistare un immobile in Italia è solo l'inizio. Una volta firmato il rogito, scattano una serie di costi ricorrenti annuali: imposte, spese condominiali, utenze, manutenzione e assicurazione. Conoscere queste spese di gestione prima dell'acquisto consente di valutare la redditività reale dell'investimento ed evitare sorprese di bilancio. Questa guida analizza ogni voce di costo significativa per un proprietario in Italia, sulla base dei dati aggiornati al 2025–2026 del Ministero delle Finanze italiano, Investropa e Altroconsumo.</p>
 
-<h2>Condominio e utenze</h2>
-<p>Se l'immobile è in condominio, pagherete le spese condominiali per parti comuni, ascensore, pulizie e riparazioni. Utenze (luce, gas, acqua, internet) e eventuali oneri condominiali dipendono dai consumi e dai contratti. Budget indicativo 1.500–3.000 € l'anno per un appartamento medio, escluso il mutuo.</p>
+<h2>IMU – Imposta Municipale Unica</h2>
+<p>L'IMU è la principale imposta annuale sulla proprietà immobiliare in Italia, disciplinata dalla Legge 160/2019. La regola più importante per i compratori: <strong>l'abitazione principale (prima casa) è completamente esente</strong> dall'IMU, purché non sia classificata come immobile di lusso (categorie catastali A/1, A/8 o A/9). L'esenzione richiede la residenza anagrafica registrata presso quell'indirizzo.</p>
+<p>Per le seconde case, gli immobili da reddito e i non residenti, l'IMU si applica ogni anno. L'aliquota base nazionale è <strong>8,6‰ (0,86%)</strong> e i comuni possono aumentarla fino a un massimo di <strong>10,6‰ (1,06%)</strong>. Dal 2025 ogni comune deve pubblicare le proprie aliquote in un "prospetto delle aliquote" standardizzato per maggiore trasparenza.</p>
+<p>L'IMU si calcola sul <em>valore catastale</em>, non sul prezzo di mercato. La formula è: (rendita catastale × 1,05 × 160) × aliquota comunale. Ad esempio, un immobile residenziale con rendita catastale di 800 € e aliquota dello 0,86% genera un'IMU annua di circa 1.149 €. Per una seconda casa tipica, prevedere <strong>600–2.500 € l'anno</strong>. Il pagamento avviene in due rate: l'acconto entro il 16 giugno e il saldo entro il 16 dicembre.</p>
 
-<h2>Manutenzione e assicurazione</h2>
-<p>Accantonate fondi per manutenzione ordinaria, riparazioni e, se prevista, assicurazione dello stabile. Negli edifici storici o antichi la manutenzione può essere più onerosa. È consigliabile un fondo per emergenze di qualche migliaio di euro.</p>`,
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Voce di costo</th><th>Range annuo tipico</th><th>A carico di</th><th>Note principali</th></tr></thead>
+<tbody>
+<tr><td>IMU – seconda casa</td><td>600–2.500 €</td><td>Proprietario</td><td>Esente per prima casa (non lusso)</td></tr>
+<tr><td>TARI (tassa rifiuti)</td><td>150–600 €</td><td>Proprietario / occupante</td><td>In base a superficie e occupanti</td></tr>
+<tr><td>Spese condominiali</td><td>1.200–7.200 €</td><td>Proprietario</td><td>Varia per edificio e città</td></tr>
+<tr><td>Assicurazione fabbricato</td><td>200–800 €</td><td>Proprietario</td><td>Vivamente consigliata</td></tr>
+<tr><td>Riserva manutenzione</td><td>1–2% del valore/anno</td><td>Proprietario</td><td>Più alta per edifici storici</td></tr>
+</tbody>
+</table>
+<p style="font-size:0.85rem; color:#666;">Fonti: Ministero delle Finanze italiano, Investropa 2026, Altroconsumo 2025</p>
+
+<h2>TARI – Tassa sui Rifiuti</h2>
+<p>La TARI è l'imposta municipale che finanzia la raccolta, il trasporto, il riciclo e lo smaltimento dei rifiuti. A differenza dell'IMU, si applica a <strong>tutti i proprietari e occupanti</strong>, indipendentemente dal fatto che si tratti di prima o seconda casa. È calcolata in base alla superficie utile dell'immobile e al numero degli occupanti. Per un appartamento tipo di 80 m², la TARI annua si aggira tra <strong>150 e 600 €</strong>, con valori più elevati nelle città del sud dove i costi del servizio sono strutturati diversamente.</p>
+<p>Dal 2025 molti comuni stanno introducendo la "Tariffa Puntuale", che collega il costo alla quantità effettiva di rifiuti indifferenziati prodotti, anziché a una formula fissa basata sulla superficie. Il pagamento avviene di norma in due o tre rate annue tramite F24 o PagoPA. Sono previste riduzioni per famiglie a basso reddito (in base all'ISEE) e per immobili non occupati.</p>
+
+<h2>Spese Condominiali</h2>
+<p>Se l'immobile si trova in un condominio o complesso gestito, si pagano le spese condominiali mensili per la manutenzione delle parti comuni, l'ascensore, le pulizie, la sicurezza, l'amministrazione e le utenze condivise. Queste spese sono <strong>obbligatorie e non negoziabili</strong> una volta approvate dall'assemblea condominiale.</p>
+<p>Le spese ordinarie per un appartamento di 100 m² variano da <strong>100 a 300 € al mese</strong> a livello nazionale, ma possono raggiungere 400–600 € o più negli edifici con servizi completi a Milano o nel centro di Roma. Oltre alle spese ordinarie, l'assemblea può approvare interventi straordinari — restauro della facciata, sostituzione del tetto, aggiornamento dell'ascensore — che possono aggiungere diverse migliaia di euro in un singolo anno.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%; border-collapse:collapse; margin:1rem 0;">
+<thead><tr><th>Città</th><th>Spese cond. medie/mese</th><th>IMU annua tipica (immobile da 300.000 €)</th><th>Costi di gestione annui stimati</th></tr></thead>
+<tbody>
+<tr><td>Milano</td><td>~162 €</td><td>1.800–2.500 €</td><td>3.500–6.000 €</td></tr>
+<tr><td>Roma</td><td>~108 €</td><td>1.500–2.200 €</td><td>2.800–5.000 €</td></tr>
+<tr><td>Firenze</td><td>~120 €</td><td>1.400–2.100 €</td><td>2.600–4.500 €</td></tr>
+<tr><td>Torino</td><td>~119 €</td><td>1.200–2.000 €</td><td>2.500–4.500 €</td></tr>
+<tr><td>Napoli</td><td>~76 €</td><td>900–1.800 €</td><td>1.800–3.500 €</td></tr>
+</tbody>
+</table>
+<p style="font-size:0.85rem; color:#666;">Fonti: Altroconsumo 2025, Investropa 2026, Ministero delle Finanze italiano</p>
+
+<h2>Utenze</h2>
+<p>Se si occupa l'immobile personalmente o lo si lascia vuoto, i contratti delle utenze (elettricità, gas, acqua, internet) rimangono a carico del proprietario. La spesa mensile media per le utenze di un appartamento in una città del nord si aggira intorno ai <strong>300 €</strong>, mentre nell'Italia centrale è circa il 29% inferiore e nel sud circa il 48% in meno rispetto ai valori del nord. Il gas ha un peso particolare in inverno; se l'edificio ha il riscaldamento centralizzato, questo costo è incluso nelle spese condominiali. Un budget indicativo di <strong>1.500–3.000 € l'anno</strong> per le utenze è ragionevole per un appartamento di 80–100 m² in una grande città.</p>
+
+<h2>Manutenzione e Assicurazione</h2>
+<p>La manutenzione immobiliare in Italia segue il principio che i proprietari sono responsabili del mantenimento dell'abitabilità e della conformità dell'unità. Come regola generale, accantonare <strong>l'1–2% del valore di mercato dell'immobile l'anno</strong> per la manutenzione ordinaria: ritinteggiatura, riparazioni idrauliche, sostituzione di elettrodomestici, revisione della caldaia (ispezione annuale obbligatoria per legge italiana) e pavimentazioni. Per gli edifici più vecchi o storici — comuni nei centri città italiani — i costi possono superare il 3% annuo.</p>
+<p>L'assicurazione del fabbricato (assicurazione fabbricato) non è obbligatoria per legge per i singoli appartamenti, ma è vivamente consigliata. Una polizza standard che copre incendio, danni da acqua e responsabilità civile verso terzi costa <strong>200–800 € l'anno</strong> in base alle dimensioni, alla posizione e alla copertura. Se l'immobile è in condominio, l'edificio potrebbe avere una polizza collettiva, che però raramente copre i beni dei singoli appartamenti.</p>
+
+<h2>Consigli per i Proprietari Stranieri</h2>
+<ul>
+<li><strong>Registrare il codice fiscale e aprire un conto corrente italiano</strong> per pagare IMU e TARI con addebito diretto. Questo evita sanzioni per scadenze mancate.</li>
+<li><strong>Assumere un commercialista locale</strong> se si è proprietari non residenti. Può presentare la dichiarazione dei redditi italiana, ottimizzare l'uso della <em>cedolare secca</em> (tassa piatta del 21% sugli affitti) e garantire il corretto pagamento di TARI e IMU.</li>
+<li><strong>Richiedere i verbali assemblea degli ultimi tre anni</strong> prima di acquistare. Rivelano eventuali lavori straordinari approvati ma non ancora pagati che diventano a carico dell'acquirente dopo il rogito.</li>
+<li><strong>Verificare il valore e la categoria catastale</strong> dell'immobile prima di acquistare: la rendita catastale determina direttamente il conto IMU, e la categoria determina se si può beneficiare dell'esenzione prima casa.</li>
+<li><strong>Preventivare costi imprevisti</strong>: una riserva annua di 3.000–5.000 € oltre alle spese ordinarie protegge da accertamenti straordinari o riparazioni importanti.</li>
+</ul>
+
+<h2>Conclusione</h2>
+<p>Possedere un immobile in Italia comporta costi annuali prevedibili che, se pianificati correttamente, sono molto gestibili. Per un appartamento standard di 80–100 m² in una grande città, i costi di gestione totali annui — IMU, TARI, spese condominiali, utenze e manutenzione — si collocano tipicamente tra <strong>2.500 e 6.000 €</strong>, con variazioni legate principalmente alla città e al tipo di edificio. Un'analisi approfondita pre-acquisto della contabilità condominiale, dei dati catastali e delle aliquote IMU locali vi metterà nella posizione migliore per pianificare con precisione e investire con fiducia.`,
+        faq1: {
+          question: "L'abitazione principale (prima casa) è esente dall'IMU in Italia?",
+          answer: "Sì. Se si ha la residenza anagrafica registrata presso l'immobile e non si tratta di una categoria di lusso (A/1, A/8 o A/9), l'abitazione principale è completamente esente dall'IMU. I non residenti, i proprietari di seconde case e i proprietari-locatori pagano l'IMU annualmente all'aliquota comunale, che varia dall'8,6‰ al 10,6‰ del valore catastale.",
+        },
+        faq2: {
+          question: "Come si calcola l'IMU per una seconda casa in Italia?",
+          answer: "La formula è: (rendita catastale × 1,05 × 160) × aliquota comunale. La rendita catastale è un valore assegnato dallo Stato, indipendente dal prezzo di mercato. Per un immobile con rendita di 800 € all'aliquota base nazionale dello 0,86%, l'IMU annua è di circa 1.149 €. La maggior parte delle seconde case genera una bolletta IMU annua di 600–2.500 €. Il pagamento avviene in due rate: entro il 16 giugno e il 16 dicembre.",
+        },
+        faq3: {
+          question: "Cos'è la TARI e chi deve pagarla?",
+          answer: "La TARI (Tassa sui Rifiuti) è l'imposta municipale per la raccolta dei rifiuti. È dovuta da chiunque occupi o possieda un immobile che produce rifiuti — compresi i non residenti e i proprietari di seconde case. Si calcola in base alla superficie utile dell'immobile e al numero degli occupanti. Una TARI annua tipica per un appartamento di 80 m² varia da 150 a 600 € a seconda del comune.",
+        },
+        faq4: {
+          question: "Qual è un budget annuo realistico per possedere un appartamento in Italia?",
+          answer: "Per un appartamento standard di 80–100 m² in una grande città italiana, prevedere un budget annuo totale di 2.500–6.000 € per i costi di gestione. Questo comprende IMU (600–2.500 € per seconde case), TARI (150–600 €), spese condominiali (1.200–3.500 € per un edificio normale), assicurazione del fabbricato (200–800 €) e riserva per la manutenzione. Milano tende a collocarsi nella parte alta di questo intervallo; Napoli e le città più piccole nella parte bassa.",
+        },
+        faq5: {
+          question: "I proventi da locazione possono compensare i costi di gestione di un immobile in Italia?",
+          answer: "Sì. I rendimenti lordi da locazione in Italia si aggirano in media intorno al 5–7% nelle grandi città, il che nella maggior parte dei casi supera significativamente i costi di gestione annui. Con il regime della cedolare secca, i redditi da locazione sono tassati al 21% fisso (o al 10% per i contratti a canone concordato), semplificando gli obblighi fiscali. Un immobile gestito bene a Roma o Firenze può generare reddito netto dopo tutte le imposte e i costi, rendendolo un investimento valido a lungo termine.",
+        },
       },
       italyFlatTaxRegime2026: {
         title: "Regime flat tax Italia 2026: guida completa per acquirenti stranieri",
